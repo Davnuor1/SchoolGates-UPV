@@ -113,7 +113,7 @@ TextureImporter:
         width: 94
         height: 76
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,7 +134,7 @@ TextureImporter:
         width: 38
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,7 +155,7 @@ TextureImporter:
         width: 30
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,7 +176,7 @@ TextureImporter:
         width: 78
         height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -195,9 +195,9 @@ TextureImporter:
         x: 33
         y: 336
         width: 13
-        height: 45
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,6 +205,153 @@ TextureImporter:
       bones: []
       spriteID: 667002bf64382b64b9026523b52b724c
       internalID: 820063340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-noise
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1056
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4fc50024785bf408c7a5342140368f
+      internalID: 484525144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecino-madera-patron-1
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 640
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089e4eb5d83cc2c46847586ee2328e62
+      internalID: 1357841485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecino-madera-patron-2
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 624
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9726da9d7b209dd44a34b4b032a7ed61
+      internalID: 277226453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vecino-patron-azul
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 608
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e2a2ef08bcdee48a9a73f8d8e99a6e
+      internalID: -555330335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puerta-vecino-1
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 608
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99580d4c24392b04b95502d9929c7f56
+      internalID: 1864018025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puerta-vecino-2
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 608
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ffa6f4a2ec2cb46b01d6adbf380586
+      internalID: 67567348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puerta-vecino-3
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 608
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf54272cde3ac74f893c98b3b7ccbce
+      internalID: 1755345155
       vertices: []
       indices: 
       edges: []
@@ -222,9 +369,16 @@ TextureImporter:
     nameFileIdTable:
       casa-prota-tile: 750233525
       casa-vecino-tile: -1146357223
+      puerta-vecino-3: 1755345155
+      puerta-vecino-1: 1864018025
+      vecino-madera-patron-2: 277226453
+      puerta-vecino-2: 67567348
+      vecino-madera-patron-1: 1357841485
       merendero-tile: 297709668
+      grass-noise: 484525144
       arbol-over-tile: -443482755
       farola-tile: 820063340
+      vecino-patron-azul: -555330335
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
