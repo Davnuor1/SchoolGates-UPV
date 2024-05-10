@@ -2377,9 +2377,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1888
-        y: 912
+        y: 904
         width: 112
-        height: 48
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2587,7 +2587,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1968
-        y: 880
+        y: 864
         width: 32
         height: 32
       alignment: 0
@@ -2608,7 +2608,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1952
-        y: 880
+        y: 864
         width: 16
         height: 32
       alignment: 0
@@ -2629,7 +2629,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1920
-        y: 880
+        y: 864
         width: 32
         height: 32
       alignment: 0
@@ -2650,7 +2650,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1888
-        y: 880
+        y: 864
         width: 32
         height: 32
       alignment: 0
@@ -2670,9 +2670,9 @@ TextureImporter:
       name: entrance-home
       rect:
         serializedVersion: 2
-        x: 2000
-        y: 880
-        width: 48
+        x: 2009
+        y: 879
+        width: 30
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2683,6 +2683,153 @@ TextureImporter:
       bones: []
       spriteID: bb482aef7a009514ab3c819f44ddc01d
       internalID: 43885470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main-house-door
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 836
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf051e24807f7246981e3355180a700
+      internalID: 502288239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: house-stairs-up-small-2-tile
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 832
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fdb383ad5ce94499c242b615970fcf
+      internalID: 271956730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: house-stairs-up-small-3-tile
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 848
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb06c543c84a2b4a99118239987ada5
+      internalID: -1325575426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: entrance-home-2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 873
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399427c7644786c429ed999248aa3104
+      internalID: -738383833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: house-stairs-up-small-4-tile
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 816
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f057a222ab7e64abb580e1430cf8e1
+      internalID: 1754855582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rug-1-tile
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 832
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a121820e808db4541ae328e9a2718bde
+      internalID: -301518531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rug-2-tile
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 880
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0d2df1f4b3029439ea20cf23e2fc8b
+      internalID: 846925343
       vertices: []
       indices: 
       edges: []
@@ -2702,6 +2849,7 @@ TextureImporter:
       school-wall-left-up-tile: 369982738
       school-wall-topleft-tile: -1250551227
       main-house-floor-2-tile: 1245934035
+      house-stairs-up-small-4-tile: 1754855582
       school-wall-tile: 2133179368
       school-wall-left-tile: -430442852
       school-wall-topcorner-2-tile: -342612074
@@ -2721,19 +2869,21 @@ TextureImporter:
       main-house-border-12-tile: -469236981
       school-floor-shadow-tinycorner-tile: 740425559
       escalera-ab-centro: 1531415396
+      rug-1-tile: -301518531
       escalera-ab: 1890158694
       main-house-border-8-tile: -1563879428
       school-floor-shadow-up-tile: -1833407909
-      grass-noise-2: 563954829
+      house-stairs-up-small-2-tile: 271956730
       escalera-ab-izq: -1397956589
-      main-house-border-6-tile: -2144329628
-      farola-tile: 820063340
-      entrance-home: 43885470
+      grass-noise-2: 563954829
       school-floor-shadow-left-2-tile: 1483541158
-      pavimento-arr-izq: 1069547256
-      cocina-multi-tile: -781386283
+      farola-tile: 820063340
+      main-house-border-6-tile: -2144329628
       school-floor-shadow-up-2-tile: -326113219
       vecino-patron-azul: -555330335
+      cocina-multi-tile: -781386283
+      entrance-home: 43885470
+      pavimento-arr-izq: 1069547256
       pavimento-der: -640400766
       main-house-floor-1-tile: 534026027
       school-tile: -1566916657
@@ -2750,11 +2900,14 @@ TextureImporter:
       school-wall-topright-3-tile: 1858797507
       escalera-izq: 1141441833
       main-house-floor--tile: -1316435137
+      rug-2-tile: 846925343
       puerta-vecino-2: 67567348
+      house-stairs-up-small-3-tile: -1325575426
       pavimento-izq: 1379516157
       school-wall-topcorner-1-tile: -2023154526
       pavimento-esq-int-arr-izq: -1566386583
       school-wall-topcorner-4-tile: -1530510575
+      entrance-home-2: -738383833
       main-house-border-4-tile: 2116991785
       main-house-border-5-tile: -2091690818
       pavimento-ab: -742344218
@@ -2794,6 +2947,7 @@ TextureImporter:
       escalera-izq-arr: 1835027522
       barranco-izq: -1791219594
       arbol-arr-tile: 1476713219
+      main-house-door: 502288239
       mirador: 1812216705
       escalera-arr: -1408225912
       main-house-border-9-tile: 1314116284
