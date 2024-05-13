@@ -2801,7 +2801,7 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2822,7 +2822,7 @@ TextureImporter:
         width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2830,6 +2830,111 @@ TextureImporter:
       bones: []
       spriteID: 9c0d2df1f4b3029439ea20cf23e2fc8b
       internalID: 846925343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school-door-left-1-tile
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 464
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff3c9d30cf19ed458e8f3a87db210d2
+      internalID: 1031136207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school-door-left-2-tile
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 464
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f1b5657ef07a04a91ac58072e9b9cc
+      internalID: 1235908131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school-door-left-3-tile
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 464
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50846326fd1d7e4ba48a1f4f7a0edde
+      internalID: -762550851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school-door-1-tile
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 416
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e5aac176998b24d9efdfaa944abcd0
+      internalID: -2005474162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black-tile
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 496
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cd3dac391620f4c9d32a480f376253
+      internalID: -807507703
       vertices: []
       indices: 
       edges: []
@@ -2855,9 +2960,11 @@ TextureImporter:
       school-wall-topcorner-2-tile: -342612074
       school-floor-tile: -359363112
       escalera-arr-de: -316600300
+      black-tile: -807507703
       school-wall-right-tile: -888851472
       barranco: 1785832600
       school-wall-bottom-tile: -1244271544
+      school-door-left-2-tile: 1235908131
       school-floor-shadow-left-tile: 865623263
       market-tile: -1379910127
       school-wall-innercorner-2-tile: 1214828167
@@ -2872,18 +2979,18 @@ TextureImporter:
       rug-1-tile: -301518531
       escalera-ab: 1890158694
       main-house-border-8-tile: -1563879428
+      main-house-border-6-tile: -2144329628
       school-floor-shadow-up-tile: -1833407909
       house-stairs-up-small-2-tile: 271956730
       escalera-ab-izq: -1397956589
+      farola-tile: 820063340
+      entrance-home: 43885470
       grass-noise-2: 563954829
       school-floor-shadow-left-2-tile: 1483541158
-      farola-tile: 820063340
-      main-house-border-6-tile: -2144329628
+      pavimento-arr-izq: 1069547256
+      cocina-multi-tile: -781386283
       school-floor-shadow-up-2-tile: -326113219
       vecino-patron-azul: -555330335
-      cocina-multi-tile: -781386283
-      entrance-home: 43885470
-      pavimento-arr-izq: 1069547256
       pavimento-der: -640400766
       main-house-floor-1-tile: 534026027
       school-tile: -1566916657
@@ -2897,6 +3004,7 @@ TextureImporter:
       escalera-der-ab: 588404156
       escalera-arr-centro: 1746694583
       barranco-der: -2136315294
+      school-door-left-3-tile: -762550851
       school-wall-topright-3-tile: 1858797507
       escalera-izq: 1141441833
       main-house-floor--tile: -1316435137
@@ -2913,8 +3021,8 @@ TextureImporter:
       pavimento-ab: -742344218
       pavimento-esq-int-ab-izq: 520666716
       school-wall-top-2-tile: -1149954121
-      school-wall-right-up-tile: 39254140
       mesa-vertical-tile: 1496854513
+      school-wall-right-up-tile: 39254140
       school-wall-bottom-left-tile: -360119800
       main-house-floor-5-tile: 1583508932
       cuadro-2-tile: -1678953501
@@ -2946,6 +3054,7 @@ TextureImporter:
       pavimento-esq-int-arr-der: 1153018876
       escalera-izq-arr: 1835027522
       barranco-izq: -1791219594
+      school-door-1-tile: -2005474162
       arbol-arr-tile: 1476713219
       main-house-door: 502288239
       mirador: 1812216705
@@ -2971,6 +3080,7 @@ TextureImporter:
       school-wall-topright-tile: -1114062435
       mesa-cuadrada-tile: 2039751182
       main-house-floor-3-tile: 1159172337
+      school-door-left-1-tile: 1031136207
       school-wall-innercorner-1-tile: 349598178
       main-house-border-7-tile: -66398097
       arbol-ba-tile: 453723322
