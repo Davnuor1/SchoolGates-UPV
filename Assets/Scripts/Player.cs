@@ -32,8 +32,8 @@ public class Player : MonoBehaviour
 
         SelectTile();
         CanSelectCheck();
-        Marker();
-        if (Input.GetKeyDown(KeyCode.Space) && selectable == true)
+        //Marker();
+        /* if (Input.GetKeyDown(KeyCode.Space) && selectable == true)
         {
             Vector3Int position2= GetTileBase(Input.mousePosition);
             Vector3Int positionPlayer = GetTileBase(direction);
@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
             Vector2Int toolDirection = new Vector2Int(auxHor, auxVer);
 
             GameManager.instance.toolManager.UseTool2(inventory.toolbar,toolDirection);
-        }
+        } */
     }
     public void DropItem(Item item)
     {
@@ -131,7 +131,7 @@ public class Player : MonoBehaviour
         Vector2 characterposition = transform.position;
         Vector2 cameraPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         selectable = Vector2.Distance(characterposition, cameraPosition) < range;
-        GameManager.instance.markerManager.Show(selectable);
+        //GameManager.instance.markerManager.Show(selectable);
     }
 
     public Vector3Int GetTileBase(Vector2 mousePosition)
@@ -142,10 +142,10 @@ public class Player : MonoBehaviour
         //Debug.Log("Tile in position:" + gridPosition + "is" + tile);
         return gridPosition;
     }
-    private void Marker()
-    {
-        //Vector3Int gridPosition = GetTileBase(Input.mousePosition);
-        GameManager.instance.markerManager.markedCellPosition = selectedTilePosition;
-    }
+    //private void Marker()
+    //{
+    //    //Vector3Int gridPosition = GetTileBase(Input.mousePosition);
+    //    GameManager.instance.markerManager.markedCellPosition = selectedTilePosition;
+    //}
 }
     
