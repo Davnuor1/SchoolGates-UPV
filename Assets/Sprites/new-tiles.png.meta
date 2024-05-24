@@ -5753,6 +5753,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: window
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 460
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d1d41ab294f6f4ab3214f271bb273b
+      internalID: -399079379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light-4
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 350
+        width: 33
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5151515, y: 0.8235294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc89062926b02a34199c50dcbe03420e
+      internalID: -925278944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs-school-lateral
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 257
+        width: 72
+        height: 79
+      alignment: 9
+      pivot: {x: 0.11111111, y: 0.8987342}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edb7eb4bf2636747809b38b5a6486e7
+      internalID: 1931059957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs-school-out
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 301
+        width: 34
+        height: 35
+      alignment: 9
+      pivot: {x: 0.23529412, y: 0.7714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63043a4bd1f8466409d3dcad32a9ffe3
+      internalID: -1210528312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -5766,13 +5850,13 @@ TextureImporter:
     nameFileIdTable:
       coffee-machine-tile: -824626271
       bookshelve-8-tile: 1245728805
+      school-wall-innercorner-1-tile: 349598178
       house-stairs-up-small-4-tile: 1754855582
       carpet-1-1-tile: -139038409
       barra-comedor: 1804879140
       escalera-arr-de: -316600300
       lab-tools-1: -1368479601
       barranco: 1785832600
-      arbol-ba-tile: 453723322
       wet-floor: 1372855043
       school-wall-bottom-tile: -1244271544
       scenery-12-tile: -33474695
@@ -5795,10 +5879,10 @@ TextureImporter:
       school-floor-shadow-up-tile: -1833407909
       grass-noise-2: 563954829
       house-stairs-up-small-2-tile: 271956730
-      escalera-ab-izq: -1397956589
-      farola-tile: 820063340
-      wood-furniture-1-tile: -1665902418
       main-house-border-6-tile: -2144329628
+      farola-tile: 820063340
+      escalera-ab-izq: -1397956589
+      wood-furniture-1-tile: -1665902418
       school-floor-shadow-up-2-tile: -326113219
       cocina-multi-tile: -781386283
       bathroom-mirror-1: 1735363030
@@ -5818,6 +5902,7 @@ TextureImporter:
       lab-picture-2: -1809803872
       lab-tools-8: -31146051
       chair-right-tile: -2142961560
+      stairs-school-lateral: 1931059957
       bookshelve-1-tile: -1688815912
       trash-can-1-tile: 2062809750
       school-wall-topcorner-4-tile: -1530510575
@@ -5826,16 +5911,16 @@ TextureImporter:
       library-table-3-tile: 959191659
       box-2: -1343139715
       school-janitor-table: 1177409289
-      cartel-3: -1626930320
       pavimento-esq-int-ab-izq: 520666716
-      bathroom-mirror-2: -1668642464
       trophies: 527266327
+      bathroom-mirror-2: -1668642464
+      chair-back-tile: 1558179201
       library-table-2-tile: 1364244626
       school-wall-right-up-tile: 39254140
       school-wall-top-2-tile: -1149954121
       poster-school: 1782523682
+      cartel-3: -1626930320
       scenery-4-tile: -612360034
-      chair-back-tile: 1558179201
       school-stairs-2: 841751551
       cuadro-2-tile: -1678953501
       main-house-border-11-tile: -1750623738
@@ -5950,6 +6035,7 @@ TextureImporter:
       school-wall-topright-3-tile: 1858797507
       lab-human-1: 1083622154
       bookshelf-store: 2142212344
+      stairs-school-out: -1210528312
       bookshelve-4-tile: -1641578268
       scenery-1-tile: 2050504056
       main-house-floor--tile: -1316435137
@@ -5993,6 +6079,7 @@ TextureImporter:
       scenery-11-tile: 557475808
       arbol-2-tile: 458657647
       pavimento-arr-der: 1048917414
+      window: -399079379
       escalera-izq-arr: 1835027522
       school-wall-topleft-2-tile: 2113482704
       school-door-1-tile: -2005474162
@@ -6026,12 +6113,13 @@ TextureImporter:
       main-house-border-10-tile: -1150700293
       scenery-chair-back: -1045075207
       mesa-cuadrada-tile: 2039751182
+      light-4: -925278944
       school-double-table-2: -971345064
-      school-wall-innercorner-1-tile: 349598178
       scenery-10-tile: 148623166
-      carpet-1-4-tile: 1014135950
       school-door-left-1-tile: 1031136207
+      carpet-1-4-tile: 1014135950
       lab-chair: 1833050163
+      arbol-ba-tile: 453723322
       planta-casa-tile: 146502401
   spritePackingTag: 
   pSDRemoveMatte: 0
