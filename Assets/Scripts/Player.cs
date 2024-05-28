@@ -7,13 +7,14 @@ public class Player : MonoBehaviour
 {
     public InventoryManager inventory;
     [SerializeField] private Tilemap tileMarker;
-    
+    [SerializeField] Animator changeSceneAnimator;
     private Vector3 direction;
     private Vector3Int selectedTilePosition;
     bool selectable;
     float range = 2f;
     private int auxHor;
     private int auxVer;
+    
     
     
 
@@ -30,8 +31,11 @@ public class Player : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         direction = new Vector3(horizontal, vertical-30f);
 
-        SelectTile();
-        CanSelectCheck();
+        //SelectTile();
+        //CanSelectCheck();
+        if (Input.GetKeyDown(KeyCode.Space)){
+            //ChangePositionPlayer();
+        }
         //Marker();
         /* if (Input.GetKeyDown(KeyCode.Space) && selectable == true)
         {
@@ -147,5 +151,11 @@ public class Player : MonoBehaviour
     //    //Vector3Int gridPosition = GetTileBase(Input.mousePosition);
     //    GameManager.instance.markerManager.markedCellPosition = selectedTilePosition;
     //}
+    public void ChangePositionPlayer(Vector2 nextPosition)
+    {
+        changeSceneAnimator.SetTrigger("FadeOut");
+        this.transform.position = new Vector2(10, -2);
+        changeSceneAnimator.SetTrigger("FadeIn");
+    }
 }
     

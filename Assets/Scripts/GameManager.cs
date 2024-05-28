@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public DayTimeController dayTimeController;
     public ItemSpawnManager itemSpawnManager;
     public CurrencyManager currencyManager;
+    public SceneController sceneController;
 
     public Player player;
     private void Awake()
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
         dayTimeController = GetComponent<DayTimeController>();
         itemSpawnManager = GetComponent<ItemSpawnManager>();
         currencyManager = GetComponent<CurrencyManager>();
+        sceneController = GetComponent<SceneController>();
 
         player = FindObjectOfType<Player>();
     }
