@@ -7650,7 +7650,7 @@ TextureImporter:
         x: 1584
         y: 288
         width: 48
-        height: 65
+        height: 64
       alignment: 9
       pivot: {x: 0.5, y: 0.26153848}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7816,9 +7816,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1584
-        y: 353
+        y: 352
         width: 48
-        height: 47
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8009,7 +8009,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -8017,6 +8017,27 @@ TextureImporter:
       bones: []
       spriteID: 50800d770fc07b64fa0e6940527fa133
       internalID: 93257231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp-entrance
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 269
+        width: 87
+        height: 134
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c836dc79f866040a95c980e168789a
+      internalID: 467664707
       vertices: []
       indices: 
       edges: []
@@ -8216,6 +8237,7 @@ TextureImporter:
       wood-furniture-3-tile: 425290267
       main-house-wall-tile: -1470450112
       libro: 1350732420
+      swamp-entrance: 467664707
       blackboard-text-1-tile: 785613323
       swamp-rock-2: -163904079
       cat-drink-parents: 1087957868
