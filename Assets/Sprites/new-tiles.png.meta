@@ -8484,7 +8484,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new-tiles_0
+      name: canasta-1
       rect:
         serializedVersion: 2
         x: 160
@@ -8996,7 +8996,7 @@ TextureImporter:
         width: 16
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -9017,7 +9017,7 @@ TextureImporter:
         width: 17
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -9025,6 +9025,69 @@ TextureImporter:
       bones: []
       spriteID: 9e6e47787baa1d14ba7761e8681eb331
       internalID: -255613541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canasta-2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1024
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde17bee58d71dd44bc80df26076c17a
+      internalID: 2057234148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola-basket
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1008
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351fe654754f0f145808bcbd5476f2ac
+      internalID: 1501156452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolafutbol
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1008
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f487e238d687fa641b155fe056c7087f
+      internalID: 1676042398
       vertices: []
       indices: 
       edges: []
@@ -9163,7 +9226,7 @@ TextureImporter:
       school-door-left-2-tile: 1235908131
       lab-tools-10: -887635951
       school-wall-topright-2-tile: 738070252
-      cat-bed-parents: -590819527
+      canasta-1: 1192657121
       blackboard-tile: 1162682233
       bathroom-sink-1: -1722644889
       maze-floor-3: -1902891074
@@ -9171,6 +9234,7 @@ TextureImporter:
       sofa-elegant: -1830348785
       vecino-madera-patron-1: 1357841485
       new-tiles_3: 233247657
+      cat-bed-parents: -590819527
       swamp-rock-6: 93257231
       maze-wall-4: -1279981634
       grada-2: 173626454
@@ -9207,6 +9271,7 @@ TextureImporter:
       pantalla-prota: 560128765
       swamp-tree-4: -1058222148
       computer-left: 2085076025
+      canasta-2: 2057234148
       piano: 1557039130
       carpet-1-6-tile: -313557048
       porteria-2: 955793466
@@ -9298,7 +9363,6 @@ TextureImporter:
       scenery-3-tile: 1155118131
       main-house-floor-1-tile: 534026027
       maze-floor-4: 1546611130
-      new-tiles_0: 1192657121
       pavimento-cruce-1: 78754664
       rug-2-tile: 846925343
       poster-room-4: -798921893
@@ -9328,6 +9392,7 @@ TextureImporter:
       lab-table-horizontal: 615889925
       maze-fruit-5: -272723242
       escalera-der-arr: 838690116
+      bolafutbol: 1676042398
       scenery-curtain-2: 1195089381
       maze-fruit-4: -1500520780
       swamp-floor-6: -1828178409
@@ -9428,6 +9493,7 @@ TextureImporter:
       mop: -2061901320
       bathroom-percha: -652311847
       chimenea-salida: -395137891
+      bola-basket: 1501156452
       arbol-2-tile: 458657647
       mirror-parents: -845499330
       maze-floor-8: 1430000121
