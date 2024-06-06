@@ -9349,7 +9349,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1216
-        y: 304
+        y: 303
         width: 16
         height: 16
       alignment: 0
@@ -9563,7 +9563,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -9584,7 +9584,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -9605,7 +9605,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -9626,7 +9626,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -9634,6 +9634,48 @@ TextureImporter:
       bones: []
       spriteID: 8359061b3b60fe640a293718baddf315
       internalID: 1157441320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: temple-template
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 13
+        width: 164
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3970bb09044436841ab190b359c45a31
+      internalID: -705048841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knowledge-center
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 3
+        width: 178
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d837839d4de7f0d46bde6730dfd91f3d
+      internalID: 1945787614
       vertices: []
       indices: 
       edges: []
@@ -9806,6 +9848,7 @@ TextureImporter:
       bookshelve-6-tile: 396293667
       pavimento-arr-izq: 1069547256
       pavimento-der: -640400766
+      temple-template: -705048841
       art-table-2: -1911861317
       school-tile: -1566916657
       piano-chair: 842065012
@@ -9827,6 +9870,7 @@ TextureImporter:
       swamp-plant: 1548523450
       swamp-floor-12: -1839428818
       pantalla-prota: 560128765
+      knowledge-center: 1945787614
       swamp-tree-4: -1058222148
       computer-left: 2085076025
       canasta-2: 2057234148
@@ -9955,8 +9999,8 @@ TextureImporter:
       lab-table-horizontal: 615889925
       escalera-der-arr: 838690116
       bolafutbol: 1676042398
-      maze-fruit-5: -272723242
       knowledge-grass-10: -1129531077
+      maze-fruit-5: -272723242
       scenery-curtain-2: 1195089381
       maze-fruit-4: -1500520780
       swamp-floor-6: -1828178409
