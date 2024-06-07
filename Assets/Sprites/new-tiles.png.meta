@@ -10382,7 +10382,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -10390,6 +10390,48 @@ TextureImporter:
       bones: []
       spriteID: 6ae60f3a0c3f54a4ba985717db813273
       internalID: 39014756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knowledge-barca-1
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 208
+        width: 63
+        height: 47
+      alignment: 9
+      pivot: {x: 0.50793654, y: 0.10638297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40447b94472f5cf458f14faf670568b0
+      internalID: -502192649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knowledge-barca-2
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 208
+        width: 48
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0.30769232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e379efd60af8547b72bab826b63345
+      internalID: 418381570
       vertices: []
       indices: 
       edges: []
@@ -10425,6 +10467,7 @@ TextureImporter:
       knowledge-road-7: -1639470661
       knowledge-road-12: -796242990
       knowledge-escultura-2: 39014756
+      knowledge-barca-1: -502192649
       basket-lines-2: 1237456136
       grass-noise-2: 563954829
       swamp-floor-3: -1929072622
@@ -10551,14 +10594,14 @@ TextureImporter:
       bathroom-sink-1: -1722644889
       maze-floor-3: -1902891074
       school-floor-shadow-corner-tile: 2107558981
-      sofa-elegant: -1830348785
+      cat-bed-parents: -590819527
       vecino-madera-patron-1: 1357841485
       knowledge-road-3: -1851765494
       new-tiles_3: 233247657
-      cat-bed-parents: -590819527
-      swamp-rock-6: 93257231
+      sofa-elegant: -1830348785
       maze-wall-4: -1279981634
       grada-2: 173626454
+      swamp-rock-6: 93257231
       basket-circle-3: 948282012
       swamp-tree-3: 358234932
       rug-1-tile: -301518531
@@ -10573,8 +10616,8 @@ TextureImporter:
       art-table-2: -1911861317
       knowledge-water-10: 2078946935
       school-tile: -1566916657
-      bookshelf-store: 2142212344
       piano-chair: 842065012
+      bookshelf-store: 2142212344
       pavimento-ab-izq: 643263786
       stairs-school-out: -1210528312
       school-wall-topright-3-tile: 1858797507
@@ -10582,6 +10625,7 @@ TextureImporter:
       scenery-1-tile: 2050504056
       main-house-floor--tile: -1316435137
       armario-prota: 1934484427
+      knowledge-barca-2: 418381570
       locker: 697888476
       pavimento-izq: 1379516157
       school-wall-topcorner-1-tile: -2023154526
