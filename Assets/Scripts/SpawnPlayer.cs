@@ -15,6 +15,8 @@ public class SpawnPlayer : MonoBehaviour
         {
             cameraFollow.target = player.transform;
         }
+        Player playerGM = player.GetComponent<Player>();
+        GameManager.instance.player = playerGM;
     }
 
     

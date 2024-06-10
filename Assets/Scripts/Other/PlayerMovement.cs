@@ -31,8 +31,21 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         playerMovement = Vector3.zero;
-        playerMovement.x = Input.GetAxisRaw("Horizontal");
-        playerMovement.y = Input.GetAxisRaw("Vertical");
+        //playerMovement.x = Input.GetAxisRaw("Horizontal");
+        //playerMovement.y = Input.GetAxisRaw("Vertical");
+
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        float verticalInput = Input.GetAxisRaw("Vertical");
+        if (Mathf.Abs(horizontalInput) > Mathf.Abs(verticalInput))
+        {
+            playerMovement.x = horizontalInput;
+            playerMovement.y = 0;
+        }
+        else
+        {
+            playerMovement.x = 0;
+            playerMovement.y = verticalInput;
+        }
 
         UpdateAnimationAndMove();
     }
