@@ -5,7 +5,7 @@ public class FrutaLaberintoController : MonoBehaviour
     private Transform player;
     public float followSpeed = 50f;
     public float followDistance = 1f; // Distancia deseada entre la fruta y el jugador
-    private bool isFollowing = false;
+    public bool isFollowing = false;
     private Vector3 velocity = Vector3.zero;
     
 
@@ -31,5 +31,10 @@ public class FrutaLaberintoController : MonoBehaviour
             player = other.transform;
             isFollowing = true;
         
+    }
+    public void DeactivateFruit()
+    {
+        isFollowing = false;
+        gameObject.SetActive(false); // Desactivar la fruta
     }
 }
