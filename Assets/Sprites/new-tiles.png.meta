@@ -11432,7 +11432,7 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11453,7 +11453,7 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11474,7 +11474,7 @@ TextureImporter:
         width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11495,7 +11495,7 @@ TextureImporter:
         width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11516,7 +11516,7 @@ TextureImporter:
         width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11537,7 +11537,7 @@ TextureImporter:
         width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11558,7 +11558,7 @@ TextureImporter:
         width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11579,7 +11579,7 @@ TextureImporter:
         width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11600,7 +11600,7 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11621,7 +11621,7 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11642,7 +11642,7 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11650,6 +11650,69 @@ TextureImporter:
       bones: []
       spriteID: bd1e5f74c0593a5499e02ab338a68522
       internalID: -131860971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knowledge-interior-picture-3
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 64
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5267bccb9247e647b449760cf75df0a
+      internalID: 1197321819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knowledge-interior-picture-4
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3698cb6a262a14094dbc9043501f58
+      internalID: 999692178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knowledge-interior-picture-5
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ae5da92205366489736115b61f5324
+      internalID: 839805156
       vertices: []
       indices: 
       edges: []
@@ -11982,19 +12045,19 @@ TextureImporter:
       knowledge-interior-wall-2: 563561782
       box-1: 1387098465
       boat-1-3: -1858347514
+      light-circle: -1552611283
       knowledge-interior-agua-2: -1443865798
       school-floor-shadow-up-tile: -1833407909
-      main-house-border-6-tile: -2144329628
       house-stairs-up-small-2-tile: 271956730
+      main-house-border-6-tile: -2144329628
       farola-tile: 820063340
-      swamp-bridge-support: -621087517
       wood-furniture-1-tile: -1665902418
       school-floor-shadow-up-2-tile: -326113219
-      light-circle: -1552611283
       knowledge-tinaja3: 1436892739
       scenery-3-tile: 1155118131
       main-house-floor-1-tile: 534026027
       maze-floor-4: 1546611130
+      swamp-bridge-support: -621087517
       pavimento-cruce-1: 78754664
       knowledge-center-6: 1834224285
       rug-2-tile: 846925343
@@ -12088,6 +12151,7 @@ TextureImporter:
       school-floor-tile: -359363112
       silla-prota-2: -2033868696
       swamp-floor-2: 154833586
+      knowledge-interior-picture-4: 999692178
       knowledge-stairs-3: 809529753
       fishes: 598109837
       light-1: 2021523447
@@ -12140,6 +12204,7 @@ TextureImporter:
       temple-grande: -6460201
       lab-tools-11: 1941078065
       swamp-wharf: -1255147674
+      knowledge-interior-picture-5: 839805156
       scenery-curtain-1: -763010670
       entrance-home-2: -738383833
       carpet-1-10-tile: -623866938
@@ -12198,6 +12263,7 @@ TextureImporter:
       stair-portable: 377302764
       bathroom-agua: -2079094482
       art-item-6: -826834994
+      knowledge-interior-picture-3: 1197321819
       puerta-vecino-1: 1864018025
       art-item-4: 1739783507
       carpet-1-7-tile: -384805800
