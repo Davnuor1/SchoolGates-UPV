@@ -8,6 +8,7 @@ public class SceneController : MonoBehaviour
     //public Vector2 posicion;
     [SerializeField] public GameObject playerPrefab;
     public Vector2 enQuePosicion;
+    
 
     
     public void ChangeScene(int sceneIndex,Vector2 posicionInicio)
@@ -16,6 +17,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(sceneIndex);
         //spawnPlayer(posicionInicio, playerPrefab);
         
+    }
+    public void Teleport(Vector2 posicionInicio)
+    {
+        enQuePosicion = posicionInicio;
+        GameManager.instance.player.transform.position = enQuePosicion;
     }
     public void spawnPlayer(Vector2 posicionInicio, GameObject playerPrefab)
     {

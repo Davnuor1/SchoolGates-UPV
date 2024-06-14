@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneTeleport : MonoBehaviour
+public class PassScene : MonoBehaviour
 {
     [SerializeField] public Vector2 posicionSiguiente;
     [SerializeField] private Animator ChangeSceneAnimator;
@@ -11,6 +11,7 @@ public class SceneTeleport : MonoBehaviour
     {
 
         //GameManager.instance.player.ChangePositionPlayer(posicionSiguiente);
+        ChangeSceneAnimator.SetTrigger("FadeOut");
         GameManager.instance.sceneController.ChangeScene(aQueEscena, posicionSiguiente);
     }
 }
