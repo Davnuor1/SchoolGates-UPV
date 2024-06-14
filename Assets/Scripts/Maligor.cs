@@ -4,12 +4,19 @@ public class Maligor : MonoBehaviour
 {
     public string nombreTagJugador = "Player"; // Tag asignado al jugador
     public float rangoDeteccion = 30f; // Rango de detección en unidades
-    public float velocidad = 0.5f; // Velocidad de movimiento del demonio
+    public float velocidad = 1f; // Velocidad de movimiento del demonio
 
     private Transform objetivo; // Transform del jugador
     private bool jugadorEnRango = false;
     private float tiempoBusqueda = 1f; // Tiempo entre búsquedas del jugador
     private float tiempoTranscurrido = 0f;
+
+    private Animator animator; // Referencia al componente Animator
+
+    void Start()
+    {
+        animator = GetComponent<Animator>(); // Obtener el componente Animator
+    }
 
     void Update()
     {
@@ -45,6 +52,12 @@ public class Maligor : MonoBehaviour
             {
                 PerseguirJugador();
             }
+            else
+            {
+                // Si el jugador está fuera de rango, resetea las variables de animación
+                animator.SetFloat("MoveX", 0);
+                animator.SetFloat("MoveY", 0);
+            }
         }
     }
 
@@ -52,5 +65,9 @@ public class Maligor : MonoBehaviour
     {
         Vector3 direccion = (objetivo.position - transform.position).normalized;
         transform.position += direccion * velocidad * Time.deltaTime;
+
+        // Configurar las variables de animación basadas en la dirección
+        animator.SetFloat("MoveX", direccion.x);
+        animator.SetFloat("MoveY", direccion.y);
     }
 }
