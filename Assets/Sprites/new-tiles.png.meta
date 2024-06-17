@@ -12020,7 +12020,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -12028,6 +12028,657 @@ TextureImporter:
       bones: []
       spriteID: 7448b8712d08b8942a34ce5816fec861
       internalID: 2119189194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-rock-1
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c8909196f8fc447a10f2e894812862
+      internalID: -1739443704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-stalagmite-1
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 272
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.4375, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09211339022a6ff4b958a376a3b4a355
+      internalID: -1354478443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-stalagmite-2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 256
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12e6a3767cd27e40950155fca612fdb
+      internalID: 861980753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-stalagmite-3
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 256
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.15625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22fe827fdf3f73479f528eebaa87871
+      internalID: -346376226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-1
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef819db025ea7248b7acb68ab3fdd92
+      internalID: 791466767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-8
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1713797f08400f4ca0d75e570597fe2
+      internalID: 346281483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-5
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ade93391e915f4093dc55e8a2ceb1f
+      internalID: 1421446269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-2
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32c89bbf31a8ba428741673c3901227
+      internalID: 401883431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-9
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf58c7d10656ec489eb8810b9fd7f07
+      internalID: 682594049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-10
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7386684608817428077d3d8d7eb044
+      internalID: 625207992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4b97b77b59e2745b0da8b1b0c09b0c
+      internalID: -1661906780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-7
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008bc1feda1af1745b1533dd11ff80c6
+      internalID: 864590301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-3
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0a2d771a3f06d4db0f28a231be7555
+      internalID: -691781405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-4
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53576b8c0fffba4fbabefabfae8fcde
+      internalID: 1778526855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-14
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc38fbbe9f7fd7141a7fbb4ee8fd0ced
+      internalID: -1036855815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-13
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6526b8a32cc2964b9e603aad7f3da87
+      internalID: -1601588139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-11
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75376dac883e1cb4686283b5d1493753
+      internalID: 639488656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-puddle-12
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e3876e75bb7f643961c55d3feb22f3
+      internalID: -839540682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-floor-12
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b3ff0887cc382438054cb46ef6891b
+      internalID: -1136126804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-floor-11
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933ef0b044a425e49ae702e9626cb4be
+      internalID: -1506674542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-floor-10
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9997ea7ddbab03b4a8bd187e865faa45
+      internalID: 800204674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-floor-9
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74dcd5db5350eaf41ade88a47ce71a52
+      internalID: -1750198836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-floor-8
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b152c8fcb821aa488acc2b72ae8caff
+      internalID: 644698117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-floor-7
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025a5e2fabf6a2c4c9da3efc73c0dfe0
+      internalID: -865536191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-floor-4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f77f0fffb79e50418e6b79b640db72f
+      internalID: -404166707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-floor-5
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5112cc392a93124298e723570933c13
+      internalID: 941058318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-floor-6
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1434cfe8b5a8493489b9433af0bf863a
+      internalID: -1538448319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-crystal-1
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33525e99cc7f74b48ac57f4aa0222f3a
+      internalID: -451740351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-crystal-2
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c07564a4fe73440a51ef7bc3180e08
+      internalID: 922411622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-crystal-3
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6546443240e26ed43a1e1741dce141c8
+      internalID: 923273264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-mirror
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 256
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1581cd7b0327cf54ca6832c0848af6ec
+      internalID: 67254377
       vertices: []
       indices: 
       edges: []
@@ -12061,9 +12712,11 @@ TextureImporter:
       banco-2: -255613541
       cartel-2: -1875073098
       knowledge-grass-1: -859046034
+      cave-puddle-13: -1601588139
       basket-lines-5: -1963461826
       knowledge-road-7: -1639470661
       knowledge-road-12: -796242990
+      cave-crystal-3: 923273264
       knowledge-escultura-2: 39014756
       knowledge-barca-1: -502192649
       basket-lines-2: 1237456136
@@ -12072,6 +12725,7 @@ TextureImporter:
       escalera-ab-izq: -1397956589
       maze-fruit-2: 709025743
       knowledge-fronton-3: -1715793079
+      cave-floor-11: -1506674542
       cocina-multi-tile: -781386283
       bathroom-mirror-1: 1735363030
       boat-3-1: -1242176833
@@ -12148,6 +12802,7 @@ TextureImporter:
       swamp-floor-8: -2102009564
       house-stairs-up-big-tile: 1395689869
       swamp-bridge-2: 831369236
+      cave-floor-6: -1538448319
       escalera-der-centro: 1455083534
       library-table-1-tile: 2015734247
       main-house-floor-6-tile: 1775370087
@@ -12160,6 +12815,7 @@ TextureImporter:
       basket-lines-12: 948403430
       main-house-wall-4-tile: 684884385
       knowledge-road-5: -339425122
+      cave-puddle-5: 1421446269
       knowledge-interior-agua-9: -601576550
       main-house-door: 502288239
       mirador: 1812216705
@@ -12171,6 +12827,7 @@ TextureImporter:
       cama-prota: -206947922
       school-wall-topcorner-3-tile: -1280719214
       lab-tools-6: 1891938320
+      cave-floor-7: -865536191
       knowledge-center-1: 1945787614
       art-item-3: 1106437780
       canvass-front: -214420026
@@ -12181,11 +12838,13 @@ TextureImporter:
       light-2: 1873365826
       mapa-tile: -694427219
       bookshelve-7-tile: -1857485370
+      cave-puddle-6: -1661906780
       pavimento-ab-der: -542881208
       main-house-wall-3-tile: -923615226
       school-wall-topright-tile: -1114062435
       kowledge-road-1: 1689998719
       cave-floor-2: 1047863346
+      cave-crystal-1: -451740351
       main-house-border-7-tile: -66398097
       boat-3-3: 306970168
       house-stairs-up-left-tile: 583916714
@@ -12194,6 +12853,7 @@ TextureImporter:
       school-wall-topleft-tile: -1250551227
       main-house-floor-2-tile: 1245934035
       knowledge-interior-picture-2: 909723425
+      cave-puddle-10: 625207992
       school-wall-tile: 2133179368
       bookshelve-3-tile: 1445911390
       school-wall-topcorner-2-tile: -342612074
@@ -12218,6 +12878,7 @@ TextureImporter:
       vecino-madera-patron-1: 1357841485
       knowledge-road-3: -1851765494
       new-tiles_3: 233247657
+      cave-mirror: 67254377
       sofa-elegant: -1830348785
       maze-wall-4: -1279981634
       grada-2: 173626454
@@ -12229,6 +12890,7 @@ TextureImporter:
       basket-lines-11: -788831320
       cave-floor-1: -1009557449
       cave-wall-3: 222612497
+      cave-puddle-9: 682594049
       stairs-school-lateral-2: 1738063958
       cabinet-parents: 1867643556
       bookshelve-6-tile: 396293667
@@ -12270,6 +12932,7 @@ TextureImporter:
       canasta-2: 2057234148
       boat-3-2: 1383030426
       piano: 1557039130
+      cave-puddle-1: 791466767
       carpet-1-6-tile: -313557048
       porteria-2: 955793466
       kowledge-road-4: 482940728
@@ -12280,11 +12943,14 @@ TextureImporter:
       swamp-tree: -1068287126
       canvas-left: 1576201305
       basket-lines-15: -512948595
+      cave-puddle-7: 864590301
       knowledge-interior-picture-1: 1750921957
       main-house-border-13-tile: 195751331
       cartel-1: -492628050
       knowledge-water-4: 452144625
+      cave-stalagmite-3: -346376226
       chair-front-tile: -1078576842
+      cave-puddle-12: -839540682
       vecino-madera-patron-2: 277226453
       cave-floor-3: -264247429
       knowledge-interior-agua-6: 40208366
@@ -12298,6 +12964,7 @@ TextureImporter:
       pavimento-arr-der: 1048917414
       basket-lines-10: -1649809233
       knowledge-water-1: -741775138
+      cave-floor-8: 644698117
       mesita-prota: 2020237336
       swamp-trunk-5: -1748510003
       escalera-izq-arr: 1835027522
@@ -12333,8 +13000,10 @@ TextureImporter:
       carpet-1-14-tile: 1349368727
       sofa-horizontal-down-tile: 2114283248
       swamp-floor-15: 880803486
+      cave-puddle-14: -1036855815
       knowledge-grass-11: -2032471284
       light-4: -925278944
+      cave-floor-12: -1136126804
       cave-wall-7: -706879380
       school-wall-innercorner-1-tile: 349598178
       carpet-1-4-tile: 1014135950
@@ -12382,6 +13051,7 @@ TextureImporter:
       wood-furniture-1-tile: -1665902418
       school-floor-shadow-up-2-tile: -326113219
       knowledge-tinaja3: 1436892739
+      cave-floor-9: -1750198836
       scenery-3-tile: 1155118131
       main-house-floor-1-tile: 534026027
       maze-floor-4: 1546611130
@@ -12400,6 +13070,7 @@ TextureImporter:
       bathroom-sit-2: 1898789027
       trash-can-1-tile: 2062809750
       swamp-rock-5: -1622774664
+      cave-rock-1: -1739443704
       knowledge-interior-agua-1: -609943621
       main-house-wall-2-tile: 1076369122
       swamp-floor-7: 696543192
@@ -12461,14 +13132,17 @@ TextureImporter:
       knowledge-road-2: 2042087169
       basket-lines-8: -1717640409
       maze-floor-6: 109366263
+      cave-stalagmite-2: 861980753
       table-study-1: -1761943305
       grass-noise: 484525144
       lab-extra-3: -1205722466
       main-house-floor-3-tile: 1159172337
+      cave-stalagmite-1: -1354478443
       round-table-1-tile: 1175438060
       boat-4-1: 265083804
       swamp-puddle-1: 45565493
       water-font: -1844001125
+      cave-puddle-2: 401883431
       art-item-1: -1303595950
       knowledge-center-4: -1404548267
       swamp-rock-1: -391713977
@@ -12487,7 +13161,9 @@ TextureImporter:
       light-1: 2021523447
       knowledge-stairs-5: -139754448
       bathroom-sit: -2116906407
+      cave-puddle-8: 346281483
       poster-room-2: -7758186
+      cave-floor-10: 800204674
       school-stairs: -1763619736
       wood-furniture-4-tile: 20305273
       knowledge-fronton-2: -390497726
@@ -12534,9 +13210,11 @@ TextureImporter:
       temple-grande: -6460201
       lab-tools-11: 1941078065
       swamp-wharf: -1255147674
+      cave-puddle-11: 639488656
       knowledge-interior-picture-5: 839805156
       scenery-curtain-1: -763010670
       entrance-home-2: -738383833
+      cave-floor-4: -404166707
       carpet-1-10-tile: -623866938
       pavimento-ab: -742344218
       table-parents: 653346705
@@ -12569,6 +13247,7 @@ TextureImporter:
       knowledge-pillar-2: 1057539444
       mirror-parents: -845499330
       maze-floor-8: 1430000121
+      cave-crystal-2: 922411622
       window: -399079379
       bed-parents: 1963622451
       school-door-1-tile: -2005474162
@@ -12584,6 +13263,7 @@ TextureImporter:
       bathroom-sink-3: 543844880
       mesa-prota: 113055459
       main-house-wall-5-tile: -2102570074
+      cave-floor-5: 941058318
       knowledge-fronton-4: -2042189692
       knowledge-interior-agua-5: 2142060578
       knowledge-road-11: -934419173
@@ -12598,7 +13278,9 @@ TextureImporter:
       art-item-4: 1739783507
       carpet-1-7-tile: -384805800
       platos: 832229642
+      cave-puddle-4: 1778526855
       scenery-chair-back: -1045075207
+      cave-puddle-3: -691781405
       knowledge-interior-agua-7: -320562640
       knowledge-water-3: -1794612425
       teacher-table: 480559923
