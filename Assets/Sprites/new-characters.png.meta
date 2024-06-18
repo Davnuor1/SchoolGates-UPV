@@ -113,7 +113,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,7 +134,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,7 +155,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,7 +176,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,7 +197,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,7 +218,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,7 +239,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,6 +247,888 @@ TextureImporter:
       bones: []
       spriteID: c9d07d84fecea114bab96343088eb120
       internalID: 1506819868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-menu-1
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 510
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6054f5cff6b57a243a6bbdf25b394a89
+      internalID: -1472161405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-menu-2
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 510
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3751222384b9be744a3a5486e0e3be0e
+      internalID: 1549898949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-thumbup-1
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 526
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3efd7722b111d4d9c622feb2bca56d
+      internalID: -1846625533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-thumbup-2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 526
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1525ec6cfaefed4cb73dd81a48e9334
+      internalID: 721196633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-thumdown-1
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 526
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ddf56cd79ed79438408ac0c55fb2e3
+      internalID: 588989896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-thumdown-2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 526
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b272e9dd1f649704a80bc4bd032775ab
+      internalID: 1114253292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n1-1
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 510
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f68fc45ca462640b16ef3f6c1fcb12
+      internalID: -581106441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n2-1
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 510
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292acdcfadc0f354986c6be45104d181
+      internalID: 421063088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n3-1
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 510
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0ea135c11eb7d439a79f5ed206501d
+      internalID: -1178964092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n4-1
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 494
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cee9f5765028d479ab81954eb92703
+      internalID: -1476546361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n5-1
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 494
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3868a4b78884e408fd1d24eb0491a4
+      internalID: -1903802985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n6-1
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 494
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5565897c69574419eb86dceb6a1728
+      internalID: 1870775436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n7-1
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 478
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1404d34d50e914ea8c9dbdd9a9e7ba
+      internalID: -1598860733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n8-1
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 478
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03467c4aea58ab41ba9467910aeca7c
+      internalID: -1183976737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n9-1
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 478
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46babbab418be142bdd5047d694d1d7
+      internalID: -140475387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n10-1
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 462
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9fc68eb3e842244b90e0982942c075
+      internalID: 515054518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-menu-3
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 490
+        width: 160
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb684a35787e6e5439606a178617e3d9
+      internalID: -923994236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-mirror
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 397
+        width: 80
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6f10ea5e130d54d8e5969e873e3297
+      internalID: 58754398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n1-2
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 446
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ee675921a36fa4f8ce7c0a0bccb520
+      internalID: 851971579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n2-2
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 446
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c070f7ecd795045ab3e96686db7154
+      internalID: 1331117691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n3-2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 446
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0588fe325904e49b4eebfd0754d7d4
+      internalID: 1681536045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n4-2
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 430
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d83f9a8f6980d34cad0ac079fe78062
+      internalID: 49429726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n5-2
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 430
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22f778865b6ade4494d2f553daadbe2
+      internalID: -458982904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n6-2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 430
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a39670bdb3b57147836b3d71c37cbed
+      internalID: -866094543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n7-2
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 414
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca8dd85d98a1f34d9fd3314fbc0e48d
+      internalID: 956643145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n8-2
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 414
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916c925fe4927ae4384f45803f40837c
+      internalID: -162274705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n9-2
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 414
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8996115a74b7154fbbbf2fce8c2c39d
+      internalID: 1466170488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-n10-2
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 398
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb53cbc86ed998479e3d46753105f00
+      internalID: 1597413791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-menu-4
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 385
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36dad94b2a104634789c69c9712e061c
+      internalID: -2146157639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-selector-9
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 443
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c063534f54b28c41ba2089c54fe8025
+      internalID: -2094074992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-selector-8
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 403
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc0dc770d55c934383d29b322457898
+      internalID: -957171962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-selector-10
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 436
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97371df2675dadc48a64387265544a28
+      internalID: -888729659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-selector-1
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 388
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065977760bcc53f4db01c47120280481
+      internalID: 837770059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-selector-7
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 362
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8be376bdab0e8f4f8780253cb0cda37
+      internalID: 647708793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-selector-6
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 308
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6917d08720ca1ff4199e435635c522ba
+      internalID: 554817674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-selector-2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 347
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb00fc4f4560d954d9ddc5799f4453c6
+      internalID: 115629555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-selector-3
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 307
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f51477b9dffb104fb6058a49915d3fd
+      internalID: 2103356755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-selector-4
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 347
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9436ec0f4f1b55544886f90f5e841f29
+      internalID: -878848176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-selector-5
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 340
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee13e30cdc9fbe49a1a42ca0e62a1dd
+      internalID: -1308193910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-menu-5
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 327
+        width: 81
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfb6ab3476d3b042b6fa749b0a2d08c
+      internalID: 1307001150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-menu-6
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 263
+        width: 80
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c410ece93f93c9458109e1fde83d83f
+      internalID: -573183872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-cave-menu-7
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 237
+        width: 80
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0109e0924f94c5c4791502dd1518c0df
+      internalID: 1685461430
       vertices: []
       indices: 
       edges: []
@@ -262,13 +1144,55 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      maligor-front-4: 1912139523
-      maligor-right-1: -206634625
+      ui-cave-n3-2: 1681536045
+      ui-cave-mirror: 58754398
+      ui-cave-n3-1: -1178964092
+      ui-cave-menu-7: 1685461430
+      ui-cave-selector-5: -878848176
+      ui-cave-thumbup-1: -1846625533
+      ui-cave-n6-2: -866094543
       maligor-front-3: -1877674418
+      ui-cave-n1-1: -581106441
+      ui-cave-menu-4: -2146157639
+      ui-cave-selector-3: 115629555
+      ui-cave-selector-7: 554817674
+      ui-cave-n1-2: 851971579
       maligor-left-1: 1506819868
+      ui-cave-thumdown-2: 1114253292
+      ui-cave-n10-1: -140475387
+      ui-cave-thumbup-2: 721196633
+      ui-cave-n4-1: -1476546361
       maligor-front-1: -370761271
       maligor-front-2: -1234012375
+      ui-cave-n2-2: 1331117691
+      ui-cave-menu-3: -923994236
+      ui-cave-n10-2: 1466170488
+      ui-cave-selector-4: 2103356755
+      ui-cave-n8-1: -1183976737
+      ui-cave-n7-1: -1598860733
+      ui-cave-selector-8: 647708793
       maligor-back-1: -515961936
+      ui-cave-menu-2: 1549898949
+      maligor-front-4: 1912139523
+      ui-cave-n4-2: 49429726
+      ui-cave-n6-1: 1870775436
+      ui-cave-selector-1: -2094074992
+      maligor-right-1: -206634625
+      ui-cave-selector-2: 837770059
+      ui-cave-selector-6: -1308193910
+      ui-cave-menu-6: -573183872
+      ui-cave-menu-1: -1472161405
+      ui-cave-thumdown-1: 588989896
+      ui-cave-n5-2: -458982904
+      ui-cave-n8-2: -162274705
+      ui-cave-selector-9: -957171962
+      ui-cave-n2-1: 421063088
+      ui-cave-n7-2: 956643145
+      ui-cave-menu-5: 1307001150
+      ui-cave-selector-10: -888729659
+      ui-cave-n5-1: -1903802985
+      ui-cave-n9-2: 1466170488
+      ui-cave-n9-1: -140475387
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
