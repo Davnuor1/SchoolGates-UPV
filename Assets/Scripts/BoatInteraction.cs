@@ -8,6 +8,7 @@ public class BoatInteraction : MonoBehaviour
 
     private GameObject player;
     private bool isPlayerOnBoat = false;
+    private Rigidbody2D playerRigidbody;
 
     void Update()
     {
@@ -35,6 +36,10 @@ public class BoatInteraction : MonoBehaviour
     void FindPlayer()
     {
         player = GameObject.FindGameObjectWithTag("Player"); // Asegúrate de que tu jugador tenga la etiqueta "Player"
+        if (player != null)
+        {
+            playerRigidbody = player.GetComponent<Rigidbody2D>();
+        }
     }
 
     void CheckForBoatInteraction()
@@ -55,11 +60,16 @@ public class BoatInteraction : MonoBehaviour
         isPlayerOnBoat = true;
         boatController.enabled = true;
         boatController.SetPlayer(player);
-        Debug.Log("desactivando movimiento jugador fueraaa");
+
         if (player.TryGetComponent<PlayerMovement>(out var playerMovement))
         {
-            Debug.Log("desactivando movimiento jugador");
             playerMovement.enabled = false; // Desactiva el script de movimiento del jugador
+        }
+
+        if (playerRigidbody != null)
+        {
+            playerRigidbody.isKinematic = true; // Desactiva las físicas del jugador
+            playerRigidbody.velocity = Vector2.zero; // Detiene cualquier movimiento
         }
     }
 
@@ -71,6 +81,11 @@ public class BoatInteraction : MonoBehaviour
         if (player.TryGetComponent<PlayerMovement>(out var playerMovement))
         {
             playerMovement.enabled = true; // Reactiva el script de movimiento del jugador
+        }
+
+        if (playerRigidbody != null)
+        {
+            playerRigidbody.isKinematic = false; // Reactiva las físicas del jugador
         }
     }
 }
