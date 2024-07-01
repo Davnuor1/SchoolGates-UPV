@@ -5,6 +5,7 @@ using TMPro;
 
 public class MinijuegoEspejos01 : MonoBehaviour
 {
+    [SerializeField] public GameObject minijuegoEntero;
     [SerializeField] public GameObject botonLike;
     [SerializeField] public GameObject botonDislike;
     [SerializeField] public GameObject RuedaRating;
@@ -105,16 +106,14 @@ public class MinijuegoEspejos01 : MonoBehaviour
         //guardar puntuacion
         espejosLike.Add(espejos[idEspejo]);
         idEspejo += 1;
-        Debug.Log("hola rating");
+        
         if (idEspejo > (espejos.Count-1))
         {
-            Debug.Log("hola rating en el if");
             idEspejo = 0;
             parte2Minijuego();
         }
         else
         {
-            Debug.Log("hola rating en el else");
             botonLike.SetActive(true);
             botonDislike.SetActive(true);
             RuedaRating.SetActive(false);
@@ -135,19 +134,40 @@ public class MinijuegoEspejos01 : MonoBehaviour
     }
     public void pulsarCorrecto()
     {
-        textoFeedback.text = "Aqui feedback correcto";
+        //sumar stat integridad
+        textoFeedback.text = "You are right… this is probably an proof that you are " + espejosLike[idEspejo];
         idEspejo += 1;
-        textoEspejos.text = "Which is the real proof of beeing " + espejosLike[idEspejo];
-        textoCorrecto.text = respuestasCorrectas[espejosLike[idEspejo]];
-        textoIncorrecto.text = respuestasIncorrectas[espejosLike[idEspejo]];
+        
+        if (idEspejo > (espejosLike.Count - 1))
+        {
+            
+            minijuegoEntero.SetActive(false);
+        }
+        else
+        {
+            
+            textoEspejos.text = "Which is the real proof of beeing " + espejosLike[idEspejo];
+            textoCorrecto.text = respuestasCorrectas[espejosLike[idEspejo]];
+            textoIncorrecto.text = respuestasIncorrectas[espejosLike[idEspejo]];
+        }
+        
+        
     }
     public void pulsarIncorrecto()
     {
-        textoFeedback.text = "Aqui feedback incorrecto";
+        textoFeedback.text = "Maybe you are not so "+espejosLike[idEspejo] +" as you think… This happens to everyone from time to time…";
         idEspejo += 1;
-        textoEspejos.text = "Which is the real proof of beeing " + espejosLike[idEspejo];
-        textoCorrecto.text = respuestasCorrectas[espejosLike[idEspejo]];
-        textoIncorrecto.text = respuestasIncorrectas[espejosLike[idEspejo]];
+        if (idEspejo > (espejosLike.Count - 1))
+        {
+            minijuegoEntero.SetActive(false);
+        }
+        else
+        {
+            textoEspejos.text = "Which is the real proof of beeing " + espejosLike[idEspejo];
+            textoCorrecto.text = respuestasCorrectas[espejosLike[idEspejo]];
+            textoIncorrecto.text = respuestasIncorrectas[espejosLike[idEspejo]];
+        }
+        
     }
 
 }
