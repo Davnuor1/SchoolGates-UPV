@@ -364,6 +364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RocaPantano (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6545084401791222239, guid: 3a72227a0f3eb1846b4e15b75bba575c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a72227a0f3eb1846b4e15b75bba575c, type: 3}
 --- !u!4 &7205885 stripped
@@ -1208,7 +1212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126669847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.5, y: 42.17, z: -2}
+  m_LocalPosition: {x: -4.73, y: 42.67, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1251,13 +1255,13 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126669847}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.005
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -1277,8 +1281,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.007808447, y: -0.002790451}
-  m_Size: {x: 1.5783668, y: 2.6642418}
+  m_Offset: {x: 0.0049409866, y: -0.22803116}
+  m_Size: {x: 1.4678717, y: 2.2137604}
   m_Direction: 0
 --- !u!95 &126669854
 Animator:
@@ -79224,6 +79228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RocaPantano (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6545084401791222239, guid: 3a72227a0f3eb1846b4e15b75bba575c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a72227a0f3eb1846b4e15b75bba575c, type: 3}
 --- !u!4 &1125676424 stripped
@@ -93026,6 +93034,10 @@ PrefabInstance:
     - target: {fileID: 4515779513583240614, guid: 3a72227a0f3eb1846b4e15b75bba575c, type: 3}
       propertyPath: m_Name
       value: RocaPantano (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545084401791222239, guid: 3a72227a0f3eb1846b4e15b75bba575c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a72227a0f3eb1846b4e15b75bba575c, type: 3}
@@ -256175,6 +256187,8 @@ GameObject:
   - component: {fileID: 1489258493}
   - component: {fileID: 1489258495}
   - component: {fileID: 1489258494}
+  - component: {fileID: 1489258497}
+  - component: {fileID: 1489258496}
   m_Layer: 0
   m_Name: CaminoBarca
   m_TagString: Untagged
@@ -256440,6 +256454,63 @@ EdgeCollider2D:
   - {x: -1.4104815, y: -5.0725136}
   - {x: 0.9140706, y: -5.2013626}
   - {x: 1.5876265, y: -6.4794807}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1489258496
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489258492}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 17.88476, y: 19.57663}
+  - {x: 17.863997, y: 20.02515}
+  - {x: 17.525982, y: 20.32581}
+  - {x: 17.00388, y: 20.318485}
+  - {x: 16.698578, y: 20.063404}
+  - {x: 16.70182, y: 19.595081}
+  - {x: 16.965929, y: 19.213932}
+  - {x: 17.52741, y: 19.196049}
+  - {x: 17.950367, y: 19.594948}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1489258497
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489258492}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.20377445, y: 8.249115}
+  - {x: -1.8273087, y: 8.259609}
+  - {x: -2.2737207, y: 7.9638557}
+  - {x: -2.2736502, y: 7.5755424}
+  - {x: -1.924675, y: 7.2581024}
+  - {x: -0.53277206, y: 7.2552185}
+  - {x: -0.1164341, y: 7.5536003}
+  - {x: -0.11862373, y: 8.227695}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

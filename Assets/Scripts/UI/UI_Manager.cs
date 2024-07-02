@@ -7,6 +7,12 @@ public class UI_Manager : MonoBehaviour
 {
     public Dictionary<string, Inventory_UI> inventoryUIByName = new Dictionary<string, Inventory_UI>();
     public GameObject inventoryPanel;
+    public GameObject menuPanel;
+    public GameObject skillTreePanel;
+    public GameObject bookOfCluesPanel;
+    //public GameObject travelJournalPanel;
+
+
     public List<Inventory_UI> inventory_UIs;
     public static Slot_UI draggedSlot;
     public static Image draggedIcon;
@@ -21,7 +27,8 @@ public class UI_Manager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab)||Input.GetKeyDown(KeyCode.B))
         {
-            ToggleInventoryUI();
+            //ToggleInventoryUI();
+            ToggleMenuUI();
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -44,6 +51,54 @@ public class UI_Manager : MonoBehaviour
             else
             {
                 inventoryPanel.SetActive(false);
+            }
+        }
+
+    }
+    public void ToggleMenuUI()
+    {
+        if (menuPanel != null)
+        {
+            if (!menuPanel.activeSelf)
+            {
+                menuPanel.SetActive(true);
+                
+            }
+            else
+            {
+                menuPanel.SetActive(false);
+            }
+        }
+
+    }
+    public void ToggleSkillTreeUI()
+    {
+        if (skillTreePanel != null)
+        {
+            if (!skillTreePanel.activeSelf)
+            {
+                skillTreePanel.SetActive(true);
+
+            }
+            else
+            {
+                skillTreePanel.SetActive(false);
+            }
+        }
+
+    }
+    public void ToggleBookOfCluesUI()
+    {
+        if (bookOfCluesPanel != null)
+        {
+            if (!bookOfCluesPanel.activeSelf)
+            {
+                bookOfCluesPanel.SetActive(true);
+
+            }
+            else
+            {
+                bookOfCluesPanel.SetActive(false);
             }
         }
 

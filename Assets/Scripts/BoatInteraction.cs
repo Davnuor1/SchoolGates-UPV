@@ -9,6 +9,7 @@ public class BoatInteraction : MonoBehaviour
     private GameObject player;
     private bool isPlayerOnBoat = false;
     private Rigidbody2D playerRigidbody;
+    private BoxCollider2D playerCollider;
 
     void Update()
     {
@@ -39,6 +40,7 @@ public class BoatInteraction : MonoBehaviour
         if (player != null)
         {
             playerRigidbody = player.GetComponent<Rigidbody2D>();
+            playerCollider = player.GetComponent<BoxCollider2D>();
         }
     }
 
@@ -71,6 +73,13 @@ public class BoatInteraction : MonoBehaviour
             playerRigidbody.isKinematic = true; // Desactiva las físicas del jugador
             playerRigidbody.velocity = Vector2.zero; // Detiene cualquier movimiento
         }
+
+        if (playerCollider != null)
+        {
+            playerCollider.enabled = false; // Desactiva el collider del jugador
+        }
+
+        boatController.SetBoatCollider(true); // Activa el collider de la barca cuando el jugador se sube
     }
 
     void GetOffBoat()
@@ -87,5 +96,12 @@ public class BoatInteraction : MonoBehaviour
         {
             playerRigidbody.isKinematic = false; // Reactiva las físicas del jugador
         }
+
+        if (playerCollider != null)
+        {
+            playerCollider.enabled = true; // Reactiva el collider del jugador
+        }
+
+        boatController.SetBoatCollider(false); // Desactiva el collider de la barca cuando el jugador se baja
     }
 }

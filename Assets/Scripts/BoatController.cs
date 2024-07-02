@@ -7,20 +7,24 @@ public class BoatController : MonoBehaviour
     private bool playerOnBoard = false;
     private Animator animator;
     private Animator playerAnimator;
+    private Rigidbody2D rb;
+    private Collider2D boatCollider;
 
-    private Vector3 boatMovement;
+    private Vector2 boatMovement;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        
+        rb = GetComponent<Rigidbody2D>();
+        boatCollider = GetComponent<Collider2D>(); // Obtener el collider de la barca
+        rb.gravityScale = 0; // Ensure gravity scale is zero
     }
 
     void FixedUpdate()
     {
         if (playerOnBoard)
         {
-            boatMovement = Vector3.zero;
+            boatMovement = Vector2.zero;
 
             float horizontalInput = Input.GetAxisRaw("Horizontal");
             float verticalInput = Input.GetAxisRaw("Vertical");
@@ -38,11 +42,15 @@ public class BoatController : MonoBehaviour
 
             UpdateAnimationAndMove();
         }
+        else
+        {
+            rb.velocity = Vector2.zero; // Stop the boat when the player is not on board
+        }
     }
 
     void UpdateAnimationAndMove()
     {
-        if (boatMovement != Vector3.zero)
+        if (boatMovement != Vector2.zero)
         {
             MoveBoat();
             animator.SetFloat("MoveX", boatMovement.x);
@@ -54,12 +62,14 @@ public class BoatController : MonoBehaviour
         else
         {
             animator.SetBool("Moving", false);
+            rb.velocity = Vector2.zero; // Stop the boat when there is no input
         }
     }
 
     void MoveBoat()
     {
-        transform.Translate(boatMovement * moveSpeed * Time.fixedDeltaTime);
+        Vector2 newPosition = rb.position + boatMovement * moveSpeed * Time.fixedDeltaTime;
+        rb.MovePosition(newPosition);
     }
 
     public void SetPlayer(GameObject playerObject)
@@ -69,15 +79,21 @@ public class BoatController : MonoBehaviour
         player.transform.SetParent(transform);
         playerAnimator = player.GetComponent<Animator>();
 
-        // Mantener la posición Z del jugador sin cambios y ajustar la posición Y a 0.4 unidades más arriba
+        // Mantener la posición Z del jugador sin cambios y ajustar la posición Y a 0.8 unidades más arriba
         Vector3 playerPosition = player.transform.localPosition;
-        player.transform.localPosition = new Vector3(0, 0.4f, playerPosition.z);
+        player.transform.localPosition = new Vector3(0, 0.8f, playerPosition.z);
     }
 
     public void RemovePlayer()
     {
         player.transform.SetParent(null);
         playerOnBoard = false;
+        rb.velocity = Vector2.zero; // Stop the boat when the player gets off
         this.enabled = false;
+    }
+
+    public void SetBoatCollider(bool isActive)
+    {
+        boatCollider.enabled = isActive; // Activar o desactivar el collider de la barca
     }
 }
