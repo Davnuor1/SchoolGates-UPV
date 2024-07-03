@@ -10,7 +10,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject menuPanel;
     public GameObject skillTreePanel;
     public GameObject bookOfCluesPanel;
-    //public GameObject travelJournalPanel;
+    public GameObject travelJournalPanel;
 
 
     public List<Inventory_UI> inventory_UIs;
@@ -99,6 +99,22 @@ public class UI_Manager : MonoBehaviour
             else
             {
                 bookOfCluesPanel.SetActive(false);
+            }
+        }
+
+    }
+    public void ToggleTravelJournalUI()
+    {
+        if (travelJournalPanel != null)
+        {
+            if (!travelJournalPanel.activeSelf)
+            {
+                travelJournalPanel.SetActive(true);
+
+            }
+            else
+            {
+                travelJournalPanel.SetActive(false);
             }
         }
 
