@@ -20,6 +20,7 @@ public class MinijuegoEspejos01 : MonoBehaviour
     [SerializeField] TextMeshProUGUI textoIncorrecto;
     //[SerializeField] public GameObject panelFeedback;
     [SerializeField] TextMeshProUGUI textoFeedback;
+    [SerializeField] public GameObject botonSiguiente;
     Dictionary<string, string> respuestasCorrectas = new Dictionary<string, string>()
     {
         {"Fearful/ anxious","I feel afraid of new things" },
@@ -136,26 +137,15 @@ public class MinijuegoEspejos01 : MonoBehaviour
     {
         //sumar stat integridad
         textoFeedback.text = "You are right… this is probably an proof that you are " + espejosLike[idEspejo];
-        idEspejo += 1;
-        
-        if (idEspejo > (espejosLike.Count - 1))
-        {
-            
-            minijuegoEntero.SetActive(false);
-        }
-        else
-        {
-            
-            textoEspejos.text = "Which is the real proof of beeing " + espejosLike[idEspejo];
-            textoCorrecto.text = respuestasCorrectas[espejosLike[idEspejo]];
-            textoIncorrecto.text = respuestasIncorrectas[espejosLike[idEspejo]];
-        }
-        
-        
+        botonSiguiente.SetActive(true);
     }
     public void pulsarIncorrecto()
     {
         textoFeedback.text = "Maybe you are not so "+espejosLike[idEspejo] +" as you think… This happens to everyone from time to time…";
+        botonSiguiente.SetActive(true);
+    }
+    public void pulsarSiguiente()
+    {
         idEspejo += 1;
         if (idEspejo > (espejosLike.Count - 1))
         {
@@ -163,6 +153,8 @@ public class MinijuegoEspejos01 : MonoBehaviour
         }
         else
         {
+            botonSiguiente.SetActive(false);
+            textoFeedback.text = "";
             textoEspejos.text = "Which is the real proof of beeing " + espejosLike[idEspejo];
             textoCorrecto.text = respuestasCorrectas[espejosLike[idEspejo]];
             textoIncorrecto.text = respuestasIncorrectas[espejosLike[idEspejo]];

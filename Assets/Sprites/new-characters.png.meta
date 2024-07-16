@@ -2864,7 +2864,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2885,7 +2885,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2906,7 +2906,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2927,7 +2927,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2935,6 +2935,90 @@ TextureImporter:
       bones: []
       spriteID: 3bd7fc092ad4f4b47ae861ceed2543bb
       internalID: 628375872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new-characters_2
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 542
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c869529353502c46b433c20daf4f562
+      internalID: 1798042027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new-characters_3
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 542
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2735482348cb460478f578b151947a6b
+      internalID: -137814488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new-characters_4
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 526
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10c8c859b94f0b4996e8f29dbe2f799
+      internalID: -396190305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new-characters_5
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 526
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71c358e57906e04983263952014f4d7
+      internalID: 413802803
       vertices: []
       indices: 
       edges: []
@@ -3026,6 +3110,7 @@ TextureImporter:
       ui-skilltree-icon-communication: -1267636075
       ui-menu-items: -785123729
       ui-knowledge-selector-1: -1227866029
+      new-characters_4: -396190305
       ui-cave-thumbup-1: -1846625533
       ui-cave-n6-2: -866094543
       ui-knowledge-button-1: -1089856808
@@ -3068,10 +3153,12 @@ TextureImporter:
       ui-menu-book: 455726937
       ui-cave-selector-2: 837770059
       ui-knowledge-counter-2: -1967310898
+      new-characters_3: -137814488
       ui-knowledge-icon-1: 1608499874
       ui-cave-menu-1: -1472161405
       ui-cave-n8-2: -162274705
       ui-cave-n5-2: -458982904
+      new-characters_2: 1798042027
       agora-character-3: -705287654
       ui-knowledge-button-: -390033744
       ui-menu-quests: 983586239
@@ -3083,6 +3170,7 @@ TextureImporter:
       ui-knowledge-counter-3: -1585396625
       ui-knowledge-menu-1: 516109778
       ui-cave-n5-1: -1903802985
+      new-characters_5: 413802803
       ui-knowledge-menu-4: 17249321
       village-character-8: 1982894282
   spritePackingTag: 
