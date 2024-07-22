@@ -14834,7 +14834,7 @@ TextureImporter:
         width: 19
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -14842,6 +14842,48 @@ TextureImporter:
       bones: []
       spriteID: 7c8e916890d51e74dbbfd36e60752788
       internalID: -623483283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-crystal-4
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5de56ddb01ee7c47acfc620ea0b9987
+      internalID: 307290749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-stalagmite-4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 288
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663b03e3cff86ef4c801eff052556eba
+      internalID: -2003803957
       vertices: []
       indices: 
       edges: []
@@ -15102,6 +15144,7 @@ TextureImporter:
       lab-tools-3: -1489705516
       basket-lines-7: 1566839953
       cave-wall-1: -1306756180
+      cave-stalagmite-4: -2003803957
       scenery-7-tile: 1759273154
       gym-fence-2: 1328543205
       knowledge-barranco-13: 759734998
@@ -15440,6 +15483,7 @@ TextureImporter:
       poster-room-3: 1200715792
       swamp-floor-13: -1338278047
       box-2: -1343139715
+      cave-crystal-4: 307290749
       libro-3: 1120789415
       school-wall-extra-6: 283189202
       school-wall-right-up-tile: 39254140
