@@ -14876,7 +14876,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -14884,6 +14884,48 @@ TextureImporter:
       bones: []
       spriteID: 663b03e3cff86ef4c801eff052556eba
       internalID: -2003803957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-stairs-1
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 320
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00180922ef929c94c9357e78d5e95bb2
+      internalID: -181998225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-stairs-2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902ed79d034accd4ab90bb3401f1551a
+      internalID: 1590527855
       vertices: []
       indices: 
       edges: []
@@ -15116,6 +15158,7 @@ TextureImporter:
       poster-room-4: -798921893
       escalera-arr-centro: 1746694583
       boat-4-2: 1207457677
+      cave-stairs-2: 1590527855
       knowledge-rock-2: 1676173866
       school-library-floor: 933486756
       trash-can-1-tile: 2062809750
@@ -15521,6 +15564,7 @@ TextureImporter:
       maze-floor-6: 109366263
       table-study-1: -1761943305
       grass-noise: 484525144
+      cave-stairs-1: -181998225
       barranco-grass-1: -1298415728
       main-house-floor-3-tile: 1159172337
       round-table-1-tile: 1175438060
