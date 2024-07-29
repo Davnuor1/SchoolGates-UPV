@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: ScienceAgora
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: What is the only part of the human body that cannot heal itself?
+    answers:
+    - skin
+    - teeth
+    - hair
+    - liver
+    correctAnswerIndex: 1
+  - questionText: Where do shrimp have their hearts?
+    answers:
+    - head
+    - legs
+    - whiskers
+    - body
+    correctAnswerIndex: 0
+  - questionText: What is the only planet that rotates clockwise?
+    answers:
+    - mars
+    - earth
+    - venus
+    - jupiter
+    correctAnswerIndex: 2
+  - questionText: Which animal never sleeps?
+    answers:
+    - bears
+    - ants
+    - shrimps
+    - horses
+    correctAnswerIndex: 1
+  - questionText: How much does a drop of oil contaminate the water?
+    answers:
+    - 1 liter
+    - 25 liters
+    - 100 liters
+    - 1000 liters
+    correctAnswerIndex: 1
+  - questionText: How many liters of water does it take to produce one liter of coca-cola?
+    answers:
+    - 2 liters
+    - 20 liters
+    - 200 liters
+    - no water used
+    correctAnswerIndex: 2
+  - questionText: How long can a person go without drinking water?
+    answers:
+    - 1 day
+    - 3 days
+    - 7 days
+    - 10 days
+    correctAnswerIndex: 2
+  - questionText: What color is the white rhino?
+    answers:
+    - white
+    - gray
+    - pink
+    - there is no such thing as a white rhino
+    correctAnswerIndex: 0
+  - questionText: 'The human circulatory system forms a network of about:'
+    answers:
+    - 10 m
+    - 10 km
+    - 1000 km
+    - 100000 km
+    correctAnswerIndex: 3
+  - questionText: Which type of light bulb is most energy-efficient?
+    answers:
+    - Incandescent
+    - CFL
+    - LED
+    - Halogen
+    correctAnswerIndex: 2

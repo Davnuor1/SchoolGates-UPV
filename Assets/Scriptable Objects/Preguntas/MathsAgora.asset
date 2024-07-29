@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: MathsAgora
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: What is the pi number?
+    answers:
+    - 3.14159
+    - 0.314159
+    - 9.61672
+    - 103.87267
+    correctAnswerIndex: 0
+  - questionText: What is the smallest prime number greater than 10?
+    answers:
+    - 7
+    - 11
+    - 13
+    - 17
+    correctAnswerIndex: 1
+  - questionText: If you roll a fair six-sided dice, what is the probability of rolling
+      an even number?
+    answers:
+    - 16.67%
+    - 25%
+    - 50%
+    - 86%
+    correctAnswerIndex: 2
+  - questionText: ' train travels 240 km in 4 hours. What is its average speed?'
+    answers:
+    - 24 km/h
+    - 30 km/h
+    - 60 km/h
+    - 100 km/h
+    correctAnswerIndex: 2
+  - questionText: If the diameter of a circle is 15 cm, what is its radius?
+    answers:
+    - 5 cm
+    - 7.5 cm
+    - 10 cm
+    - 15 cm
+    correctAnswerIndex: 1
+  - questionText: 'How much is 2 - 6 : 3 -1?'
+    answers:
+    - 1
+    - -1
+    - 2
+    - -2
+    correctAnswerIndex: 1
+  - questionText: "How much is 3 \xB7 2 + 2 \xB7 5?"
+    answers:
+    - 16
+    - 40
+    - 60
+    - 100
+    correctAnswerIndex: 0
+  - questionText: "What do you call an angle of 87\xBA?"
+    answers:
+    - acute
+    - obtuse
+    - right
+    - complete
+    correctAnswerIndex: 0
+  - questionText: In 5 = 7 + x, how much is the x?
+    answers:
+    - 5/7
+    - 7/5
+    - 2
+    - -2
+    correctAnswerIndex: 3
+  - questionText: How much is MCCXXII + XXXIV?
+    answers:
+    - MMCCL
+    - MCCLVI
+    - MCCCIX
+    - MCCCIV
+    correctAnswerIndex: 1
