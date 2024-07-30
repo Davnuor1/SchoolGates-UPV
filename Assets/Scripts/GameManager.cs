@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public ItemSpawnManager itemSpawnManager;
     public CurrencyManager currencyManager;
     public SceneController sceneController;
+    public StatsManager statsManager;
 
     public Player player;
     private void Awake()
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
         itemSpawnManager = GetComponent<ItemSpawnManager>();
         currencyManager = GetComponent<CurrencyManager>();
         sceneController = GetComponent<SceneController>();
+        statsManager = GetComponent<StatsManager>();
 
         player = FindObjectOfType<Player>();
     }
