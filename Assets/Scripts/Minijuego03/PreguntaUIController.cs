@@ -84,12 +84,21 @@ public class PreguntaUIController : MonoBehaviour
             ruletaDerecha.SetActive(false); // Ocultar la ruleta derecha después de asignar la puntuación
         }
 
-        // Solo avanzar si ambas ruletas han sido utilizadas
+        // Solo mostrar el panel de texto si ambas ruletas han sido utilizadas
         if (!ruletaIzquierda.activeSelf && !ruletaDerecha.activeSelf)
         {
-            minijuegoManager.SiguienteEspejo();
+            // Mostrar el panel de texto
+            FindObjectOfType<InputTextController>().MostrarPanelDeTexto();
         }
     }
+
+    public void ManejarTextoEnviado()
+    {
+        // Después de que el usuario envía el texto, mostrar la pregunta de selección múltiple
+        FindObjectOfType<SeleccionMultipleController>().MostrarSeleccionMultiple(espejoActual);
+    }
+
+
 
 
     private void MostrarBotonesSiNo(bool mostrar)

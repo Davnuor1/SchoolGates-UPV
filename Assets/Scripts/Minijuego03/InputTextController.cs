@@ -1,29 +1,36 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class InputTextController : MonoBehaviour
 {
-    public TMP_InputField inputField;
-    public Button enviarButton;
+    public TMP_InputField inputField; // El campo de texto donde el usuario escribe
+    public GameObject inputTextPanel; // El panel que contiene el campo de texto y el botón de enviar
+    private string textoUsuario; // La variable donde almacenaremos el texto
 
-    private string textoUsuario;
-
-    void Start()
+    public void MostrarPanelDeTexto()
     {
-        enviarButton.onClick.AddListener(EnviarTexto);
+        inputTextPanel.SetActive(true);
+        inputField.text = ""; // Limpiar el campo de texto al mostrarlo
     }
 
     public void EnviarTexto()
     {
         textoUsuario = inputField.text;
-        // Aquí puedes hacer lo que quieras con el texto, por ejemplo, almacenarlo para usarlo más adelante
-        CerrarInput();
+        Debug.Log("Texto ingresado por el usuario: " + textoUsuario);
+
+        CerrarPanelDeTexto();
+
+        // Llamar a la función para manejar la selección múltiple
+        FindObjectOfType<PreguntaUIController>().ManejarTextoEnviado();
     }
 
-    public void CerrarInput()
+    public void CerrarPanelDeTexto()
     {
-        // Ocultamos o desactivamos la UI de entrada de texto
-        gameObject.SetActive(false);
+        inputTextPanel.SetActive(false);
+    }
+
+    public string ObtenerTextoUsuario()
+    {
+        return textoUsuario;
     }
 }
