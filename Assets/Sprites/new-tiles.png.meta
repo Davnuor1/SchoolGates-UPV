@@ -15275,7 +15275,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -15296,7 +15296,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -15317,7 +15317,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -15338,7 +15338,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -15346,6 +15346,48 @@ TextureImporter:
       bones: []
       spriteID: f07d273ca0fed9a498a8f3f9c6301dbc
       internalID: 455626976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp-grass-14
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e695696f1580b4280733bc8a8e8a21
+      internalID: 1521931451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp-grass-15
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285b344000c7ecf4ab966a545b39f351
+      internalID: -498212355
       vertices: []
       indices: 
       edges: []
@@ -15376,6 +15418,7 @@ TextureImporter:
       swamp-floor-3: -1929072622
       maze-fruit-2: 709025743
       cave-floor-11: -1506674542
+      swamp-grass-14: 1521931451
       boat-3-1: -1242176833
       swamp-wharf-2: -1336274936
       knowledge-interior-column-1: 1779439641
@@ -15597,6 +15640,7 @@ TextureImporter:
       swamp-grass-10: 1203335767
       escalera-der: -2093532022
       knowledge-center-5: -1462453704
+      swamp-grass-15: -498212355
       knowledge-grass-10: -1129531077
       gym-stairs-2: 643232559
       scenery-curtain-2: 1195089381
@@ -15794,9 +15838,9 @@ TextureImporter:
       bathroom-aire: -1651061091
       puerta-vecino-3: 1755345155
       garbage-2: 381453313
+      knowledge-road-4: 2107449344
       maze-floor-2: -2014407943
       knowledge-barranco-8: -286410255
-      knowledge-road-4: 2107449344
       knowledge-grass-3: -1804925691
       window-parents: -1854309590
       knowledge-grass-5: 297038290
