@@ -29,7 +29,7 @@ public class PreguntaUIController : MonoBehaviour
     {
         espejoActual = espejo;
         tituloEspejo.text = espejo.nombreEspejo;
-        preguntaTexto.text = "¿Quieres asignar una puntuación a este espejo?";
+        preguntaTexto.text = "Think on a nice or significant life… What do you really need? Select the mirror if you think it is important or break it if you don’t";
 
         MostrarBotonesSiNo(true);
         ruletaUnica.SetActive(false);
@@ -48,7 +48,7 @@ public class PreguntaUIController : MonoBehaviour
     public void ResponderSi()
     {
         MostrarBotonesSiNo(false);
-        preguntaTexto.text = "Asigna una puntuación al espejo:";
+        preguntaTexto.text = "Value the importance of this things to you ";
         ruletaUnica.SetActive(true);
     }
 
@@ -62,7 +62,7 @@ public class PreguntaUIController : MonoBehaviour
     {
         espejoActual = espejo;
         tituloEspejo.text = espejo.nombreEspejo;
-        preguntaTexto.text = "Asigna puntuaciones adicionales:";
+        preguntaTexto.text = "So, you say these is important to you, but how much are you caring about this actually? How much attention and time are you really putting into these?";
 
         MostrarBotonesSiNo(false);
         ruletaUnica.SetActive(false);
@@ -88,6 +88,7 @@ public class PreguntaUIController : MonoBehaviour
         if (!ruletaIzquierda.activeSelf && !ruletaDerecha.activeSelf)
         {
             // Mostrar el panel de texto
+            preguntaTexto.text = "What can you do now to take more or better care of your values?";
             FindObjectOfType<InputTextController>().MostrarPanelDeTexto();
         }
     }

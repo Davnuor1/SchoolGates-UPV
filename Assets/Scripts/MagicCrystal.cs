@@ -22,19 +22,23 @@ public class MagicCrystal : MonoBehaviour
 
     private IEnumerator ToggleCrystalsWithDelay()
     {
-        yield return new WaitForSeconds(delay); // Esperar por el retardo especificado antes de ejecutar la lógica de toggle
+        //yield return new WaitForSeconds(delay); // Esperar por el retardo especificado antes de ejecutar la lógica de toggle
 
         if (areRedCrystalsActive)
         {
             // Si los cristales rojos están activos, desactívalos y activa los azules
-            crystalSpriteChanger.AnimarAzulesEmerger();
+            
             crystalSpriteChanger.AnimarRojosSumerger();
+            yield return new WaitForSeconds(delay); // Esperar por el retardo especificado antes de ejecutar la lógica de toggle
+            crystalSpriteChanger.AnimarAzulesEmerger();
         }
         else
         {
             // Si los cristales rojos están inactivos, actívalos y desactiva los azules
-            crystalSpriteChanger.AnimarRojosEmerger();
             crystalSpriteChanger.AnimarAzulesSumerger();
+            yield return new WaitForSeconds(delay); // Esperar por el retardo especificado antes de ejecutar la lógica de toggle
+            crystalSpriteChanger.AnimarRojosEmerger();
+            
         }
 
         // Invierte el estado de los cristales rojos

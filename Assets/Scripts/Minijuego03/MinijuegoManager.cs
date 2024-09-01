@@ -8,6 +8,9 @@ public class MinijuegoManager : MonoBehaviour
 
     public int indiceEspejoActual = 0;
     private bool enSegundaFase = false;
+    private PlayerMovement playerMovement;
+    //public FadeInObject escaleras3;
+    public GameObject portalSalida;
 
     public PreguntaUIController preguntaUIController;
 
@@ -23,9 +26,9 @@ public class MinijuegoManager : MonoBehaviour
     {
         if (!enSegundaFase)
         {
-            Debug.Log("Indice espejo:"+indiceEspejoActual);
+            //Debug.Log("Indice espejo:"+indiceEspejoActual);
             indiceEspejoActual++;
-            Debug.Log("Indice espejo postsuma:" + indiceEspejoActual);
+            //Debug.Log("Indice espejo postsuma:" + indiceEspejoActual);
 
             if (indiceEspejoActual < todosLosEspejos.Count)
             {
@@ -48,6 +51,7 @@ public class MinijuegoManager : MonoBehaviour
             else
             {
                 // Finalizar el minijuego
+                
                 TerminarMinijuego();
             }
         }
@@ -77,6 +81,11 @@ public class MinijuegoManager : MonoBehaviour
     {
         // Implementar la lógica para finalizar el minijuego
         Debug.Log("Minijuego terminado.");
+        //escaleras3.FadeIn();
+        this.gameObject.SetActive(false);
+        playerMovement = GameManager.instance.player.GetComponent<PlayerMovement>();
+        playerMovement.enabled = true;
+        portalSalida.SetActive(true);
         // Puedes cargar una nueva escena, mostrar una pantalla de resumen, etc.
     }
 }

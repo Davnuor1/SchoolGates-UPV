@@ -10,9 +10,12 @@ public class MinijuegoEspejos01 : MonoBehaviour
     [SerializeField] public GameObject botonDislike;
     [SerializeField] public GameObject RuedaRating;
     [SerializeField] TextMeshProUGUI textoEspejos;
+    [SerializeField] TextMeshProUGUI textoPregunta;
     List<string> espejos;
     List<string> espejosLike;
     public int idEspejo=0;
+    private PlayerMovement playerMovement;
+    public FadeInObject escaleras;
     [SerializeField] public GameObject parte2;
     //[SerializeField] public GameObject botonCorrecto;
     [SerializeField] TextMeshProUGUI textoCorrecto;
@@ -60,6 +63,7 @@ public class MinijuegoEspejos01 : MonoBehaviour
         espejosLike = new List<string>();
         nombresEspejos();
         textoEspejos.text = espejos[idEspejo];
+        textoPregunta.text = "Choose the mirrors you most identify with and break the others";
     }
 
     
@@ -68,6 +72,7 @@ public class MinijuegoEspejos01 : MonoBehaviour
         botonLike.SetActive(false);
         botonDislike.SetActive(false);
         RuedaRating.SetActive(true);
+        textoPregunta.text = "Rate from 1-10 how much you identify with this mirror";
     }
 
     public void darBotonDislike()
@@ -119,6 +124,7 @@ public class MinijuegoEspejos01 : MonoBehaviour
             botonDislike.SetActive(true);
             RuedaRating.SetActive(false);
             textoEspejos.text = espejos[idEspejo];
+            textoPregunta.text = "Choose the mirrors you most identify with and break the others";
         }
         
         
@@ -129,6 +135,7 @@ public class MinijuegoEspejos01 : MonoBehaviour
         botonDislike.SetActive(false);
         RuedaRating.SetActive(false);
         parte2.SetActive(true);
+        textoPregunta.text = "Let’s see how real it is… Is that really you?";
         textoEspejos.text = "Which is the real proof of beeing " + espejosLike[idEspejo];
         textoCorrecto.text= respuestasCorrectas[espejosLike[idEspejo]];
         textoIncorrecto.text= respuestasIncorrectas[espejosLike[idEspejo]];
@@ -137,6 +144,7 @@ public class MinijuegoEspejos01 : MonoBehaviour
     {
         //sumar stat integridad
         textoFeedback.text = "You are right… this is probably an proof that you are " + espejosLike[idEspejo];
+        
         botonSiguiente.SetActive(true);
     }
     public void pulsarIncorrecto()
@@ -149,7 +157,11 @@ public class MinijuegoEspejos01 : MonoBehaviour
         idEspejo += 1;
         if (idEspejo > (espejosLike.Count - 1))
         {
+            //Aqui se acaba el minijuego
             minijuegoEntero.SetActive(false);
+            playerMovement = GameManager.instance.player.GetComponent<PlayerMovement>();
+            playerMovement.enabled = true;
+            escaleras.FadeIn(); 
         }
         else
         {

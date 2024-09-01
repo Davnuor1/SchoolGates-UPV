@@ -22,11 +22,13 @@ public class MinijuegoEspejos02 : MonoBehaviour
     [SerializeField] TextMeshProUGUI textoPreguntas2;
     [SerializeField] TextMeshProUGUI textoFeedback;
     [SerializeField] public GameObject botonSiguiente;
+    private PlayerMovement playerMovement;
     List<string> espejos;
     
     List<string> espejosLike;
     
     public int idEspejo = 0;
+    public FadeInObject escaleras2;
 
     Dictionary<string, string> feedbacks01 = new Dictionary<string, string>()
     {
@@ -189,6 +191,10 @@ public class MinijuegoEspejos02 : MonoBehaviour
         idEspejo += 1;
         if (idEspejo > (espejosLike.Count - 1))
         {
+            //se acaba minijuego
+            escaleras2.FadeIn();
+            playerMovement = GameManager.instance.player.GetComponent<PlayerMovement>();
+            playerMovement.enabled = true;
             minijuegoEntero.SetActive(false);
         }
         else
