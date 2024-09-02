@@ -15359,7 +15359,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -15380,7 +15380,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -15388,6 +15388,27 @@ TextureImporter:
       bones: []
       spriteID: 285b344000c7ecf4ab966a545b39f351
       internalID: -498212355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 649
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0864a6909ded32e47ad9c2d93700e5b4
+      internalID: -1252042679
       vertices: []
       indices: 
       edges: []
@@ -15709,6 +15730,7 @@ TextureImporter:
       basket-big-area-2: 1335499737
       school-wall-bottom-right-tile: 1564826690
       scenery-8-tile: -216928167
+      portal: -1252042679
       swamp-grass-4: -107399588
       lab-human-1: 1083622154
       knowledge-barranco-12: 235997140
