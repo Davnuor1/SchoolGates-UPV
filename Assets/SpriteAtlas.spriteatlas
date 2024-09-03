@@ -1751,6 +1751,9 @@ SpriteAtlas:
   - {fileID: 1922397377, guid: 724495a0416db6e4daecc23ebd3ecab8, type: 3}
   - {fileID: 1700620590, guid: 724495a0416db6e4daecc23ebd3ecab8, type: 3}
   - {fileID: -1749404846, guid: 724495a0416db6e4daecc23ebd3ecab8, type: 3}
+  - {fileID: -1188037035, guid: 0baf7de0dda102f4cb85318e031dcf30, type: 3}
+  - {fileID: -106177549, guid: 0baf7de0dda102f4cb85318e031dcf30, type: 3}
+  - {fileID: -491722757, guid: 0baf7de0dda102f4cb85318e031dcf30, type: 3}
   - {fileID: -475986995, guid: 4582522138627c84182b54bb626def43, type: 3}
   - {fileID: 44906996, guid: 4582522138627c84182b54bb626def43, type: 3}
   - {fileID: -2053035418, guid: 4582522138627c84182b54bb626def43, type: 3}
@@ -6872,6 +6875,7 @@ SpriteAtlas:
   - {fileID: -2116906407, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
   - {fileID: -640400766, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
   - {fileID: 222612497, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
+  - {fileID: -1252042679, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
   - {fileID: 644698117, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
   - {fileID: -2136315294, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
   - {fileID: -1750198836, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
@@ -7130,6 +7134,7 @@ SpriteAtlas:
   - {fileID: 1430331153, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
   - {fileID: 1891938320, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
   - {fileID: -1368479601, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
+  - {fileID: -284126710, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
   - {fileID: 1804879140, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
   - {fileID: -1833407909, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
   - {fileID: 1057539444, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
@@ -8312,6 +8317,7 @@ SpriteAtlas:
   - {fileID: 1238425246, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: 1861982310, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: 334379786, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
+  - {fileID: -961074298, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: -206634625, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: -785123729, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: 14406621, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
@@ -8419,9 +8425,11 @@ SpriteAtlas:
   - {fileID: -531938964, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: -887293369, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: 680577938, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
+  - {fileID: -1811965259, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: -1082262724, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: -797277234, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: -348102593, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
+  - {fileID: -295834246, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: 678089108, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: 58754398, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
   - {fileID: 1478303168, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
@@ -10183,6 +10191,9 @@ SpriteAtlas:
   - tiles_322
   - tiles_338
   - tiles_418
+  - mapas-school-2
+  - mapas-school-1
+  - map-village-main
   - cow_black animation_7
   - cow_black animation_6
   - cow_black animation_5
@@ -15304,6 +15315,7 @@ SpriteAtlas:
   - bathroom-sit
   - pavimento-der
   - cave-wall-3
+  - portal
   - cave-floor-8
   - barranco-der
   - cave-floor-9
@@ -15562,6 +15574,7 @@ SpriteAtlas:
   - lab-tools-7
   - lab-tools-6
   - lab-tools-1
+  - map-school
   - barra-comedor
   - school-floor-shadow-up-tile
   - knowledge-pillar-2
@@ -16744,6 +16757,7 @@ SpriteAtlas:
   - ui-dialogue-menu-2
   - ui-dialogue-menu-1
   - ui-cave-selector-2-10
+  - ui-dialogue-menu-full
   - maligor-right-1
   - ui-menu-items
   - swamp-character-10
@@ -16851,9 +16865,11 @@ SpriteAtlas:
   - ui-travel-base
   - ui-skilltree-icon-hope
   - ui-skilltree-icon-positiveinfluence
+  - parrot-1
   - village-character-1
   - village-character-2
   - village-character-3
+  - grandma-1
   - village-character-4
   - ui-cave-mirror
   - village-character-5
