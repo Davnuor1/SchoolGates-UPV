@@ -15401,7 +15401,7 @@ TextureImporter:
         width: 74
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -15409,6 +15409,27 @@ TextureImporter:
       bones: []
       spriteID: 0864a6909ded32e47ad9c2d93700e5b4
       internalID: -1252042679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map-school
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 351
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f4f7aab7693584a8daff07cf037e07
+      internalID: -284126710
       vertices: []
       indices: 
       edges: []
@@ -15643,6 +15664,7 @@ TextureImporter:
       rug-2-tile: 846925343
       poster-room-4: -798921893
       escalera-arr-centro: 1746694583
+      map-school: -284126710
       boat-4-2: 1207457677
       cave-stairs-2: 1590527855
       swamp-grass-8: 92715195
