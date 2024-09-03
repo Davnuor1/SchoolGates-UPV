@@ -5,7 +5,7 @@ using PixelCrushers.DialogueSystem; // Asegúrate de incluir este namespace
 public class NPCLaberinto : MonoBehaviour
 {
     public GameObject emoticono; // Referencia al objeto emoticono
-
+    
     void Start()
     {
         // Registrar el método EntregarFruta para que sea accesible desde Lua
@@ -45,22 +45,17 @@ public class NPCLaberinto : MonoBehaviour
     {
         // Encuentra todas las frutas en la escena
         FrutaLaberintoController[] frutas = FindObjectsOfType<FrutaLaberintoController>();
-
-        // Busca la fruta que está siguiendo al jugador
         foreach (FrutaLaberintoController fruta in frutas)
         {
             if (fruta.isFollowing)
             {
-                // Desactivar la fruta
                 fruta.DeactivateFruit();
+                GatePeopleController.Instance.IncrementarFrutasDesactivadas(); // Llamada al GameController
 
-                // Activar el emoticono en la posición sobre el NPC
                 emoticono.transform.position = transform.position + new Vector3(0, 1, 0);
                 emoticono.SetActive(true);
 
-                // Iniciar la corrutina para desactivar el emoticono después de 2 segundos
                 StartCoroutine(DeactivateEmoticonAfterDelay());
-
                 break;
             }
         }
@@ -73,5 +68,6 @@ public class NPCLaberinto : MonoBehaviour
 
         // Desactivar el emoticono
         emoticono.SetActive(false);
+
     }
 }

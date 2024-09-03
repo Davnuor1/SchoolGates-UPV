@@ -16,6 +16,9 @@ public class QuizManager : MonoBehaviour
     public QuestionCollectionStatus questionCollectionStatus; // Referencia al ScriptableObject
     public QuizSelector quizSelector; // Referencia al QuizSelector
 
+    public GameObject rewardPanel; // Panel que se activará al completar las colecciones necesarias
+    public int requiredCollectionsCompleted = 5; // Número de colecciones requeridas para mostrar el panel
+
     private QuestionCollection questionCollection;
     private List<Question> questions;
     private Question currentQuestion;
@@ -42,6 +45,10 @@ public class QuizManager : MonoBehaviour
         if (panelPostMinijuego != null)
         {
             panelPostMinijuego.SetActive(false);
+        }
+        if (rewardPanel != null)
+        {
+            rewardPanel.SetActive(false); // Asegurarse de que el panel de recompensa esté oculto al inicio
         }
         correctAnswersCount = 0;
         GenerateRandomQuestion();
@@ -146,6 +153,12 @@ public class QuizManager : MonoBehaviour
         if (quizSelector != null)
         {
             quizSelector.UpdateCollectionButtons();
+        }
+
+        // Comprobar si el usuario ha completado suficientes colecciones para activar el panel de recompensa
+        if (rewardPanel != null && questionCollectionStatus.completedCollections.Count >= requiredCollectionsCompleted)
+        {
+            rewardPanel.SetActive(true);
         }
     }
 }

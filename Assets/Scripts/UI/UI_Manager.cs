@@ -11,6 +11,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject skillTreePanel;
     public GameObject bookOfCluesPanel;
     public GameObject travelJournalPanel;
+    public GameObject statsPanel;
 
 
     public List<Inventory_UI> inventory_UIs;
@@ -67,6 +68,22 @@ public class UI_Manager : MonoBehaviour
             else
             {
                 menuPanel.SetActive(false);
+            }
+        }
+
+    }
+    public void ToggleStatsUI()
+    {
+        if (statsPanel != null)
+        {
+            if (!statsPanel.activeSelf)
+            {
+                statsPanel.SetActive(true);
+
+            }
+            else
+            {
+                statsPanel.SetActive(false);
             }
         }
 

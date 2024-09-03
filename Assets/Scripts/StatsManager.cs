@@ -1,5 +1,6 @@
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
+using System;
 
 public class StatsManager : MonoBehaviour
 {
@@ -20,14 +21,14 @@ public class StatsManager : MonoBehaviour
 
     private void RegisterFunctions()
     {
-        Lua.RegisterFunction("ModifyEnergy", this, SymbolExtensions.GetMethodInfo(() => ModifyEnergy(0)));
-        Lua.RegisterFunction("ModifyKarma", this, SymbolExtensions.GetMethodInfo(() => ModifyKarma(0)));
-        Lua.RegisterFunction("ModifySpirituality", this, SymbolExtensions.GetMethodInfo(() => ModifySpirituality(0)));
-        Lua.RegisterFunction("ModifyExperience", this, SymbolExtensions.GetMethodInfo(() => ModifyExperience(0)));
-        Lua.RegisterFunction("SetEnergy", this, SymbolExtensions.GetMethodInfo(() => SetEnergy(0)));
-        Lua.RegisterFunction("SetKarma", this, SymbolExtensions.GetMethodInfo(() => SetKarma(0)));
-        Lua.RegisterFunction("SetSpirituality", this, SymbolExtensions.GetMethodInfo(() => SetSpirituality(0)));
-        Lua.RegisterFunction("SetExperience", this, SymbolExtensions.GetMethodInfo(() => SetExperience(0)));
+        Lua.RegisterFunction("ModifyEnergy", this, SymbolExtensions.GetMethodInfo(() => ModifyEnergy(0.0)));
+        Lua.RegisterFunction("ModifyKarma", this, SymbolExtensions.GetMethodInfo(() => ModifyKarma(0.0)));
+        Lua.RegisterFunction("ModifySpirituality", this, SymbolExtensions.GetMethodInfo(() => ModifySpirituality(0.0)));
+        Lua.RegisterFunction("ModifyExperience", this, SymbolExtensions.GetMethodInfo(() => ModifyExperience(0.0)));
+        Lua.RegisterFunction("SetEnergy", this, SymbolExtensions.GetMethodInfo(() => SetEnergy(0.0)));
+        Lua.RegisterFunction("SetKarma", this, SymbolExtensions.GetMethodInfo(() => SetKarma(0.0)));
+        Lua.RegisterFunction("SetSpirituality", this, SymbolExtensions.GetMethodInfo(() => SetSpirituality(0.0)));
+        Lua.RegisterFunction("SetExperience", this, SymbolExtensions.GetMethodInfo(() => SetExperience(0.0)));
         Lua.RegisterFunction("GetEnergy", this, SymbolExtensions.GetMethodInfo(() => GetEnergy()));
         Lua.RegisterFunction("GetKarma", this, SymbolExtensions.GetMethodInfo(() => GetKarma()));
         Lua.RegisterFunction("GetSpirituality", this, SymbolExtensions.GetMethodInfo(() => GetSpirituality()));
@@ -51,62 +52,65 @@ public class StatsManager : MonoBehaviour
     }
 
     #endregion
-
-    public void ModifyEnergy(int amount)
+    private double Clamp(double value, double min, double max)
     {
-        playerStats.energy = Mathf.Clamp(playerStats.energy + amount, playerStats.minEnergy, playerStats.maxEnergy);
+        return Math.Max(min, Math.Min(max, value));
+    }
+    public void ModifyEnergy(double amount)
+    {
+        playerStats.energy = Clamp(playerStats.energy + amount, playerStats.minEnergy, playerStats.maxEnergy);
     }
 
-    public void ModifyKarma(int amount)
+    public void ModifyKarma(double amount)
     {
-        playerStats.karma = Mathf.Clamp(playerStats.karma + amount, playerStats.minKarma, playerStats.maxKarma);
+        playerStats.karma = Clamp(playerStats.karma + amount, playerStats.minKarma, playerStats.maxKarma);
     }
 
-    public void ModifySpirituality(int amount)
+    public void ModifySpirituality(double amount)
     {
-        playerStats.spirituality = Mathf.Clamp(playerStats.spirituality + amount, playerStats.minSpirituality, playerStats.maxSpirituality);
+        playerStats.spirituality = Clamp(playerStats.spirituality + amount, playerStats.minSpirituality, playerStats.maxSpirituality);
     }
 
-    public void ModifyExperience(int amount)
+    public void ModifyExperience(double amount)
     {
-        playerStats.experience = Mathf.Clamp(playerStats.experience + amount, playerStats.minExperience, playerStats.maxExperience);
+        playerStats.experience = Clamp(playerStats.experience + amount, playerStats.minExperience, playerStats.maxExperience);
     }
 
-    public void SetEnergy(int amount)
+    public void SetEnergy(double amount)
     {
-        playerStats.energy = Mathf.Clamp(amount, playerStats.minEnergy, playerStats.maxEnergy);
+        playerStats.energy = Clamp(amount, playerStats.minEnergy, playerStats.maxEnergy);
     }
 
-    public void SetKarma(int amount)
+    public void SetKarma(double amount)
     {
-        playerStats.karma = Mathf.Clamp(amount, playerStats.minKarma, playerStats.maxKarma);
+        playerStats.karma = Clamp(amount, playerStats.minKarma, playerStats.maxKarma);
     }
 
-    public void SetSpirituality(int amount)
+    public void SetSpirituality(double amount)
     {
-        playerStats.spirituality = Mathf.Clamp(amount, playerStats.minSpirituality, playerStats.maxSpirituality);
+        playerStats.spirituality = Clamp(amount, playerStats.minSpirituality, playerStats.maxSpirituality);
     }
 
-    public void SetExperience(int amount)
+    public void SetExperience(double amount)
     {
-        playerStats.experience = Mathf.Clamp(amount, playerStats.minExperience, playerStats.maxExperience);
+        playerStats.experience = Clamp(amount, playerStats.minExperience, playerStats.maxExperience);
     }
-    public int GetEnergy()
+    public double GetEnergy()
     {
         return playerStats.energy;
     }
 
-    public int GetKarma()
+    public double GetKarma()
     {
         return playerStats.karma;
     }
 
-    public int GetSpirituality()
+    public double GetSpirituality()
     {
         return playerStats.spirituality;
     }
 
-    public int GetExperience()
+    public double GetExperience()
     {
         return playerStats.experience;
     }

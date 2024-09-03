@@ -5666,9 +5666,21 @@ PrefabInstance:
       value: PortalEscena
       objectReference: {fileID: 0}
     - target: {fileID: 938096135610520556, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
+      propertyPath: aQueEscena
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 938096135610520556, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
       propertyPath: ChangeSceneAnimator
       value: 
       objectReference: {fileID: 1916149739}
+    - target: {fileID: 938096135610520556, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
+      propertyPath: posicionSiguiente.x
+      value: -58
+      objectReference: {fileID: 0}
+    - target: {fileID: 938096135610520556, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
+      propertyPath: posicionSiguiente.y
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 938096135610520558, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -19276,7 +19288,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 12
-  m_Sprite: {fileID: 2132886267, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
+  m_Sprite: {fileID: -1252042679, guid: f5dd348a60ef15841844d9a1c05a3ef5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
