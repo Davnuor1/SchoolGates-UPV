@@ -1,11 +1,11 @@
-using System.Collections;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic; // Asegúrate de incluir esto para usar List<>
 
 public class MagicCrystal : MonoBehaviour
 {
-    public CrystalSpriteChanger crystalSpriteChanger;
-    private bool areRedCrystalsActive = false; // Estado inicial: rojos desactivados, azules activados
-    public float delay =0f; // Retardo 
+    public CrystalSpriteChanger crystalSpriteChanger; // Controlador de animaciones
+    public float delay = 0f; // Retardo de 0 segundo
 
     void Update()
     {
@@ -22,26 +22,41 @@ public class MagicCrystal : MonoBehaviour
 
     private IEnumerator ToggleCrystalsWithDelay()
     {
-        //yield return new WaitForSeconds(delay); // Esperar por el retardo especificado antes de ejecutar la lógica de toggle
+        
 
-        if (areRedCrystalsActive)
+        // Verificar si los coliders de los cristales rojos están activados (emergidos) o desactivados (sumergidos)
+        bool areRedCrystalsEmerged = IsColliderActive(crystalSpriteChanger.crystalsRojos);
+        bool areBlueCrystalsEmerged = IsColliderActive(crystalSpriteChanger.crystalsAzules);
+
+        if (areRedCrystalsEmerged)
         {
-            // Si los cristales rojos están activos, desactívalos y activa los azules
+            // Si los cristales rojos están emergidos, sumergirlos y emerger los cristales azules
             
             crystalSpriteChanger.AnimarRojosSumerger();
             yield return new WaitForSeconds(delay); // Esperar por el retardo especificado antes de ejecutar la lógica de toggle
             crystalSpriteChanger.AnimarAzulesEmerger();
         }
-        else
+        else if (areBlueCrystalsEmerged)
         {
-            // Si los cristales rojos están inactivos, actívalos y desactiva los azules
+            // Si los cristales azules están emergidos, sumergirlos y emerger los cristales rojos
+            
             crystalSpriteChanger.AnimarAzulesSumerger();
             yield return new WaitForSeconds(delay); // Esperar por el retardo especificado antes de ejecutar la lógica de toggle
             crystalSpriteChanger.AnimarRojosEmerger();
-            
         }
+    }
 
-        // Invierte el estado de los cristales rojos
-        areRedCrystalsActive = !areRedCrystalsActive;
+    // Método para verificar si alguno de los cristales en la lista tiene su collider activado (emergido)
+    private bool IsColliderActive(List<GameObject> crystals)
+    {
+        foreach (GameObject crystal in crystals)
+        {
+            BoxCollider2D collider = crystal.GetComponent<BoxCollider2D>();
+            if (collider != null && collider.enabled)
+            {
+                return true; // Si al menos uno de los coliders está activado, consideramos que el grupo está emergido
+            }
+        }
+        return false; // Si todos los coliders están desactivados, consideramos que están sumergidos
     }
 }
