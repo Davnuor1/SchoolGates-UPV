@@ -3767,7 +3767,7 @@ TextureImporter:
         width: 87
         height: 153
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3775,6 +3775,195 @@ TextureImporter:
       bones: []
       spriteID: 83c5d98c387ea004788a77dde321b3ed
       internalID: -961074298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-stats-base
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 606
+        width: 250
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308776d4bbdef2e4e8879d0b88b89690
+      internalID: -1739643406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-stats-bar-1
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 590
+        width: 66
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44bccec39b08374692b910522a0219b
+      internalID: 130138540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-stats-bar-2
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 574
+        width: 66
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a40e2d83a678c49981d04b450c2528
+      internalID: -235819172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-stats-bar-3
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 558
+        width: 66
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5c4da5618f46d448bca15ba949b1c8
+      internalID: 574539874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-stats-bar-4
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 542
+        width: 66
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62ecc05e6b43ba4bb69adbb9904bbe9
+      internalID: -1695437820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-stats-icon-2
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 552
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97789eec1aa0604c94d29d97ab10f63
+      internalID: -1780281100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-stats-icon-4
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 496
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc3014f916b64843ae833a9a3fd011a
+      internalID: -260566597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-stats-icon-3
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 506
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2430f06d50b836646b25a230613bd48a
+      internalID: -1586706121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-stats-icon-1
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 469
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40e29ab9d9059d41a8242017d8896f4
+      internalID: 522103729
       vertices: []
       indices: 
       edges: []
@@ -3791,6 +3980,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       ui-cave-n3-2: 1681536045
+      ui-stats-icon-1: 522103729
       ui-skilltree-icon-leadership: 750855392
       ui-cave-selector-3: 115629555
       maligor-front-3: -1877674418
@@ -3813,6 +4003,7 @@ TextureImporter:
       maligor-front-4: 1912139523
       ui-cave-n4-2: 49429726
       ui-cave-selector-1: -2094074992
+      ui-stats-icon-2: -1780281100
       village-character-4: 678089108
       ui-knowledge-icon-2: 251337000
       ui-cave-selector-3-4: -795582911
@@ -3885,6 +4076,7 @@ TextureImporter:
       ui-cave-selector-2-1: -300246617
       ui-knowledge-selector-2: 1347512346
       ui-skilltree-icon-justice: 2054434075
+      ui-stats-bar-2: -235819172
       ui-skilltree-base-3: -1886049838
       swamp-character-1: -1780709363
       ui-knowledge-correct: 699402566
@@ -3895,6 +4087,7 @@ TextureImporter:
       ui-skilltree-icon-resilience: -1671520713
       ui-menu-base: -1589775407
       ui-menu-stats: -1882122540
+      ui-stats-icon-4: -260566597
       swamp-character-3: 1050865915
       ui-cave-selector-2-4: 1870775436
       ui-cave-n6-1: 1269570015
@@ -3918,6 +4111,8 @@ TextureImporter:
       ui-cave-n9-2: 1624166244
       ui-book-base: -551824344
       swamp-character-2: -387731309
+      ui-stats-bar-4: -1695437820
+      ui-stats-bar-1: 130138540
       agora-character-2: -893407903
       ui-skilltree-base-1: -84737164
       ui-skilltree-icon-selfmotivation: -69314944
@@ -3937,6 +4132,7 @@ TextureImporter:
       village-character-1: -1813793071
       ui-skilltree-icon-selfconfidence: -797277234
       village-character-2: -515961936
+      ui-stats-base: -1739643406
       maligor-back-1: 547152070
       ui-knowledge-icon-5: 1549898949
       ui-cave-menu-2: 1356480103
@@ -3946,6 +4142,7 @@ TextureImporter:
       ui-knowledge-icon-4: 455726937
       ui-menu-book: -206634625
       maligor-right-1: -1472161405
+      ui-stats-bar-3: 574539874
       ui-cave-menu-1: -162274705
       ui-cave-n8-2: -390033744
       ui-knowledge-button-: 421063088
@@ -3963,6 +4160,7 @@ TextureImporter:
       new-characters_5: -1541595540
       ui-cave-selector-2-8: 17249321
       ui-knowledge-menu-4: -1327501235
+      ui-stats-icon-3: -1586706121
       ui-cave-selector-2-9: 1182428391
       ui-portrait-3: -295834246
   spritePackingTag: 
