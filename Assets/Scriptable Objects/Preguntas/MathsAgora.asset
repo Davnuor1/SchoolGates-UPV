@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
   m_Name: MathsAgora
   m_EditorClassIdentifier: 
+  collectionName: Mathematica
   questions:
   - questionText: What is the pi number?
     answers:
@@ -84,3 +85,4 @@ MonoBehaviour:
     - MCCCIX
     - MCCCIV
     correctAnswerIndex: 1
+  collectionIcon: {fileID: 112390163, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class QuizManager : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class QuizManager : MonoBehaviour
     public GameObject panelPostMinijuego;
     public bool showPostMinijuegoPanel;
     public int maxCorrectAnswers = 1;
-
+    public Image collectionIconImage; // Imagen para mostrar el icono de la colección
+    public TextMeshProUGUI nombreCollection;
     public QuestionCollectionStatus questionCollectionStatus; // Referencia al ScriptableObject
     public QuizSelector quizSelector; // Referencia al QuizSelector
 
@@ -28,6 +30,13 @@ public class QuizManager : MonoBehaviour
     public void SetQuestionCollection(QuestionCollection collection)
     {
         questionCollection = collection;
+        if (collectionIconImage != null && questionCollection.collectionIcon != null)
+        {
+            collectionIconImage.sprite = questionCollection.collectionIcon;
+            collectionIconImage.gameObject.SetActive(true); // Mostrar la imagen si no estaba activa
+            nombreCollection.text = questionCollection.collectionName;
+            nombreCollection.gameObject.SetActive(true);
+        }
     }
 
     public void StartQuiz()

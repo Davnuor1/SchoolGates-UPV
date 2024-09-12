@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
   m_Name: HistoryAgora
   m_EditorClassIdentifier: 
+  collectionName: Historia
   questions:
   - questionText: What is the capital city of New Zealand?
     answers:
@@ -85,3 +86,4 @@ MonoBehaviour:
     - 1948
     - 1978
     correctAnswerIndex: 2
+  collectionIcon: {fileID: 980677572, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
