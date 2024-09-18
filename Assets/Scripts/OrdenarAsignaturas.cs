@@ -11,18 +11,19 @@ public class OrdenarAsignaturas : MonoBehaviour
     public GameObject portal; // GameObject "portal" que se activará (asignado desde el Inspector)
 
     private List<GameObject> availableCollections = new List<GameObject>(); // Lista de colecciones disponibles para ordenar
+    private Dictionary<GameObject, Transform> originalParents = new Dictionary<GameObject, Transform>(); // Para guardar el padre original de cada icono
     private int nextSlotIndex = 0; // El índice del siguiente hueco disponible
     private PlayerMovement playerMovement;
 
     void Start()
     {
-        //player = GameManager.instance.player;
-        // Inicializar la lista de colecciones disponibles con los iconos visibles
+        // Inicializar la lista de colecciones disponibles con los iconos visibles y guardar sus padres originales
         foreach (var icon in collectionIcons)
         {
             if (icon != null)
             {
                 availableCollections.Add(icon);
+                originalParents[icon] = icon.transform.parent; // Guardamos el padre original del icono
             }
         }
     }
@@ -56,7 +57,7 @@ public class OrdenarAsignaturas : MonoBehaviour
         {
             if (icon != null)
             {
-                icon.transform.SetParent(this.transform, false);
+                icon.transform.SetParent(originalParents[icon], false); // Restaurar el padre original
                 availableCollections.Add(icon);
             }
         }
@@ -70,7 +71,7 @@ public class OrdenarAsignaturas : MonoBehaviour
             if (slot.transform.childCount > 0)
             {
                 var child = slot.transform.GetChild(0);
-                child.SetParent(this.transform, false);
+                child.SetParent(originalParents[child.gameObject], false); // Restaurar el padre del icono
             }
         }
     }
@@ -89,8 +90,8 @@ public class OrdenarAsignaturas : MonoBehaviour
         {
             portal.SetActive(true);
         }
-        
-        playerMovement=GameManager.instance.player.GetComponent<PlayerMovement>();
+
+        playerMovement = GameManager.instance.player.GetComponent<PlayerMovement>();
         playerMovement.enabled = true;
     }
 }
