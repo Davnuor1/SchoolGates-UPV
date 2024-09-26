@@ -16388,7 +16388,7 @@ TextureImporter:
         width: 114
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -16396,6 +16396,90 @@ TextureImporter:
       bones: []
       spriteID: 0a3714ddd9e20a446b6fd484933b5db2
       internalID: -233074598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-special-crystal-3-1
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 352
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6334a79a54458b04ca251fe001203321
+      internalID: -710010137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-special-crystal-3-2
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 352
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dec05a7d8d7ac408e28e18798b53a6
+      internalID: -682705398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-special-crystal-3-3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 352
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56e63b2eb8b2da49a9083f486a280ea
+      internalID: -855682027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave-crystal-5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c7c22b079229841bd2a73bcf434296
+      internalID: -1635558716
       vertices: []
       indices: 
       edges: []
@@ -16418,6 +16502,7 @@ TextureImporter:
       scenery-12-tile: -33474695
       cave-puddle-13: -1601588139
       swamp-floor-1: 669385363
+      cave-special-crystal-3-1: -710010137
       knowledge-road-12: -796242990
       knowledge-barca-1: -502192649
       knowledge-barranco-5: 597493156
@@ -16595,6 +16680,7 @@ TextureImporter:
       gym-stairs-entrance-2: -623483283
       tv-tile: 713884311
       kowledge-road-6: -1910110647
+      cave-special-crystal-3-2: -682705398
       libro: 1350732420
       blackboard-text-1-tile: 785613323
       swamp-rock-2: -163904079
@@ -16729,6 +16815,7 @@ TextureImporter:
       swamp-void-2: -87884491
       canasta-4: 1386463035
       scenery-5-tile: -500325070
+      cave-crystal-5: -1635558716
       swamp-grass-11: -1884851337
       basket-cono-2: 83216267
       school-wall-extra-4: 612858791
@@ -16833,10 +16920,10 @@ TextureImporter:
       banco-2: -255613541
       cartel-2: -1875073098
       knowledge-grass-1: -859046034
-      cave-crystal-3: 923273264
       gym-puerta: -951621528
       basket-lines-5: -1963461826
       knowledge-road-7: -1639470661
+      cave-crystal-3: 923273264
       knowledge-escultura-2: 39014756
       tomb-3: 1514591389
       basket-lines-2: 1237456136
@@ -16882,11 +16969,11 @@ TextureImporter:
       knowledge-barranco-8: -286410255
       knowledge-grass-3: -1804925691
       maze-floor-2: -2014407943
-      window-parents: -1854309590
-      pantano-borde-1: 2046887612
       cliff-bridge-3: -233074598
+      pantano-borde-1: 2046887612
       knowledge-grass-5: 297038290
       escalera-arr-izq: 304142325
+      window-parents: -1854309590
       canasta-3: -2084488714
       kowledge-road-3: 267319709
       knowledge-interior-agua-13: 594098108
@@ -16997,8 +17084,8 @@ TextureImporter:
       carpet-1-13-tile: -391556630
       cave-mirror-broken: 1898522523
       cuadro-3-tile: 1768403396
-      ventana-azotea: 315773762
       pavimento-cruce-2: -51071219
+      ventana-azotea: 315773762
       wood-furniture-3-tile: 425290267
       school-wall-extra-8: 270672797
       main-house-wall-tile: -1470450112
@@ -17169,6 +17256,7 @@ TextureImporter:
       art-item-5: 658854122
       banco-1: -549559025
       shelf-full: 1005094348
+      cave-special-crystal-3-3: -855682027
       mesa-prota: 113055459
       bookshelve-5-tile: -2025446706
       scenery-9-tile: 1900686272
