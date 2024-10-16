@@ -9,6 +9,7 @@ public class NPCProximityTrigger : MonoBehaviour
     public float interactionDistance = 2f;  // Distancia mínima para la interacción
     private GameObject player;
     private bool isPlayerNearby = false;
+    
 
     void Start()
     {
@@ -63,4 +64,5 @@ public class NPCProximityTrigger : MonoBehaviour
             Debug.LogWarning("El nombre de la conversación no está asignado.");
         }
     }
+    
 }
