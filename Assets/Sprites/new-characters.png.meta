@@ -4292,7 +4292,7 @@ TextureImporter:
         width: 66
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4300,6 +4300,48 @@ TextureImporter:
       bones: []
       spriteID: c23aae81c4200704eb43d7927833f76f
       internalID: 821788721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demon-1
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 380
+        width: 47
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913f6343578e0074b8da1d703d366ef9
+      internalID: 1680816492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demon-2
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 321
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f8a13c4de250d4d9f831dff1756b59
+      internalID: 1005346294
       vertices: []
       indices: 
       edges: []
@@ -4316,7 +4358,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       ui-cave-n3-2: 1681536045
-      ui-cave-selector-2-9: 1182428391
+      ui-stats-icon-1: 522103729
       character-16: -1129677351
       ui-skilltree-icon-leadership: 750855392
       ui-cave-selector-3: 115629555
@@ -4334,6 +4376,7 @@ TextureImporter:
       maligor-front-1: -370761271
       maligor-front-2: -1234012375
       ui-cave-n2-2: 1331117691
+      demon-1: 1680816492
       swamp-character-5: -1169443705
       ui-agora-question-5: 112390163
       ui-cave-n8-1: -1183976737
@@ -4482,6 +4525,7 @@ TextureImporter:
       ui-knowledge-counter-5: -1082262724
       village-character-1: -1813793071
       ui-skilltree-icon-selfconfidence: -797277234
+      demon-2: 1005346294
       village-character-2: -515961936
       ui-stats-base: -1739643406
       maligor-back-1: 547152070
@@ -4513,7 +4557,7 @@ TextureImporter:
       ui-cave-selector-2-8: 17249321
       ui-knowledge-menu-4: -1327501235
       ui-stats-icon-3: -1586706121
-      ui-stats-icon-1: 522103729
+      ui-cave-selector-2-9: 1182428391
       ui-portrait-3: -295834246
   spritePackingTag: 
   pSDRemoveMatte: 0
