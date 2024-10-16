@@ -18047,7 +18047,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -18068,7 +18068,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -18076,6 +18076,27 @@ TextureImporter:
       bones: []
       spriteID: 5344cd983aa144545a19458b504cea5b
       internalID: -1730408442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: village-fence-broken
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 848
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b8e01c5c236824483111d3c4a9ff9f
+      internalID: -854001600
       vertices: []
       indices: 
       edges: []
@@ -18826,6 +18847,7 @@ TextureImporter:
       knowledge-water-6: 1834426167
       knowledge-center-2: 1104687372
       arbol-over-tile: -443482755
+      village-fence-broken: -854001600
       barranco-izq: -1791219594
       knowledge-interior-ceniza: -1236257383
       knowledge-escultura-1: -68679683
