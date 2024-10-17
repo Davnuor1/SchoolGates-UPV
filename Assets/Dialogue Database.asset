@@ -146,7 +146,37 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-  locations: []
+  locations:
+  - id: 1
+    fields:
+    - title: Name
+      value: es
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 2
+    fields:
+    - title: Name
+      value: en
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 3
+    fields:
+    - title: Name
+      value: de
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
   variables:
   - id: 1
     fields:
@@ -253,6 +283,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -308,6 +346,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -363,6 +409,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -461,6 +515,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -517,6 +579,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -615,6 +685,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 3
       isRoot: 0
       isGroup: 0
@@ -671,6 +749,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 3
       isRoot: 0
       isGroup: 0
@@ -769,6 +855,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -830,6 +924,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -879,6 +981,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -977,6 +1087,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 5
       isRoot: 0
       isGroup: 0
@@ -1033,6 +1151,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 5
       isRoot: 0
       isGroup: 0
@@ -1131,6 +1257,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 6
       isRoot: 0
       isGroup: 0
@@ -1186,6 +1320,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 6
       isRoot: 0
       isGroup: 0
@@ -1284,6 +1426,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 7
       isRoot: 0
       isGroup: 0
@@ -1339,6 +1489,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 7
       isRoot: 0
       isGroup: 0
@@ -1437,6 +1595,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 8
       isRoot: 0
       isGroup: 0
@@ -1492,6 +1658,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 8
       isRoot: 0
       isGroup: 0
@@ -1590,6 +1764,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 9
       isRoot: 0
       isGroup: 0
@@ -1645,6 +1827,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 9
       isRoot: 0
       isGroup: 0
@@ -1743,6 +1933,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 10
       isRoot: 0
       isGroup: 0
@@ -1798,6 +1996,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 10
       isRoot: 0
       isGroup: 0
@@ -1896,6 +2102,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 11
       isRoot: 0
       isGroup: 0
@@ -1951,6 +2165,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 11
       isRoot: 0
       isGroup: 0
@@ -2049,6 +2271,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 12
       isRoot: 0
       isGroup: 0
@@ -2104,6 +2334,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: CustomFieldType_Text
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 12
       isRoot: 0
       isGroup: 0
@@ -2202,12 +2440,20 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 13
@@ -2238,11 +2484,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 2
         type: 5
@@ -2254,18 +2500,30 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: "I have inadvertently left one of my windows open and my beloved Parrot
           has flown out and now I cannot find him anymore! I am very worried because
           he\u2019s never been outside, and I am afraid he will die if I don\u2019t
           find him soon! Can you please help me?"
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: "Ich habe versehentlich eines meiner Fenster offen gelassen und mein
+          geliebter Papagei ist hinausgeflogen und jetzt kann ich ihn nicht mehr
+          finden! Ich bin sehr besorgt, weil er noch nie drau\xDFen war und ich bef\xFCrchte,
+          er wird sterben, wenn ich ihn nicht bald finde! K\xF6nntest Du mir bitte
+          helfen?"
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -2327,6 +2585,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: Ich habe ein bisschen Angst vor Papageien, aber ich werde Ihnen helfen
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -2385,6 +2651,15 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: "Ich habe ein bisschen Angst vor Papageien\u2026 Es tut mir sehr leid,
+          aber ich kann Ihnen nicht helfen"
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -2434,6 +2709,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: Vielen Dank! Dieser Papagei ist mir wichtig!
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -2489,6 +2772,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: "K\xF6nnen Sie mir Ihren Papagei beschreiben?"
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -2545,6 +2836,16 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: "Er ist ziemlich gro\xDF, wei\xDF mit rosa Fl\xFCgelspitzen. Er mag
+          keine lauten Ger\xE4usche und sein Name ist Pirat. Er mag gl\xE4nzende
+          Dinge und Kekse"
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -2606,6 +2907,14 @@ MonoBehaviour:
         value: SetActive(parrot, true)
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: Ich werde im Garten herumlaufen und nach dem Papagei suchen
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -2657,6 +2966,15 @@ MonoBehaviour:
         value: SetActive(parrot, true)
         type: 0
         typeString: CustomFieldType_Text
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: "Ich nehme einen Keks und fange an, meine Schl\xFCssel in der Sonne
+          baumeln zu lassen"
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -2708,6 +3026,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -2806,6 +3132,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 14
       isRoot: 0
       isGroup: 0
@@ -2861,6 +3195,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 14
       isRoot: 0
       isGroup: 0
@@ -2916,6 +3258,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 14
       isRoot: 0
       isGroup: 0
@@ -2978,6 +3328,15 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: "Nun, ich werde die alte Frau den Papagei fangen lassen oder ihn \xFCberzeugen,
+          zu ihr zur\xFCckzufliegen."
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 14
       isRoot: 0
       isGroup: 0
@@ -3027,6 +3386,15 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: Ich habe ein bisschen Angst, aber ich werde helfen, den Papagei zu
+          fangen!
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 14
       isRoot: 0
       isGroup: 0
@@ -3125,6 +3493,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 15
       isRoot: 0
       isGroup: 0
@@ -3180,6 +3556,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 15
       isRoot: 0
       isGroup: 0
@@ -3278,6 +3662,14 @@ MonoBehaviour:
         value: None()
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3333,6 +3725,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3389,6 +3789,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3457,6 +3865,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3512,6 +3928,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3567,6 +3991,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3616,6 +4048,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3665,6 +4105,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3733,6 +4181,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3789,6 +4245,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3845,6 +4309,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3900,6 +4372,14 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3922,6 +4402,175 @@ MonoBehaviour:
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 1
+  - id: 17
+    fields:
+    - title: Title
+      value: New Conversation 17
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Actor
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+      emTagForOldResponses: 0
+      emTagForInvalidResponses: 0
+      cancelSubtitle:
+        key: 27
+        buttonName: 
+      cancelConversation:
+        key: 27
+        buttonName: 
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 17
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 17
+        originDialogueID: 0
+        destinationConversationID: 17
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 160
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 17
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 160
+        height: 30
+    entryGroups: []
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
   syncInfo:
     syncActors: 0
     syncItems: 0
@@ -3934,6 +4583,7 @@ MonoBehaviour:
   templateJson: '{"treatItemsAsQuests":true,"actorFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":""},{"title":"IsPlayer","value":"False","type":2,"typeString":"CustomFieldType_Boolean"}],"itemFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Is
     Item","value":"True","type":2,"typeString":"CustomFieldType_Boolean"}],"questFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Success
     Description","value":"","type":0,"typeString":""},{"title":"Failure Description","value":"","type":0,"typeString":""},{"title":"State","value":"unassigned","type":0,"typeString":""},{"title":"Is
-    Item","value":"False","type":2,"typeString":"CustomFieldType_Boolean"}],"locationFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""}],"variableFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Initial
-    Value","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""}],"conversationFields":[{"title":"Title","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Actor","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"0","type":5,"typeString":"CustomFieldType_Actor"}],"dialogueEntryFields":[{"title":"Title","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Actor","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Menu
-    Text","value":"","type":0,"typeString":""},{"title":"Dialogue Text","value":"","type":0,"typeString":""},{"title":"Sequence","value":"","type":0,"typeString":""}],"actorPrimaryFieldTitles":[],"itemPrimaryFieldTitles":[],"questPrimaryFieldTitles":[],"locationPrimaryFieldTitles":[],"variablePrimaryFieldTitles":[],"conversationPrimaryFieldTitles":[],"dialogueEntryPrimaryFieldTitles":[],"npcLineColor":{"r":1.0,"g":0.0,"b":0.0,"a":1.0},"pcLineColor":{"r":0.0,"g":0.0,"b":1.0,"a":1.0},"repeatLineColor":{"r":0.5,"g":0.5,"b":0.5,"a":1.0}}'
+    Item","value":"False","type":2,"typeString":"CustomFieldType_Boolean"}],"locationFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"}],"variableFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Initial
+    Value","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""}],"conversationFields":[{"title":"Title","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Actor","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"0","type":5,"typeString":"CustomFieldType_Actor"}],"dialogueEntryFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Menu
+    Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Dialogue
+    Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Sequence","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"es","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"de","value":"","type":4,"typeString":"CustomFieldType_Localization"}],"actorPrimaryFieldTitles":[],"itemPrimaryFieldTitles":[],"questPrimaryFieldTitles":[],"locationPrimaryFieldTitles":[],"variablePrimaryFieldTitles":[],"conversationPrimaryFieldTitles":[],"dialogueEntryPrimaryFieldTitles":[],"npcLineColor":{"r":1.0,"g":0.0,"b":0.0,"a":1.0},"pcLineColor":{"r":0.0,"g":0.0,"b":1.0,"a":1.0},"repeatLineColor":{"r":0.5,"g":0.5,"b":0.5,"a":1.0}}'
