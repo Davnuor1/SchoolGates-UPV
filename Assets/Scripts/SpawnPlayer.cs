@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SpawnPlayer : MonoBehaviour
 {
     [SerializeField] GameObject playerPrefab;
     [SerializeField] Camera camara;
+    [SerializeField] GameObject panelNombreEscena;
+    [SerializeField] string textoNombreEscena;
+    [SerializeField] TextMeshProUGUI textMeshNombreEscena;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +25,22 @@ public class SpawnPlayer : MonoBehaviour
         }
         Player playerGM = player.GetComponent<Player>();
         GameManager.instance.player = playerGM;
+
+        if (textoNombreEscena!= null)
+        {
+            panelNombreEscena.SetActive(true);
+            textMeshNombreEscena.text = textoNombreEscena;
+            StartCoroutine(DesactivarPanelDespuesDeTiempo(5f)); // Llama a la corrutina para esperar 5 segundos
+        }
     }
 
-    
+    // Corrutina para desactivar el panel después de un tiempo especificado
+    private IEnumerator DesactivarPanelDespuesDeTiempo(float segundos)
+    {
+        yield return new WaitForSeconds(segundos); // Espera los segundos especificados
+        panelNombreEscena.SetActive(false); // Desactiva el panel
+    }
 }
+
+    
+
