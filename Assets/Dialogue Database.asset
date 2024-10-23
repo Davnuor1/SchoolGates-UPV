@@ -120,7 +120,8 @@ MonoBehaviour:
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description de
-      value: 
+      value: "Wir sind an einem Platz mit mehreren Geb\xE4uden angekommen... Wir
+        sollten das Geb\xE4ude der kritischen Denker finden.\r"
       type: 4
       typeString: CustomFieldType_Localization
     - title: Name de
@@ -163,7 +164,8 @@ MonoBehaviour:
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description de
-      value: 
+      value: "Jetzt, wo wir im Geb\xE4ude der kritischen Denker sind, sollten wir
+        eine Karte der Gegend finden!\r"
       type: 4
       typeString: CustomFieldType_Localization
     - title: Name de
@@ -226,7 +228,8 @@ MonoBehaviour:
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description de
-      value: 
+      value: "Finde heraus, wo die 3 magischen Portale sind, und gehe durch ihre
+        magischen Welten.\r"
       type: 4
       typeString: CustomFieldType_Localization
     - title: Name de
@@ -268,7 +271,45 @@ MonoBehaviour:
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description de
+      value: "Suche in den H\xF6hlen und absolviere Minispiele\r"
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Name de
       value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+  - id: 5
+    fields:
+    - title: Name
+      value: Gate of People
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: Explore the swamp and complete the laberynth.
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description de
+      value: "Erforsche den Sumpf und schlie\xDFe das Labyrinth ab.\r"
       type: 4
       typeString: CustomFieldType_Localization
     - title: Name de
@@ -482,7 +523,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "Muy buenos d\xEDas David, bienvenido a la Demo de School Gates!"
+        value: "Muy buenos d\xEDas, bienvenido a la Demo de School Gates!"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -490,11 +531,13 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: es
-        value: 
+        value: "Muy buenos d\xEDas, bienvenido a la Demo de School Gates!"
         type: 4
         typeString: CustomFieldType_Localization
       - title: de
-        value: 
+        value: 'Guten Morgen, willkommen zur School Gates Demo!
+
+'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -557,7 +600,7 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: de
-        value: 
+        value: "Guten Morgen, vielen Dank.\r"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -1060,7 +1103,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Tengo mucha hambre, necesito una fruta
+        value: Tengo mucha hambre, necesito una fruta...
         type: 0
         typeString: 
       - title: Sequence
@@ -1456,7 +1499,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Cuantos trofeos tiene nuestra escuela!
+        value: "Qu\xE9 estupidos trofeos tiene nuestra escuela!"
         type: 0
         typeString: 
       - title: Sequence
@@ -1963,7 +2006,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "La comida de la cafeter\xEDa esta malisima."
+        value: "La comida de la cafeter\xEDa est\xE1 mal\xEDsima."
         type: 0
         typeString: 
       - title: Sequence
@@ -3722,7 +3765,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
+        x: 159
         y: 80
         width: 160
         height: 30
@@ -4543,8 +4586,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 13.865483, y: 4.1660004}
+    canvasZoom: 1.03
   - id: 17
     fields:
     - title: Title
