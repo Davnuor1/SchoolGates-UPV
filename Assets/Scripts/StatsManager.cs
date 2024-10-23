@@ -5,6 +5,8 @@ using System;
 public class StatsManager : MonoBehaviour
 {
     public PlayerStats playerStats;
+    public StatFeedbackManager statFeedbackManager;
+
 
     private void Awake()
     {
@@ -58,22 +60,49 @@ public class StatsManager : MonoBehaviour
     }
     public void ModifyEnergy(double amount)
     {
+        double oldValue = playerStats.energy;
         playerStats.energy = Clamp(playerStats.energy + amount, playerStats.minEnergy, playerStats.maxEnergy);
+
+        // Mostrar el feedback si hubo un cambio
+        if (amount != 0 && statFeedbackManager != null)
+        {
+            statFeedbackManager.ShowFeedback("Energy", amount);
+        }
     }
 
     public void ModifyKarma(double amount)
     {
+        double oldValue = playerStats.karma;
         playerStats.karma = Clamp(playerStats.karma + amount, playerStats.minKarma, playerStats.maxKarma);
+
+        // Mostrar el feedback si hubo un cambio
+        if (amount != 0 && statFeedbackManager != null)
+        {
+            statFeedbackManager.ShowFeedback("Karma", amount);
+        }
     }
 
     public void ModifySpirituality(double amount)
     {
+        double oldValue = playerStats.spirituality;
         playerStats.spirituality = Clamp(playerStats.spirituality + amount, playerStats.minSpirituality, playerStats.maxSpirituality);
+
+        // Mostrar el feedback si hubo un cambio
+        if (amount != 0 && statFeedbackManager != null)
+        {
+            statFeedbackManager.ShowFeedback("Spirituality", amount);
+        }
     }
 
     public void ModifyExperience(double amount)
     {
+        double oldValue = playerStats.experience;
         playerStats.experience = Clamp(playerStats.experience + amount, playerStats.minExperience, playerStats.maxExperience);
+        // Mostrar el feedback si hubo un cambio
+        if (amount != 0 && statFeedbackManager != null)
+        {
+            statFeedbackManager.ShowFeedback("Experience", amount);
+        }
     }
 
     public void SetEnergy(double amount)

@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public SceneController sceneController;
     public StatsManager statsManager;
 
+    //public Canvas menuGeneral;
     public Player player;
     private void Awake()
     {
@@ -39,6 +40,8 @@ public class GameManager : MonoBehaviour
         sceneController = GetComponent<SceneController>();
         statsManager = GetComponent<StatsManager>();
 
+        //menuGeneral = FindObjectOfType<Canvas>();
+        //menuGeneral = GetComponent<Canvas>();
         player = FindObjectOfType<Player>();
     }
 }
