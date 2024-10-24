@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: MathsAgora_De
+  m_EditorClassIdentifier: 
+  collectionName: Mathematica
+  questions:
+  - questionText: Was stellt die Zahl Pi da?
+    answers:
+    - 3.14159
+    - 0.314159
+    - 9.61672
+    - 103.87267
+    correctAnswerIndex: 0
+  - questionText: "Was ist die kleinste Primzahl gr\xF6\xDFer als 10?"
+    answers:
+    - 7
+    - 11
+    - 13
+    - 17
+    correctAnswerIndex: 1
+  - questionText: "Wie hoch ist die Wahrscheinlichkeit, eine gerade Zahl zu w\xFCrfeln,
+      wenn Du einen fairen sechsseitigen W\xFCrfel wirfst?"
+    answers:
+    - 16.67%
+    - 25%
+    - 50%
+    - 86%
+    correctAnswerIndex: 2
+  - questionText: "Ein Zug f\xE4hrt in 4 Stunden 240 km. Wie hoch ist seine Durchschnittsgeschwindigkeit?"
+    answers:
+    - 24 km/h
+    - 30 km/h
+    - 60 km/h
+    - 100 km/h
+    correctAnswerIndex: 2
+  - questionText: "Wenn der Durchmesser eines Kreises 15 cm betr\xE4gt, wie gro\xDF
+      ist dann sein Radius?"
+    answers:
+    - 5 cm
+    - 7.5 cm
+    - 10 cm
+    - 15 cm
+    correctAnswerIndex: 1
+  - questionText: 'Wie viel ist 2 - 6 : 3 -1?'
+    answers:
+    - 1
+    - -1
+    - 2
+    - -2
+    correctAnswerIndex: 1
+  - questionText: "Wie viel ist 3 \xB7 2 + 2 \xB7 5?"
+    answers:
+    - 16
+    - 40
+    - 60
+    - 100
+    correctAnswerIndex: 0
+  - questionText: "Wie nennt man einen Winkel von 87\xBA?"
+    answers:
+    - spitz
+    - stumpf
+    - recht
+    - ganz
+    correctAnswerIndex: 0
+  - questionText: In 5 = 7 + x, how much is the x?
+    answers:
+    - 5/7
+    - 7/5
+    - 2
+    - -2
+    correctAnswerIndex: 3
+  - questionText: How much is MCCXXII + XXXIV?
+    answers:
+    - MMCCL
+    - MCCLVI
+    - MCCCIX
+    - MCCCIV
+    correctAnswerIndex: 1
+  collectionIcon: {fileID: 112390163, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: ArtsAgora_De
+  m_EditorClassIdentifier: 
+  collectionName: Arts
+  questions:
+  - questionText: Who wrote the longest book ever?
+    answers:
+    - Marcel Proust
+    - Cervantes
+    - Lev Tolstoi
+    - Stephen King
+    correctAnswerIndex: 0
+  - questionText: Who wrote The Portrait of Dorian Gray?
+    answers:
+    - Dorian Gray
+    - J.K. Rowling
+    - Oscar Wilde
+    - Emile Zola
+    correctAnswerIndex: 2
+  - questionText: Where Wolfgang Amadeus Mozart was from?
+    answers:
+    - Germany
+    - Austria
+    - Sweden
+    - Netherlands
+    correctAnswerIndex: 1
+  - questionText: This American rapper is known for his socially conscious lyrics
+      and activism. Who is he?
+    answers:
+    - Kendrick Lamar
+    - Jay-Z
+    - Eminem
+    - Drake
+    correctAnswerIndex: 0
+  - questionText: Who is the Mexican painter known for her surrealist self-portraits
+      and depictions of indigenous Mexican culture?
+    answers:
+    - Frida Kahlo
+    - Georgia O'Keeffe
+    - Yayoi Kusama
+    - Tamara de Lempicka
+    correctAnswerIndex: 0
+  - questionText: "Who sculpted The Piet\xE0?"
+    answers:
+    - Da Vinci
+    - Michelangelo
+    - Raphael
+    - Titian
+    correctAnswerIndex: 1
+  - questionText: What is the name of the main character from To Kill a Mockingbird"
+      by Harper Lee, known for his moral integrity?
+    answers:
+    - "Rolando Garc\xEDa"
+    - Atticus Finch
+    - Dorian Gray
+    - Phoebe Weatherfield
+    correctAnswerIndex: 1
+  - questionText: What is the name of the music and culture movement that started
+      in United Kingdom around 1977?
+    answers:
+    - Rap
+    - Trap
+    - Punk
+    - Bossanova
+    correctAnswerIndex: 2
+  - questionText: What is the subject of War and Peace by Lev Tolstoi?
+    answers:
+    - First World War
+    - "Napoleon\u2019s Russian Campaign"
+    - World War II
+    - Vietnam War
+    correctAnswerIndex: 1
+  - questionText: "What is the literature genre of \u201CThe Lord of the Rings\u201D?"
+    answers:
+    - Fantasy
+    - Realism
+    - Surrealism
+    - Poetry
+    correctAnswerIndex: 0
+  collectionIcon: {fileID: -449540351, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

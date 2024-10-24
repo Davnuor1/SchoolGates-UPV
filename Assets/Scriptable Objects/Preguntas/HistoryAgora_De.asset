@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: HistoryAgora_De
+  m_EditorClassIdentifier: 
+  collectionName: Historia
+  questions:
+  - questionText: "Wie hei\xDFt die Hauptstadt von Neuseeland?"
+    answers:
+    - Wellington
+    - Minsk
+    - Santiago
+    - Nairobi
+    correctAnswerIndex: 0
+  - questionText: What is the capital city of Chile?
+    answers:
+    - Wellington
+    - Minsk
+    - Santiago
+    - Nairobi
+    correctAnswerIndex: 2
+  - questionText: Wann begann der Erste Weltkrieg?
+    answers:
+    - 1879
+    - 1492
+    - 1914
+    - 1939
+    correctAnswerIndex: 2
+  - questionText: When did the second world war start?
+    answers:
+    - 1879
+    - 1492
+    - 1939
+    - 2020
+    correctAnswerIndex: 2
+  - questionText: "Welches war das erste Land, das das allgemeine Wahlrecht f\xFCr
+      Frauen endg\xFCltig eingef\xFChrt hat?"
+    answers:
+    - Deutschland
+    - Spanien
+    - Italien
+    - Neuseeland
+    correctAnswerIndex: 3
+  - questionText: "Welches Land ist gr\xF6\xDFer als der Planet Pluto?"
+    answers:
+    - Spanien
+    - Italien
+    - Deutschland
+    - Russland
+    correctAnswerIndex: 3
+  - questionText: "Where do you find the Hadrian\u2019s Wall?"
+    answers:
+    - Italy
+    - France
+    - Portugal
+    - England
+    correctAnswerIndex: 3
+  - questionText: Who invented writing?
+    answers:
+    - the Egyptians
+    - the Greeks
+    - the Sumerians
+    - the Romans
+    correctAnswerIndex: 2
+  - questionText: "Welches Land hatte 1980 das erste demokratisch gew\xE4hlte Staatsoberhaupt
+      der Welt?"
+    answers:
+    - USA
+    - England
+    - China
+    - Island
+    correctAnswerIndex: 3
+  - questionText: When was the universal declaration of human rights adopted?
+    answers:
+    - 1879
+    - 1918
+    - 1948
+    - 1978
+    correctAnswerIndex: 2
+  collectionIcon: {fileID: 980677572, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: ScienceAgora_De
+  m_EditorClassIdentifier: 
+  collectionName: Scientia
+  questions:
+  - questionText: "Welcher Teil des menschlichen K\xF6rpers kann sich nicht selbst
+      heilen?"
+    answers:
+    - Haut
+    - "Z\xE4hne"
+    - Haare
+    - 'Leber  '
+    correctAnswerIndex: 1
+  - questionText: Wo haben Garnelen ihr Herz?
+    answers:
+    - Kopf
+    - Beine
+    - "F\xFChler"
+    - "K\xF6rper  "
+    correctAnswerIndex: 0
+  - questionText: What is the only planet that rotates clockwise?
+    answers:
+    - mars
+    - earth
+    - venus
+    - jupiter
+    correctAnswerIndex: 2
+  - questionText: "Welches Tier schl\xE4ft nie?"
+    answers:
+    - "B\xE4ren"
+    - Ameisen
+    - Garnelen
+    - 'Pferde  '
+    correctAnswerIndex: 1
+  - questionText: How much does a drop of oil contaminate the water?
+    answers:
+    - 1 liter
+    - 25 liters
+    - 100 liters
+    - 1000 liters
+    correctAnswerIndex: 1
+  - questionText: "Wie viele Liter Wasser werden ben\xF6tigt, um einen Liter Coca-Cola
+      zu produzieren?"
+    answers:
+    - 2 liter
+    - 20 liter
+    - 200 liter
+    - es wird kein Wasser verwendet
+    correctAnswerIndex: 2
+  - questionText: Wie lange kann ein Mensch ohne Wasser auskommen?
+    answers:
+    - 1 Tag
+    - 3 Tage
+    - 7 Tage
+    - 10 Tage
+    correctAnswerIndex: 2
+  - questionText: "Welche Farbe hat das wei\xDFe Nashorn?"
+    answers:
+    - "wei\xDF"
+    - grau
+    - rosa
+    - "es gibt kein wei\xDFes Nashorn"
+    correctAnswerIndex: 0
+  - questionText: 'Das menschliche Kreislaufsystem bildet ein Netzwerk von etwa:'
+    answers:
+    - 10 m
+    - 10 km
+    - 1000 km
+    - 100000 km
+    correctAnswerIndex: 3
+  - questionText: Which type of light bulb is most energy-efficient?
+    answers:
+    - Incandescent
+    - CFL
+    - LED
+    - Halogen
+    correctAnswerIndex: 2
+  collectionIcon: {fileID: 219575835, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
