@@ -5,11 +5,13 @@ public class BoatInteraction : MonoBehaviour
     public float interactionRange = 2f;
     public GameObject boat;
     public BoatController boatController;
+    public GameObject puntoAnclaje; // Referencia al PuntoAnclaje
 
     private GameObject player;
     private bool isPlayerOnBoat = false;
     private Rigidbody2D playerRigidbody;
     private BoxCollider2D playerCollider;
+    private Animator playerAnimator;
 
     void Update()
     {
@@ -28,7 +30,7 @@ public class BoatInteraction : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E)) // Tecla para bajar de la barca
                 {
-                    GetOffBoat();
+                    TryGetOffBoat();
                 }
             }
         }
@@ -41,12 +43,13 @@ public class BoatInteraction : MonoBehaviour
         {
             playerRigidbody = player.GetComponent<Rigidbody2D>();
             playerCollider = player.GetComponent<BoxCollider2D>();
+            playerAnimator = player.GetComponent<Animator>();
         }
     }
 
     void CheckForBoatInteraction()
     {
-        if (Input.GetKeyDown(KeyCode.E)) // Clic izquierdo
+        if (Input.GetMouseButtonDown(0)) // Clic izquierdo
         {
             Vector2 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             float distanceToBoat = Vector2.Distance(player.transform.position, boat.transform.position);
@@ -80,6 +83,31 @@ public class BoatInteraction : MonoBehaviour
         }
 
         boatController.SetBoatCollider(true); // Activa el collider de la barca cuando el jugador se sube
+
+        // Forzar animación idle del jugador
+        if (playerAnimator != null)
+        {
+            playerAnimator.SetBool("moving", false);
+
+            // Mantener la última dirección en la animación idle
+            float lastMoveX = playerAnimator.GetFloat("moveX");
+            float lastMoveY = playerAnimator.GetFloat("moveY");
+
+            // Asegurar que solo queda en estado idle con la última dirección de movimiento
+            playerAnimator.SetFloat("moveX", lastMoveX);
+            playerAnimator.SetFloat("moveY", lastMoveY);
+        }
+    }
+
+    void TryGetOffBoat()
+    {
+        // Verificar que el PuntoAnclaje esté dentro de 4 unidades de distancia
+        float distanceToAnchor = Vector2.Distance(boat.transform.position, puntoAnclaje.transform.position);
+
+        if (distanceToAnchor <= 4f)
+        {
+            GetOffBoat();
+        }
     }
 
     void GetOffBoat()
@@ -103,5 +131,8 @@ public class BoatInteraction : MonoBehaviour
         }
 
         boatController.SetBoatCollider(false); // Desactiva el collider de la barca cuando el jugador se baja
+
+        // Colocar al jugador en la posición del PuntoAnclaje
+        player.transform.position = puntoAnclaje.transform.position;
     }
 }

@@ -8,6 +8,7 @@ public class TogglePlayerMovement : MonoBehaviour
 {
     private GameObject player;
     private PlayerMovement playerMovement;
+    private Animator playerAnimator;
     void Start()
     {
         // Intentar encontrar al jugador al inicio
@@ -26,6 +27,7 @@ public class TogglePlayerMovement : MonoBehaviour
     {
         // Buscar al jugador por su tag
         player = GameObject.FindGameObjectWithTag("Player");
+        playerAnimator = player.GetComponent<Animator>();
 
         if (player == null)
         {
@@ -55,6 +57,7 @@ public class TogglePlayerMovement : MonoBehaviour
     {
         if (player != null)
         {
+            playerAnimator.SetBool("moving", false);
             playerMovement = player.GetComponent<PlayerMovement>();
             playerMovement.enabled = false; // Desactiva el movimiento del jugador
 
