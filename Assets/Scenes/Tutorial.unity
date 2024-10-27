@@ -2048,7 +2048,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1700227716}
   - component: {fileID: 1700227718}
-  - component: {fileID: 1700227717}
   m_Layer: 5
   m_Name: Selections
   m_TagString: Untagged
@@ -2081,44 +2080,6 @@ RectTransform:
   m_AnchoredPosition: {x: 21, y: -65.3}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1700227717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700227715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffa4acfe7f84c054c99b43d3cf7c186a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterBody: {fileID: 11400000, guid: 9d856671028f89742a1e0ef5e3d5ad03, type: 2}
-  bodyPartSelections:
-  - bodyPartName: Body
-    bodyPartOptions:
-    - {fileID: 11400000, guid: 04184ccc187ebeb4898134b291bec24b, type: 2}
-    - {fileID: 11400000, guid: 48cdaf5d95f59d94a8fa889ff85dcc07, type: 2}
-    bodyPartNameTextComponent: {fileID: 1999301404}
-    bodyPartCurrentIndex: 0
-  - bodyPartName: Hair
-    bodyPartOptions:
-    - {fileID: 11400000, guid: 6cbe392ad638a864daa283f1419d4412, type: 2}
-    - {fileID: 11400000, guid: 7a2a182ab3c50ce44a5e03b296084fb5, type: 2}
-    bodyPartNameTextComponent: {fileID: 0}
-    bodyPartCurrentIndex: 0
-  - bodyPartName: Torso
-    bodyPartOptions:
-    - {fileID: 11400000, guid: 1344766a0a65f164aa04b98df2bc5bd3, type: 2}
-    - {fileID: 11400000, guid: bc32bae8dd8f0ce41a514cf6fd504e3c, type: 2}
-    bodyPartNameTextComponent: {fileID: 0}
-    bodyPartCurrentIndex: 0
-  - bodyPartName: Legs
-    bodyPartOptions:
-    - {fileID: 11400000, guid: 3446583dbcbcedb49ae7587f7ef2e7dc, type: 2}
-    - {fileID: 11400000, guid: 664153d2da20a6b4fb38d1ab9adedfb1, type: 2}
-    bodyPartNameTextComponent: {fileID: 0}
-    bodyPartCurrentIndex: 0
 --- !u!114 &1700227718
 MonoBehaviour:
   m_ObjectHideFlags: 0

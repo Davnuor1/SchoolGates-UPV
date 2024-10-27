@@ -569,6 +569,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 5482149406558429224, guid: 9ec60cd538707f144bb4278f0b222bd4, type: 3}
   camara: {fileID: 1559691133}
+  panelNombreEscena: {fileID: 0}
+  textoNombreEscena: 
+  textMeshNombreEscena: {fileID: 0}
 --- !u!4 &214385769
 Transform:
   m_ObjectHideFlags: 0
@@ -10409,11 +10412,17 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -18.439993, y: -2.5741715}
+  - {x: -20.447012, y: -0.66387725}
+  - {x: -18.4421, y: -0.44994164}
   - {x: -18.448904, y: 6.4035172}
   - {x: -31.428562, y: 6.3988423}
-  - {x: -31.430916, y: -2.597672}
-  - {x: -18.40305, y: -2.6194026}
+  - {x: -31.4304, y: -0.6311703}
+  - {x: -30.025276, y: -0.6348326}
+  - {x: -29.448078, y: -1.6304343}
+  - {x: -28.41269, y: -1.6466752}
+  - {x: -28.405247, y: -2.6212838}
+  - {x: -20.461811, y: -2.6197898}
+  - {x: -20.470522, y: -0.72119856}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

@@ -42,7 +42,9 @@ public class VendingMachine : MonoBehaviour
         if (distance <= interactionDistance)
         {
             GameManager.instance.statsManager.ModifyEnergy(20);
-            //GameManager.instance.statsManager.SetKarma(37);
+            GameManager.instance.statsManager.SetKarma(37);
+            GameManager.instance.statsManager.SetExperience(50);
+            GameManager.instance.statsManager.SetSpirituality(90);
             Debug.Log("Interacted with vending machine: Energy +20, Karma set to 37");
         }
     }

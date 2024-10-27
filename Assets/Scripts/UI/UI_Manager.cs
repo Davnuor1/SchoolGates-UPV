@@ -62,7 +62,11 @@ public class UI_Manager : MonoBehaviour
         {
             if (!menuPanel.activeSelf)
             {
-                menuPanel.SetActive(true);
+                if (!statsPanel.activeSelf & !inventoryPanel.activeSelf & !skillTreePanel.activeSelf & !bookOfCluesPanel.activeSelf & !travelJournalPanel.activeSelf)
+                {
+                    menuPanel.SetActive(true);
+                }
+                
                 
             }
             else
