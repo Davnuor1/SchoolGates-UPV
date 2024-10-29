@@ -25,8 +25,8 @@ public class InventoryManager : MonoBehaviour
 
         
         inventoryByName.Add("Backpack", backpack);
-        //inventoryByName.Add("SellShop2", sellShop2);
-        //inventoryByName.Add("Toolbar", toolbar);
+        inventoryByName.Add("SellShop2", sellShop2);
+        inventoryByName.Add("Toolbar", toolbar);
         
 
     }

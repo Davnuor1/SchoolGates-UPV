@@ -24,7 +24,7 @@ public class CurrencyManager : MonoBehaviour
     {
         amount = 100;
         UpdateText();
-        //sellInventory = GameManager.instance.player.inventory.GetInventoryByName("SellShop2");
+        sellInventory = GameManager.instance.player.inventory.GetInventoryByName("SellShop2");
         //player.inventory.Add("Toolbar", toolForToolbar1);
         //player.inventory.Add("Toolbar", toolForToolbar2);
         //player.inventory.Add("Toolbar", toolForToolbar3);

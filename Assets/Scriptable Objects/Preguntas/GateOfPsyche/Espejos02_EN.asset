@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e418474bb2a30542b702a5d9eab1987, type: 3}
+  m_Name: Espejos02_EN
+  m_EditorClassIdentifier: 
+  textoPreguntaInicial: How much does this statement reflect your own beliefs?
+  textoPreguntaRating: Rate from 1-10 how much you identify with this mirror
+  textoPreguntaParte2: 
+  textoFeedbackLike: "Great! Let's keep looking for the real you\u2026"
+  textoFeedbackDislikeFinal: "Ok\u2026 just keep this in mind and keep looking on
+    for the real you\u2026"
+  textoFeedbackDislikeIntermedio: 
+  textoDoYouAgree: Do you agree?
+  espejos:
+  - nombre: I must do well and get the approval of everybody who matters to me or
+      I will be a worthless person.
+    feedback01: Remember that not everyone is always going to like you and that's
+      okay.
+    feedback02: '"Keep in mind that your personal worth should not depend on other
+      people''s approval.'
+  - nombre: Other people must treat me kindly and fairly or else they are bad.
+    feedback01: Remember that people sometimes act unkind and unfair because, just
+      like you, they have their own struggles and are not always able to behave friendly.
+    feedback02: You may consider that bad behavior is not necessarily a reflection
+      of malice.
+  - nombre: I must have an easy, enjoyable life or I cannot enjoy living at all.
+    feedback01: Remember that life is unpredictable and is filled with both challenges
+      and enjoyment.
+    feedback02: Keep in mind that it's the very nature of life's ups and downs that
+      make it a rich and meaningful experience and give you the opportunity to learn
+      & grow.
+  - nombre: All the people who matter to me must love me and approve of me or it
+      will be awful.
+    feedback01: "Remember that those people who love and care about you, have their
+      own opinions and not need to agree with or approve of everything you do.This
+      does not mean that they don\u2019t love you or love you less"
+    feedback02: Consider that true connections are built on understanding, empathy,
+      and the ability to work through disagreements.
+  - nombre: I must be a high achiever or I will be worthless.
+    feedback01: Remember that your personal worth comes from who you are, not just
+      from what you accomplish or from what you have
+    feedback02: Keep in mind that making mistakes and experiencing setbacks are part
+      of the human experience.
+  - nombre: Nobody should ever behave badly and if they do I should condemn them.
+    feedback01: Remember that people are not perfect, and they can be influenced
+      by unfortunate events, experiences, and emotions, which can lead to bad behavior.
+    feedback02: You may consider consider adopting a more empathetic and constructive
+      approach, trying to understand the reasons of their actions, instead of immediately
+      condemning those who behave badly.
+  - nombre: "I mustn\u2019t be frustrated in getting what I want and if I am it will
+      be terrible."
+    feedback01: "Remember that it is not terrible to feel frustrated, it\u2019s simply
+      a signal that something is not going as planned."
+    feedback02: "Keep in mind that frustration is a common emotional response to
+      obstacles, delays, and unmet expectations, which can be a valuable source of
+      motivation and growth and are part of everybody\u2019s lives."
+  - nombre: '"When things are tough and I am under pressure I must be miserable and
+      there is nothing I can do about this.'
+    feedback01: 'Remember that in difficult moments it is normal to feel miserable,
+      but there is always at least something you can do: decide how you take the
+      setback.'
+    feedback02: You may consider different things you can do to manage stress and
+      improve your emotional state, rather than resigning yourself to misery."},        
+      {"When faced with the possibility of something frightening or dangerous happening
+      to me I must obsess about it and make frantic efforts to avoid it.", "You may
+      consider adopting a more rational and measured approach to addressing potential
+      risks by evaluating the likelihood and severity of the threat objectively,
+      and taking reasonable precautions to mitigate it.
+  - nombre: When faced with the possibility of something frightening or dangerous
+      happening to me I must obsess about it and make frantic efforts to avoid it.
+    feedback01: "Remember that, while it\u2018s ok to be concerned about potential
+      dangers or frightening situations, excessive worry and avoidance behaviors
+      can make you feel even more anxious."
+    feedback02: You may consider adopting a more rational and measured approach to
+      addressing potential risks by evaluating the likelihood and severity of the
+      threat objectively, and taking reasonable precautions to mitigate it.
+  - nombre: "I can avoid my responsibilities and dealing with life\u2019s difficulties
+      and still be fulfilled."
+    feedback01: Remember that, while it's tempting to avoid responsibility and difficulties,
+      doing so can prevent you from realizing your potential and enjoy life at its
+      fullest.
+    feedback02: Keep in mind that life comes with challenges, moral obligations,
+      and responsibilities, and attempting to evade them will likely lead to greater
+      stress and unhappiness in the long run.
+  - nombre: My past is the most important part of my life and it will keep on dictating
+      how I feel and what I do.
+    feedback01: Remember the past may limit your options, but it does not completely
+      determine you. Instead of dwelling on the past and feeling trapped by it, focus
+      on what you can control in the present.
+    feedback02: '"You may consider that, despite your past, you have the power to
+      make choices and decisions in the present moment that can influence your future.'
+  - nombre: "Everybody and everything should be better than they are and, if they\u2019re
+      not, it\u2019s awful."
+    feedback01: Remember that expecting everybody and everything to be perfect is
+      an unattainable goal, because life is filled with imperfections, both in people
+      and circumstances.
+    feedback02: Keep in mind that the pursuit of improvement is a natural and ongoing
+      process that should be balanced with an acceptance of reality.
+  - nombre: I can be as happy as is possible by doing as little as I can and by just
+      enjoying myself.
+    feedback01: Remember that a happy life is not only about seeking pleasure, but
+      also about accepting life's challenges.
+    feedback02: You may consider that achieving happiness involves setting and pursuing
+      meaningful goals, contributing to others, and embracing personal growth; all
+      these aspects require effort, responsibilities and facing challenges.

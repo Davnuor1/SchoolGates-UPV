@@ -594,6 +594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 225363bfcd1301a49abadd4c08a59705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localizacion: {fileID: 11400000, guid: b01ecc4e2eb4b7f49a8d330774c14319, type: 2}
   minijuegoEntero: {fileID: 7650945}
   botonLike: {fileID: 1672289023}
   botonDislike: {fileID: 2011223358}
@@ -608,7 +609,6 @@ MonoBehaviour:
   textoPreguntas2: {fileID: 164756183}
   textoFeedback: {fileID: 1146954642}
   botonSiguiente: {fileID: 2108006215}
-  idEspejo: 0
   escaleras2: {fileID: 1738599860}
 --- !u!114 &7650947
 MonoBehaviour:
@@ -244844,19 +244844,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07262f57c8658ae4da03475efd72799b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localizacion: {fileID: 11400000, guid: a9e62b8562eb50f438233a8b4427d227, type: 2}
   minijuegoEntero: {fileID: 1972500383}
   botonLike: {fileID: 75155735}
   botonDislike: {fileID: 1170751668}
   RuedaRating: {fileID: 1951995941}
   textoEspejos: {fileID: 496623622}
   textoPregunta: {fileID: 53540046}
-  idEspejo: 0
-  escaleras: {fileID: 1703308894}
   parte2: {fileID: 417014134}
   textoCorrecto: {fileID: 215121916}
   textoIncorrecto: {fileID: 1295066023}
   textoFeedback: {fileID: 2038988161}
   botonSiguiente: {fileID: 2099902322}
+  escaleras: {fileID: 1703308894}
 --- !u!1001 &1973844307
 PrefabInstance:
   m_ObjectHideFlags: 0

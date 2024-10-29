@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457a34b01ea1a0147ac69562ed6959ec, type: 3}
+  m_Name: Espejos01_EN
+  m_EditorClassIdentifier: 
+  textoPreguntaInicial: Choose the mirrors you most identify with and break the others
+  textoPreguntaRating: Rate from 1-10 how much you identify with this mirror
+  textoPreguntaParte2: "Let\u2019s see how real it is\u2026 Is that really you?"
+  textoPreEspejoParte2: Which is the real proof of beeing
+  textoFeedbackCorrecto: "You are right\u2026 this is probably an proof that you
+    are"
+  textoFeedbackIncorrectoParte1: Maybe you are not so
+  textoFeedbackIncorrectoParte2: "as you think\u2026 This happens to everyone from
+    time to time\u2026"
+  espejos:
+  - nombre: Fearful/ anxious
+    respuestaCorrecta: I feel afraid of new things
+    respuestaIncorrecta: I get nervous when meeting new people
+  - nombre: Optimistic
+    respuestaCorrecta: In difficult times I tend to hope for the best.
+    respuestaIncorrecta: Nothing bad can happen to me
+  - nombre: Impulsive
+    respuestaCorrecta: I don't usually think about the consequences of what I do
+      or say.
+    respuestaIncorrecta: Sometimes I regret something I have said or done
+  - nombre: Open to experience
+    respuestaCorrecta: I like trying new things.
+    respuestaIncorrecta: I like to do things my way
+  - nombre: Approval seeking
+    respuestaCorrecta: I usually do what my friends want me to do.
+    respuestaIncorrecta: I don't feel good when someone gets mad at me
+  - nombre: Independent
+    respuestaCorrecta: I like spending time with people, but I don't mind doing things
+      on my own
+    respuestaIncorrecta: If I am upset, I prefer to be alone.
+  - nombre: Underachiever
+    respuestaCorrecta: I have no clear goals in my life.
+    respuestaIncorrecta: Sometimes I doubt about myself and the best way to accomplish
+      the task
+  - nombre: Determined
+    respuestaCorrecta: I am motivated by challenging tasks
+    respuestaIncorrecta: I gave up some things in my life
+  - nombre: Insecure
+    respuestaCorrecta: I feel incompetent when faced with obstacles and difficulties.
+    respuestaIncorrecta: I feel insecure when I do things wrong
+  - nombre: Resourceful
+    respuestaCorrecta: I feel that my life has a clear meaning and direction
+    respuestaIncorrecta: "I don\u2019t always feel like I have a choice"
+  - nombre: Empathic
+    respuestaCorrecta: I try to treat people fairly
+    respuestaIncorrecta: sometimes I don't understand the people around me
+  - nombre: Hostile
+    respuestaCorrecta: I tend to take revenge on those who have hurt me
+    respuestaIncorrecta: I can get very angry sometimes
+  - nombre: Faithful
+    respuestaCorrecta: I believe that we are all equal
+    respuestaIncorrecta: Sometimes I doubt that a better world is possible
+  - nombre: Materialistic
+    respuestaCorrecta: I only believe what I see
+    respuestaIncorrecta: I like receiving presents.
