@@ -9,8 +9,10 @@ public class MinijuegoEspejos01Localization : ScriptableObject
     public string textoPreguntaRating;
     public string textoPreguntaParte2;
     public string textoPreEspejoParte2;
+    public string textoPostEspejoParte2;
 
     public string textoFeedbackCorrecto;
+    public string textoFeedbackCorrectoDetras;
     public string textoFeedbackIncorrectoParte1;
     public string textoFeedbackIncorrectoParte2;
 

@@ -76,14 +76,14 @@ public class MinijuegoEspejos01 : MonoBehaviour
         RuedaRating.SetActive(false);
         parte2.SetActive(true);
         textoPregunta.text = localizacion.textoPreguntaParte2;
-        textoEspejos.text = localizacion.textoPreEspejoParte2 + espejosLike[idEspejo];
+        textoEspejos.text = localizacion.textoPreEspejoParte2 + espejosLike[idEspejo] + localizacion.textoPostEspejoParte2;
         textoCorrecto.text = localizacion.espejos[idEspejo].respuestaCorrecta;
         textoIncorrecto.text = localizacion.espejos[idEspejo].respuestaIncorrecta;
     }
 
     public void pulsarCorrecto()
     {
-        textoFeedback.text = localizacion.textoFeedbackCorrecto + espejosLike[idEspejo];
+        textoFeedback.text = localizacion.textoFeedbackCorrecto + espejosLike[idEspejo] + localizacion.textoFeedbackCorrectoDetras;
         botonSiguiente.SetActive(true);
     }
 
@@ -107,7 +107,7 @@ public class MinijuegoEspejos01 : MonoBehaviour
         {
             botonSiguiente.SetActive(false);
             textoFeedback.text = "";
-            textoEspejos.text = localizacion.textoPreEspejoParte2 + espejosLike[idEspejo];
+            textoEspejos.text = localizacion.textoPreEspejoParte2 + espejosLike[idEspejo] + localizacion.textoFeedbackIncorrectoParte2;
             textoCorrecto.text = localizacion.espejos[idEspejo].respuestaCorrecta;
             textoIncorrecto.text = localizacion.espejos[idEspejo].respuestaIncorrecta;
         }

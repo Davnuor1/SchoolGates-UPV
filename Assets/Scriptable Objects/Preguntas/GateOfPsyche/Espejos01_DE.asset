@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457a34b01ea1a0147ac69562ed6959ec, type: 3}
+  m_Name: Espejos01_DE
+  m_EditorClassIdentifier: 
+  textoPreguntaInicial: "W\xE4hle einen Spiegel aus, mit dem Du Dich identifizierst,
+    und zerst\xF6re die anderen"
+  textoPreguntaRating: Bewerte von 1-10, wie sehr Du Dich mit diesem Spiegel identifizierst
+  textoPreguntaParte2: Schauen wir mal, wie real es ist... Bist das wirklich Du?
+  textoPreEspejoParte2: "Was ist ein echter Beweis daf\xFCr "
+  textoPostEspejoParte2: ' zu sein?'
+  textoFeedbackCorrecto: "Du hast recht... das ist wahrscheinlich ein Beweis daf\xFCr,
+    dass Du "
+  textoFeedbackCorrectoDetras: bist
+  textoFeedbackIncorrectoParte1: 'Vielleicht bist Du nicht so '
+  textoFeedbackIncorrectoParte2: ' wie Du denkst... Das passiert jedem von Zeit zu
+    Zeit...'
+  espejos:
+  - nombre: "Furchtsam / \xC4ngstlich"
+    respuestaCorrecta: Ich habe Angst vor neuen Dingen
+    respuestaIncorrecta: "Ich werde nerv\xF6s, wenn ich neue Leute treffe"
+  - nombre: Optimistisch
+    respuestaCorrecta: In schwierigen Zeiten neige ich dazu, auf das Beste zu hoffen
+    respuestaIncorrecta: Mir kann nichts Schlimmes passieren
+  - nombre: Impulsiv
+    respuestaCorrecta: "Ich denke normalerweise nicht \xFCber die Konsequenzen meiner
+      Handlungen oder Worte nach."
+    respuestaIncorrecta: Manchmal bedauere ich etwas, das ich gesagt oder getan habe
+  - nombre: "Offen f\xFCr Erfahrungen"
+    respuestaCorrecta: Ich probiere gerne neue Dinge aus
+    respuestaIncorrecta: ' Ich mache die Dinge gerne auf meine Art'
+  - nombre: "Zustimmungsbed\xFCrftig oder abh\xE4ngig "
+    respuestaCorrecta: ' Ich tue normalerweise, was meine Freunde von mir verlangen.'
+    respuestaIncorrecta: "Ich f\xFChle mich nicht gut, wenn jemand w\xFCtend auf
+      mich ist."
+  - nombre: "Unabh\xE4ngig"
+    respuestaCorrecta: Ich verbringe gerne Zeit mit Menschen, aber es macht mir nichts
+      aus, Dinge allein zu tun
+    respuestaIncorrecta: "Wenn ich ver\xE4rgert bin, bin ich lieber allein"
+  - nombre: Versager
+    respuestaCorrecta: ' Ich habe keine klaren Ziele in meinem Leben'
+    respuestaIncorrecta: "Manchmal zweifle ich an mir selbst und daran, wie ich eine
+      Aufgabe am besten bew\xE4ltigen kann"
+  - nombre: Zielstrebig
+    respuestaCorrecta: Herausfordernde Aufgaben motivieren mich
+    respuestaIncorrecta: I gave up some thingsIch habe einige Dinge in meinem Leben
+      aufgegebenin my life
+  - nombre: Unsicher
+    respuestaCorrecta: "Ich f\xFChle mich inkompetent, wenn ich mit Hindernissen
+      und Schwierigkeiten konfrontiert werde"
+    respuestaIncorrecta: "Ich f\xFChle mich unsicher, wenn ich etwas falsch mache"
+  - nombre: Einfallsreich
+    respuestaCorrecta: "Ich habe das Gef\xFChl, dass mein Leben einen klaren Sinn
+      und eine klare Richtung ha"
+    respuestaIncorrecta: "Ich habe nicht immer das Gef\xFChl, dass ich eine Wahl
+      habe"
+  - nombre: Empathisch
+    respuestaCorrecta: Ich versuche, Menschen fair zu behandeln
+    respuestaIncorrecta: Manchmal verstehe ich die Menschen um mich herum nicht
+  - nombre: Feindselig
+    respuestaCorrecta: "Ich neige dazu, mich an denen zu r\xE4chen, die mich verletzt
+      haben"
+    respuestaIncorrecta: "Ich kann manchmal sehr w\xFCtend werden"
+  - nombre: "Gl\xE4ubig"
+    respuestaCorrecta: Ich glaube, dass wir alle gleich sind
+    respuestaIncorrecta: "Manchmal bezweifle ich, dass eine bessere Welt m\xF6glich
+      ist"
+  - nombre: Materialistisch
+    respuestaCorrecta: Ich glaube nur, was ich sehe
+    respuestaIncorrecta: Ich mag es, Geschenke zu bekommen

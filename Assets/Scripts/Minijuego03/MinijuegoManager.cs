@@ -3,40 +3,42 @@ using UnityEngine;
 
 public class MinijuegoManager : MonoBehaviour
 {
-    public List<Espejo> todosLosEspejos; // Lista completa de espejos para la primera fase
-    private List<Espejo> espejosSegundaFase; // Lista filtrada de espejos para la segunda fase
+    [SerializeField] private MinijuegoEspejos03Localization localizacion;
+    public List<Espejo> todosLosEspejos;
+    private List<Espejo> espejosSegundaFase;
+    private List<int> puntuacionesEspejos; // Lista para almacenar las puntuaciones de cada espejo
 
     public int indiceEspejoActual = 0;
     private bool enSegundaFase = false;
     private PlayerMovement playerMovement;
-    //public FadeInObject escaleras3;
     public GameObject portalSalida;
 
     public PreguntaUIController preguntaUIController;
 
     void Start()
     {
-        // Iniciar la primera fase mostrando el primer espejo
         indiceEspejoActual = 0;
         enSegundaFase = false;
-        preguntaUIController.MostrarEspejo(todosLosEspejos[indiceEspejoActual]);
+
+        // Inicializar la lista de puntuaciones de acuerdo al número de espejos
+        puntuacionesEspejos = new List<int>(new int[todosLosEspejos.Count]);
+
+        // Mostrar el primer espejo
+        preguntaUIController.MostrarEspejo(indiceEspejoActual);
     }
 
     public void SiguienteEspejo()
     {
         if (!enSegundaFase)
         {
-            //Debug.Log("Indice espejo:"+indiceEspejoActual);
             indiceEspejoActual++;
-            //Debug.Log("Indice espejo postsuma:" + indiceEspejoActual);
 
             if (indiceEspejoActual < todosLosEspejos.Count)
             {
-                preguntaUIController.MostrarEspejo(todosLosEspejos[indiceEspejoActual]);
+                preguntaUIController.MostrarEspejo(indiceEspejoActual);
             }
             else
             {
-                // Preparar la segunda fase
                 PrepararSegundaFase();
             }
         }
@@ -46,12 +48,10 @@ public class MinijuegoManager : MonoBehaviour
 
             if (indiceEspejoActual < espejosSegundaFase.Count)
             {
-                preguntaUIController.MostrarSegundaParte(espejosSegundaFase[indiceEspejoActual]);
+                preguntaUIController.MostrarSegundaParte(indiceEspejoActual);
             }
             else
             {
-                // Finalizar el minijuego
-                
                 TerminarMinijuego();
             }
         }
@@ -60,32 +60,39 @@ public class MinijuegoManager : MonoBehaviour
     void PrepararSegundaFase()
     {
         // Filtrar los espejos que tienen puntuación asignada
-        espejosSegundaFase = todosLosEspejos.FindAll(espejo => espejo.puntuacion > 0);
+        espejosSegundaFase = new List<Espejo>();
+
+        for (int i = 0; i < todosLosEspejos.Count; i++)
+        {
+            if (puntuacionesEspejos[i] > 0) // Agregar a segunda fase si el espejo tiene puntuación
+            {
+                espejosSegundaFase.Add(todosLosEspejos[i]);
+            }
+        }
 
         if (espejosSegundaFase.Count == 0)
         {
-            // Si no hay espejos con puntuación, finalizar el minijuego
             TerminarMinijuego();
             return;
         }
 
-        // Reiniciar el índice y cambiar el estado a segunda fase
         indiceEspejoActual = 0;
         enSegundaFase = true;
 
-        // Mostrar el primer espejo de la segunda fase
-        preguntaUIController.MostrarSegundaParte(espejosSegundaFase[indiceEspejoActual]);
+        preguntaUIController.MostrarSegundaParte(indiceEspejoActual);
+    }
+
+    public void AsignarPuntuacionEspejoActual(int puntuacion)
+    {
+        puntuacionesEspejos[indiceEspejoActual] = puntuacion;
     }
 
     void TerminarMinijuego()
     {
-        // Implementar la lógica para finalizar el minijuego
         Debug.Log("Minijuego terminado.");
-        //escaleras3.FadeIn();
         this.gameObject.SetActive(false);
         playerMovement = GameManager.instance.player.GetComponent<PlayerMovement>();
         playerMovement.enabled = true;
         portalSalida.SetActive(true);
-        // Puedes cargar una nueva escena, mostrar una pantalla de resumen, etc.
     }
 }

@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e418474bb2a30542b702a5d9eab1987, type: 3}
+  m_Name: Espejos02_DE
+  m_EditorClassIdentifier: 
+  textoPreguntaInicial: "Bist Du das? Zerbrich den Spiegel, wenn es nicht so ist.
+    Oder w\xE4hle aus, wenn er es ist"
+  textoPreguntaRating: Wie sehr spiegelt dieser Spiegel dich selbst wider?
+  textoFeedbackLike: "Gro\xDFartig! Lass uns weiter nach Deinem wahren Ich suchen..."
+  textoFeedbackDislikeFinal: Ok... behalte das im Hinterkopf und suche weiter nach
+    Deinem wahren Ich...
+  textoDoYouAgree: Bist Du einverstanden?
+  espejos:
+  - nombre: Ich muss gut sein und die Anerkennung von allen bekommen, die mir wichtig
+      sind, oder ich werde eine wertlose Person sein.
+    feedback01: "Denk daran, dass Dich nicht immer alle m\xF6gen werden, und das
+      ist auch in Ordnung."
+    feedback02: "Denk daran, dass Dein pers\xF6nlicher Wert nicht von der Anerkennung
+      anderer Menschen abh\xE4ngen sollte."
+  - nombre: "Andere Menschen m\xFCssen mich freundlich und fair behandeln, sonst
+      sind sie schlecht."
+    feedback01: 'Denke daran, dass Menschen sich manchmal unfreundlich und unfair
+      verhalten, weil sie, genau wie Du, ihre eigenen Probleme haben und nicht immer
+      in der Lage sind, sich freundlich zu verhalten. '
+    feedback02: "Bedenke, dass schlechtes Verhalten nicht unbedingt auf B\xF6swilligkeit
+      zur\xFCckzuf\xFChren ist. "
+  - nombre: "Ich muss ein einfaches, angenehmes Leben haben, sonst kann ich das Leben
+      nicht genie\xDFen."
+    feedback01: "Denke daran, dass das Leben unvorhersehbar ist und sowohl Herausforderungen
+      als auch Vergn\xFCgen bietet."
+    feedback02: "Denke daran, dass es gerade die H\xF6hen und Tiefen des Lebens sind,
+      die es zu einer reichen und bedeutungsvollen Erfahrung machen und Dir die M\xF6glichkeit
+      geben, zu lernen und zu wachsen."
+  - nombre: "Alle Menschen, die mir wichtig sind, m\xFCssen mich lieben und mir Best\xE4tigung
+      geben, sonst wird es furchtbar."
+    feedback01: "Denke daran, dass die Menschen, die Du liebst und denen Du wichtig
+      bist, ihre eigene Meinung haben und nicht mit allem, was Du tust, einverstanden
+      sein oder es guthei\xDFen m\xFCssen. Das hei\xDFt nicht, dass sie dich nicht
+      oder weniger lieben."
+    feedback02: "Bedenke, dass echte Beziehungen auf Verst\xE4ndnis, Einf\xFChlungsverm\xF6gen
+      und der F\xE4higkeit, Meinungsverschiedenheiten auszur\xE4umen, beruhen."
+  - nombre: "Ich muss ein \xDCberflieger sein, sonst bin ich wertlos."
+    feedback01: "Erinnere Dich daran, dass Dein pers\xF6nlicher Wert von dem kommt,
+      was Du bist, nicht nur von dem, was Du erreicht hast oder was Du besitzt. "
+    feedback02: "Denke daran, dass es zur menschlichen Erfahrung geh\xF6rt, Fehler
+      zu machen und R\xFCckschl\xE4ge zu erleiden."
+  - nombre: Niemand sollte sich jemals schlecht benehmen, und wenn es doch jemand
+      macht, sollte ich ihn verurteilen.
+    feedback01: "Denke daran, dass Menschen nicht perfekt sind und durch ungl\xFCckliche
+      Ereignisse, Erfahrungen und Emotionen beeinflusst werden k\xF6nnen, was zu
+      schlechtem Verhalten f\xFChren kann."
+    feedback02: "Du k\xF6nntest in Erw\xE4gung ziehen, einen einf\xFChlsameren und
+      konstruktiveren Ansatz zu w\xE4hlen und zu versuchen, die Gr\xFCnde f\xFCr
+      Dein Handeln zu verstehen, anstatt diejenigen, die sich schlecht verhalten,
+      sofort zu verurteilen."
+  - nombre: "Wenn mir etwas nicht gelingt, darf ich nicht frustriert sein, weil das
+      zeigen w\xFCrde, dass ich einfach nicht gut genug bin. "
+    feedback01: "Denke daran, dass es nicht schlimm ist, frustriert zu sein, es ist
+      einfach ein Zeichen daf\xFCr, dass etwas nicht wie geplant l\xE4uft. "
+    feedback02: "Denke daran, dass Frustration eine \xFCbliche emotionale Reaktion
+      auf Hindernisse, Verz\xF6gerungen und unerf\xFCllte Erwartungen ist, die eine
+      wertvolle Quelle f\xFCr Motivation und Wachstum sein kann und Teil des Lebens
+      eines jeden Menschen ist."
+  - nombre: "Wenn es hart auf hart kommt und ich unter Druck stehe, bin ich ungl\xFCcklich
+      und es gibt nichts, was ich dagegen tun kann"
+    feedback01: "Denke daran, dass es normal ist, sich in schwierigen Zeiten ungl\xFCcklich
+      zu f\xFChlen, aber es gibt immer mindestens eine Sache, die Du tun kannst:
+      entscheide, wie Du mit dem R\xFCckschlag umgehst. "
+    feedback02: "Du kannst \xFCber verschiedene Dinge nachdenken, die Du tun kannst,
+      um mit Stress umzugehen und Deine emotionale Verfassung zu verbessern, anstatt
+      Dich dem Ungl\xFCck zu ergeben"
+  - nombre: "Wenn ich mit der M\xF6glichkeit konfrontiert werde, dass mir etwas Be\xE4ngstigendes
+      oder Gef\xE4hrliches passiert, mache ich mir Gedanken dar\xFCber und versuche
+      verzweifelt, es zu vermeiden."
+    feedback01: "Denke daran, dass es normal ist, sich wegen m\xF6glicher Gefahren
+      oder be\xE4ngstigender Situationen Sorgen zu machen. \xDCberm\xE4\xDFige Sorgen
+      und das Vermeiden von unangenehmen Situationen k\xF6nnen jedoch Deine Angst
+      verst\xE4rken."
+    feedback02: "M\xF6glicherweise m\xF6chtest Du potenzielle Risiken sachlich und
+      bedacht angehen, indem Du bewertest, wie wahrscheinlich und schwerwiegend Du
+      die Bedrohung einsch\xE4tzt, um angemessene Vorkehrungen zu treffen"
+  - nombre: "Ich kann meinen Verpflichtungen und den Schwierigkeiten im Leben aus
+      dem Weg gehen und trotzdem erf\xFCllt sein. "
+    feedback01: "Bedenke, dass es zwar verlockend ist, Verantwortung und Schwierigkeiten
+      aus dem Weg zu gehen, Du dadurch aber m\xF6glicherweise Dein Potenzial nicht
+      aussch\xF6pfen und das Leben nicht in vollen Z\xFCgen genie\xDFen kannst."
+    feedback02: "Bedenke, dass das Leben Herausforderungen, moralische Verpflichtungen
+      und Verantwortungen mit sich bringt und der Versuch, ihnen auszuweichen, auf
+      lange Sicht wahrscheinlich zu gr\xF6\xDFerem Stress und Ungl\xFCck f\xFChrt."
+  - nombre: "Meine Vergangenheit ist der wichtigste Teil meines Lebens und sie wird
+      mir auch weiterhin vorgeben, wie ich f\xFChle und was ich tue."
+    feedback01: "Denke daran, dass die Vergangenheit Deine M\xF6glichkeiten einschr\xE4nken
+      kann, aber sie bestimmt Dich nicht vollst\xE4ndig. Anstatt sich mit der Vergangenheit
+      zu besch\xE4ftigen und sich von ihr gefangen zu f\xFChlen, konzentriere Dich
+      auf das, was Du in der Gegenwart kontrollieren kannst."
+    feedback02: "Du kannst bedenken, dass Du trotz Deiner Vergangenheit die Macht
+      hast, im Hier und Jetzt Entscheidungen zu treffen, die Deine Zukunft beeinflussen
+      k\xF6nnen."
+  - nombre: "Alles und alle sollten immer perfekt sein, denn Fehler zu machen und
+      unvollkommen zu sein ist eine Schw\xE4che."
+    feedback01: "Denke daran, dass es ein unerreichbares Ziel ist, zu erwarten, dass
+      alles und jeder perfekt ist, denn das Leben ist voller Unvollkommenheiten,
+      sowohl bei Menschen als auch bei Umst\xE4nden"
+    feedback02: "Denke daran, dass das Streben nach Verbesserung ein nat\xFCrlicher
+      und fortlaufender Prozess ist, der durch dadurch ausgeglichen werden kann,
+      dass Du die Realit\xE4t akzeptierst."
+  - nombre: "Ich kann so gl\xFCcklich wie m\xF6glich sein, indem ich so wenig wie
+      m\xF6glich tue und mich einfach nur am\xFCsiere."
+    feedback01: "Denke daran, dass ein gl\xFCckliches Leben nicht nur aus dem Streben
+      nach Vergn\xFCgen besteht, sondern auch aus der Akzeptanz der Herausforderungen
+      des Lebens."
+    feedback02: "Bedenke, dass zum Gl\xFCcklichsein geh\xF6rt, sich sinnvolle Ziele
+      zu setzen und diese zu verfolgen, einen Beitrag f\xFCr andere zu leisten und
+      sich pers\xF6nlich weiterzuentwickeln; all diese Aspekte erfordern Anstrengung,
+      Verantwortung und die Bew\xE4ltigung von Herausforderungen. "

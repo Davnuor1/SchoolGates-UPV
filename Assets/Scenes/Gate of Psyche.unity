@@ -178188,6 +178188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5112c737ee060834d92d3c5468d00c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localizacion: {fileID: 0}
   botones:
   - {fileID: 1227650203}
   - {fileID: 666403975}
@@ -181595,22 +181596,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588569910}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad739dce474512c4a81d8811f27979c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEspejo: Family and Home
-  puntuacion: 0
-  puntuacionIzquierda: 0
-  puntuacionDerecha: 0
-  respuestasSeleccionMultiple:
-  - having a family that supports me
-  - having a family that listens to me
-  - Spending time with my family
-  - Feeling safe at home
-  - Having a wealthy family (that allow me all the things I want)
-  - Having a family that lets me free of living my life as I please
+  localizacion: {fileID: 0}
+  idEspejo: 0
+  textoEspejo: {fileID: 0}
+  textoRespuestas: []
 --- !u!1 &588912942
 GameObject:
   m_ObjectHideFlags: 0
@@ -182931,6 +182925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5112c737ee060834d92d3c5468d00c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localizacion: {fileID: 0}
   botones:
   - {fileID: 1209500533}
   - {fileID: 341464738}
@@ -203404,22 +203399,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079641697}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad739dce474512c4a81d8811f27979c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEspejo: Friendships and social relationships
-  puntuacion: 0
-  puntuacionIzquierda: 0
-  puntuacionDerecha: 0
-  respuestasSeleccionMultiple:
-  - having close friends that I can share my thoughts and feelings with
-  - spending time together with my friends
-  - being in a in romantic relationship
-  - having a lot of followers on social media
-  - participating in a social community and global causes
-  - Having popular or powerful friends
+  localizacion: {fileID: 0}
+  idEspejo: 0
+  textoEspejo: {fileID: 0}
+  textoRespuestas: []
 --- !u!1 &1079799067
 GameObject:
   m_ObjectHideFlags: 0
@@ -203948,22 +203936,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087771160}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad739dce474512c4a81d8811f27979c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEspejo: Search for Identity
-  puntuacion: 0
-  puntuacionIzquierda: 0
-  puntuacionDerecha: 0
-  respuestasSeleccionMultiple:
-  - Being able to explore and express my own identity
-  - wearing the clothes that I like, listening to my favorite music whenever I like
-  - trying new things, new life experiences
-  - traveling
-  - Being able to enjoy spiritual experiences
-  - Integrating the artistic things I like into my essence
+  localizacion: {fileID: 0}
+  idEspejo: 0
+  textoEspejo: {fileID: 0}
+  textoRespuestas: []
 --- !u!1001 &1088731517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -207382,19 +207363,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159896607}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad739dce474512c4a81d8811f27979c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEspejo: Independence
-  puntuacion: 0
-  puntuacionIzquierda: 0
-  puntuacionDerecha: 0
-  respuestasSeleccionMultiple:
-  - making my own decisions
-  - having some level of control over my life
-  - being able to earn and manage my own money
+  localizacion: {fileID: 0}
+  idEspejo: 0
+  textoEspejo: {fileID: 0}
+  textoRespuestas: []
 --- !u!1001 &1164336469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -213458,20 +213435,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287573327}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad739dce474512c4a81d8811f27979c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEspejo: Fitness and Health
-  puntuacion: 0
-  puntuacionIzquierda: 0
-  puntuacionDerecha: 0
-  respuestasSeleccionMultiple:
-  - doing exercise regularly
-  - eating healthy
-  - sleeping enough hours
-  - improving my health and well-being
+  localizacion: {fileID: 0}
+  idEspejo: 0
+  textoEspejo: {fileID: 0}
+  textoRespuestas: []
 --- !u!1 &1289429876
 GameObject:
   m_ObjectHideFlags: 0
@@ -216325,20 +216297,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347033301}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad739dce474512c4a81d8811f27979c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEspejo: Education and School
-  puntuacion: 0
-  puntuacionIzquierda: 0
-  puntuacionDerecha: 0
-  respuestasSeleccionMultiple:
-  - getting good marks at school
-  - learning things that are meaningful at school
-  - choosing the subjects/career that I like
-  - being popular at school
+  localizacion: {fileID: 0}
+  idEspejo: 0
+  textoEspejo: {fileID: 0}
+  textoRespuestas: []
 --- !u!1001 &1347975243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -225112,6 +225079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5112c737ee060834d92d3c5468d00c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localizacion: {fileID: 0}
   botones:
   - {fileID: 963993120}
   - {fileID: 1843000777}
@@ -241298,6 +241266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168de312e95260745995e6b2e64383f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localizacion: {fileID: 11400000, guid: 38d31312faad2294daab12e0fe256b54, type: 2}
   todosLosEspejos:
   - {fileID: 1159896608}
   - {fileID: 1079641698}
@@ -241321,6 +241290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88ef2d2a031f9cf4baf46d94ce5b798e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localizacion: {fileID: 11400000, guid: 38d31312faad2294daab12e0fe256b54, type: 2}
   tituloEspejo: {fileID: 1235794200}
   preguntaTexto: {fileID: 506756134}
   botonSi: {fileID: 651155097}
@@ -241434,6 +241404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cb79e85b881c8547acf0ffa1a2446d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localizacion: {fileID: 11400000, guid: 38d31312faad2294daab12e0fe256b54, type: 2}
   preguntaTexto: {fileID: 506756134}
   panelSeleccionMultiple: {fileID: 1755723490}
   botonesPlantilla:
@@ -537010,21 +536981,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049470139}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad739dce474512c4a81d8811f27979c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEspejo: Hobbies/Interests, Privacy
-  puntuacion: 0
-  puntuacionIzquierda: 0
-  puntuacionDerecha: 0
-  respuestasSeleccionMultiple:
-  - engaging in art, music, or writing
-  - having time for my hobbies or interests
-  - having enough privacy and my own personal space
-  - having time to dedicate to the things I like
-  - having some alone time where I can be with my thoughts
+  localizacion: {fileID: 0}
+  idEspejo: 0
+  textoEspejo: {fileID: 0}
+  textoRespuestas: []
 --- !u!1001 &2050400620
 PrefabInstance:
   m_ObjectHideFlags: 0

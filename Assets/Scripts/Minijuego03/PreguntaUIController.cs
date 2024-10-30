@@ -4,16 +4,18 @@ using TMPro;
 
 public class PreguntaUIController : MonoBehaviour
 {
+    [SerializeField] private MinijuegoEspejos03Localization localizacion;
+
     public TextMeshProUGUI tituloEspejo;
     public TextMeshProUGUI preguntaTexto;
 
     public Button botonSi;
     public Button botonNo;
-    public GameObject ruletaUnica; // Ruleta para la primera fase
-    public GameObject ruletaIzquierda; // Ruleta izquierda para la segunda fase
-    public GameObject ruletaDerecha; // Ruleta derecha para la segunda fase
+    public GameObject ruletaUnica;
+    public GameObject ruletaIzquierda;
+    public GameObject ruletaDerecha;
 
-    private Espejo espejoActual;
+    private int idEspejoActual;
     private MinijuegoManager minijuegoManager;
 
     void Start()
@@ -25,11 +27,11 @@ public class PreguntaUIController : MonoBehaviour
         ruletaDerecha.SetActive(false);
     }
 
-    public void MostrarEspejo(Espejo espejo)
+    public void MostrarEspejo(int idEspejo)
     {
-        espejoActual = espejo;
-        tituloEspejo.text = espejo.nombreEspejo;
-        preguntaTexto.text = "Think on a nice or significant life… What do you really need? Select the mirror if you think it is important or break it if you don’t";
+        idEspejoActual = idEspejo;
+        tituloEspejo.text = localizacion.espejos[idEspejoActual].nombre;
+        preguntaTexto.text = localizacion.textoInstruccionesPrimeraFase;
 
         MostrarBotonesSiNo(true);
         ruletaUnica.SetActive(false);
@@ -37,32 +39,30 @@ public class PreguntaUIController : MonoBehaviour
 
     public void RecibirPuntuacion(int puntuacion)
     {
-        Debug.Log("Puntuación recibida para " + espejoActual.nombreEspejo + ": " + puntuacion);
-        espejoActual.puntuacion = puntuacion;
+        Debug.Log("Puntuación recibida para " + localizacion.espejos[idEspejoActual].nombre + ": " + puntuacion);
+        // Guardar la puntuación en una variable o lista si es necesario
         ruletaUnica.SetActive(false);
 
-        // Llamamos a SiguienteEspejo solo una vez aquí
         minijuegoManager.SiguienteEspejo();
     }
 
     public void ResponderSi()
     {
         MostrarBotonesSiNo(false);
-        preguntaTexto.text = "Value the importance of this things to you ";
+        preguntaTexto.text = localizacion.textoValoracion;
         ruletaUnica.SetActive(true);
     }
 
     public void ResponderNo()
     {
-        // Llamamos a SiguienteEspejo solo cuando el usuario elige "No"
         minijuegoManager.SiguienteEspejo();
     }
 
-    public void MostrarSegundaParte(Espejo espejo)
+    public void MostrarSegundaParte(int idEspejo)
     {
-        espejoActual = espejo;
-        tituloEspejo.text = espejo.nombreEspejo;
-        preguntaTexto.text = "So, you say these is important to you, but how much are you caring about this actually? How much attention and time are you really putting into these?";
+        idEspejoActual = idEspejo;
+        tituloEspejo.text = localizacion.espejos[idEspejoActual].nombre;
+        preguntaTexto.text = localizacion.textoInstruccionesSegundaFase;
 
         MostrarBotonesSiNo(false);
         ruletaUnica.SetActive(false);
@@ -74,33 +74,26 @@ public class PreguntaUIController : MonoBehaviour
     {
         if (puntuacionIzquierda != -1)
         {
-            espejoActual.puntuacionIzquierda = puntuacionIzquierda;
-            ruletaIzquierda.SetActive(false); // Ocultar la ruleta izquierda después de asignar la puntuación
+            ruletaIzquierda.SetActive(false);
         }
 
         if (puntuacionDerecha != -1)
         {
-            espejoActual.puntuacionDerecha = puntuacionDerecha;
-            ruletaDerecha.SetActive(false); // Ocultar la ruleta derecha después de asignar la puntuación
+            ruletaDerecha.SetActive(false);
         }
 
-        // Solo mostrar el panel de texto si ambas ruletas han sido utilizadas
         if (!ruletaIzquierda.activeSelf && !ruletaDerecha.activeSelf)
         {
-            // Mostrar el panel de texto
-            preguntaTexto.text = "What can you do now to take more or better care of your values?";
+            preguntaTexto.text = localizacion.textoCuidadoValores;
             FindObjectOfType<InputTextController>().MostrarPanelDeTexto();
         }
     }
 
     public void ManejarTextoEnviado()
     {
-        // Después de que el usuario envía el texto, mostrar la pregunta de selección múltiple
-        FindObjectOfType<SeleccionMultipleController>().MostrarSeleccionMultiple(espejoActual);
+        preguntaTexto.text = localizacion.textoAccionFinal;
+        FindObjectOfType<SeleccionMultipleController>().MostrarSeleccionMultiple(idEspejoActual);
     }
-
-
-
 
     private void MostrarBotonesSiNo(bool mostrar)
     {

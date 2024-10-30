@@ -5,64 +5,55 @@ using TMPro;
 
 public class SeleccionMultipleController : MonoBehaviour
 {
+    [SerializeField] private MinijuegoEspejos03Localization localizacion;
     public TextMeshProUGUI preguntaTexto;
-    public GameObject panelSeleccionMultiple; // El panel que contiene las respuestas
-    public List<Button> botonesPlantilla; // Lista de los 6 botones plantilla preposicionados
+    public GameObject panelSeleccionMultiple;
+    public List<Button> botonesPlantilla;
 
     private List<string> respuestasSeleccionadas = new List<string>();
-    private Espejo espejoActual;
+    private int idEspejoActual;
 
-    public void MostrarSeleccionMultiple(Espejo espejo)
+    public void MostrarSeleccionMultiple(int idEspejo)
     {
-        espejoActual = espejo;
-        preguntaTexto.text = "Which kind of people do you know who care about this as much as you do?";
+        idEspejoActual = idEspejo;
+        preguntaTexto.text = localizacion.textoPreguntaInicial;
         panelSeleccionMultiple.SetActive(true);
 
-        // Desactivar todos los botones antes de comenzar y resetear el color a blanco
-        foreach (Button boton in botonesPlantilla)
+        // Configurar los botones basados en las respuestas del `ScriptableObject`
+        List<string> respuestas = localizacion.espejos[idEspejoActual].respuestas;
+        for (int i = 0; i < botonesPlantilla.Count; i++)
         {
-            boton.gameObject.SetActive(false);  // Asegúrate de que los botones no visibles estén desactivados
-            boton.GetComponent<Image>().color = Color.white; // Restablecer el color a blanco
-        }
+            if (i < respuestas.Count)
+            {
+                botonesPlantilla[i].gameObject.SetActive(true);
+                TMP_Text textoBoton = botonesPlantilla[i].GetComponentInChildren<TMP_Text>();
+                textoBoton.text = respuestas[i];
 
-        // Activar y configurar solo los botones necesarios
-        for (int i = 0; i < espejo.respuestasSeleccionMultiple.Count; i++)
-        {
-            botonesPlantilla[i].gameObject.SetActive(true);
-            TMP_Text textoBoton = botonesPlantilla[i].GetComponentInChildren<TMP_Text>();
-            textoBoton.text = espejo.respuestasSeleccionMultiple[i];
-
-            // Captura correctamente el índice en una variable local
-            int indiceLocal = i;
-            botonesPlantilla[i].onClick.RemoveAllListeners();  // Remover cualquier listener previo
-            botonesPlantilla[i].onClick.AddListener(() => SeleccionarRespuesta(espejo.respuestasSeleccionMultiple[indiceLocal], botonesPlantilla[indiceLocal].gameObject));
+                int indiceLocal = i;
+                botonesPlantilla[i].onClick.RemoveAllListeners();
+                botonesPlantilla[i].onClick.AddListener(() => SeleccionarRespuesta(respuestas[indiceLocal], botonesPlantilla[indiceLocal].gameObject));
+            }
+            else
+            {
+                botonesPlantilla[i].gameObject.SetActive(false);
+            }
         }
     }
-
 
     public void SeleccionarRespuesta(string respuesta, GameObject boton)
     {
         Image botonImage = boton.GetComponent<Image>();
-
-        if (botonImage == null)
-        {
-            Debug.LogError("El botón no tiene un componente Image asignado.");
-            return;
-        }
-
-        Debug.Log($"Botón pulsado: {boton.name}, Respuesta: {respuesta}");
+        if (botonImage == null) return;
 
         if (respuestasSeleccionadas.Contains(respuesta))
         {
             respuestasSeleccionadas.Remove(respuesta);
-            botonImage.color = Color.white; // Cambia el color del botón a blanco si se deselecciona
-            Debug.Log($"El botón {boton.name} ha sido deseleccionado (blanco).");
+            botonImage.color = Color.white;
         }
         else
         {
             respuestasSeleccionadas.Add(respuesta);
-            botonImage.color = Color.green; // Cambia el color del botón a verde si se selecciona
-            Debug.Log($"El botón {boton.name} ha sido seleccionado (verde).");
+            botonImage.color = Color.green;
         }
     }
 
@@ -72,8 +63,6 @@ public class SeleccionMultipleController : MonoBehaviour
         {
             Debug.Log("Respuestas seleccionadas: " + string.Join(", ", respuestasSeleccionadas));
             panelSeleccionMultiple.SetActive(false);
-
-            // Proceder al siguiente espejo
             FindObjectOfType<MinijuegoManager>().SiguienteEspejo();
         }
         else

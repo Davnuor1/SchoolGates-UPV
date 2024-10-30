@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e583b4c22b793db448789db36fb2579b, type: 3}
+  m_Name: Espejos03_EN
+  m_EditorClassIdentifier: 
+  textoPreguntaInicial: '"Which kind of people do you know who care about this as
+    much as you do?'
+  textoInstruccionesPrimeraFase: Think on a nice or significant life. What do you
+    really need? Select the mirror if you think it is important or break it if you
+    don't
+  textoInstruccionesSegundaFase: So, you say these is important to you, but how much
+    are you caring about this actually? How much attention and time are you really
+    putting into these?
+  textoValoracion: Value the importance of this things to you
+  textoCuidadoValores: What can you do now to take more or better care of your values?
+  textoAccionFinal: 
+  espejos:
+  - nombre: Independence
+    respuestas:
+    - making my own decisions
+    - having some level of control over my life
+    - being able to earn and manage my own money
+  - nombre: Friendships and social relationships
+    respuestas:
+    - having close friends that I can share my thoughts and feelings with
+    - spending time together with my friends
+    - being in a in romantic relationship
+    - having a lot of followers on social media
+    - participating in a social community and global causes
+  - nombre: Search for Identity
+    respuestas:
+    - Being able to explore and express my own identity
+    - wearing the clothes that I like, listening to my favorite music whenever I
+      like
+    - trying new things, new life experiences
+    - traveling
+  - nombre: Hobbies/Interests, Privacy
+    respuestas:
+    - engaging in art, music, or writing
+    - having time for my hobbies or interests
+    - having enough privacy and my own personal space
+  - nombre: Family and Home
+    respuestas:
+    - having a family that supports me
+    - having a family that listens to me
+    - Spending time with my family
+    - Feeling safe at home
+  - nombre: Education and School
+    respuestas:
+    - getting good marks at school
+    - learning things that are meaningful at school
+    - choosing the subjects/career that I like
+    - being popular at school
+  - nombre: Fitness and Health
+    respuestas:
+    - doing exercise regularly
+    - eating healthy
+    - 'sleeping enough hours '
+    - improving my health and well-being
