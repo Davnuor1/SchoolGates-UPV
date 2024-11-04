@@ -19,6 +19,9 @@ public class SeleccionMultipleController : MonoBehaviour
         preguntaTexto.text = localizacion.textoPreguntaInicial;
         panelSeleccionMultiple.SetActive(true);
 
+        // Reiniciar los botones antes de mostrar las nuevas respuestas
+        ResetearBotones();
+
         // Configurar los botones basados en las respuestas del `ScriptableObject`
         List<string> respuestas = localizacion.espejos[idEspejoActual].respuestas;
         for (int i = 0; i < botonesPlantilla.Count; i++)
@@ -40,6 +43,16 @@ public class SeleccionMultipleController : MonoBehaviour
         }
     }
 
+    private void ResetearBotones()
+    {
+        respuestasSeleccionadas.Clear(); // Limpiar la lista de respuestas seleccionadas
+
+        foreach (Button boton in botonesPlantilla)
+        {
+            boton.GetComponent<Image>().color = Color.white; // Restablecer el color a blanco
+        }
+    }
+
     public void SeleccionarRespuesta(string respuesta, GameObject boton)
     {
         Image botonImage = boton.GetComponent<Image>();
@@ -48,12 +61,12 @@ public class SeleccionMultipleController : MonoBehaviour
         if (respuestasSeleccionadas.Contains(respuesta))
         {
             respuestasSeleccionadas.Remove(respuesta);
-            botonImage.color = Color.white;
+            botonImage.color = Color.white; // Cambiar el color del botón a blanco si se deselecciona
         }
         else
         {
             respuestasSeleccionadas.Add(respuesta);
-            botonImage.color = Color.green;
+            botonImage.color = Color.green; // Cambiar el color del botón a verde si se selecciona
         }
     }
 

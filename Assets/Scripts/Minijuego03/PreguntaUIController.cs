@@ -15,7 +15,6 @@ public class PreguntaUIController : MonoBehaviour
     public GameObject ruletaIzquierda;
     public GameObject ruletaDerecha;
 
-    private int idEspejoActual;
     private MinijuegoManager minijuegoManager;
 
     void Start()
@@ -29,8 +28,7 @@ public class PreguntaUIController : MonoBehaviour
 
     public void MostrarEspejo(int idEspejo)
     {
-        idEspejoActual = idEspejo;
-        tituloEspejo.text = localizacion.espejos[idEspejoActual].nombre;
+        tituloEspejo.text = localizacion.espejos[idEspejo].nombre;
         preguntaTexto.text = localizacion.textoInstruccionesPrimeraFase;
 
         MostrarBotonesSiNo(true);
@@ -39,10 +37,14 @@ public class PreguntaUIController : MonoBehaviour
 
     public void RecibirPuntuacion(int puntuacion)
     {
-        Debug.Log("Puntuación recibida para " + localizacion.espejos[idEspejoActual].nombre + ": " + puntuacion);
-        // Guardar la puntuación en una variable o lista si es necesario
+        Debug.Log("Puntuación recibida para " + localizacion.espejos[minijuegoManager.indiceEspejoActual].nombre + ": " + puntuacion);
+
+        // Llamar al método de MinijuegoManager para asignar la puntuación
+        minijuegoManager.AsignarPuntuacionEspejoActual(puntuacion);
+
         ruletaUnica.SetActive(false);
 
+        // Pasar al siguiente espejo
         minijuegoManager.SiguienteEspejo();
     }
 
@@ -58,10 +60,9 @@ public class PreguntaUIController : MonoBehaviour
         minijuegoManager.SiguienteEspejo();
     }
 
-    public void MostrarSegundaParte(int idEspejo)
+    public void MostrarSegundaParte(MinijuegoEspejos03Localization.EspejoData espejo)
     {
-        idEspejoActual = idEspejo;
-        tituloEspejo.text = localizacion.espejos[idEspejoActual].nombre;
+        tituloEspejo.text = espejo.nombre;
         preguntaTexto.text = localizacion.textoInstruccionesSegundaFase;
 
         MostrarBotonesSiNo(false);
@@ -92,7 +93,7 @@ public class PreguntaUIController : MonoBehaviour
     public void ManejarTextoEnviado()
     {
         preguntaTexto.text = localizacion.textoAccionFinal;
-        FindObjectOfType<SeleccionMultipleController>().MostrarSeleccionMultiple(idEspejoActual);
+        FindObjectOfType<SeleccionMultipleController>().MostrarSeleccionMultiple(minijuegoManager.indiceEspejoActual);
     }
 
     private void MostrarBotonesSiNo(bool mostrar)

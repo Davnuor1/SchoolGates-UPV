@@ -4,8 +4,6 @@ using UnityEngine;
 public class MinijuegoManager : MonoBehaviour
 {
     [SerializeField] private MinijuegoEspejos03Localization localizacion;
-    public List<Espejo> todosLosEspejos;
-    private List<Espejo> espejosSegundaFase;
     private List<int> puntuacionesEspejos; // Lista para almacenar las puntuaciones de cada espejo
 
     public int indiceEspejoActual = 0;
@@ -20,8 +18,8 @@ public class MinijuegoManager : MonoBehaviour
         indiceEspejoActual = 0;
         enSegundaFase = false;
 
-        // Inicializar la lista de puntuaciones de acuerdo al número de espejos
-        puntuacionesEspejos = new List<int>(new int[todosLosEspejos.Count]);
+        // Inicializar la lista de puntuaciones de acuerdo al número de espejos en la localización
+        puntuacionesEspejos = new List<int>(new int[localizacion.espejos.Count]);
 
         // Mostrar el primer espejo
         preguntaUIController.MostrarEspejo(indiceEspejoActual);
@@ -33,7 +31,7 @@ public class MinijuegoManager : MonoBehaviour
         {
             indiceEspejoActual++;
 
-            if (indiceEspejoActual < todosLosEspejos.Count)
+            if (indiceEspejoActual < localizacion.espejos.Count)
             {
                 preguntaUIController.MostrarEspejo(indiceEspejoActual);
             }
@@ -48,7 +46,8 @@ public class MinijuegoManager : MonoBehaviour
 
             if (indiceEspejoActual < espejosSegundaFase.Count)
             {
-                preguntaUIController.MostrarSegundaParte(indiceEspejoActual);
+                Debug.Log($"Mostrando espejo en la segunda fase: {localizacion.espejos[espejosSegundaFase[indiceEspejoActual]].nombre}");
+                preguntaUIController.MostrarSegundaParte(localizacion.espejos[espejosSegundaFase[indiceEspejoActual]]);
             }
             else
             {
@@ -57,21 +56,25 @@ public class MinijuegoManager : MonoBehaviour
         }
     }
 
+    private List<int> espejosSegundaFase;
+
     void PrepararSegundaFase()
     {
-        // Filtrar los espejos que tienen puntuación asignada
-        espejosSegundaFase = new List<Espejo>();
+        espejosSegundaFase = new List<int>();
 
-        for (int i = 0; i < todosLosEspejos.Count; i++)
+        for (int i = 0; i < puntuacionesEspejos.Count; i++)
         {
-            if (puntuacionesEspejos[i] > 0) // Agregar a segunda fase si el espejo tiene puntuación
+            Debug.Log($"Evaluando espejo {i} con puntuación: {puntuacionesEspejos[i]}");
+            if (puntuacionesEspejos[i] > 0)
             {
-                espejosSegundaFase.Add(todosLosEspejos[i]);
+                espejosSegundaFase.Add(i);
+                Debug.Log($"Espejo {localizacion.espejos[i].nombre} añadido para la segunda fase, recuento actual: {espejosSegundaFase.Count}");
             }
         }
 
         if (espejosSegundaFase.Count == 0)
         {
+            Debug.Log("No hay espejos con puntuación para la segunda fase. Terminando el minijuego.");
             TerminarMinijuego();
             return;
         }
@@ -79,11 +82,13 @@ public class MinijuegoManager : MonoBehaviour
         indiceEspejoActual = 0;
         enSegundaFase = true;
 
-        preguntaUIController.MostrarSegundaParte(indiceEspejoActual);
+        Debug.Log($"Comenzando segunda fase con {espejosSegundaFase.Count} espejos.");
+        preguntaUIController.MostrarSegundaParte(localizacion.espejos[espejosSegundaFase[indiceEspejoActual]]);
     }
 
     public void AsignarPuntuacionEspejoActual(int puntuacion)
     {
+        Debug.Log($"Asignando puntuación {puntuacion} al índice {indiceEspejoActual}");
         puntuacionesEspejos[indiceEspejoActual] = puntuacion;
     }
 

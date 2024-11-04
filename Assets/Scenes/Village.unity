@@ -140467,7 +140467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bd7d2034bbc2a84d974370056abcad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posicionSiguiente: {x: 56.59, y: 164}
+  posicionSiguiente: {x: -30, y: 162}
   ChangeSceneAnimator: {fileID: 380959539}
   aQueEscena: 7
 --- !u!61 &1505143518
@@ -147891,7 +147891,7 @@ PrefabInstance:
     - target: {fileID: 8716012096550981098, guid: fef94a5a68173224ea5dfaabfb289ea0, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: f59fab095295ba64d8ebd56a0c002c9f, type: 3}
+      objectReference: {fileID: 12800000, guid: a6d5f6df02372ac49b0a9af01cac467c, type: 3}
     - target: {fileID: 8716012096550981098, guid: fef94a5a68173224ea5dfaabfb289ea0, type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 2
@@ -148264,6 +148264,14 @@ PrefabInstance:
       propertyPath: m_margin.z
       value: 8.365875
       objectReference: {fileID: 0}
+    - target: {fileID: 8716012098077928161, guid: fef94a5a68173224ea5dfaabfb289ea0, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 62169d26301cbf347bfde505c6024630, type: 2}
+    - target: {fileID: 8716012098077928161, guid: fef94a5a68173224ea5dfaabfb289ea0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5654135124893116109, guid: 62169d26301cbf347bfde505c6024630, type: 2}
     - target: {fileID: 8716012098077928165, guid: fef94a5a68173224ea5dfaabfb289ea0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
