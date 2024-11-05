@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectionName: Humanitatis
   questions:
-  - questionText: How much of what we care about never happens?
+  - questionText: Wie viele Neuronen hat ein Mensch durchschnittlich im Gehirn?
     answers:
-    - 20%
-    - 50%
-    - 80%
-    - 100%
-    correctAnswerIndex: 2
+    - "etwas so viel wie es Sterne in unserer Milchstra\xDFe gibt (ca. 100 Milliarden)"
+    - Anzahl Liter in einem Kubikmeter (1000)
+    - Anzahl der Menschen auf der Erde (8 Milliarden
+    - 20 Milliarden
+    correctAnswerIndex: 0
   - questionText: Wie lange braucht das Gehirn, um sich einen ersten Eindruck von
       jemandem zu machen?
     answers:
@@ -43,20 +43,6 @@ MonoBehaviour:
     - asleep
     - eating
     correctAnswerIndex: 0
-  - questionText: "\u201CRomantic love\u201D is biochemically indistinguishable from"
-    answers:
-    - severe OCD
-    - running
-    - sleeping
-    - eating
-    correctAnswerIndex: 0
-  - questionText: 'The average time it takes a person to forget a great love is:'
-    answers:
-    - 3 months
-    - one year
-    - 17 months and 26 days
-    - you never forget a great love
-    correctAnswerIndex: 2
   - questionText: "Das Betrachten eines Fotos eines geliebten Menschen kann k\xF6rperliche
       Schmerzen genauso gut lindern wie ein Schmerzmittel, bis zu:"
     answers:
@@ -65,26 +51,40 @@ MonoBehaviour:
     - 44%
     - 88%
     correctAnswerIndex: 2
-  - questionText: Who said "Focus on what you can control"?
+  - questionText: "Wie nennt man die Angst vor offenen oder \xFCberf\xFCllten Pl\xE4tzen?"
     answers:
-    - Socrates
+    - 'Klaustrophobie  '
+    - 'Agoraphobie '
+    - 'Arachnophobie  '
+    - Akrophobie
+    correctAnswerIndex: 1
+  - questionText: "In welcher Schlafphase treten die lebhaftesten Tr\xE4ume auf?"
+    answers:
+    - 'Leichtschlaf  '
+    - 'Tiefschlaf  '
+    - 'REM-Schlaf '
+    - Non-REM-Schlaf
+    correctAnswerIndex: 2
+  - questionText: "Wer ist ber\xFChmt f\xFCr die Aussage \"Ich denke, also bin ich\"?"
+    answers:
+    - "Ren\xE9 Descartes"
+    - Immanuel Kant
     - Platon
-    - Epicurus
-    - Epictetus
-    correctAnswerIndex: 3
-  - questionText: Who said that we must act according to values that we may want
-      as universal laws?
-    answers:
-    - Kant
-    - Socrates
-    - Nietzsche
-    - Obama
+    - Aristoteles
     correctAnswerIndex: 0
-  - questionText: Who wrote "the second sex" reflecting on human and women's rights?
+  - questionText: "Wie nennt man die \xDCberzeugung, dass alle Ereignisse durch vorherige
+      Ursachen bestimmt sind?"
     answers:
-    - Simone de Beauvoir
-    - Simone Weil
-    - Simone Biles
-    - Edith Stein
-    correctAnswerIndex: 0
+    - Freier Wille
+    - Empirismus
+    - 'Determinismus  '
+    - Existentialismus
+    correctAnswerIndex: 2
+  - questionText: Wer gilt als der Vater der Psychoanalyse?
+    answers:
+    - 'Carl Jung '
+    - Sigmund Freud
+    - B.F. Skinner
+    - John Watson
+    correctAnswerIndex: 1
   collectionIcon: {fileID: 1168092969, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

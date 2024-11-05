@@ -51,20 +51,6 @@ MonoBehaviour:
     - 10 cm
     - 15 cm
     correctAnswerIndex: 1
-  - questionText: 'Wie viel ist 2 - 6 : 3 -1?'
-    answers:
-    - 1
-    - -1
-    - 2
-    - -2
-    correctAnswerIndex: 1
-  - questionText: "Wie viel ist 3 \xB7 2 + 2 \xB7 5?"
-    answers:
-    - 16
-    - 40
-    - 60
-    - 100
-    correctAnswerIndex: 0
   - questionText: "Wie nennt man einen Winkel von 87\xBA?"
     answers:
     - spitz
@@ -72,18 +58,32 @@ MonoBehaviour:
     - recht
     - ganz
     correctAnswerIndex: 0
-  - questionText: In 5 = 7 + x, how much is the x?
+  - questionText: Welche Zahl ist eine Primzahl?
     answers:
-    - 5/7
-    - 7/5
+    - 4
+    - 7
+    - 8
+    - 9
+    correctAnswerIndex: 1
+  - questionText: "Wenn 0\xB0 Norden ist, bei wie viel Grad ist dann Westen?"
+    answers:
+    - 90
+    - 180
+    - 270
+    - 45
+    correctAnswerIndex: 2
+  - questionText: Wenn der Wind aus Nord-Ost kommt, wo weht er dann hin?
+    answers:
+    - "S\xFCd-Osten"
+    - "S\xFCd-West"
+    - Nord-Ost
+    - Nord-West
+    correctAnswerIndex: 1
+  - questionText: 'Wie viel ist 2 - 6 : 3 -1?'
+    answers:
+    - 1
+    - -1
     - 2
     - -2
-    correctAnswerIndex: 3
-  - questionText: How much is MCCXXII + XXXIV?
-    answers:
-    - MMCCL
-    - MCCLVI
-    - MCCCIX
-    - MCCCIV
     correctAnswerIndex: 1
   collectionIcon: {fileID: 112390163, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

@@ -22,7 +22,7 @@ public class VendingMachine : MonoBehaviour
             player = FindObjectOfType<Player>();
         }
 
-        if (player != null && Input.GetMouseButtonDown(0))
+        if (player != null && Input.GetKeyDown(KeyCode.E))
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
@@ -42,9 +42,9 @@ public class VendingMachine : MonoBehaviour
         if (distance <= interactionDistance)
         {
             GameManager.instance.statsManager.ModifyEnergy(20);
-            GameManager.instance.statsManager.SetKarma(37);
-            GameManager.instance.statsManager.SetExperience(50);
-            GameManager.instance.statsManager.SetSpirituality(90);
+           // GameManager.instance.statsManager.SetKarma(37);
+            //GameManager.instance.statsManager.SetExperience(50);
+            //GameManager.instance.statsManager.SetSpirituality(90);
             Debug.Log("Interacted with vending machine: Energy +20, Karma set to 37");
         }
     }

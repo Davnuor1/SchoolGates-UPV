@@ -14,78 +14,74 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectionName: Arts
   questions:
-  - questionText: Who wrote the longest book ever?
+  - questionText: Wer hat das Buch "Die Schatzinsel" geschrieben?
     answers:
-    - Marcel Proust
-    - Cervantes
-    - Lev Tolstoi
-    - Stephen King
-    correctAnswerIndex: 0
-  - questionText: Who wrote The Portrait of Dorian Gray?
+    - Jules Verne
+    - Robert Louis Stevenson
+    - Mark Twain
+    - Jonathan Swift
+    correctAnswerIndex: 1
+  - questionText: "Welches dieser B\xFCcher wurde von Astrid Lindgren geschrieben?"
     answers:
-    - Dorian Gray
-    - J.K. Rowling
-    - Oscar Wilde
-    - Emile Zola
+    - '"Charlie und die Schokoladenfabrik" '
+    - '"Alice im Wunderland"'
+    - '"Pippi Langstrumpf"'
+    - '"Der kleine Prinz"'
     correctAnswerIndex: 2
-  - questionText: Where Wolfgang Amadeus Mozart was from?
+  - questionText: "Wie hei\xDFt der ber\xFChmte Zauberer in J.K. Rowlings B\xFCchern?"
     answers:
-    - Germany
-    - Austria
-    - Sweden
-    - Netherlands
-    correctAnswerIndex: 1
-  - questionText: This American rapper is known for his socially conscious lyrics
-      and activism. Who is he?
-    answers:
-    - Kendrick Lamar
-    - Jay-Z
-    - Eminem
-    - Drake
-    correctAnswerIndex: 0
-  - questionText: Who is the Mexican painter known for her surrealist self-portraits
-      and depictions of indigenous Mexican culture?
-    answers:
-    - Frida Kahlo
-    - Georgia O'Keeffe
-    - Yayoi Kusama
-    - Tamara de Lempicka
-    correctAnswerIndex: 0
-  - questionText: "Who sculpted The Piet\xE0?"
-    answers:
-    - Da Vinci
-    - Michelangelo
-    - Raphael
-    - Titian
-    correctAnswerIndex: 1
-  - questionText: What is the name of the main character from To Kill a Mockingbird"
-      by Harper Lee, known for his moral integrity?
-    answers:
-    - "Rolando Garc\xEDa"
-    - Atticus Finch
-    - Dorian Gray
-    - Phoebe Weatherfield
-    correctAnswerIndex: 1
-  - questionText: What is the name of the music and culture movement that started
-      in United Kingdom around 1977?
-    answers:
-    - Rap
-    - Trap
-    - Punk
-    - Bossanova
+    - Gandalf
+    - Merlin
+    - Harry Potter
+    - Aladdin
     correctAnswerIndex: 2
-  - questionText: What is the subject of War and Peace by Lev Tolstoi?
+  - questionText: In welchem Land spielt die Geschichte von "Heidi"?
     answers:
-    - First World War
-    - "Napoleon\u2019s Russian Campaign"
-    - World War II
-    - Vietnam War
+    - Italien
+    - Schweiz
+    - Frankreich
+    - "\xD6sterreich"
     correctAnswerIndex: 1
-  - questionText: "What is the literature genre of \u201CThe Lord of the Rings\u201D?"
+  - questionText: Wer hat die Figur Sherlock Holmes erfunden?
     answers:
-    - Fantasy
-    - Realism
-    - Surrealism
-    - Poetry
-    correctAnswerIndex: 0
+    - Agatha Christie
+    - Arthur Conan Doyle
+    - Edgar Allan Poe
+    - George Orwell
+    correctAnswerIndex: 1
+  - questionText: "Welches Instrument geh\xF6rt zur Familie der Saiteninstrumente?"
+    answers:
+    - Trompete
+    - Gitarre
+    - 'Schlagzeug  '
+    - Klarinette
+    correctAnswerIndex: 1
+  - questionText: Welcher Musiker wurde taub und komponierte trotzdem weiter?
+    answers:
+    - Wolfgang Amadeus Mozart
+    - 'Ludwig van Beethoven '
+    - Johann Sebastian Bach
+    - Antonio Vivald
+    correctAnswerIndex: 1
+  - questionText: Welches dieser Lieder wurde von den Beatles gesungen?
+    answers:
+    - '"Smells Like Teen Spirit"'
+    - '"We Will Rock You"'
+    - '"Hey Jude"'
+    - ' "Bohemian Rhapsody"'
+    correctAnswerIndex: 2
+  - questionText: 'Welches dieser Musikinstrumente hat Tasten? '
+    answers:
+    - Violine
+    - Trommel
+    - Klavier
+    - "Fl\xF6te"
+    correctAnswerIndex: 2
+  - questionText: 'Was ist eine Sinfonie? '
+    answers:
+    - "Ein Solo-Klavierst\xFCck "
+    - Ein Pop-Song
+    - Ein Duett
+    - "Ein gro\xDFes Orchesterwerk"
+    correctAnswerIndex: 3
   collectionIcon: {fileID: -449540351, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
