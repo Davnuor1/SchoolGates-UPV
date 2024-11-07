@@ -1,10 +1,10 @@
 [System.Serializable]
 public class PlayerStats
 {
-    public double energy;
-    public double karma;
-    public double spirituality;
-    public double experience;
+    public double energy=60;
+    public double karma=50;
+    public double spirituality=50;
+    public double experience=50;
 
     public double minEnergy = 0;
     public double minKarma = 0;

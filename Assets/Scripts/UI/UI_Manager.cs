@@ -18,6 +18,7 @@ public class UI_Manager : MonoBehaviour
     public static Slot_UI draggedSlot;
     public static Image draggedIcon;
     public static bool dragSingle;
+    public bool canToggle=true;
 
     public void Awake()
     {
@@ -28,8 +29,12 @@ public class UI_Manager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab)||Input.GetKeyDown(KeyCode.B))
         {
+            if (canToggle)
+            {
+                ToggleMenuUI();
+            }
             //ToggleInventoryUI();
-            ToggleMenuUI();
+            
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {

@@ -57,6 +57,8 @@ public class TogglePlayerMovement : MonoBehaviour
     {
         if (player != null)
         {
+            DialogueManager.instance.GetComponentInChildren<StandardUIQuestTracker>().HideTracker();
+            GameManager.instance.uiManager.canToggle = false;
             playerAnimator.SetBool("moving", false);
             playerMovement = player.GetComponent<PlayerMovement>();
             playerMovement.enabled = false; // Desactiva el movimiento del jugador
@@ -67,6 +69,8 @@ public class TogglePlayerMovement : MonoBehaviour
     {
         if (player != null)
         {
+            DialogueManager.instance.GetComponentInChildren<StandardUIQuestTracker>().ShowTracker();
+            GameManager.instance.uiManager.canToggle = true;
             playerMovement = player.GetComponent<PlayerMovement>();
             playerMovement.enabled = true; // Desactiva el movimiento del jugador
 

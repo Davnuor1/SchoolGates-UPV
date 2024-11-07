@@ -4,7 +4,7 @@ using PixelCrushers.DialogueSystem; // Asegúrate de incluir este namespace
 
 public class NPCLaberinto : MonoBehaviour
 {
-    public GameObject emoticono; // Referencia al objeto emoticono
+    [SerializeField] private  GameObject emoticono; // Referencia al objeto emoticono
     
     void Start()
     {
