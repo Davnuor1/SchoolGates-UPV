@@ -49,7 +49,7 @@ public class BoatInteraction : MonoBehaviour
 
     void CheckForBoatInteraction()
     {
-        if (Input.GetMouseButtonDown(0)) // Clic izquierdo
+        if (Input.GetKeyDown(KeyCode.E)) // Clic izquierdo
         {
             Vector2 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             float distanceToBoat = Vector2.Distance(player.transform.position, boat.transform.position);
