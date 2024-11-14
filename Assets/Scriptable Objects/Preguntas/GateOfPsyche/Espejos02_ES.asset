@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e418474bb2a30542b702a5d9eab1987, type: 3}
+  m_Name: Espejos02_ES
+  m_EditorClassIdentifier: 
+  textoPreguntaInicial: "\xBFCu\xE1nto te ves reflejado en este espejo?"
+  textoPreguntaRating: "Valora del 1 al 10 cu\xE1nto te identificas con este espejo."
+  textoFeedbackLike: "\xA1Genial! Sigamos buscando a tu verdadero yo..."
+  textoFeedbackDislikeFinal: "Est\xE1 bien... solo ten esto en cuenta y sigue buscando
+    a tu verdadero yo..."
+  textoDoYouAgree: "\xBFEst\xE1s de acuerdo? "
+  espejos:
+  - nombre: "Debo hacerlo bien y obtener la aprobaci\xF3n de todas las personas que
+      me importan o ser\xE9 una persona in\xFAtil."
+    feedback01: Recuerda que no siempre vas a gustar a todo el mundo y no pasa nada
+    feedback02: "Ten en cuenta que tu val\xEDa personal no debe depender de la aprobaci\xF3n
+      de los dem\xE1s."
+  - nombre: " Los dem\xE1s deben tratarme con amabilidad y de manera justa o, de
+      lo contrario, son malas personas."
+    feedback01: "Recuerda que a veces las personas act\xFAan de forma poco agradable
+      e injusta porque, al igual que t\xFA, tienen sus propias dificultades y no
+      siempre son capaces de comportarse amablemente."
+    feedback02: Puedes considerar que un mal comportamiento no es necesariamente
+      un indicio de malicia.
+  - nombre: " Debo llevar una vida f\xE1cil y agradable o no podr\xE9 disfrutar de
+      la vida en absoluto."
+    feedback01: "Recuerda que la vida es impredecible y est\xE1 llena de retos y
+      alegr\xEDas. "
+    feedback02: Recuerda que los altibajos de la vida la convierten en una experiencia
+      enriquecedora y significativa que te da la oportunidad de aprender y crecer.
+  - nombre: "Todas las personas que me importan deben quererme y apoyarme o ser\xE1
+      horrible. "
+    feedback01: "Recuerda que las personas que te quieren y se preocupan por ti tienen
+      sus propias opiniones y no tienen por qu\xE9 estar de acuerdo o aprobar todo
+      lo que haces. Esto no significa que no te quieran o que te quieran menos. "
+    feedback02: " Piensa que las verdaderas relaciones se construyen sobre la comprensi\xF3n,
+      la empat\xEDa y la capacidad de superar los desacuerdos. "
+  - nombre: "Debo alcanzar grandes logros o no valdr\xE9 nada. "
+    feedback01: "Recuerda que tu val\xEDa personal proviene de lo que eres, no s\xF3lo
+      de lo que consigues o de lo que posees. "
+    feedback02: 'Ten en cuenta que cometer errores y atravesar contratiempos forma
+      parte de la experiencia humana. '
+  - nombre: "Nadie deber\xEDa portarse mal y si lo hace debo reproch\xE1rselo. "
+    feedback01: 'Recuerda que las personas no son perfectas y que pueden verse influidas
+      por acontecimientos desafortunados, experiencias y emociones, que pueden llevar
+      a un mal comportamiento.  '
+    feedback02: "Puedes plantearte adoptar un enfoque m\xE1s emp\xE1tico y constructivo,
+      intentando comprender las razones de sus actos, en lugar de condenar inmediatamente
+      a quienes se comportan mal. "
+  - nombre: "Si algo no me sale bien, no debo frustrame porque eso demostrar\xEDa
+      que no soy lo suficientemente bueno.  "
+    feedback01: "Recuerda que no es terrible sentirse frustrado, es simplemente una
+      se\xF1al de que algo no va seg\xFAn lo previsto. "
+    feedback02: "Ten en cuenta que la frustraci\xF3n es una respuesta emocional habitual
+      ante los obst\xE1culos, los retrasos y las expectativas no cumplidas, que pueden
+      ser una valiosa fuente de motivaci\xF3n y crecimiento y forman parte de la
+      vida de todos. "
+  - nombre: "Cuando las cosas son dif\xEDciles y estoy bajo presi\xF3n me siento
+      fatal y no hay nada que pueda hacer al respecto. "
+    feedback01: "Recuerda que en los momentos dif\xEDciles es normal sentirse abatido,
+      pero siempre hay al menos algo que puedes hacer: decidir c\xF3mo afrontar el
+      contratiempo."
+    feedback02: "Puedes valorar diferentes formas de controlar el estr\xE9s y mejorar
+      tu estado emocional, en lugar de resignarte. "
+  - nombre: ' Ante la posibilidad de que me ocurra algo aterrador o peligroso, debo
+      obsesionarme con ello y esforzarme desesperadamente por evitarlo.  '
+    feedback01: "Recuerda que, aunque est\xE1 bien preocuparse por posibles peligros
+      o situaciones aterradoras, la preocupaci\xF3n excesiva y evitar situaciones
+      desagradables pueden hacer que te sientas todav\xEDa m\xE1s ansioso. "
+    feedback02: "Puedes querer abordar los riesgos potenciales de manera objetiva
+      y reflexiva, evaluando qu\xE9 tan probable y grave percibes que sea la amenaza,
+      para tomar las precauciones adecuadas. "
+  - nombre: "Puedo eludir mis responsabilidades y hacer frente a las dificultades
+      de la vida y seguir sinti\xE9ndome realizado."
+    feedback01: "Recuerda que, aunque es tentador evitar responsabilidades y dificultades,
+      hacerlo puede impedirte desarrollar todo tu potencial y disfrutar de la vida
+      al m\xE1ximo."
+    feedback02: "Ten en cuenta que la vida viene acompa\xF1ada de retos, obligaciones
+      morales y responsabilidades, e intentar eludirlos probablemente te conducir\xE1
+      a un mayor estr\xE9s e infelicidad a largo plazo."
+  - nombre: "Mi pasado es la parte m\xE1s importante de mi vida y seguir\xE1 dictando
+      c\xF3mo me siento y la forma en que act\xFAo."
+    feedback01: "Recuerda que el pasado puede limitar tus opciones, pero no determina
+      por completo tu vida. En lugar de obsesionarte con el pasado y sentirte atrapado
+      por \xE9l, c\xE9ntrate en lo que puedes controlar en el presente. "
+    feedback02: 'Puedes plantearte que, a pesar de tu pasado, tienes el poder de
+      tomar decisiones en el presente que pueden influir en tu futuro. '
+  - nombre: " Todos y todo deber\xEDan ser siempre perfectos, porque cometer errores
+      y ser imperpefecto es una debilidad. "
+    feedback01: " Recuerda que esperar que todos y todo sea perfecto es un objetivo
+      inalcanzable, porque la vida est\xE1 llena de imperfecciones, tanto en las
+      personas como en las circunstancias. "
+    feedback02: "Ten en cuenta que el af\xE1n de superaci\xF3n es un proceso natural
+      y continuo que debe equilibrarse con la aceptaci\xF3n de la realidad. "
+  - nombre: "Puedo ser plenamente feliz haciendo lo m\xEDnimo posible y simplemente
+      disfrutando. "
+    feedback01: "Recuerda que una vida feliz no consiste \xFAnicamente en la b\xFAsqueda
+      del placer, sino tambi\xE9n en afrontar los retos de la vida."
+    feedback02: "Puedes considerar que alcanzar la felicidad implica fijarse y perseguir
+      objetivos significativos, contribuir a los dem\xE1s y favorecer el crecimiento
+      personal; todos estos aspectos requieren esfuerzo, responsabilidades y afrontar
+      retos."
