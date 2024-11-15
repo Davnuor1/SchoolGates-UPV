@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: ScienceAgora_ES
+  m_EditorClassIdentifier: 
+  collectionName: Scientia
+  questions:
+  - questionText: "\xBFCu\xE1l es la \xFAnica parte del cuerpo humano que no puede
+      curarse a s\xED misma?"
+    answers:
+    - Piel
+    - Dientes
+    - Cabello
+    - "H\xEDgado"
+    correctAnswerIndex: 1
+  - questionText: "\xBFQu\xE9 es la fuerza de la gravedad?"
+    answers:
+    - La fuerza que hace que los objetos se alejen de la Tierra
+    - La fuerza que atrae a los objetos hacia el centro de la Tierra
+    - La fuerza que impulsa a los aviones hacia arriba
+    - La fuerza que hace que los objetos floten en el aire.
+    correctAnswerIndex: 1
+  - questionText: "\xBFCu\xE1l es el planeta m\xE1s cercano a la Tierra?"
+    answers:
+    - Marte
+    - "J\xFApiter"
+    - Venus
+    - Saturno
+    correctAnswerIndex: 2
+  - questionText: "\xBFQu\xE9 animal nunca duerme?"
+    answers:
+    - Osos
+    - Hormigas
+    - Camarones
+    - Caballos
+    correctAnswerIndex: 1
+  - questionText: "\xBFCu\xE1les son los estados de la materia?"
+    answers:
+    - " S\xF3lido, l\xEDquido y energ\xEDa"
+    - "S\xF3lido, l\xEDquido y gas"
+    - "Fr\xEDo, caliente y energ\xEDa"
+    - "L\xEDquido, gas y vapor."
+    correctAnswerIndex: 1
+  - questionText: "\xBFCu\xE1ntos litros de agua se necesitan para producir un litro
+      de Coca-Cola?"
+    answers:
+    - 2 litros
+    - 20 litros
+    - 200 litros
+    - No se usa agua
+    correctAnswerIndex: 2
+  - questionText: "\xBFCu\xE1nto tiempo puede sobrevivir una persona sin beber agua?"
+    answers:
+    - "1 d\xEDa"
+    - "3 d\xEDas"
+    - "7 d\xEDas"
+    - "10 d\xEDas"
+    correctAnswerIndex: 2
+  - questionText: "\xBFPara qu\xE9 sirven los cloroplastos en las plantas?"
+    answers:
+    - Para que la planta respire
+    - Para almacenar agua
+    - "Para transformar la luz del sol en alimento mediante la fotos\xEDntesis"
+    - "Para que la planta crezca m\xE1s r\xE1pido."
+    correctAnswerIndex: 2
+  - questionText: El sistema circulatorio humano forma una red de aproximadamente
+    answers:
+    - 10 m
+    - 10 km
+    - 1000 km
+    - 100000 km
+    correctAnswerIndex: 3
+  - questionText: "\xBFQu\xE9 tipo de bombilla es la m\xE1s eficiente energ\xE9ticamente?"
+    answers:
+    - Incandesciente
+    - CFL
+    - LED
+    - "Hal\xF3geno"
+    correctAnswerIndex: 2
+  collectionIcon: {fileID: 219575835, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e583b4c22b793db448789db36fb2579b, type: 3}
+  m_Name: Espejos03_ES
+  m_EditorClassIdentifier: 
+  textoPreguntaInicial: "\xBFQu\xE9 tipo de personas conoces que se preocupan por
+    esto tanto como t\xFA?"
+  textoInstruccionesPrimeraFase: "Piensa en una experiencia significativa o agradable
+    en tu vida... \xBFQu\xE9 es lo que realmente necesitas? Selecciona el espejo
+    si crees que es importante o r\xF3mpelo si no lo es."
+  textoInstruccionesSegundaFase: "Entonces, dices que esto es importante para ti,
+    pero \xBFcu\xE1nto te est\xE1s preocupando realmente por ello? \xBFCu\xE1nta
+    atenci\xF3n y tiempo le est\xE1s dedicando?"
+  textoValoracion: Valora la importancia de estas cosas para ti.
+  textoCuidadoValores: "\xBFQu\xE9 puedes hacer ahora para cuidar mejor tus valores?"
+  textoAccionFinal: 
+  espejos:
+  - nombre: Independencia
+    respuestas:
+    - Tomar mis propias decisiones
+    - Tener cierto nivel de control sobre mi vida
+    - Ser capaz de ganar y administrar mi propio dinero
+  - nombre: Amistades y relaciones sociales
+    respuestas:
+    - "Tener amigos \xEDntimos con los que pueda compartir mis pensamientos y sentimientos"
+    - Pasar tiempo con mis amigos
+    - "Tener una relaci\xF3n sentimental"
+    - ener muchos seguidores en las redes sociales
+    - Ser parte de una comunidad y de causas globales
+  - nombre: "B\xFAsqueda de la identidad"
+    respuestas:
+    - Poder explorar y expresar mi propia identidad
+    - "Llevar la ropa que me gusta, escuchar mi m\xFAsica favorita siempre que quiero"
+    - Probar cosas nuevas, nuevas experiencias vitales
+    - Viajar
+  - nombre: Aficiones/intereses, intimidad
+    respuestas:
+    - "Dedicarme al arte, la m\xFAsica o la literatura"
+    - Tener tiempo para mis aficiones o intereses
+    - Tener suficiente intimidad y mi propio espacio personal
+  - nombre: Familia y hogar
+    respuestas:
+    - Tener una familia que me apoya
+    - Tener una familia que me escucha
+    - Pasar tiempo con mi familia
+    - Sentirme seguro/a en casa
+  - nombre: "Educaci\xF3n y escuela"
+    respuestas:
+    - Sacar buenas notas en la escuela
+    - Aprender cosas significativas en la escuela
+    - Elegir las asignaturas o la carrera que me gustan
+    - Ser popular en la escuela
+  - nombre: Fitness y salud
+    respuestas:
+    - Hacer ejercicio regularmente
+    - Comer sano
+    - Dormir suficientes horas
+    - Mejorar mi salud y bienestar

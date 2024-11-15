@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 11500438}
   - component: {fileID: 11500439}
+  - component: {fileID: 11500440}
   m_Layer: 0
   m_Name: Sofa (1)
   m_TagString: Untagged
@@ -207,6 +208,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &11500440
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11500437}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2}
+  m_EdgeRadius: 0
 --- !u!1001 &89401713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10476,6 +10503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1624417564}
   - component: {fileID: 1624417565}
+  - component: {fileID: 1624417566}
   m_Layer: 0
   m_Name: Sofa (2)
   m_TagString: Untagged
@@ -10550,6 +10578,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1624417566
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624417563}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.35503817}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.2899237}
+  m_EdgeRadius: 0
 --- !u!1 &1670517520
 GameObject:
   m_ObjectHideFlags: 0
@@ -10980,11 +11034,17 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 33.564537, y: 10.375084}
+  - {x: 34.48304, y: 12.033154}
+  - {x: 34.502274, y: 10.398865}
   - {x: 40.581303, y: 10.397669}
   - {x: 40.58307, y: 19.388628}
   - {x: 33.568703, y: 19.382524}
-  - {x: 33.54562, y: 10.2595215}
+  - {x: 33.554977, y: 13.958025}
+  - {x: 34.65749, y: 13.944477}
+  - {x: 34.6473, y: 13.184671}
+  - {x: 35.575836, y: 13.182899}
+  - {x: 35.554104, y: 12.203314}
+  - {x: 34.297123, y: 12.227732}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -11049,6 +11109,10 @@ EdgeCollider2D:
   - {x: 9.58462, y: 4.436832}
   - {x: 8.550044, y: 4.3978457}
   - {x: 8.55079, y: 5.4112067}
+  - {x: 7.9019175, y: 5.4161305}
+  - {x: 7.894706, y: 4.474623}
+  - {x: 6.329999, y: 4.4712567}
+  - {x: 6.321761, y: 5.4131885}
   - {x: 3.588503, y: 5.4156175}
   - {x: 3.56217, y: -6.6506367}
   m_AdjacentStartPoint: {x: 0, y: 0}

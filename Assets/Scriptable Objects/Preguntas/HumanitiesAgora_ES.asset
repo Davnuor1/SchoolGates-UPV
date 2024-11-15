@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: HumanitiesAgora_ES
+  m_EditorClassIdentifier: 
+  collectionName: Humanitatis
+  questions:
+  - questionText: "\xBFCu\xE1nto de lo que nos preocupa nunca sucede?"
+    answers:
+    - 20%
+    - 50%
+    - 80%
+    - 100%
+    correctAnswerIndex: 2
+  - questionText: "\xBFCu\xE1nto tarda el cerebro en formarse una primera impresi\xF3n
+      de alguien?"
+    answers:
+    - 5 segundos
+    - 30 sedungos
+    - 1 minutos
+    - 1 hora
+    correctAnswerIndex: 1
+  - questionText: "\xBFQui\xE9n es conocido como el \"padre de la filosof\xEDa\"
+      y propuso la idea de que \"solo s\xE9 que no s\xE9 nada\"?"
+    answers:
+    - "Plat\xF3n"
+    - "S\xF3crates"
+    - "Arist\xF3teles"
+    - Epicuro
+    correctAnswerIndex: 1
+  - questionText: "\xBFCu\xE1l de las siguientes corrientes filos\xF3ficas se centra
+      en la b\xFAsqueda de la felicidad y el placer como el fin \xFAltimo de la vida?"
+    answers:
+    - Estoicismo
+    - Existencialismo
+    - Hedonismo
+    - Idealismo
+    correctAnswerIndex: 2
+  - questionText: "\xBFCu\xE1l es la parte del cerebro que se asocia principalmente
+      con las emociones y la memoria? "
+    answers:
+    - "El c\xF3rtex frontal"
+    - ' El cerebelo'
+    - "La am\xEDgdala"
+    - "El hipot\xE1lamo"
+    correctAnswerIndex: 2
+  - questionText: "\xBFQui\xE9n es conocido como el fundador del psicoan\xE1lisis
+      y propuso la existencia del inconsciente?"
+    answers:
+    - Carl Rogers
+    - Sigmund Freud
+    - B.F. Skinner
+    - 'Albert Bandura '
+    correctAnswerIndex: 1
+  - questionText: "\xBFQu\xE9 tipo de filosof\xEDa se centra en c\xF3mo vivir una
+      vida buena y feliz?"
+    answers:
+    - "\xC9tica"
+    - "L\xF3gica"
+    - "Est\xE9tica"
+    - "Metaf\xEDsica"
+    correctAnswerIndex: 0
+  - questionText: "\xBFQu\xE9 rama de la filosof\xEDa estudia la belleza y el arte?"
+    answers:
+    - "\xC9tica"
+    - "L\xF3gica"
+    - "Est\xE9tica"
+    - "Metaf\xEDsica"
+    correctAnswerIndex: 2
+  - questionText: "\xBFQu\xE9 t\xE9rmino describe la pr\xE1ctica de entender a las
+      personas observando su comportamiento?"
+    answers:
+    - "Psicolog\xEDa"
+    - "Filosof\xEDa"
+    - "Sociolog\xEDa"
+    - "Antropolog\xEDa"
+    correctAnswerIndex: 0
+  collectionIcon: {fileID: 1168092969, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: MathsAgora_ES
+  m_EditorClassIdentifier: 
+  collectionName: Mathematica
+  questions:
+  - questionText: "\xBFCu\xE1l es el n\xFAmero pi?"
+    answers:
+    - 3.14159
+    - 0.314159
+    - 9.61672
+    - 103.87267
+    correctAnswerIndex: 0
+  - questionText: "\xBFCu\xE1l es el n\xFAmero primo m\xE1s peque\xF1o mayor que
+      10?"
+    answers:
+    - 7
+    - 11
+    - 13
+    - 17
+    correctAnswerIndex: 1
+  - questionText: "Si lanzas un dado de seis caras, \xBFcu\xE1l es la probabilidad
+      de obtener un n\xFAmero par?"
+    answers:
+    - 16.67%
+    - 25%
+    - 50%
+    - 86%
+    correctAnswerIndex: 2
+  - questionText: "Un tren viaja 240 km en 4 horas. \xBFCu\xE1l es su velocidad promedio?"
+    answers:
+    - 24 km/h
+    - 30 km/h
+    - 60 km/h
+    - 100 km/h
+    correctAnswerIndex: 2
+  - questionText: "Si el di\xE1metro de un c\xEDrculo es 15 cm, \xBFcu\xE1l es su
+      radio?"
+    answers:
+    - 5 cm
+    - 7.5 cm
+    - 10 cm
+    - 15 cm
+    correctAnswerIndex: 1
+  - questionText: "\xBFCu\xE1nto es 2 - 6?"
+    answers:
+    - 1
+    - -4
+    - 2
+    - -2
+    correctAnswerIndex: 1
+  - questionText: "\xBFCu\xE1nto es 3 \xB7 2 + 2 \xB7 5?"
+    answers:
+    - 16
+    - 40
+    - 60
+    - 100
+    correctAnswerIndex: 0
+  - questionText: "\xBFC\xF3mo se llama un \xE1ngulo de 87\xBA?"
+    answers:
+    - acute
+    - obtuse
+    - right
+    - complete
+    correctAnswerIndex: 0
+  - questionText: "En 5 = 7 + x, \xBFcu\xE1nto es x?"
+    answers:
+    - 5/7
+    - 7/5
+    - 2
+    - -2
+    correctAnswerIndex: 3
+  - questionText: "\xBFCu\xE1nto es \xBE+ \xBD?"
+    answers:
+    - 5/4
+    - 4/6
+    - 0,6667
+    - 11/4
+    correctAnswerIndex: 0
+  collectionIcon: {fileID: 112390163, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

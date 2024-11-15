@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: HistoryAgora_ES
+  m_EditorClassIdentifier: 
+  collectionName: Historia
+  questions:
+  - questionText: "\xBFCu\xE1l es la capital de Suecia?"
+    answers:
+    - Estocolmo
+    - Helsinki
+    - Oslo
+    - Nairobi
+    correctAnswerIndex: 0
+  - questionText: "\xBFCu\xE1l es la capital de Chile?"
+    answers:
+    - Wellington
+    - Minsk
+    - Santiago
+    - Nairobi
+    correctAnswerIndex: 2
+  - questionText: "\xBFCu\xE1ndo comenz\xF3 la Primera Guerra Mundial?"
+    answers:
+    - 1879
+    - 1492
+    - 1914
+    - 1939
+    correctAnswerIndex: 2
+  - questionText: "\xBFCu\xE1ndo comenz\xF3 la Segunda Guerra Mundial?"
+    answers:
+    - 1879
+    - 1492
+    - 1939
+    - 2020
+    correctAnswerIndex: 2
+  - questionText: "\xBFCu\xE1l fue el primer pa\xEDs en aprobar definitivamente el
+      sufragio universal para las mujeres?"
+    answers:
+    - Alemania
+    - "Espa\xF1a"
+    - Italia
+    - Nueva Zelanda
+    correctAnswerIndex: 3
+  - questionText: "\xBFQu\xE9 pa\xEDs es m\xE1s grande que Plut\xF3n?"
+    answers:
+    - "Espa\xF1a"
+    - Italia
+    - Alemania
+    - Rusia
+    correctAnswerIndex: 3
+  - questionText: "\xBFD\xF3nde se encuentra el Palacio de Versailles?"
+    answers:
+    - Italia
+    - Francia
+    - Portugal
+    - Inglaterra
+    correctAnswerIndex: 1
+  - questionText: "\xBFQu\xE9 acontecimiento hist\xF3rico marca el comienzo de la
+      edad contempor\xE1nea de la historia?"
+    answers:
+    - "Ca\xEDda del Imperio Romano"
+    - "Descubrimiento de Am\xE9rica"
+    - "Revoluci\xF3n Francesa"
+    - "Invenci\xF3n de la Escritura"
+    correctAnswerIndex: 2
+  - questionText: "\xBFCu\xE1ndo comenz\xF3 la Guerra Civil Espa\xF1ola?"
+    answers:
+    - 1939
+    - 1929
+    - 1936
+    - 1945
+    correctAnswerIndex: 2
+  - questionText: "\xBFCu\xE1ndo se adopt\xF3 la Declaraci\xF3n Universal de los
+      Derechos Humanos?"
+    answers:
+    - 1879
+    - 1918
+    - 1948
+    - 1978
+    correctAnswerIndex: 2
+  collectionIcon: {fileID: 980677572, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
