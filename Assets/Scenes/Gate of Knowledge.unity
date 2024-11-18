@@ -143980,11 +143980,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quizManager: {fileID: 1376355725}
   questionCollections:
-  - {fileID: 11400000, guid: 42b6825495d7fac449b804bb11afb572, type: 2}
-  - {fileID: 11400000, guid: 3b93c81f5a0620f40b04ea588465f5e6, type: 2}
-  - {fileID: 11400000, guid: 126b6e90aba1c2f4289bbc0a50c2ce91, type: 2}
-  - {fileID: 11400000, guid: cf2db7f44d0ad0c4c886fef3a464f19f, type: 2}
-  - {fileID: 11400000, guid: 277f058cc2cdb584f87a687bba5e58e2, type: 2}
+  - {fileID: 11400000, guid: 6235ca88224bedf479dd7c048de8a185, type: 2}
+  - {fileID: 11400000, guid: 802faa1a6003633428bc9f21b9242228, type: 2}
+  - {fileID: 11400000, guid: 1cb139c2860428245a31a4099b5aa130, type: 2}
+  - {fileID: 11400000, guid: 1bd185419791a73489d3bf5d5720df3e, type: 2}
+  - {fileID: 11400000, guid: e69875be3c7fb784da9081bc9aa208eb, type: 2}
   questionCollectionStatus: {fileID: 11400000, guid: be8bc34f61adfc2478645ef55aece9c7, type: 2}
   collectionButtons:
   - {fileID: 1053405988}
@@ -257756,6 +257756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2076726011}
   - component: {fileID: 2076726010}
+  - component: {fileID: 2076726012}
   m_Layer: 0
   m_Name: Templo (CritThink)
   m_TagString: Untagged
@@ -257831,6 +257832,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2076726012
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076726009}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.56271744}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 20.25, y: 15.25}
+    newSize: {x: 20, y: 15}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.25, y: 7.760002}
+  m_EdgeRadius: 0
 --- !u!1 &2077963360
 GameObject:
   m_ObjectHideFlags: 0
