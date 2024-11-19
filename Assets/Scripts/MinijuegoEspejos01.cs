@@ -16,7 +16,8 @@ public class MinijuegoEspejos01 : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textoIncorrecto;
     [SerializeField] private TextMeshProUGUI textoFeedback;
     [SerializeField] private GameObject botonSiguiente;
-    private List<string> espejosLike = new List<string>();
+
+    private List<(string nombre, int id)> espejosLike = new List<(string nombre, int id)>();
     private int idEspejo = 0;
     private PlayerMovement playerMovement;
     [SerializeField] private FadeInObject escaleras;
@@ -51,7 +52,7 @@ public class MinijuegoEspejos01 : MonoBehaviour
 
     public void darRating()
     {
-        espejosLike.Add(localizacion.espejos[idEspejo].nombre);
+        espejosLike.Add((localizacion.espejos[idEspejo].nombre, idEspejo));
         idEspejo++;
 
         if (idEspejo >= localizacion.espejos.Count)
@@ -76,20 +77,24 @@ public class MinijuegoEspejos01 : MonoBehaviour
         RuedaRating.SetActive(false);
         parte2.SetActive(true);
         textoPregunta.text = localizacion.textoPreguntaParte2;
-        textoEspejos.text = localizacion.textoPreEspejoParte2 + espejosLike[idEspejo] + localizacion.textoPostEspejoParte2;
-        textoCorrecto.text = localizacion.espejos[idEspejo].respuestaCorrecta;
-        textoIncorrecto.text = localizacion.espejos[idEspejo].respuestaIncorrecta;
+
+        var (nombre, id) = espejosLike[idEspejo];
+        textoEspejos.text = localizacion.textoPreEspejoParte2 + nombre + localizacion.textoPostEspejoParte2;
+        textoCorrecto.text = localizacion.espejos[id].respuestaCorrecta;
+        textoIncorrecto.text = localizacion.espejos[id].respuestaIncorrecta;
     }
 
     public void pulsarCorrecto()
     {
-        textoFeedback.text = localizacion.textoFeedbackCorrecto + espejosLike[idEspejo] + localizacion.textoFeedbackCorrectoDetras;
+        var (nombre, _) = espejosLike[idEspejo];
+        textoFeedback.text = localizacion.textoFeedbackCorrecto + nombre + localizacion.textoFeedbackCorrectoDetras;
         botonSiguiente.SetActive(true);
     }
 
     public void pulsarIncorrecto()
     {
-        textoFeedback.text = localizacion.textoFeedbackIncorrectoParte1 + espejosLike[idEspejo] + localizacion.textoFeedbackIncorrectoParte2;
+        var (nombre, _) = espejosLike[idEspejo];
+        textoFeedback.text = localizacion.textoFeedbackIncorrectoParte1 + nombre + localizacion.textoFeedbackIncorrectoParte2;
         botonSiguiente.SetActive(true);
     }
 
@@ -107,9 +112,11 @@ public class MinijuegoEspejos01 : MonoBehaviour
         {
             botonSiguiente.SetActive(false);
             textoFeedback.text = "";
-            textoEspejos.text = localizacion.textoPreEspejoParte2 + espejosLike[idEspejo] + localizacion.textoFeedbackIncorrectoParte2;
-            textoCorrecto.text = localizacion.espejos[idEspejo].respuestaCorrecta;
-            textoIncorrecto.text = localizacion.espejos[idEspejo].respuestaIncorrecta;
+
+            var (nombre, id) = espejosLike[idEspejo];
+            textoEspejos.text = localizacion.textoPreEspejoParte2 + nombre + localizacion.textoPostEspejoParte2;
+            textoCorrecto.text = localizacion.espejos[id].respuestaCorrecta;
+            textoIncorrecto.text = localizacion.espejos[id].respuestaIncorrecta;
         }
     }
 }

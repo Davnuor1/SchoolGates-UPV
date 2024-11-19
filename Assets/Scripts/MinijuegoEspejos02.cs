@@ -20,7 +20,7 @@ public class MinijuegoEspejos02 : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textoFeedback;
     [SerializeField] private GameObject botonSiguiente;
     private PlayerMovement playerMovement;
-    private List<string> espejosLike = new List<string>();
+    private List<(string nombre, int id)> espejosLike = new List<(string nombre, int id)>();
     private int idEspejo = 0;
     [SerializeField] private FadeInObject escaleras2;
 
@@ -54,7 +54,7 @@ public class MinijuegoEspejos02 : MonoBehaviour
 
     public void darRating(int puntuacion)
     {
-        espejosLike.Add(localizacion.espejos[idEspejo].nombre);
+        espejosLike.Add((localizacion.espejos[idEspejo].nombre, idEspejo));
         idEspejo++;
 
         if (idEspejo >= localizacion.espejos.Count)
@@ -82,26 +82,30 @@ public class MinijuegoEspejos02 : MonoBehaviour
         botonDislike2.SetActive(true);
         panelFeedback.SetActive(true);
         panelTitulo2.SetActive(true);
-        textoEspejos.text = espejosLike[idEspejo];
-        textoPreguntas2.text = localizacion.espejos[idEspejo].feedback01 + localizacion.textoDoYouAgree;
+
+        var (nombre, id) = espejosLike[idEspejo];
+        textoEspejos.text = nombre;
+        textoPreguntas2.text = localizacion.espejos[id].feedback01 + localizacion.textoDoYouAgree;
     }
 
     public void darBotonLike2()
     {
+        var (nombre, id) = espejosLike[idEspejo];
         textoFeedback.text = localizacion.textoFeedbackLike;
         botonSiguiente.SetActive(true);
     }
 
     public void darBotonDislike2()
     {
-        if (textoPreguntas2.text == localizacion.espejos[idEspejo].feedback02 +  localizacion.textoDoYouAgree)
+        var (nombre, id) = espejosLike[idEspejo];
+        if (textoPreguntas2.text == localizacion.espejos[id].feedback02 + localizacion.textoDoYouAgree)
         {
             textoFeedback.text = localizacion.textoFeedbackDislikeFinal;
             botonSiguiente.SetActive(true);
         }
         else
         {
-            textoPreguntas2.text = localizacion.espejos[idEspejo].feedback02 + localizacion.textoDoYouAgree;
+            textoPreguntas2.text = localizacion.espejos[id].feedback02 + localizacion.textoDoYouAgree;
         }
     }
 
@@ -119,8 +123,10 @@ public class MinijuegoEspejos02 : MonoBehaviour
         {
             botonSiguiente.SetActive(false);
             textoFeedback.text = "";
-            textoEspejos.text = espejosLike[idEspejo];
-            textoPreguntas2.text = localizacion.espejos[idEspejo].feedback01 + localizacion.textoDoYouAgree;
+
+            var (nombre, id) = espejosLike[idEspejo];
+            textoEspejos.text = nombre;
+            textoPreguntas2.text = localizacion.espejos[id].feedback01 + localizacion.textoDoYouAgree;
         }
     }
 }

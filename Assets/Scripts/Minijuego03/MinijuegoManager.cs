@@ -56,7 +56,7 @@ public class MinijuegoManager : MonoBehaviour
         }
     }
 
-    private List<int> espejosSegundaFase;
+    public List<int> espejosSegundaFase; // Hacer esta lista pública para acceder desde SeleccionMultipleController
 
     void PrepararSegundaFase()
     {

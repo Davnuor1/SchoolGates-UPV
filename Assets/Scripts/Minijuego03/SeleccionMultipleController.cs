@@ -12,6 +12,12 @@ public class SeleccionMultipleController : MonoBehaviour
 
     private List<string> respuestasSeleccionadas = new List<string>();
     private int idEspejoActual;
+    private MinijuegoManager minijuegoManager;
+
+    private void Start()
+    {
+        minijuegoManager = FindObjectOfType<MinijuegoManager>();
+    }
 
     public void MostrarSeleccionMultiple(int idEspejo)
     {
@@ -23,7 +29,7 @@ public class SeleccionMultipleController : MonoBehaviour
         ResetearBotones();
 
         // Configurar los botones basados en las respuestas del `ScriptableObject`
-        List<string> respuestas = localizacion.espejos[idEspejoActual].respuestas;
+        List<string> respuestas = localizacion.espejos[minijuegoManager.espejosSegundaFase[idEspejo]].respuestas;
         for (int i = 0; i < botonesPlantilla.Count; i++)
         {
             if (i < respuestas.Count)
