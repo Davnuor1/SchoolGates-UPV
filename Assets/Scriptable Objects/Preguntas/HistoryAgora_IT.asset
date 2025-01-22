@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: HistoryAgora_IT
+  m_EditorClassIdentifier: 
+  collectionName: Historia
+  questions:
+  - questionText: "Qual \xE8 la capitale della Nuova Zelanda?"
+    answers:
+    - Wellington
+    - Minsk
+    - Santiago
+    - Nairobi
+    correctAnswerIndex: 0
+  - questionText: "Qual \xE8 la capitale del Cile?"
+    answers:
+    - Wellington
+    - Minsk
+    - Santiago
+    - Nairobi
+    correctAnswerIndex: 2
+  - questionText: "Quando scoppi\xF2 la Prima guerra mondiale?"
+    answers:
+    - 1879
+    - 1492
+    - 1914
+    - 1939
+    correctAnswerIndex: 2
+  - questionText: "Quando \xE8 iniziata la Seconda guerra mondiale?"
+    answers:
+    - 1879
+    - 1492
+    - 1939
+    - 2020
+    correctAnswerIndex: 2
+  - questionText: "Quale \xE8 stato il primo Paese ad approvare definitivamente il
+      suffragio universale per le donne?"
+    answers:
+    - Germania
+    - Spagna
+    - Italia
+    - Nuova Zelanda
+    correctAnswerIndex: 3
+  - questionText: "Quale paese \xE8 pi\xF9 grande di Plutone?"
+    answers:
+    - Spagna
+    - Italia
+    - Germania
+    - Russia
+    correctAnswerIndex: 3
+  - questionText: Dove si trova il Vallo di Adriano?
+    answers:
+    - Italia
+    - Francia
+    - Portogallo
+    - Inghilterra
+    correctAnswerIndex: 3
+  - questionText: Chi ha inventato la scrittura?
+    answers:
+    - gli Egizi
+    - i Greci
+    - i Sumeri
+    - i Romani
+    correctAnswerIndex: 2
+  - questionText: Quale Paese ha avuto la prima donna al mondo a capo di stato democraticamente
+      eletta nel 1980?
+    answers:
+    - Stati Uniti
+    - Inghilterra
+    - Cina
+    - Islanda
+    correctAnswerIndex: 3
+  - questionText: "Quando \xE8 stata adottata la Dichiarazione universale dei diritti
+      umani?"
+    answers:
+    - 1879
+    - 1918
+    - 1948
+    - 1978
+    correctAnswerIndex: 2
+  collectionIcon: {fileID: 980677572, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

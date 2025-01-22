@@ -951,7 +951,7 @@ PrefabInstance:
       objectReference: {fileID: 1821887234}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.localizationSettings.language
-      value: es
+      value: it
       objectReference: {fileID: 0}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.subtitleSettings.minSubtitleSeconds
@@ -33302,7 +33302,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cerrar Juego
+  m_text: Chiudere il gioco
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 62169d26301cbf347bfde505c6024630, type: 2}
   m_sharedMaterial: {fileID: -5654135124893116109, guid: 62169d26301cbf347bfde505c6024630, type: 2}
@@ -33913,7 +33913,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Diario de viaje
+  m_text: Diario di viaggio
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 62169d26301cbf347bfde505c6024630, type: 2}
   m_sharedMaterial: {fileID: -5654135124893116109, guid: 62169d26301cbf347bfde505c6024630, type: 2}
@@ -57074,7 +57074,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Estad\xEDsticas"
+  m_text: Statistiche
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 62169d26301cbf347bfde505c6024630, type: 2}
   m_sharedMaterial: {fileID: -5654135124893116109, guid: 62169d26301cbf347bfde505c6024630, type: 2}
@@ -137188,7 +137188,7 @@ Tilemap:
       - {fileID: -1973172094, guid: f33855a2c14d9a24da734b7a3e1ea828, type: 3}
       - {fileID: -147612782, guid: f33855a2c14d9a24da734b7a3e1ea828, type: 3}
       - {fileID: -1892596587, guid: f33855a2c14d9a24da734b7a3e1ea828, type: 3}
-      m_AnimationSpeed: 3
+      m_AnimationSpeed: 3.0000002
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -6, y: -1, z: 0}
@@ -138855,7 +138855,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Skill Tree
+  m_text: "Albero delle abilit\xE0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 62169d26301cbf347bfde505c6024630, type: 2}
   m_sharedMaterial: {fileID: -5654135124893116109, guid: 62169d26301cbf347bfde505c6024630, type: 2}
@@ -139667,7 +139667,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Libro de pistas
+  m_text: Libro degli indizi
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 62169d26301cbf347bfde505c6024630, type: 2}
   m_sharedMaterial: {fileID: -5654135124893116109, guid: 62169d26301cbf347bfde505c6024630, type: 2}
@@ -143742,7 +143742,7 @@ PrefabInstance:
       objectReference: {fileID: 477471530}
     - target: {fileID: 5626235431481843963, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
       propertyPath: textoNombreEscena
-      value: Pueblo
+      value: "Citt\xE0"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
@@ -144248,7 +144248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 938096135610520555, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 938096135610520556, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
       propertyPath: aQueEscena

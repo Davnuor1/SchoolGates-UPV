@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e418474bb2a30542b702a5d9eab1987, type: 3}
+  m_Name: Espejos02_IT
+  m_EditorClassIdentifier: 
+  textoPreguntaInicial: Quanto di te stesso riflette questo specchio?
+  textoPreguntaRating: Dai un voto da 1 a 10 su quanto ti identifichi in questo specchio.
+  textoFeedbackLike: "Fantastico! Continuiamo a cercare il vero te\u2026"
+  textoFeedbackDislikeFinal: "Ok\u2026tienilo a mente e continua a cercare il vero
+    te\u2026"
+  textoDoYouAgree: "Sei d\u2019accordo?"
+  espejos:
+  - nombre: "Devo comportarmi bene e ottenere l'approvazione di tutti coloro che
+      contano per me , altrimenti diventer\xF2 una persona senza valore. "
+    feedback01: "Ricorda che non piacerai sempre a tutti e va bene cos\xEC. "
+    feedback02: 'Tieni presente che il tuo valore personale non dovrebbe dipendere
+      dall''approvazione degli altri. '
+  - nombre: "Le altre persone devono trattarmi con gentilezza ed equit\xE0, altrimenti
+      sono cattive "
+    feedback01: "Ricorda che le persone a volte si comportano in modo scortese e
+      ingiusto perch\xE9, proprio come te, hanno i loro problemi e non sono sempre
+      in grado di comportarsi in modo amichevole. "
+    feedback02: "Potresti considerare che un cattivo comportamento non \xE8 necessariamente
+      un riflesso di malizia. "
+  - nombre: "Devo avere una vita facile e piacevole, altrimenti non mi piacer\xE0
+      affatto vivere. "
+    feedback01: "Ricorda che la vita \xE8 imprevedibile ed \xE8 piena di sfide e
+      divertimento. "
+    feedback02: "Tieni presente che \xE8 la natura stessa degli alti e bassi della
+      vita a renderla un'esperienza ricca e significativa e a darti l'opportunit\xE0
+      di imparare e crescere. "
+  - nombre: "Tutte le persone che contano per me devono amarmi e approvarmi altrimenti
+      sar\xE0 terribile. "
+    feedback01: "Ricorda che le persone che ti amano e si prendono cura di te hanno
+      le proprie opinioni e non hanno bisogno di essere d'accordo con te o approvare
+      tutto ci\xF2 che fai. Questo non significa che non ti amino o che ti amino
+      di meno "
+    feedback02: "Considera che le vere connessioni si basano sulla comprensione,
+      sull\u2019empatia e sulla capacit\xE0 di superare i disaccordi. "
+  - nombre: "Devo ottenere grandi risultati o sar\xF2 inutile. "
+    feedback01: "Ricorda che il tuo valore personale deriva da chi sei, non solo
+      da ci\xF2 che realizzi o da ci\xF2 che hai "
+    feedback02: "Tieni presente che commettere errori e sperimentare battute d\u2019arresto
+      fanno parte dell\u2019esperienza umana. "
+  - nombre: 'Nessuno dovrebbe mai comportarsi male e se lo fa dovrei condannarlo. '
+    feedback01: 'Ricorda che le persone non sono perfette e possono essere influenzate
+      da eventi, esperienze ed emozioni spiacevoli, che possono portare a comportamenti
+      scorretti. '
+    feedback02: "Potresti prendere in considerazione l\u2019idea di adottare un approccio
+      pi\xF9 empatico e costruttivo, cercando di comprendere le ragioni delle loro
+      azioni, invece di condannare immediatamente chi si comporta male. "
+  - nombre: "Se qualcosa non mi riesce, non devo frustrarmi perch\xE9 questo dimostrerebbe
+      che semplicemente non sono abbastanza bravo.\""
+    feedback01: "Ricorda che non \xE8 terribile sentirsi frustrati, \xE8 semplicemente
+      un segnale che qualcosa non sta andando come previsto "
+    feedback02: "Tieni presente che la frustrazione \xE8 una risposta emotiva comune
+      agli ostacoli, ai ritardi e alle aspettative non soddisfatte, che pu\xF2 essere
+      una preziosa fonte di motivazione e crescita e fa parte della vita di tutti. "
+  - nombre: Quando le cose si fanno difficili e sono sotto pressione mi sento infelice
+      e non posso farci niente.
+    feedback01: "Ricorda che nei momenti difficili \xE8 normale sentirsi infelici,
+      ma c'\xE8 sempre almeno qualcosa che puoi fare: decidere come affrontare la
+      battuta d'arresto. "
+    feedback02: 'Potresti considerare diverse cose che puoi fare per gestire lo stress
+      e migliorare il tuo stato emotivo, piuttosto che rassegnarti alla miseria. '
+  - nombre: "Di fronte alla possibilit\xE0 che mi accada qualcosa di spaventoso o
+      pericoloso, questa idea diventa un\u2019ossessione e devo fare sforzi frenetici
+      per evitarlo. "
+    feedback01: "Ricorda che, anche se \xE8 giusto preoccuparsi di potenziali pericoli
+      o situazioni spaventose, un'eccessiva preoccupazione e comportamenti di evitamento
+      possono farti sentire ancora pi\xF9 ansioso. "
+    feedback02: "Potresti prendere in considerazione l\u2019adozione di un approccio
+      pi\xF9 razionale e misurato per affrontare i potenziali rischi valutando oggettivamente
+      la probabilit\xE0 e la gravit\xE0 della minaccia e adottando precauzioni ragionevoli
+      per mitigarla "
+  - nombre: "Posso evitare le mie responsabilit\xE0 e le difficolt\xE0 della vita
+      ed essere comunque realizzato "
+    feedback01: "Ricorda che, anche se sei tentato di evitare responsabilit\xE0 e
+      difficolt\xE0, farlo pu\xF2 impedirti di realizzare il tuo potenziale e goderti
+      la vita al massimo. "
+    feedback02: "Tieni presente che la vita comporta sfide, obblighi morali e responsabilit\xE0,
+      e tentare di evitarli porter\xE0 probabilmente a maggiore stress e infelicit\xE0
+      a lungo termine. "
+  - nombre: "Il mio passato \xE8 la parte pi\xF9 importante della mia vita e continuer\xE0
+      a dettare come mi sento e cosa faccio. "
+    feedback01: "Ricorda che il passato pu\xF2 limitare le tue opzioni, ma non ti
+      determina completamente. Invece di soffermarti sul passato e sentirti intrappolato,
+      concentrati su ci\xF2 che puoi controllare nel presente "
+    feedback02: 'Potresti considerare che, nonostante il tuo passato, hai il potere
+      di fare scelte e decisioni nel momento presente che possono influenzare il
+      tuo futuro. '
+  - nombre: "Tutto e tutti dovrebbero essere sempre perfetti, perch\xE9 fare errori
+      ed essere imperfetti \xE8 una debolezza."
+    feedback01: "Ricorda che aspettarsi che tutti e tutto siano perfetti \xE8 un
+      obiettivo irraggiungibile, perch\xE9 la vita \xE8 piena di imperfezioni, sia
+      nelle persone che nelle circostanze. "
+    feedback02: "Tieni presente che la ricerca del miglioramento \xE8 un processo
+      naturale e continuo che dovrebbe essere bilanciato con l\u2019accettazione
+      della realt\xE0. "
+  - nombre: "Posso essere il pi\xF9 felice possibile facendo il meno possibile e
+      semplicemente divertendomi. "
+    feedback01: 'Ricorda che una vita felice non significa solo ricercare il piacere,
+      ma anche accettare le sfide della vita. '
+    feedback02: "Potresti considerare che raggiungere la felicit\xE0 implica stabilire
+      e perseguire obiettivi significativi, contribuire agli altri e abbracciare
+      la crescita personale; tutti questi aspetti richiedono impegno, responsabilit\xE0
+      e capacit\xE0 di affrontare sfide. "

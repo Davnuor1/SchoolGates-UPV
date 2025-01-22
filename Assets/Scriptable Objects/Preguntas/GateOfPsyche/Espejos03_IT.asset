@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e583b4c22b793db448789db36fb2579b, type: 3}
+  m_Name: Espejos03_IT
+  m_EditorClassIdentifier: 
+  textoPreguntaInicial: Che tipo di persone credi abbiano a cuore questi aspetti
+    tanto quanto te?
+  textoInstruccionesPrimeraFase: "Pensa a una bella vita o una vita che abbia un
+    senso\u2026Di cosa hai davvero bisogno?"
+  textoInstruccionesSegundaFase: Quindi, secondo te queste cose sono importanti,
+    ma quanto ti interessano, davvero?
+  textoValoracion: "Valuta l\u2019importanza, per te, di queste cose"
+  textoCuidadoValores: "Cosa puoi fare ora per prenderti pi\xF9 o miglior cura di
+    questi tuoi valori?"
+  textoAccionFinal: 
+  espejos:
+  - nombre: Indipendenza
+    respuestas:
+    - Prendere le mie decisioni
+    - Avere un certo livello di controllo sulla mia vita
+    - Essere in grado di guadagnare e gestire i propri soldi
+  - nombre: Amicizie e relazioni sociali
+    respuestas:
+    - Avere amici intimi con cui posso condividere i miei pensieri e sentimenti
+    - Trascorrere del tempo insieme ai miei amici
+    - Essere in una relazione romantica
+    - Avere molti follower sui social media
+    - "Partecipare a una comunit\xE0 sociale e a cause globali"
+  - nombre: "Ricerca dell\u2019 identit\xE0"
+    respuestas:
+    - "Essere in grado di esplorare ed esprimere la propria identit\xE0 "
+    - 'Indossare i vestiti che mi piacciono, ascoltare la mia musica preferita ogni
+      volta che voglio '
+    - Provare cose nuove, nuove esperienze di vita
+    - Viaggiare
+  - nombre: Hobby/Interessi, Privacy
+    respuestas:
+    - Impegnarsi nell'arte, nella musica o nella scrittura
+    - Avere tempo per i miei hobby o interessi
+    - Avere abbastanza privacy e il mio spazio personale
+  - nombre: Famiglia e casa
+    respuestas:
+    - Avere una famiglia che mi sostiene
+    - Avere una famiglia che mi ascolta
+    - Trascorrere del tempo con la mia famiglia
+    - Sentirsi al sicuro a casa
+  - nombre: Istruzione e scuola
+    respuestas:
+    - Ottenere buoni voti a scuola
+    - Imparare cose significative a scuola
+    - Scegliere le materie/carriera che mi piacciono
+    - Essere popolare a scuola
+  - nombre: Forma fisica e salute
+    respuestas:
+    - "Fare attivit\xE0 fisica regolarmente"
+    - Mangiare sano
+    - Dormire abbastanza ore
+    - Migliorare la mia salute e il mio benessere
