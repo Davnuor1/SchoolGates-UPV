@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: ScienceAgora_IT
+  m_EditorClassIdentifier: 
+  collectionName: Scientia
+  questions:
+  - questionText: "Qual \xE8 l'unica parte del corpo umano che non pu\xF2 guarire
+      se stessa?"
+    answers:
+    - Pelle
+    - Denti
+    - Capelli
+    - Fegato
+    correctAnswerIndex: 1
+  - questionText: Dove hanno il cuore i gamberetti?
+    answers:
+    - Testa
+    - Gambe
+    - Baffi
+    - Corpo
+    correctAnswerIndex: 0
+  - questionText: "Qual \xE8 l'unico pianeta che ruota in senso orario?"
+    answers:
+    - Marte
+    - Terra
+    - Venere
+    - Giove
+    correctAnswerIndex: 2
+  - questionText: Quale animale non dorme mai?
+    answers:
+    - Orsi
+    - Formiche
+    - Gamberetti
+    - Cavalli
+    correctAnswerIndex: 1
+  - questionText: Quanto contamina l'acqua una goccia d'olio?
+    answers:
+    - 1 litro
+    - 25 litri
+    - 100 litri
+    - 1000 litri
+    correctAnswerIndex: 1
+  - questionText: Quanti litri d'acqua ci vogliono per produrre un litro di coca-cola?
+    answers:
+    - 2 litri
+    - 20 litri
+    - 200 litri
+    - Senza acqua utilizzata
+    correctAnswerIndex: 2
+  - questionText: "Quanto tempo una persona pu\xF2 stare senza acqua potabile?"
+    answers:
+    - 1 giorno
+    - 3 giorni
+    - 7 giorni
+    - 10 giorni
+    correctAnswerIndex: 2
+  - questionText: "Di che colore \xE8 il rinoceronte bianco?"
+    answers:
+    - Bianco
+    - Grigio
+    - Rosa
+    - Non esiste un rinoceronte bianco.
+    correctAnswerIndex: 1
+  - questionText: Il sistema circolatorio umano forma una rete di circa
+    answers:
+    - 10 m
+    - 10 km
+    - 1000 km
+    - 100000 km
+    correctAnswerIndex: 3
+  - questionText: "Quale tipo di lampadina \xE8 pi\xF9 efficiente dal punto di vista
+      energetico?"
+    answers:
+    - Incandesciente
+    - CFL
+    - LED
+    - Alogena
+    correctAnswerIndex: 2
+  collectionIcon: {fileID: 219575835, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

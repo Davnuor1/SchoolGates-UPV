@@ -133,6 +133,13 @@ MonoBehaviour:
         el edificio del critical thinkers
       type: 4
       typeString: CustomFieldType_Localization
+    - title: Description it
+      value: 'Siamo arrivati in una piazza con diversi edifici... Dovremmo trovare
+        l''edificio dei pensatori critici.
+
+'
+      type: 4
+      typeString: 
   - id: 2
     fields:
     - title: Name
@@ -182,6 +189,11 @@ MonoBehaviour:
         un mapa de la zona!
       type: 4
       typeString: CustomFieldType_Localization
+    - title: Description it
+      value: "Ora che siamo nell'edificio dei pensatori critici, dovremmo trovare
+        una mappa della zona!\r"
+      type: 4
+      typeString: 
   - id: 3
     fields:
     - title: Name
@@ -251,6 +263,10 @@ MonoBehaviour:
         m\xE1gicos"
       type: 4
       typeString: CustomFieldType_Localization
+    - title: Description it
+      value: Scoprire dove sono i 3 portali magici e avanzare nei loro mondi magici.
+      type: 4
+      typeString: 
   - id: 4
     fields:
     - title: Name
@@ -297,6 +313,10 @@ MonoBehaviour:
       value: Busca en las cuevas  completa los minijuegos
       type: 4
       typeString: CustomFieldType_Localization
+    - title: Description it
+      value: Cercare nelle grotte e completare i minigiochi.
+      type: 4
+      typeString: 
   - id: 5
     fields:
     - title: Name
@@ -339,6 +359,10 @@ MonoBehaviour:
       value: Explora el pantano y completa el laberinto.
       type: 4
       typeString: CustomFieldType_Localization
+    - title: Description it
+      value: Esplorare la palude e completare il labirinto.
+      type: 4
+      typeString: 
   locations:
   - id: 1
     fields:
@@ -498,6 +522,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -563,6 +591,10 @@ MonoBehaviour:
 '
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: Buongiorno, benvenuti alla dimostrazione di School Gates!
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -624,6 +656,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: "Guten Morgen, vielen Dank.\r"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: Buongiorno, grazie.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -732,6 +768,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -798,6 +838,10 @@ MonoBehaviour:
           kristallklar aus!\r"
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: "Non \xE8 bellissima l'acqua? In questo periodo dell'anno sembra cristallina!"
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 2
       isRoot: 0
       isGroup: 0
@@ -813,8 +857,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 80
+        x: 161
+        y: 78
         width: 160
         height: 30
     entryGroups: []
@@ -904,6 +948,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 3
       isRoot: 0
       isGroup: 0
@@ -968,6 +1016,11 @@ MonoBehaviour:
       - title: de
         value: "Die Atmosph\xE4re im Park ist sehr entspannend, du solltest \xF6fter
           kommen.\r"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: "L'atmosfera nel parco \xE8 molto rilassante, dovreste venire pi\xF9
+          spesso."
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 3
@@ -1076,6 +1129,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -1145,6 +1202,10 @@ MonoBehaviour:
         value: "Ich bin sehr hungrig, ich brauche eine Frucht...\r"
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: Ho molta fame, ho bisogno di un frutto...
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -1200,6 +1261,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: "Vielen Dank, dass du mir dieses leckere Obst gebracht hast!\r"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: "Grazie mille per avermi portato questo delizioso frutto!\r"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 4
@@ -1308,6 +1373,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 5
       isRoot: 0
       isGroup: 0
@@ -1371,6 +1440,11 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: "Gut, dass es nebenan die Karte gibt, sonst w\xFCrde ich nichts finden...\r"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: "Meno male che c'\xE8 la mappa qui accanto, altrimenti non riuscirei
+          a trovare nulla...\r"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 5
@@ -1479,6 +1553,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 6
       isRoot: 0
       isGroup: 0
@@ -1540,6 +1618,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: "Was f\xFCr bl\xF6de Troph\xE4en unsere Schule hat!\r"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: Che stupidi trofei ha la nostra scuola!
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -1648,6 +1730,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 7
       isRoot: 0
       isGroup: 0
@@ -1709,6 +1795,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: "Was f\xFCr eine schlechte Atmosph\xE4re in der Schule, es ist ekelhaft.\r"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: "Che brutta atmosfera c'\xE8 a scuola, \xE8 disgustosa."
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 7
@@ -1817,6 +1907,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 8
       isRoot: 0
       isGroup: 0
@@ -1878,6 +1972,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: "Ich muss schon wieder die B\xE4lle aufsammeln, und keiner macht was.\r"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: Sono rimasto a raccogliere le palle di nuovo, nessuno fa niente.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 8
@@ -1986,6 +2084,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 9
       isRoot: 0
       isGroup: 0
@@ -2047,6 +2149,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: "Das Essen in der Cafeteria ist lausig.\r"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: Il cibo della mensa fa schifo.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -2155,6 +2261,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 10
       isRoot: 0
       isGroup: 0
@@ -2216,6 +2326,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: "Ich hasse diese Schule.\r"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: Odio questa scuola.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 10
@@ -2324,6 +2438,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 11
       isRoot: 0
       isGroup: 0
@@ -2386,6 +2504,10 @@ MonoBehaviour:
       - title: de
         value: "Ich dachte, ich h\xE4tte ein paar seltsame Teilchen auf der B\xFChne
           gesehen...\r"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: "Mi \xE8 sembrato di vedere delle strane particelle sul palco..."
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 11
@@ -2494,6 +2616,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 12
       isRoot: 0
       isGroup: 0
@@ -2555,6 +2681,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: "Oh, mein Gott!\r"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: Dio mio!
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 12
@@ -2663,6 +2793,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -2742,6 +2876,13 @@ MonoBehaviour:
           helfen?"
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: "Ho inavvertitamente lasciato una delle mie finestre aperta ed il
+          mio amato Pappagallo \xE8 volato via ed ora non lo trovo pi\xF9! Sono molto
+          preoccupata perch\xE9 non \xE8 mai uscito e ho paura che muoia se non lo
+          trovo presto! Puoi aiutarmi, per favore?"
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -2809,6 +2950,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: Ich habe ein bisschen Angst vor Papageien, aber ich werde Ihnen helfen
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: "Ho un po' paura dei pappagalli, ma ti aiuter\xF2"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 13
@@ -2879,6 +3024,11 @@ MonoBehaviour:
           aber ich kann Ihnen nicht helfen"
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: "Ho un po' paura dei pappagalli\u2026 mi dispiace molto ma non posso
+          aiutarti"
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -2894,7 +3044,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 293
+        x: 294
         y: 142
         width: 160
         height: 30
@@ -2934,6 +3084,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: Vielen Dank! Dieser Papagei ist mir wichtig!
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: "Grazie mille! Questo pappagallo mi \xE8 molto caro!"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 13
@@ -2997,6 +3151,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: "K\xF6nnen Sie mir Ihren Papagei beschreiben?"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: Mi puoi descrivere il tuo pappagallo?
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 13
@@ -3065,6 +3223,12 @@ MonoBehaviour:
         value: "Er ist ziemlich gro\xDF, wei\xDF mit rosa Fl\xFCgelspitzen. Er mag
           keine lauten Ger\xE4usche und sein Name ist Pirat. Er mag gl\xE4nzende
           Dinge und Kekse"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: "\xC8 piuttosto grande, bianco con le punte delle ali color rosa .
+          Non ama i rumori forti e il suo nome \xE8 Pirata. Gli piacciono le cose
+          che brillano e biscotti."
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 13
@@ -3136,6 +3300,10 @@ MonoBehaviour:
         value: Ich werde im Garten herumlaufen und nach dem Papagei suchen
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: "Inizier\xF2 ad aggirarmi per il cortile alla ricerca del pappagallo"
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 13
       isRoot: 0
       isGroup: 0
@@ -3153,7 +3321,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 36
+        x: 37
         y: 349
         width: 160
         height: 30
@@ -3194,6 +3362,10 @@ MonoBehaviour:
       - title: de
         value: "Ich nehme einen Keks und fange an, meine Schl\xFCssel in der Sonne
           baumeln zu lassen"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: Prendo un biscotto e comincio a far dondolare le chiavi al sole
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 13
@@ -3252,6 +3424,10 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
         value: 
         type: 4
         typeString: CustomFieldType_Localization
@@ -3361,6 +3537,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 14
       isRoot: 0
       isGroup: 0
@@ -3424,6 +3604,10 @@ MonoBehaviour:
         value: "Ist das der verlorene Papagei?\r"
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: "\xC8 questo il pappagallo perduto?"
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 14
       isRoot: 0
       isGroup: 0
@@ -3484,6 +3668,10 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
         value: 
         type: 4
         typeString: CustomFieldType_Localization
@@ -3559,6 +3747,11 @@ MonoBehaviour:
           zu ihr zur\xFCckzufliegen."
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: "Bene, ora lascer\xF2 che sia la vecchia signora a prenderlo o a convincere
+          il pappagallo a tornare da lei"
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 14
       isRoot: 0
       isGroup: 0
@@ -3615,6 +3808,10 @@ MonoBehaviour:
       - title: de
         value: Ich habe ein bisschen Angst, aber ich werde helfen, den Papagei zu
           fangen!
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: "Ho un po\u2019 paura ma aiuter\xF2 a catturare il pappagallo!"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 14
@@ -3723,6 +3920,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 15
       isRoot: 0
       isGroup: 0
@@ -3784,6 +3985,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: "Oh nein!\r"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 15
@@ -3892,6 +4097,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -3953,6 +4162,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: Hey, brauchst Du etwas?
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: Ehi, ti serve qualcosa?
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 16
@@ -4019,6 +4232,11 @@ MonoBehaviour:
       - title: de
         value: Ich hab mein Essensgeld vergessen und nun kann ich mir nichts zu essen
           kaufen. Ich bin so hungrig....
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: "Ho dimenticato i soldi per il pranzo e ora non posso comprare niente
+          da mangiare. Ho cos\xEC tanta fame..."
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 16
@@ -4099,6 +4317,11 @@ MonoBehaviour:
           zu trinken und einen kleinen Snack zu kaufen. Hier hast Du es.
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: Posso aiutarti con un po' di soldi, non sono molti ma abbastanza per
+          comprare qualcosa da bere e un piccolo spuntino. Ecco qua
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -4160,6 +4383,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: "W\xFCrdest Du gerne mit mir zusammen essen?"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: Vorresti pranzare con me?
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 16
@@ -4225,6 +4452,10 @@ MonoBehaviour:
         value: Oh man, tut mir leid, aber ich kann Dir nicht helfen
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: "Accidenti, mi dispiace ma non posso aiutarti\u2026"
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -4282,6 +4513,10 @@ MonoBehaviour:
         value: Danke, ich bin neu hier und kenne noch nicht viele Menschen.
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: Grazie, sono nuovo qui e non conosco ancora molte persone.
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -4337,6 +4572,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: Ja, danke, ich bin neu hier und kenne noch nicht viele Menschen.
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 16
@@ -4416,6 +4655,10 @@ MonoBehaviour:
           heute geht es auf mich!"
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: Cosa vorresti mangiare per pranzo? Scegli quello che vuoi, offro io
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -4480,6 +4723,11 @@ MonoBehaviour:
       - title: de
         value: "Lass uns dort dr\xFCben am Tisch sitzen und wir k\xF6nnen mein Mittag
           teilen. Ich hab genug f\xFCr uns Beide"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: "Sediamoci l\xEC a tavola e possiamo condividere il mio pranzo, ce
+          n'\xE8 abbastanza per tutti e due!"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 16
@@ -4548,6 +4796,11 @@ MonoBehaviour:
           einfach so zusammen sitzen, wenn Du willst?"
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: Oops, non ho soldi neanche per il pranzo, ma possiamo sederci insieme
+          per un po' se vuoi.
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -4609,6 +4862,10 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: de
         value: Du bist sehr nett, danke. Ich werde Dich an einem anderen Tag einladen!
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: " \u201CSei molto gentile, grazie. Ti inviter\xF2 la  prossima volta!"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 16
@@ -4717,6 +4974,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 17
       isRoot: 0
       isGroup: 0
@@ -4780,6 +5041,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 17
       isRoot: 0
       isGroup: 0
@@ -4818,7 +5083,8 @@ MonoBehaviour:
     Item","value":"False","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"Description
     de","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"Name
     de","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"Description
-    es","value":"","type":4,"typeString":"CustomFieldType_Localization"}],"locationFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"}],"variableFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Initial
+    es","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"Description
+    it","value":"","type":4,"typeString":"CustomFieldType_Localization"}],"locationFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"}],"variableFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Initial
     Value","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""}],"conversationFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"0","type":5,"typeString":"CustomFieldType_Actor"}],"dialogueEntryFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Menu
     Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Dialogue
-    Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Sequence","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"es","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"de","value":"","type":4,"typeString":"CustomFieldType_Localization"}],"actorPrimaryFieldTitles":[],"itemPrimaryFieldTitles":[],"questPrimaryFieldTitles":[],"locationPrimaryFieldTitles":[],"variablePrimaryFieldTitles":[],"conversationPrimaryFieldTitles":[],"dialogueEntryPrimaryFieldTitles":[],"npcLineColor":{"r":1.0,"g":0.0,"b":0.0,"a":1.0},"pcLineColor":{"r":0.0,"g":0.0,"b":1.0,"a":1.0},"repeatLineColor":{"r":0.5,"g":0.5,"b":0.5,"a":1.0}}'
+    Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Sequence","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"es","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"de","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"it","value":"","type":4,"typeString":"CustomFieldType_Localization"}],"actorPrimaryFieldTitles":[],"itemPrimaryFieldTitles":[],"questPrimaryFieldTitles":[],"locationPrimaryFieldTitles":[],"variablePrimaryFieldTitles":[],"conversationPrimaryFieldTitles":[],"dialogueEntryPrimaryFieldTitles":[],"npcLineColor":{"r":1.0,"g":0.0,"b":0.0,"a":1.0},"pcLineColor":{"r":0.0,"g":0.0,"b":1.0,"a":1.0},"repeatLineColor":{"r":0.5,"g":0.5,"b":0.5,"a":1.0}}'

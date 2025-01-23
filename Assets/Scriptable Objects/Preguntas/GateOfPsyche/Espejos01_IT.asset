@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457a34b01ea1a0147ac69562ed6959ec, type: 3}
+  m_Name: Espejos01_IT
+  m_EditorClassIdentifier: 
+  textoPreguntaInicial: Scegli gli specchi nei quali ti identifichi e distruggi gli
+    altri.
+  textoPreguntaRating: Dai un voto da 1 a 10 su quanto ti identifichi in questo specchio.
+  textoPreguntaParte2: "Vediamo quanto \xE8 reale\u2026sei davvero tu?"
+  textoPreEspejoParte2: "Qual \xE8 la prova che ti fa dire di essere"
+  textoPostEspejoParte2: 
+  textoFeedbackCorrecto: "Hai ragione! Questa \xE8 probabilmente la prova che sei"
+  textoFeedbackCorrectoDetras: 
+  textoFeedbackIncorrectoParte1: "Forse non sei ancora cos\xEC"
+  textoFeedbackIncorrectoParte2: "come pensi\u2026Succede a tutti, di quando in quando"
+  espejos:
+  - nombre: 'Spaventato/Ansioso '
+    respuestaCorrecta: "Ho paura delle novit\xE0 "
+    respuestaIncorrecta: 'Incontrare nuove persone mi rende nervoso '
+  - nombre: Ottimista
+    respuestaCorrecta: 'In situazioni diffiicli, tendo a sperare per il meglio '
+    respuestaIncorrecta: "Non pu\xF2 accadermi niente di male"
+  - nombre: Impulsivo
+    respuestaCorrecta: Di solito non penso alle conseguenze delle mie azioni o di
+      quello che dico
+    respuestaIncorrecta: A volte mi pento di qualcosa che ho detto o fatto
+  - nombre: 'Aperto alle esperienze '
+    respuestaCorrecta: Mi piace provare cose nuove
+    respuestaIncorrecta: Mi piace fare le cose a modo mio
+  - nombre: 'Alla ricerca di approvazione o dipendente '
+    respuestaCorrecta: Di solito faccio quello che i miei amici vogliono che io faccia
+    respuestaIncorrecta: Non sto bene quando qualcuno si arrabbia con me.
+  - nombre: Indipendente
+    respuestaCorrecta: Mi piace stare con gli altri ma anche stare da solo
+    respuestaIncorrecta: Se sono triste o arrabbiato preferisco stare da solo
+  - nombre: 'Al di sotto delle aspettative '
+    respuestaCorrecta: Non ho obiettivi chiari nella vita
+    respuestaIncorrecta: A volte ho dei dubbi su me stesso e sul modo giusto di raggiungere
+      gli obiettivi
+  - nombre: Determinato
+    respuestaCorrecta: Le sfide mi danno motivazione
+    respuestaIncorrecta: 'Nella mia vita ho lasciato perdere alcune cose '
+  - nombre: 'Dare la colpa/Insicurezza '
+    respuestaCorrecta: "Quando devo affrontare ostacoli o difficolt\xE0 mi sento
+      incompetente"
+    respuestaIncorrecta: Mi sento insicuro quando faccio le cose in modo sbagliato
+  - nombre: Ingegnoso
+    respuestaCorrecta: Sento che la mia vita ha un senso e una direzione chiari
+    respuestaIncorrecta: Spesso mi sento come se non avessi scelta
+  - nombre: 'Empatico/Gentile '
+    respuestaCorrecta: Cerco di trattare le persone in maniera giusta
+    respuestaIncorrecta: A volte non capisco le persone intorno a me
+  - nombre: Ostile
+    respuestaCorrecta: Tendo a vendicarmi dei torti subiti
+    respuestaIncorrecta: A volte tendo a arrabbiarmi moltissimo
+  - nombre: Fedele o idealista
+    respuestaCorrecta: 'Credo che siamo tutti uguali '
+    respuestaIncorrecta: A volte dubito che un mondo migliore sia possibile
+  - nombre: Materialista
+    respuestaCorrecta: "Credo solo in ci\xF2 che vedo"
+    respuestaIncorrecta: Mi piace ricevere regali
