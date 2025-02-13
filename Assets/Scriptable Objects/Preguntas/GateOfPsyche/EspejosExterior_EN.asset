@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12378fb498d283642a330e1ccd91f0bf, type: 3}
+  m_Name: EspejosExterior_EN
+  m_EditorClassIdentifier: 
+  topMessageInitial: Rumiator is talking to you, what do you want to do?
+  topMessageRespondFormat: How do you respond to the demon of {0}?
+  topMessageSecondRound: What else can you tell them?
+  espejos:
+  - mirrorTitle: Success
+    mirrorText: "You have to be successful in everything you do or you\u2019ll be
+      a loser"
+    responses:
+    - "I don\u2019t always win, but that doesn\u2019t make me a loser"
+    - Making mistakes is part of success
+    - Nobody can be the best in everything
+  - mirrorTitle: Blaming
+    mirrorText: "You are the one to blame, you don\u2019t deserve to be happy"
+    responses:
+    - Everyone deserves the chance to be happy
+    - People sometimes make mistakes, but they always deserve a second chance
+    - I am no less or more than anyone else
+  - mirrorTitle: Ideal Body
+    mirrorText: Your body is not perfect, and it has to be
+    responses:
+    - My body is perfect just the way it is, no matter what other people say
+    - I am beautiful and strong
+    - The perfect body does not exist
+  - mirrorTitle: Envy
+    mirrorText: Everyone is better than you and has better things than you
+    responses:
+    - Different people have different strengths and weaknesses
+    - Everyone has their own fears and problems
+    - I don't have everything I want, but I'm grateful for what I have
+  - mirrorTitle: Self-sabotage
+    mirrorText: You are not enough, you will never win
+    responses:
+    - Even though sometimes I'm wrong, I can do things right
+    - You don't always win and you don't always lose
+    - At least I can try my best and that's worth it
