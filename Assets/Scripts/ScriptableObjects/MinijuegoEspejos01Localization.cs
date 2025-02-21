@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
-[CreateAssetMenu(fileName = "MinijuegoEspejosLocalization", menuName = "Localization/MinijuegoEspejosLocalization")]
+[CreateAssetMenu(fileName = "MinijuegoEspejos01Localization", menuName = "Localization/MinijuegoEspejos01Localization")]
 public class MinijuegoEspejos01Localization : ScriptableObject
 {
     public string textoPreguntaInicial;
@@ -22,6 +21,7 @@ public class MinijuegoEspejos01Localization : ScriptableObject
         public string nombre;
         public string respuestaCorrecta;
         public string respuestaIncorrecta;
+        public Sprite figuraGeometrica; // Imagen de la figura geométrica
     }
 
     public List<EspejoTextos> espejos;
