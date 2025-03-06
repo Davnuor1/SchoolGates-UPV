@@ -9,6 +9,9 @@ public class TogglePlayerMovement : MonoBehaviour
     private GameObject player;
     private PlayerMovement playerMovement;
     private Animator playerAnimator;
+    public bool desactivarNPC;
+    public GameObject NpcADesactivar;
+    public bool mantenerMovimientoDesactivado;
     void Start()
     {
         // Intentar encontrar al jugador al inicio
@@ -69,10 +72,28 @@ public class TogglePlayerMovement : MonoBehaviour
     {
         if (player != null)
         {
+            
             DialogueManager.instance.GetComponentInChildren<StandardUIQuestTracker>().ShowTracker();
             GameManager.instance.uiManager.canToggle = true;
-            playerMovement = player.GetComponent<PlayerMovement>();
-            playerMovement.enabled = true; // Desactiva el movimiento del jugador
+            if (mantenerMovimientoDesactivado)
+            {
+                
+            } else
+            {
+                playerMovement = player.GetComponent<PlayerMovement>();
+                playerMovement.enabled = true; // Desactiva el movimiento del jugador
+            }
+            
+            if (desactivarNPC)
+            {
+                //this.GetComponentInParent<SpriteRenderer>;
+                if (Vector2.Distance(transform.position, player.transform.position) <= 2f)
+                {
+                    NpcADesactivar.SetActive(false);
+                    Debug.Log(NpcADesactivar.name + "Desactivado");
+                }
+                
+            }
 
         }
     }
