@@ -67,7 +67,7 @@ public class WiseManPracticesGameManager : MonoBehaviour
     public void ShowNextVignette()
     {
         List<WiseManPracticesLocalization.Vignette> relevantVignettes = localizationData.vignettes
-        .FindAll(v => v.placement == GetCurrentVignettePlacement());
+            .FindAll(v => v.placement == GetCurrentVignettePlacement());
 
         if (currentVignetteIndex < relevantVignettes.Count)
         {
@@ -89,20 +89,9 @@ public class WiseManPracticesGameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Todas las viñetas de este segmento han sido mostradas.");
             panelVignettes.SetActive(false);
-            currentVignetteIndex = 0;
-
-            if (currentConflictIndex == 2) //  Asegurar inicio correcto del Conflicto 3
-            {
-                Debug.Log("Iniciando el Conflicto 3 tras las viñetas.");
-                selectedResponses.Clear(); //  Limpiar respuestas anteriores
-                ShowDialogue();
-            }
-            else
-            {
-                StartDialogue();
-            }
+            currentVignetteIndex = 0; // Reiniciar índice de viñetas para el siguiente bloque
+            StartDialogue();
         }
     }
 
@@ -252,35 +241,23 @@ public class WiseManPracticesGameManager : MonoBehaviour
         panelOptions.SetActive(false);
         panelDialogue.SetActive(false);
 
-        if (currentConflictIndex == 1) //  Mostrar viñetas después del Conflicto 2
+        if (currentConflictIndex == 2) // Mostrar viñetas 6 y 7 después del Conflicto 2
         {
-            Debug.Log("Mostrando viñetas después del Conflicto 2.");
-            currentConflictIndex++; //  Avanzar al Conflicto 3 después de las viñetas
-            currentVignetteIndex = 0; //  Reiniciar índice de viñetas
             ShowNextVignette();
-            return;
-        }
-        else if (currentConflictIndex == 2) // Verificar que el Conflicto 3 inicia correctamente
-        {
-            Debug.Log("Iniciando el Conflicto 3 después de las viñetas.");
-            currentDialogueIndex = 0;
-            selectedResponses.Clear(); //  Limpiar respuestas seleccionadas del Conflicto 2
-            ShowDialogue();
-            return;
         }
         else if (currentConflictIndex == 3 || currentConflictIndex == 4)
         {
-            StartFinalDialogue(); // Evita mostrar ambos conflictos 4 y 5
+            StartFinalDialogue(); // Solo ejecutamos un conflicto, evitando que se activen ambos
         }
         else if (currentConflictIndex < localizationData.conflicts.Count - 1)
         {
-            currentConflictIndex++;
+            currentConflictIndex++; // Pasar al siguiente conflicto
             currentDialogueIndex = 0;
-            ShowNextVignette();
+            ShowNextVignette(); // Mostrar viñetas antes del siguiente conflicto
         }
         else
         {
-            StartFinalDialogue();
+            StartFinalDialogue(); // Finalizar el minijuego si no hay más conflictos
         }
     }
 
