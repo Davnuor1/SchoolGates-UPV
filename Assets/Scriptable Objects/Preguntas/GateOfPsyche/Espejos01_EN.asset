@@ -16,8 +16,10 @@ MonoBehaviour:
   textoPreguntaRating: Rate from 1-10 how much you identify with this mirror
   textoPreguntaParte2: "Let\u2019s see how real it is\u2026 Is that really you?"
   textoPreEspejoParte2: Which is the real proof of beeing
+  textoPostEspejoParte2: 
   textoFeedbackCorrecto: "You are right\u2026 this is probably an proof that you
     are"
+  textoFeedbackCorrectoDetras: 
   textoFeedbackIncorrectoParte1: Maybe you are not so
   textoFeedbackIncorrectoParte2: "as you think\u2026 This happens to everyone from
     time to time\u2026"
@@ -25,45 +27,59 @@ MonoBehaviour:
   - nombre: Fearful/ anxious
     respuestaCorrecta: I feel afraid of new things
     respuestaIncorrecta: I get nervous when meeting new people
+    figuraGeometrica: {fileID: -560067584, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Optimistic
     respuestaCorrecta: In difficult times I tend to hope for the best.
     respuestaIncorrecta: Nothing bad can happen to me
+    figuraGeometrica: {fileID: -982431839, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Impulsive
     respuestaCorrecta: I don't usually think about the consequences of what I do
       or say.
     respuestaIncorrecta: Sometimes I regret something I have said or done
+    figuraGeometrica: {fileID: 1977372526, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Open to experience
     respuestaCorrecta: I like trying new things.
     respuestaIncorrecta: I like to do things my way
+    figuraGeometrica: {fileID: 2045820704, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Approval seeking
     respuestaCorrecta: I usually do what my friends want me to do.
     respuestaIncorrecta: I don't feel good when someone gets mad at me
+    figuraGeometrica: {fileID: 653353828, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Independent
     respuestaCorrecta: I like spending time with people, but I don't mind doing things
       on my own
     respuestaIncorrecta: If I am upset, I prefer to be alone.
+    figuraGeometrica: {fileID: 1213282274, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Underachiever
     respuestaCorrecta: I have no clear goals in my life.
     respuestaIncorrecta: Sometimes I doubt about myself and the best way to accomplish
       the task
+    figuraGeometrica: {fileID: 442500950, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Determined
     respuestaCorrecta: I am motivated by challenging tasks
     respuestaIncorrecta: I gave up some things in my life
+    figuraGeometrica: {fileID: -1381567409, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Insecure
     respuestaCorrecta: I feel incompetent when faced with obstacles and difficulties.
     respuestaIncorrecta: I feel insecure when I do things wrong
+    figuraGeometrica: {fileID: 1028397491, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Resourceful
     respuestaCorrecta: I feel that my life has a clear meaning and direction
     respuestaIncorrecta: "I don\u2019t always feel like I have a choice"
+    figuraGeometrica: {fileID: 274148446, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Empathic
     respuestaCorrecta: I try to treat people fairly
     respuestaIncorrecta: sometimes I don't understand the people around me
+    figuraGeometrica: {fileID: 1343471562, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Hostile
     respuestaCorrecta: I tend to take revenge on those who have hurt me
     respuestaIncorrecta: I can get very angry sometimes
+    figuraGeometrica: {fileID: 1441467998, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Faithful
     respuestaCorrecta: I believe that we are all equal
     respuestaIncorrecta: Sometimes I doubt that a better world is possible
+    figuraGeometrica: {fileID: 1902071648, guid: dcb68943281300147896107e7e87782c, type: 3}
   - nombre: Materialistic
     respuestaCorrecta: I only believe what I see
     respuestaIncorrecta: I like receiving presents.
+    figuraGeometrica: {fileID: 715348572, guid: dcb68943281300147896107e7e87782c, type: 3}
