@@ -13,8 +13,8 @@ public class NPCProximityTrigger : MonoBehaviour
 
     void Start()
     {
-        DialogueManager.SetLanguage("es");
-        Debug.Log("Lenguaje cambiado a es");
+        DialogueManager.SetLanguage("default");
+        Debug.Log("Lenguaje cambiado a default");
         // Intentar encontrar al jugador al inicio
         FindPlayer();
     }

@@ -184901,7 +184901,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1320330677}
-  m_RootOrder: 40
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &895440794
 SpriteRenderer:
@@ -185171,7 +185171,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1320330677}
-  m_RootOrder: 23
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &911005778
 SpriteRenderer:
@@ -190929,7 +190929,7 @@ PrefabInstance:
       objectReference: {fileID: 686191161}
     - target: {fileID: 5626235431481843963, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
       propertyPath: textoNombreEscena
-      value: "Agor\xE0"
+      value: Agora
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
@@ -191984,6 +191984,7 @@ Transform:
   - {fileID: 465933927}
   - {fileID: 1186528808}
   - {fileID: 1157105284}
+  - {fileID: 911005777}
   - {fileID: 337441577}
   - {fileID: 1310879831}
   - {fileID: 361949722}
@@ -191995,7 +191996,6 @@ Transform:
   - {fileID: 4554988533026650460}
   - {fileID: 7179898352364805158}
   - {fileID: 871766218}
-  - {fileID: 911005777}
   - {fileID: 1028834960}
   - {fileID: 26553866}
   - {fileID: 489870570}
@@ -192007,13 +192007,13 @@ Transform:
   - {fileID: 1978414440}
   - {fileID: 899383109}
   - {fileID: 629260472}
+  - {fileID: 895440793}
   - {fileID: 78386760}
-  - {fileID: 1560529611}
   - {fileID: 1532454909}
   - {fileID: 1964193469}
   - {fileID: 1375016474}
-  - {fileID: 895440793}
   - {fileID: 1802179195}
+  - {fileID: 1560529611}
   - {fileID: 687720502}
   - {fileID: 527643689}
   - {fileID: 168070616}
@@ -354302,7 +354302,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1320330677}
-  m_RootOrder: 41
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1802179196
 SpriteRenderer:
