@@ -34,6 +34,8 @@ public class MinijuegoEspejosExteriorManager : MonoBehaviour
     private PlayerMovement playerMovement;
     private Animator playerAnimator;
 
+    public GameObject espejoParaQuitar;
+
     private void Start()
     {
         // Asignar los textos de los botones de fase 1 según la localización
@@ -163,6 +165,7 @@ public class MinijuegoEspejosExteriorManager : MonoBehaviour
         GameManager.instance.uiManager.canToggle = true;
 
         canvasMinijuego.SetActive(false);
+        espejoParaQuitar.SetActive(false);
         // Aquí podrías reactivar el control del jugador, etc.
     }
 }
