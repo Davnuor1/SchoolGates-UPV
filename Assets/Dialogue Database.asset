@@ -778,6 +778,20 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
+  - id: 12
+    fields:
+    - title: Name
+      value: ConflictsSolved
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
   conversations:
   - id: 1
     fields:
@@ -6092,7 +6106,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: (Aqui meter kaleidoscope
+        value: (Here will appear kaleidoscopie in final version)
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -6407,7 +6421,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 58.638306
-        y: 811.6668
+        y: 810.1743
         width: 160
         height: 30
     - id: 14
@@ -6500,7 +6514,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Aqui meter Wheel of values
+        value: (Here will appear wheel of values in final version)
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -6741,7 +6755,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["ConflictsSolved"] = Variable["ConflictsSolved"] + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7140,7 +7154,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["ConflictsSolved"] = Variable["ConflictsSolved"] + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7151,8 +7165,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 98.82349, y: 1236.4683}
-    canvasZoom: 0.85000014
+    canvasScrollPosition: {x: 268.3432, y: 1370.9509}
+    canvasZoom: 0.94000006
   - id: 19
     fields:
     - title: Title
@@ -7843,7 +7857,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: (Aqui meter kaleidoscope
+        value: (Here will appear kaleidioscopie  in final version)
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -8251,7 +8265,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Aqui meter Wheel of values
+        value: (Here will appear wheel of values in final version)
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -8493,7 +8507,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["ConflictsSolved"] = Variable["ConflictsSolved"] + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9367,7 +9381,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["ConflictsSolved"] = Variable["ConflictsSolved"] + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9518,8 +9532,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 77.272736, y: 1490.9054}
-    canvasZoom: 0.8800001
+    canvasScrollPosition: {x: 139.34418, y: 821.44244}
+    canvasZoom: 0.6100004
   - id: 20
     fields:
     - title: Title
@@ -22114,7 +22128,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 14.626831}
+    canvasScrollPosition: {x: 0, y: 592.2737}
     canvasZoom: 0.85000014
   - id: 49
     fields:
@@ -22218,6 +22232,12 @@ MonoBehaviour:
         destinationDialogueID: 1
         isConnector: 0
         priority: 2
+      - originConversationID: 49
+        originDialogueID: 0
+        destinationConversationID: 49
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -22285,15 +22305,15 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["ConflictsSolved"] >= 2
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 80
+        x: 334
+        y: 86
         width: 160
         height: 30
     - id: 2
@@ -22365,8 +22385,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 130
+        x: 322
+        y: 134
         width: 160
         height: 30
     - id: 3
@@ -22420,16 +22440,22 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 49
+        originDialogueID: 3
+        destinationConversationID: 49
+        destinationDialogueID: 7
+        isConnector: 0
+        priority: 2
       conditionsString: 
-      userScript: 
+      userScript: activarFuego();
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 80
-        y: 195
+        x: 203
+        y: 202
         width: 160
         height: 30
     - id: 4
@@ -22495,8 +22521,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 272
-        y: 195
+        x: 462
+        y: 194
         width: 160
         height: 30
     - id: 5
@@ -22549,6 +22575,134 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 49
+        originDialogueID: 5
+        destinationConversationID: 49
+        destinationDialogueID: 7
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: activarFuego();
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 444
+        y: 252
+        width: 160
+        height: 30
+    - id: 6
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: You have to solve the other conflicts before come here!
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 49
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: Variable["ConflictsSolved"] < 2
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 6
+        y: 84
+        width: 160
+        height: 30
+    - id: 7
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Nice! We have light now!
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: es
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: de
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: it
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 49
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
       userScript: 
@@ -22557,8 +22711,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 272
-        y: 245
+        x: 330
+        y: 345
         width: 160
         height: 30
     entryGroups: []

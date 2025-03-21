@@ -68,7 +68,8 @@ public class WiseManPracticesGameManager : MonoBehaviour
     {
         List<WiseManPracticesLocalization.Vignette> relevantVignettes = localizationData.vignettes
             .FindAll(v => v.placement == GetCurrentVignettePlacement());
-
+        //Debug.Log("PosicionAcutalDeViñetas:" +GetCurrentVignettePlacement());
+        //Debug.Log("ViñetasRelevantes" +relevantVignettes.Count);
         if (currentVignetteIndex < relevantVignettes.Count)
         {
             var vignette = relevantVignettes[currentVignetteIndex];
@@ -79,7 +80,7 @@ public class WiseManPracticesGameManager : MonoBehaviour
 
             vignetteBackground.sprite = vignette.backgroundImage;
             vignetteText.text = vignette.text;
-
+            //Debug.Log("Mostrando viñeta:" + vignette.text);
             buttonNextVignette.onClick.RemoveAllListeners();
             buttonNextVignette.onClick.AddListener(() =>
             {
@@ -164,13 +165,25 @@ public class WiseManPracticesGameManager : MonoBehaviour
     {
         panelOptions.SetActive(true);
 
+        //Debug.Log("Mostrando opciones para el Conflicto " + currentConflictIndex);
+        //Debug.Log("Opciones disponibles: " + dialogue.responseOptions.Count);
+
         for (int i = 0; i < optionButtons.Length; i++)
         {
             if (i < dialogue.responseOptions.Count)
             {
                 optionTexts[i].text = dialogue.responseOptions[i].responseText;
                 optionButtons[i].gameObject.SetActive(true);
-                optionButtons[i].interactable = !selectedResponses.Contains(i); // Habilitar solo si no ha sido seleccionado antes
+
+                //  Asegurar que solo el Conflicto 2 tiene restricciones de respuestas
+                if (localizationData.conflicts[currentConflictIndex].requiresAllFeedback)
+                {
+                    optionButtons[i].interactable = !selectedResponses.Contains(i);
+                }
+                else
+                {
+                    optionButtons[i].interactable = true; //  Habilitar todas las respuestas en otros conflictos
+                }
 
                 int index = i;
                 optionButtons[i].onClick.RemoveAllListeners();
@@ -184,9 +197,26 @@ public class WiseManPracticesGameManager : MonoBehaviour
     }
 
 
+
     public void SelectOption(int index)
     {
         var dialogue = localizationData.conflicts[currentConflictIndex].dialogues[currentDialogueIndex];
+
+        //Debug.Log("Conflicto: " + currentConflictIndex + " | Diálogo: " + currentDialogueIndex);
+        //Debug.Log("Total de opciones disponibles: " + dialogue.responseOptions.Count);
+        //Debug.Log("Índice seleccionado: " + index);
+
+        if (dialogue.responseOptions == null || dialogue.responseOptions.Count == 0)
+        {
+            //Debug.LogError("No hay opciones de respuesta en este diálogo.");
+            return;
+        }
+
+        if (index < 0 || index >= dialogue.responseOptions.Count)
+        {
+            //Debug.LogError("Índice fuera de rango en SelectOption(): " + index + " | Opciones disponibles: " + dialogue.responseOptions.Count);
+            return;
+        }
 
         // Asignar el feedback al texto del diálogo
         dialogueText.text = dialogue.responseOptions[index].responseFeedback;
@@ -197,30 +227,34 @@ public class WiseManPracticesGameManager : MonoBehaviour
         selectedResponses.Add(index); // Registrar la opción seleccionada
         optionButtons[index].interactable = false; // Bloquear opción ya seleccionada
 
-        // Conflicto 2: forzar a seleccionar todas las respuestas antes de avanzar
+        //  Conflicto 2: Forzar al usuario a ver todas las respuestas antes de avanzar
         if (localizationData.conflicts[currentConflictIndex].requiresAllFeedback)
         {
             if (selectedResponses.Count < dialogue.responseOptions.Count)
             {
-                panelOptions.SetActive(true); // Seguir mostrando opciones hasta que se seleccionen todas
+                panelOptions.SetActive(true); // Mantener opciones activas hasta que se seleccionen todas
             }
             else
             {
                 buttonNextDialogue.gameObject.SetActive(true); // Permitir avanzar al siguiente diálogo
             }
         }
-        // Conflicto 3: bifurcación a Conflicto 4 o Conflicto 5
+        //  Conflicto 3: Bifurcación hacia Conflicto 4 o 5
         else if (localizationData.conflicts[currentConflictIndex].isBranchingConflict && currentDialogueIndex == 0)
         {
             if (index == 0)
             {
-                Debug.Log("El jugador eligió la primera opción, avanzando a Conflicto 4.");
+                //Debug.Log("El jugador eligió la primera opción, avanzando a Conflicto 4.");
                 currentConflictIndex = 3; // Ir a Conflicto 4
+            }
+            else if (index == 2)
+            {
+                //Debug.Log("El jugador eligió la segunda opción, avanzando a Conflicto 5.");
+                currentConflictIndex = 4; // Ir a Conflicto 5
             }
             else
             {
-                Debug.Log("El jugador eligió la segunda opción, avanzando a Conflicto 5.");
-                currentConflictIndex = 4; // Ir a Conflicto 5
+                //Debug.LogError("Error en la bifurcación: índice inesperado " + index);
             }
 
             currentDialogueIndex = 0;
@@ -234,18 +268,20 @@ public class WiseManPracticesGameManager : MonoBehaviour
 
 
 
+
+
     private void EndConflict()
     {
-        Debug.Log("Finalizando conflicto: " + currentConflictIndex);
+        //Debug.Log("Finalizando conflicto: " + (currentConflictIndex+1));
 
         panelOptions.SetActive(false);
         panelDialogue.SetActive(false);
 
-        if (currentConflictIndex == 2) // Mostrar viñetas 6 y 7 después del Conflicto 2
-        {
-            ShowNextVignette();
-        }
-        else if (currentConflictIndex == 3 || currentConflictIndex == 4)
+        //if (currentConflictIndex == 2) // Mostrar viñetas 6 y 7 después del Conflicto 2
+        //{
+        //    ShowNextVignette();
+        //}
+        if (currentConflictIndex == 3 || currentConflictIndex == 4)
         {
             StartFinalDialogue(); // Solo ejecutamos un conflicto, evitando que se activen ambos
         }
@@ -253,6 +289,7 @@ public class WiseManPracticesGameManager : MonoBehaviour
         {
             currentConflictIndex++; // Pasar al siguiente conflicto
             currentDialogueIndex = 0;
+            //Debug.Log("Pasando al conflicto"+ (currentConflictIndex + 1));
             ShowNextVignette(); // Mostrar viñetas antes del siguiente conflicto
         }
         else
