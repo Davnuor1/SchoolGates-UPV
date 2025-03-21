@@ -41,7 +41,7 @@ public class WallOfGratitudeManager : MonoBehaviour
     private List<GratitudeStone> selectedStones = new List<GratitudeStone>();
     private int currentStoneIndex = 0;
     private int stonesViewed = 0;
-
+    public GameObject portalSalida;
     private Image stoneImage; // Se obtiene automáticamente desde el Panel_StoneView
 
     private void Start()
@@ -224,6 +224,7 @@ public class WallOfGratitudeManager : MonoBehaviour
     public void FinishMinigame()
     {
         Debug.Log("Minijuego completado");
+        portalSalida.SetActive(true);
         panelMain.SetActive(false);
     }
 }

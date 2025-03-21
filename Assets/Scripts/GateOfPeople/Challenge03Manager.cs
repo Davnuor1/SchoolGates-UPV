@@ -13,6 +13,7 @@ public class Challenge03Manager : MonoBehaviour
     public GameObject bloqueo01;
     public GameObject bloqueo02;
     public GameObject bloqueo03;
+    public GameObject portalSalida;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -113,6 +114,7 @@ public class Challenge03Manager : MonoBehaviour
             
         }
         bloqueo03.SetActive(false);
+        portalSalida.SetActive(true);
 
         //---------------------------
         // Activar el FadeIn
