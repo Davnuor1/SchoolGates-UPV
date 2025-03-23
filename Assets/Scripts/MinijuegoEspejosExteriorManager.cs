@@ -33,7 +33,7 @@ public class MinijuegoEspejosExteriorManager : MonoBehaviour
     private int firstResponseSelected = -1; // índice de la respuesta elegida en la primera ronda
     private PlayerMovement playerMovement;
     private Animator playerAnimator;
-
+    private bool estaActivo = false;
     public GameObject espejoParaQuitar;
 
     private void Start()
@@ -43,7 +43,7 @@ public class MinijuegoEspejosExteriorManager : MonoBehaviour
         buttonRespond.GetComponentInChildren<TMP_Text>().text = localizacion.buttonRespondText;
 
         // Ocultamos inicialmente el canvas del minijuego
-        canvasMinijuego.SetActive(false);
+        //canvasMinijuego.SetActive(false);
         panelResponseOptions.SetActive(false);
     }
 
@@ -55,8 +55,12 @@ public class MinijuegoEspejosExteriorManager : MonoBehaviour
         playerAnimator.SetBool("moving", false);
         playerMovement.enabled = false;
         GameManager.instance.uiManager.canToggle = false;
-
+        Debug.Log("Aqui activamos el canvas");
         canvasMinijuego.SetActive(true);
+        estaActivo = canvasMinijuego.activeSelf;
+        Debug.Log(estaActivo);
+
+        
         currentMirrorIndex = 0;
         ShowCurrentMirror();
     }

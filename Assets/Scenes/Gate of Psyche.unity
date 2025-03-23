@@ -197028,6 +197028,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6778405855317521757, guid: 3548d1e732c3eb748b835f7a4de4c776, type: 3}
   m_PrefabInstance: {fileID: 549955290}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &549955292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6778405855317521731, guid: 3548d1e732c3eb748b835f7a4de4c776, type: 3}
+  m_PrefabInstance: {fileID: 549955290}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &551430992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -265140,7 +265145,7 @@ MonoBehaviour:
   - {fileID: 1949025171}
   - {fileID: 1796438323}
   typewriterEffect: {fileID: 101873487}
-  espejoParaQuitar: {fileID: 0}
+  espejoParaQuitar: {fileID: 549955292}
 --- !u!114 &1809681885
 MonoBehaviour:
   m_ObjectHideFlags: 0
