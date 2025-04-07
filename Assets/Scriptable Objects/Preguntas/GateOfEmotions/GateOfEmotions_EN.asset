@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ed8fbac4f95a646a385ee421129d7d, type: 3}
+  m_Name: GateOfEmotions_EN
+  m_EditorClassIdentifier: 
+  introductionText: You are about to enter a different state of awareness...
+  selectTwoEmotionsText: Which emotions do you feel more frequently? Choose 2.
+  anger: Anger
+  fear: Fear
+  joy: Joy
+  sadness: Sadness
+  question1: How pleasant or unpleasant do you feel?
+  question2: How high or low is your energy?
+  question3: What would you call this feeling?
+  pleasant: Pleasant
+  unpleasant: Unpleasant
+  highEnergy: Energetic
+  lowEnergy: Low energy
+  feedbackAnger: Anger is triggered when someone hurts us in some way, because it
+    crosses the boundaries of some value, such as respect, care or justice.... It
+    fills you with energy because you need it to protect something valuable to you.
+  feedbackFear: 'Fear is triggered when we perceive that something valuable is in
+    danger. It paralyzes you so that you can assess that danger, and makes you want
+    to flee or run away to protect yourself from it. '
+  feedbackJoy: Joy is triggered when we achieve something valuable. It is like an
+    emotional reward, it fills you with vitality and optimism so you can go on with
+    your plans and keep doing important things.
+  feedbackSadness: 'Sadness is triggered when we suffer the loss of something valuable.
+    It can be overwhelming... But it has a function: it drains you of energy so you
+    can stop, cry, grieve, remember, reflect... and pull yourself together.'
+  feedbackIncorrect: "This doesn\u2019t seem to be the emotion that you are feeling
+    right now, try again\u2026"
