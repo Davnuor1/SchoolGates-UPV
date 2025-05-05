@@ -26552,7 +26552,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -26560,6 +26560,69 @@ TextureImporter:
       bones: []
       spriteID: f486d53b68b027243bb8010a0048a1a6
       internalID: 933396426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-scenery
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 902
+        width: 132
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca549128764d5dd41894795fc02ec816
+      internalID: 675853194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-table
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 978
+        width: 47
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddad8dfdf922c248a530d5406a866f0
+      internalID: 1549743436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster-door
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 1044
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463403526f9258746a37f387e1b8de4f
+      internalID: 1178251314
       vertices: []
       indices: 
       edges: []
@@ -26794,6 +26857,7 @@ TextureImporter:
       armario-prota: 1934484427
       tech-building-8: -515449340
       knowledge-barca-2: 418381570
+      monster-table: 1549743436
       swamp-plant: 1548523450
       school-wall-topcorner-1-tile: -2023154526
       swamp-zen-temple-10: -488677263
@@ -27239,18 +27303,18 @@ TextureImporter:
       flowers-parents: 1073485100
       cyberpunk-building-12: -1575027772
       cyberpunk-floor-22: -441954812
-      school-double-table-2: -971345064
       knowledge-schools-patern-2: 2110139216
-      scenery-10-tile: 148623166
-      monster-lair-1: 125548363
-      swamp-zen-19: 1308863427
-      swamp-rock-3: -1723662751
+      school-door-left-1-tile: 1031136207
+      knowledge-schools-carpet-17: 1368543083
       monster-lair-29: 289190150
+      swamp-rock-3: -1723662751
+      swamp-zen-19: 1308863427
+      school-double-table-2: -971345064
       coffee-machine-tile: -824626271
       kowledge-road-2: -2139084858
-      school-door-left-1-tile: 1031136207
+      scenery-10-tile: 148623166
       knowledge-water-5: -373789221
-      knowledge-schools-carpet-17: 1368543083
+      monster-lair-1: 125548363
       escalera-arr-de: -316600300
       barranco-grass-5: 1585880883
       tech-building-24: 693321873
@@ -27378,6 +27442,7 @@ TextureImporter:
       lab-tools-6: 1891938320
       monster-lair-38: -1128127195
       knowledge-center-1: 1945787614
+      monster-scenery: 675853194
       swamp-signal-2: 1334464378
       tech-building-21: 484491937
       main-house-border-3-tile: -1155814699
@@ -27540,6 +27605,7 @@ TextureImporter:
       knowledge-barranco-19: 1520716813
       bridge-horizontal-2: -1056970149
       swamp-bridge-3: -194993343
+      monster-door: 1178251314
       barranco: 1785832600
       swamp-fence-4: 915584575
       swamp-maligor-face-2: -955319352
