@@ -47,6 +47,8 @@ public class GateOfEmotionsUIManager : MonoBehaviour
 
     [Header("Canvas del Minijuego")]
     public GameObject canvasGateOfEmotions;
+    [Header("Gestor de Neones")]
+    public NeonEmotionManager neonManager;
 
     private List<string> selectedEmotions = new List<string>();
     private string selectedEmotion1 = "";
@@ -146,6 +148,16 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         panelEmotionSelector.SetActive(false);
 
         ShowCurrentHeavenQuestion();
+
+        // Aplica el efecto visual de los neones con la emoción sentida en el cielo anterior
+
+        string previousEmotion = GetCorrectEmotion();
+        Debug.Log("la emocion para los neones es:"+previousEmotion);
+        if (!string.IsNullOrEmpty(previousEmotion))
+        {
+            Debug.Log("poniendo neones");
+            neonManager.ChangeNeonsToEmotion(previousEmotion);
+        }
     }
 
     private void ShowCurrentHeavenQuestion()
