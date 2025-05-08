@@ -25,6 +25,8 @@ MonoBehaviour:
   unpleasant: Unpleasant
   highEnergy: Energetic
   lowEnergy: Low energy
+  feedbackIncorrect: "This doesn\u2019t seem to be the emotion that you are feeling
+    right now, try again\u2026"
   feedbackAnger: Anger is triggered when someone hurts us in some way, because it
     crosses the boundaries of some value, such as respect, care or justice.... It
     fills you with energy because you need it to protect something valuable to you.
@@ -37,5 +39,29 @@ MonoBehaviour:
   feedbackSadness: 'Sadness is triggered when we suffer the loss of something valuable.
     It can be overwhelming... But it has a function: it drains you of energy so you
     can stop, cry, grieve, remember, reflect... and pull yourself together.'
-  feedbackIncorrect: "This doesn\u2019t seem to be the emotion that you are feeling
-    right now, try again\u2026"
+  questionPart2: Which emotion is he/she feeling?
+  feedbackIncorrectPart2: "This doesn\u2019t seem to be the emotion that he/she is
+    feeling right now, try again \u2026"
+  respuestaJugador1: I think you are feeling that
+  respuestaNPC1: "But I don\u2019t want to feel that"
+  botonesRespuestaJugador2:
+  - I know it's hard, but it's okay to feel this way....
+  - Don't worry about feeling this way, it will pass at some point...
+  - "I've felt that way myself at times\u2026 Let\u2019s find something useful to
+    do\u2026"
+  feedbackAnger_Part2: "OK! Anger is triggered when someone hurts us in some way,
+    because it crosses the boundaries of some value, such as respect, care or justice....
+    It fills you with energy because you need it to protect something valuable to
+    you. Now, go back to the city and help her/him in the path of emotions\u2026"
+  feedbackFear_Part2: "OK! Fear is triggered when we perceive that something valuable
+    is in danger. It paralyzes you so that you can assess that danger, and makes
+    you want to flee or run away to protect yourself from it. Now, go back to the
+    city and help her/him in the path of emotions\u2026"
+  feedbackJoy_Part2: "OK! Joy is triggered when we achieve something valuable. It
+    is like an emotional reward, it fills you with vitality and optimism so you can
+    go on with your plans and keep doing important things.  Now, go back to the city
+    and help her/him in the path of emotions\u2026"
+  feedbackSadness_Part2: "OK! Sadness is triggered when we suffer the loss of something
+    valuable. It can be overwhelming... But it has a function: it drains you of energy
+    so you can stop, cry, grieve, remember, reflect... and pull yourself together. 
+    Now, go back to the city and help her/him in the path of emotions\u2026"

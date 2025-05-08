@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     // ~~ 1. Controls All Player Movement
     // ~~ 2. Updates Animator to Play Idle & Walking Animations
 
-    private float speed = 3f;
+    private float speed = 4f;
     private Rigidbody2D myRigidbody;
     private Vector3 playerMovement;
     private Animator animator;
@@ -34,8 +34,15 @@ public class PlayerMovement : MonoBehaviour
         //playerMovement.x = Input.GetAxisRaw("Horizontal");
         //playerMovement.y = Input.GetAxisRaw("Vertical");
 
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-        float verticalInput = Input.GetAxisRaw("Vertical");
+        //float horizontalInput = Input.GetAxisRaw("Horizontal");
+        //float verticalInput = Input.GetAxisRaw("Vertical");
+        FrustratedInputOverride inputOverride = GetComponent<FrustratedInputOverride>();
+
+        float horizontalInput = inputOverride != null ? inputOverride.GetHorizontal() : Input.GetAxisRaw("Horizontal");
+        float verticalInput = inputOverride != null ? inputOverride.GetVertical() : Input.GetAxisRaw("Vertical");
+       
+
+
         if (Mathf.Abs(horizontalInput) > Mathf.Abs(verticalInput))
         {
             playerMovement.x = horizontalInput;

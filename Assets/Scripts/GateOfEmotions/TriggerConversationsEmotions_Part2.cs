@@ -1,10 +1,10 @@
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
 
-public class TriggerConversationsEmotions : MonoBehaviour
+public class TriggerConversationsEmotions_Part2 : MonoBehaviour
 {
     public string conversationName = "DefaultConversation";
-    public GateOfEmotionsUIManager uiManager;
+    public GateOfEmotionsUIManager_Part2 part2Manager;
 
     private Collider2D triggerCollider;
     private bool isActiveConversation = false;
@@ -13,6 +13,10 @@ public class TriggerConversationsEmotions : MonoBehaviour
     private void Start()
     {
         triggerCollider = GetComponent<Collider2D>();
+        if (part2Manager == null)
+        {
+            Debug.LogWarning($"{name}: No se ha asignado el GateOfEmotionsUIManager_Part2.");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -50,9 +54,9 @@ public class TriggerConversationsEmotions : MonoBehaviour
             triggerCollider.enabled = false;
         }
 
-        if (uiManager != null)
+        if (part2Manager != null)
         {
-            uiManager.StartFadeToHeavenAfterConversation();
+            part2Manager.StartFadeToHeavenPart2();
         }
 
         thisStartedConversation = false;

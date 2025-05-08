@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-public class GateOfEmotionsUIManager : MonoBehaviour
+public class GateOfEmotionsUIManagerCopy : MonoBehaviour
 {
     [Header("Localización")]
     public GateOfEmotionsLocalization localization;
@@ -49,8 +49,6 @@ public class GateOfEmotionsUIManager : MonoBehaviour
     public GameObject canvasGateOfEmotions;
     [Header("Gestor de Neones")]
     public NeonEmotionManager neonManager;
-    [Header("Parte 2")]
-    public GateOfEmotionsUIManager_Part2 part2Manager;
 
     private List<string> selectedEmotions = new List<string>();
     private string selectedEmotion1 = "";
@@ -217,11 +215,11 @@ public class GateOfEmotionsUIManager : MonoBehaviour
 
     private void FinalEmotionSelected(string emotion)
     {
-        List<string> correctEmotions = GetCorrectEmotions();
+        string correctEmotion = GetCorrectEmotion();
 
-        if (correctEmotions.Contains(emotion.ToLower()))
+        if (emotion.ToLower() == correctEmotion)
         {
-            ShowFeedback(true, emotion.ToLower());
+            ShowFeedback(true, correctEmotion);
         }
         else
         {
@@ -229,23 +227,16 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         }
     }
 
-    private List<string> GetCorrectEmotions()
+    private string GetCorrectEmotion()
     {
-        var result = new List<string>();
-
         if (answerPleasantness == "unpleasant" && answerEnergy == "low")
-            result.Add(localization.sadness.ToLower());
-        else if (answerPleasantness == "pleasant" && answerEnergy == "high")
-            result.Add(localization.joy.ToLower());
-        else if (answerPleasantness == "unpleasant" && answerEnergy == "high")
-        {
-            result.Add(localization.fear.ToLower());
-            result.Add(localization.anger.ToLower()); //  ahora también es válida
-        }
-
-        return result;
+            return localization.sadness.ToLower();
+        if (answerPleasantness == "pleasant" && answerEnergy == "high")
+            return localization.joy.ToLower();
+        if (answerPleasantness == "unpleasant" && answerEnergy == "high")
+            return localization.fear.ToLower();
+        return "";
     }
-
 
     private void ShowFeedback(bool isCorrect, string emotion)
     {
@@ -310,19 +301,8 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         {
             // Aquí podrías activar el final del minijuego o una nueva etapa
             Debug.Log("Has completado ambas situaciones del Gate of Emotions.");
-            // Parte 1 completada. Lanzamos la Parte 2.
-            List<string> emocionesRestantes = GetUnchosenEmotions(selectedEmotion1, selectedEmotion2);
-            part2Manager.StartSecondStage(emocionesRestantes);
-
         }
         canvasGateOfEmotions.SetActive(false);
         changeSceneAnimator.SetTrigger("FadeIn");
-    }
-    private List<string> GetUnchosenEmotions(string e1, string e2)
-    {
-        var todas = new List<string> { "anger", "fear", "joy", "sadness" };
-        todas.Remove(e1.ToLower());
-        todas.Remove(e2.ToLower());
-        return todas;
     }
 }

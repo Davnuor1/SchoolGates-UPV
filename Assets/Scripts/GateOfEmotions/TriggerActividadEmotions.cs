@@ -1,10 +1,9 @@
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
 
-public class TriggerConversationsEmotions : MonoBehaviour
+public class TriggerActividadEmotions : MonoBehaviour
 {
     public string conversationName = "DefaultConversation";
-    public GateOfEmotionsUIManager uiManager;
 
     private Collider2D triggerCollider;
     private bool isActiveConversation = false;
@@ -48,11 +47,7 @@ public class TriggerConversationsEmotions : MonoBehaviour
         if (isActiveConversation && triggerCollider != null)
         {
             triggerCollider.enabled = false;
-        }
-
-        if (uiManager != null)
-        {
-            uiManager.StartFadeToHeavenAfterConversation();
+            gameObject.SetActive(false);
         }
 
         thisStartedConversation = false;
