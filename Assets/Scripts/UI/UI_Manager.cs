@@ -120,6 +120,7 @@ public class UI_Manager : MonoBehaviour
             if (!bookOfCluesPanel.activeSelf)
             {
                 bookOfCluesPanel.SetActive(true);
+                GameManager.instance.bookOfCluesManager.OpenBook();
 
             }
             else

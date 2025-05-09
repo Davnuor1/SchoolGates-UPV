@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public CurrencyManager currencyManager;
     public SceneController sceneController;
     public StatsManager statsManager;
+    public BookOfCluesManager bookOfCluesManager;
 
     //public Canvas menuGeneral;
     public Player player;
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
         currencyManager = GetComponent<CurrencyManager>();
         sceneController = GetComponent<SceneController>();
         statsManager = GetComponent<StatsManager>();
+        bookOfCluesManager= GetComponent<BookOfCluesManager>();
 
         //menuGeneral = FindObjectOfType<Canvas>();
         //menuGeneral = GetComponent<Canvas>();

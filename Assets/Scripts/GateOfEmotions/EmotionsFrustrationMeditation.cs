@@ -104,7 +104,7 @@ public class EmotionsFrustrationMeditation : MonoBehaviour
         audioSource.Play();
 
         fadeAnimator.SetTrigger("FadeIn");
-        blackOverlay.SetActive(false);
+        blackOverlay.SetActive(false); //Desactivar pantalla negra
         yield return new WaitForSeconds(fadeDuration);
 
         buttonNext.interactable = true;

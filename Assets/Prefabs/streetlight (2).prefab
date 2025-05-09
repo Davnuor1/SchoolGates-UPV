@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5466223169395425452}
   - component: {fileID: 1177629174346575381}
+  - component: {fileID: 3370093066127561230}
   m_Layer: 0
   m_Name: streetlight (2)
   m_TagString: Untagged
@@ -84,3 +85,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &3370093066127561230
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3873126328670882410}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.003068328, y: 0.30179703}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.33407158, y: 0.06097439}
+    oldSize: {x: 1.75, y: 3.5625}
+    newSize: {x: 2.6875, y: 3.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.46589684, y: 0.80714774}
+  m_EdgeRadius: 0

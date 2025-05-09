@@ -16,4 +16,8 @@ public class EmotionsFrustrationLocalization : ScriptableObject
     [TextArea] public string meditationFinalText2;
     [TextArea] public string meditationFinalText3;
     public string meditationNextButtonText;
+    [Header("Emotions Garden")]
+    [TextArea] public string gardenText1;
+    [TextArea] public string gardenText2;
+    public string gardenNextButtonText;
 }
