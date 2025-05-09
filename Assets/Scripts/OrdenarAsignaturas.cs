@@ -9,6 +9,7 @@ public class OrdenarAsignaturas : MonoBehaviour
 
     public GameObject minigamePanel; // Panel general del minijuego (asignado desde el Inspector)
     public GameObject portal; // GameObject "portal" que se activará (asignado desde el Inspector)
+    public GameObject[] GuardiasDesactivar;
 
     private List<GameObject> availableCollections = new List<GameObject>(); // Lista de colecciones disponibles para ordenar
     private Dictionary<GameObject, Transform> originalParents = new Dictionary<GameObject, Transform>(); // Para guardar el padre original de cada icono
@@ -88,10 +89,19 @@ public class OrdenarAsignaturas : MonoBehaviour
 
         if (portal != null)
         {
-            portal.SetActive(true);
+            //portal.SetActive(true);
+            Debug.Log("Aqui activabamos portal");
+            RetirarGuardias();
         }
 
         playerMovement = GameManager.instance.player.GetComponent<PlayerMovement>();
         playerMovement.enabled = true;
+    }
+    private void RetirarGuardias()
+    {
+        foreach (var guardia in GuardiasDesactivar)
+        {
+            guardia.gameObject.SetActive(false);
+        }
     }
 }

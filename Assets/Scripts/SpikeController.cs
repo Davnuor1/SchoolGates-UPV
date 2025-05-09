@@ -15,7 +15,7 @@ public class SpikeController : MonoBehaviour
     public float vibrationFrequency = 0.05f; // Frecuencia del cambio de posición durante la vibración
 
     private SpriteRenderer[] spikeRenderers;
-    private BoxCollider2D[] spikeColliders;
+    private EdgeCollider2D[] spikeColliders;
     private BoxCollider2D[] spikeCollidersTrigger; // Array para el segundo collider trigger
     private SpriteRenderer[] maligorRenderers;
     private Vector3[] originalPositions; // Posiciones originales de los maligores
@@ -34,7 +34,7 @@ public class SpikeController : MonoBehaviour
 
         // Obtiene todos los SpriteRenderer y BoxCollider2D de los pinchos hijos del objeto spikeParent
         spikeRenderers = spikeParent.GetComponentsInChildren<SpriteRenderer>();
-        spikeColliders = spikeParent.GetComponentsInChildren<BoxCollider2D>();
+        spikeColliders = spikeParent.GetComponentsInChildren<EdgeCollider2D>();
         spikeCollidersTrigger = spikeParent.GetComponentsInChildren<BoxCollider2D>();
 
         // Filtra los colliders para diferenciar entre los colliders normales y los triggers
