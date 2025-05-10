@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ed8fbac4f95a646a385ee421129d7d, type: 3}
+  m_Name: GateOfEmotions_ES
+  m_EditorClassIdentifier: 
+  introductionText: Estas a punto de entrar en otro estado de consciencia...
+  selectTwoEmotionsText: "\xBFQu\xE9 emociones sientes con mayor frecuencia?"
+  anger: Ira
+  fear: Miedo
+  joy: Felicidad
+  sadness: Tristeza
+  question1: "\xBFC\xF3mo de a gusto o a disgusto te sientes?"
+  question2: "\xBFC\xF3mo de alta o baja est\xE1 tu energ\xEDa?"
+  question3: "\xBFC\xF3mo llamar\xEDas a este sentimiento?"
+  pleasant: Agusto
+  unpleasant: Disgusto
+  highEnergy: Alta energia
+  lowEnergy: Baja energia
+  feedbackIncorrect: "Esta no parece ser la emoci\xF3n que est\xE1s sintiendo ahora
+    mismo, int\xE9ntalo de nuevo..."
+  feedbackAnger: "La ira se desencadena cuando alguien nos hace da\xF1o de alg\xFAn
+    modo, porque sobrepasa los l\xEDmites de alg\xFAn valor, como el respeto, el
+    cari\xF1o o la justicia.... Te llena de energ\xEDa porque la necesitas para proteger
+    algo valioso para ti."
+  feedbackFear: "El miedo se desencadena cuando percibimos que algo valioso est\xE1
+    en peligro. Te paraliza para que puedas evaluar ese peligro y te hace querer
+    huir o escapar para protegerte de \xE9l"
+  feedbackJoy: "La alegr\xEDa se desencadena cuando conseguimos algo valioso. Es
+    como una recompensa emocional, te llena de vitalidad y optimismo para que puedas
+    seguir adelante con tus planes y haciendo lo que te gusta."
+  feedbackSadness: "La tristeza se desencadena cuando sufrimos la p\xE9rdida de algo
+    valioso. Puede ser abrumadora... Pero tiene una funci\xF3n: consume tu energ\xEDa
+    para que puedas hacer una pausa, llorar, lamentarte, recordar, reflexionar...
+    y recomponerte."
+  questionPart2: "\xBFQu\xE9 emoci\xF3n est\xE1 sintiendo?"
+  feedbackIncorrectPart2: "Esto no parece ser la emoci\xF3n que est\xE1 sintiendo
+    en este momento. Int\xE9ntalo de nuevo..."
+  respuestaJugador1: Creo que estas sintiendo eso
+  respuestaNPC1: "Pero no quiero sentirme as\xED"
+  botonesRespuestaJugador2:
+  - "S\xE9 que es duro, pero est\xE1 bien sentirse as\xED..."
+  - "No te preocupes por sentirte as\xED, se te pasar\xE1 con el tiempo..."
+  - "Yo tambi\xE9n me he sentido as\xED a veces... Busquemos algo provechoso que
+    hacer..."
+  feedbackAnger_Part2: "\xA1VALE! La ira se desencadena cuando alguien nos hace da\xF1o
+    de alg\xFAn modo, porque sobrepasa los l\xEDmites de alg\xFAn valor, como el
+    respeto, el cari\xF1o o la justicia.... Te llena de energ\xEDa porque la necesitas
+    para proteger algo valioso para ti. Ahora, vuelve a la ciudad y ay\xFAdale en
+    el camino de las emociones..."
+  feedbackFear_Part2: "\xA1VALE! El miedo se desencadena cuando percibimos que algo
+    valioso est\xE1 en peligro. Te paraliza para que puedas evaluar ese peligro y
+    te hace querer huir o escapar para protegerte de \xE9l Ahora, vuelve a la ciudad
+    y ay\xFAdale en el camino de las emociones..."
+  feedbackJoy_Part2: "\xA1VALE! La alegr\xEDa se desencadena cuando conseguimos algo
+    valioso. Es como una recompensa emocional, te llena de vitalidad y optimismo
+    para que puedas seguir adelante con tus planes y haciendo lo que te gusta. Ahora,
+    vuelve a la ciudad y ay\xFAdale en el camino de las emociones..."
+  feedbackSadness_Part2: "\xA1VALE! La tristeza se desencadena cuando sufrimos la
+    p\xE9rdida de algo valioso. Puede ser abrumadora... Pero tiene una funci\xF3n:
+    consume tu energ\xEDa para que puedas hacer una pausa, llorar, lamentarte, recordar,
+    reflexionar... y recomponerte. Ahora, vuelve a la ciudad y ay\xFAdale en el camino
+    de las emociones..."

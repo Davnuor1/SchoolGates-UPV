@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a61ef5f9b69e544ba75093eb10ed3d, type: 3}
+  m_Name: WallOfGratitudeLocalization_ES
+  m_EditorClassIdentifier: 
+  upperTextMain: "Siempre hay algo por lo que estar agradecido/a... piensa en aquello
+    por lo que est\xE1s agradecido/a y pon la piedra en el muro..."
+  upperTextStoneView: "Quieres a\xF1adir esta piedra al muro de la gratitud?"
+  upperTextGratitudeWall: Este es tu muro de la gratitud
+  finishButton: Terminar
+  addToWallButton: "A\xF1adir al muro"
+  backButton: Volver
+  nextButton: Siguiente
+  previousButton: Previo
+  gratitudeWallTitle: Nose
+  stones:
+  - title: Amigos y relaciones
+    descriptions:
+    - Tener amigos leales/Tener un mejor amigo
+    - "Recibir el apoyo y el cari\xF1o de las personas que me importan"
+    - Tener una pareja que me quiera y me apoye
+    - Pasarlo bien con mis amigos
+  - title: Familia
+    descriptions:
+    - Tener una familia/hermanos que me cuidan y me apoyan
+    - Sentir que me ayudan y que les puedo pedir ayuda
+    - Sentir que me escuchan y me valoran
+    - Compartir recuerdos y experiencias felices
+  - title: Libertad y seguridad
+    descriptions:
+    - Poder expresar mis sentimientos y pensamientos
+    - "Recibir apoyo en caso de sufrir discriminaci\xF3n o exclusi\xF3n"
+    - Vivir con seguridad y tranquilidad
+  - title: "Necesidades b\xE1sicas"
+    descriptions:
+    - Tener alimentos para comer
+    - Tener un hogar seguro
+    - Tener acceso a agua limpia
+  - title: Educacion
+    descriptions:
+    - Poder ir a la escuela y aprender cosas nuevas
+    - Tener buenos profesores y mentores
+    - Poder crecer y desarrollar mi potencial
+  - title: Tiempo
+    descriptions:
+    - Poder disponer de tiempo libre
+    - "Tener momentos para m\xED"
+    - "Tener momentos de reflexi\xF3n"
+  - title: Logros personales
+    descriptions:
+    - "Ser capaz de so\xF1ar con mi futuro"
+    - Haber afrontado y superado dificultades
+    - Cumplir mis objetivos
+  - title: Salud y bienestar
+    descriptions:
+    - "Tener una buena salud mental y f\xEDsica"
+    - "Tener acceso a una adecuada atenci\xF3n sanitaria"
+    - "Sentir satisfacci\xF3n y plenitud en la vida"
+  - title: Naturaleza
+    descriptions:
+    - Acceso al aire fresco y a un medio ambiente limpio
+    - Disfrutar de la belleza del paisaje, estar en la naturaleza
+  - title: "Tecnolog\xEDa"
+    descriptions:
+    - "Libre acceso a la informaci\xF3n"
+    - "Disponer de dispositivos digitales (tel\xE9fono m\xF3vil, tableta, PC)"

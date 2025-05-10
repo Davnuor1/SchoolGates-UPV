@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9becf7d9ed3e4454db5aa56b7345d9f1, type: 3}
+  m_Name: AgoraCH2Localization_ES
+  m_EditorClassIdentifier: 
+  chests:
+  - chestID: Arte
+    chestImage: {fileID: -566849752, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
+    textChest: "\xA1Estupendo! Esto es un pedazo la de verdad"
+    textClueAgora: "Para alcanzar la verdadera sabidur\xEDa, hay que recordar que
+      siempre hay m\xE1s de un punto de vista de la verdad... Algunas verdades de
+      la vida son simplemente costumbres, tienen una base emocional o intuitiva.
+      El arte puede transmitir esas verdades. Por ejemplo, cuando Gata Cattana, poeta
+      y rapera espa\xF1ola, dice: \xABLos ricos y los pobres no aman igual\xBB, no
+      est\xE1 afirmando un simple hecho, sino un estado de \xE1nimo y una declaraci\xF3n
+      de intenciones."
+    altarNumber: 2
+  - chestID: Historia
+    chestImage: {fileID: 394024147, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
+    textChest: "\xA1Estupendo! Esto es un pedazo la de verdad"
+    textClueAgora: "Para alcanzar la verdadera sabidur\xEDa, necesitar\xE1s 4 partes
+      de congruencia. La congruencia se refiere a si la informaci\xF3n se corresponde
+      con la realidad. Comprueba siempre la realidad para verificar si la informaci\xF3n
+      es cierta. Por ejemplo, si te preocupas por tu salud y decides comprar una
+      nueva marca de cereales para el desayuno que asegura estar elaborada \xEDntegramente
+      con ingredientes ecol\xF3gicos; puedes verificar esta afirmaci\xF3n. Investiga
+      la marca y confirma la autenticidad de la certificaci\xF3n ecol\xF3gica para
+      asegurarte de que la informaci\xF3n es coherente con la realidad. Esto te ayudar\xE1
+      a desarrollar tu pensamiento cr\xEDtico y tu capacidad para recopilar, clasificar
+      y filtrar informaci\xF3n"
+    altarNumber: 4
+  - chestID: Mates
+    chestImage: {fileID: -950423340, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
+    textChest: "\xA1Estupendo! Esto es un pedazo la de verdad"
+    textClueAgora: "Para obtener la verdadera sabidur\xEDa, necesitar\xE1s 3 partes
+      de consistencia. La consistencia se refiere a si la informaci\xF3n es coherente
+      con otras verdades. Por ejemplo, en el proceso de decidir una futura trayectoria
+      profesional, eval\xFAa cuidadosamente tus intereses personales, valores y objetivos
+      a largo plazo para que est\xE9n alineados entre s\xED. Estas acciones te llevar\xE1n
+      a desarrollar un pensamiento cr\xEDtico en tus elecciones vitales."
+    altarNumber: 3
+  - chestID: "Para alcanzar la verdadera sabidur\xEDa, necesitar\xE1s 5 partes de
+      evidencia. Las evidencias son pruebas o hechos objetivos, que no son discutibles
+      porque todos podemos observarlos. Por ejemplo, el calentamiento global es un
+      fen\xF3meno respaldado por m\xFAltiples evidencias, y uno de los efectos observables
+      es el deshielo de los glaciares que muestran las im\xE1genes de sat\xE9lite
+      y las fotograf\xEDas tomadas a lo largo del tiempo. Para comprender una situaci\xF3n
+      y saber si un fen\xF3meno es cierto, primero hay que recopilar hechos y, despu\xE9s,
+      reflexionar cr\xEDticamente sobre la cuesti\xF3n."
+    chestImage: {fileID: -244741445, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
+    textChest: "Great! This is a piece of truth from\u2026"
+    textClueAgora: To gain true wisdom, you will need 5 evidences. Evidences are
+      proofs or objective facts, which are not debatable because we can all observe
+      them. For example, global warming is a phenomenon supported by multiple evidences,
+      and one observable impact is the melting of glaciers showed by satellite imagery
+      and photographs taken over time. To understand a situation and know if a phenomenon
+      is true, first you have to collect facts and, then, critically think on the
+      issue
+    altarNumber: 5
+  - chestID: Humanidades
+    chestImage: {fileID: 1253979381, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
+    textChest: "\xA1Estupendo! Esto es un pedazo la de verdad"
+    textClueAgora: "Para alcanzar la verdadera sabidur\xEDa, necesitar\xE1s 1 parte
+      de utilidad y 2 partes de fuentes originales/fiables. La utilidad se refiere
+      a la calidad de una informaci\xF3n en relaci\xF3n a un objetivo. Por ejemplo,
+      conocer las posibles consecuencias de compartir determinados contenidos en
+      las redes sociales es \xFAtil para protegerse de malas experiencias.  Buscar
+      la fuente original es la forma de averiguar la verdad de una experiencia subjetiva.
+      Por ejemplo, si quieres saber c\xF3mo se siente alguien, lo mejor es preguntarle
+      directamente en lugar de hacer suposiciones o preguntar a otras personas"
+    altarNumber: 1
+  fusionErrorText: "Atenci\xF3n, algo no est\xE1 funcionando\u2026"
+  fusionSuccessText: "Todo el mundo es importante y puede marcar la diferencia si
+    recorre el camino de la sabidur\xEDa... Por eso el puzzle sigue incompleto, porque
+    cada uno tiene que poner de su parte: decidir c\xF3mo vivir y para qu\xE9 vivir..."

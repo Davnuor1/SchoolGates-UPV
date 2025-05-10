@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3830def2b6bbf848807d7aea15f27b5, type: 3}
+  m_Name: Cinematic_Intro_EN
+  m_EditorClassIdentifier: 
+  vignettes:
+  - image: {fileID: 75755818, guid: 3005a11dba33d9542a3c90bd1d1190d2, type: 3}
+    text: You have just arrived in Soul Village, after a long journey, eager to start
+      a new chapter in your life, although you feel a bit overwhelmed by the change.
+  - image: {fileID: 1781549058, guid: 3005a11dba33d9542a3c90bd1d1190d2, type: 3}
+    text: Soon, you realise that a dark aura prevails all over the place, something
+      that only you have sensed, and you wish from the bottom of your heart to solve.
+  - image: {fileID: -1776100737, guid: 3005a11dba33d9542a3c90bd1d1190d2, type: 3}
+    text: The school seems to be the main point of this affliction, so you decide
+      to investigate to find any clues.
+  - image: {fileID: -70268668, guid: 3005a11dba33d9542a3c90bd1d1190d2, type: 3}
+    text: Suddenly, as if by magic, a note appears in your pocket, and you are totally
+      astonished. The note tells you to find the four magic doors located in your
+      room, a classroom, the school playground and the assembly hall.
+  nextButtonText: Next
