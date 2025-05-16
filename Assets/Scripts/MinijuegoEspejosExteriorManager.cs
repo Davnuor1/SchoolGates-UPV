@@ -54,6 +54,10 @@ public class MinijuegoEspejosExteriorManager : MonoBehaviour
         playerAnimator = GameManager.instance.player.GetComponent<Animator>();
         playerAnimator.SetBool("moving", false);
         playerMovement.enabled = false;
+        if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+        {
+            GameManager.instance.tabletUI.SetActive(false);
+        }
         GameManager.instance.uiManager.canToggle = false;
         Debug.Log("Aqui activamos el canvas");
         canvasMinijuego.SetActive(true);
@@ -167,6 +171,10 @@ public class MinijuegoEspejosExteriorManager : MonoBehaviour
         playerMovement = GameManager.instance.player.GetComponent<PlayerMovement>();
         playerMovement.enabled = true;
         GameManager.instance.uiManager.canToggle = true;
+        if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+        {
+            GameManager.instance.tabletUI.SetActive(true);
+        }
 
         canvasMinijuego.SetActive(false);
         espejoParaQuitar.SetActive(false);

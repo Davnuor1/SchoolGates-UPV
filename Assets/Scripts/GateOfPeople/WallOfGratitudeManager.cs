@@ -9,6 +9,7 @@ public class WallOfGratitudeManager : MonoBehaviour
     public GameObject panelMain;
     public GameObject panelStoneView;
     public GameObject panelGratitudeWall;
+    public GameObject canvasMinijuego;
 
     [Header("Upper Texts")]
     public TextMeshProUGUI textUpperMain;
@@ -226,5 +227,10 @@ public class WallOfGratitudeManager : MonoBehaviour
         Debug.Log("Minijuego completado");
         portalSalida.SetActive(true);
         panelMain.SetActive(false);
+        canvasMinijuego.SetActive(false);
+        if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+        {
+            GameManager.instance.tabletUI.SetActive(true);
+        }
     }
 }

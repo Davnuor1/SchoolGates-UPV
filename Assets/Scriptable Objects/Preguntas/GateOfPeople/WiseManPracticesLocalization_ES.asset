@@ -82,28 +82,30 @@ MonoBehaviour:
   - dialogues:
     - characterName: Wise Man
       portrait: {fileID: 21300000, guid: 8c68f6b9ce088b641a9b60416829e8d6, type: 3}
-      text: "Let me introduce you to Eve, she is a really good football player\u2026"
+      text: "D\xE9jame presentarte a Eve, es una muy buena jugadora de f\xFAtbol\u2026"
       requiresResponse: 0
       responseOptions: []
     - characterName: Eve
       portrait: {fileID: 21300000, guid: 04816276ad4c8b64d80af5a19987b4b4, type: 3}
-      text: Do you like football?
+      text: "\xBFTe gusta el f\xFAtbol?"
       requiresResponse: 1
       responseOptions:
       - responseText: No
-        responseFeedback: "Eve is a bit confused now, you\u2019ve been real, but
-          maybe not so respectful or responsible\u2026 I think Eve no longer feels
-          comfortable talking to you\u2026"
-      - responseText: "No, but I\u2019m interested in your experience. Tell me more
-          about you\u2026"
-        responseFeedback: 
-      - responseText: Yes, I like it a lot
-        responseFeedback: "Eve feels good now because she notices your interest and
-          is open to getting to know you too. You\u2019ve been real, responsible,
-          responsive and respectful. Great!"
+        responseFeedback: "Eve est\xE1 algo confusa ahora, has sido real, pero quiz\xE1
+          no tan respetuosa o responsable... Creo que Eve ya no se siente c\xF3moda
+          hablando contigo..-"
+      - responseText: "No, pero me interesa tu experiencia. H\xE1blame m\xE1s de
+          ti..."
+        responseFeedback: "Eve ahora se siente bien porque percibe tu inter\xE9s
+          y est\xE1 abierta a conocerte tambi\xE9n. Has sido real, responsable, receptiva
+          y respetuosa. \xA1Genial!"
+      - responseText: "\xA1S\xED, me gusta mucho!"
+        responseFeedback: "Eve ahora se siente bien porque percibe tu inter\xE9s
+          y est\xE1 abierta a conocerte tambi\xE9n. Has sido real, responsable, receptiva
+          y respetuosa. \xA1Genial!"
     - characterName: Eve
       portrait: {fileID: 21300000, guid: 04816276ad4c8b64d80af5a19987b4b4, type: 3}
-      text: "Maybe we can launch a women\u2019s football club!"
+      text: "Quiz\xE1 podamos fundar un club de f\xFAtbol femenino"
       requiresResponse: 0
       responseOptions: []
     requiresAllFeedback: 0
@@ -111,32 +113,33 @@ MonoBehaviour:
   - dialogues:
     - characterName: Wise Woman
       portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
-      text: "Imagine that you, Anna and your friends have been planning the opening
-        of the women\u2019s football club for a long time, but at the last minute,
-        it is not possible to go on with it ... In these examples, who do you think
-        communicates more effectively?"
+      text: "Imagina que t\xFA, Anna y tus amigas hab\xE9is estado planeando la inauguraci\xF3n
+        del club de f\xFAtbol femenino durante mucho tiempo, pero en el \xFAltimo
+        momento, no es posible seguir adelante con ello... En estos ejemplos, \xBFqui\xE9n
+        crees que comunica de manera m\xE1s efectiva?"
       requiresResponse: 1
       responseOptions:
-      - responseText: One of them is criticizing the others for their opinion/attitude/behavior.
-        responseFeedback: "They is being a bit aggressive, don\u2019t you think?
-          That happens when someone express their thoughts and feelings without regard
-          for others. Aggressive communication appears dominating and controlling,
-          frequently interrupting others, invading personal space, and belittling
-          others to get their point across. This lead to conflict and resentment."
-      - responseText: One of them has been unhappy with the activities planned for
-          the opening from the start but says nothing about their feelings in fear
-          of appearing a "party-pooper"
-        responseFeedback: "They is being a bit passive or submissive, don\u2019t
-          you think? That happens when someone avoids expressing their thoughts or
-          feelings, often out of fear of conflict"
-      - responseText: One of them states the opening has to be postponed for another
-          day explaining the reasons behind this change.
-        responseFeedback: The assertive style of communication is characterized by
-          clear, direct messages. This allows you to express your thoughts and needs
-          in a respectful way.
+      - responseText: "Una de ellas critica a las otras por su opini\xF3n/actitud/comportamiento"
+        responseFeedback: "Est\xE1n siendo un poco agresivas, \xBFno crees? Eso ocurre
+          cuando alguien expresa sus pensamientos y sentimientos sin tener en cuenta
+          a los dem\xE1s. La comunicaci\xF3n agresiva parece dominante y controladora,
+          interrumpe con frecuencia a los dem\xE1s, invade el espacio personal y
+          menosprecia a los dem\xE1s para transmitir su punto de vista. Esto provoca
+          conflictos y resentimiento"
+      - responseText: "Una de ellas ha estado descontenta con las actividades planeadas
+          para la inauguraci\xF3n desde el principio, pero no dice nada sobre sus
+          sentimientos por miedo a parecer una 'aguafiestas'..."
+        responseFeedback: "Est\xE1n siendo un poco pasivas o sumisas, \xBFno crees?
+          Eso sucede cuando alguien evita expresar sus pensamientos o sentimientos,
+          a menudo por miedo al conflicto."
+      - responseText: "Una de ellas afirma que la inauguraci\xF3n tiene que posponerse
+          para otro d\xEDa, explicando las razones detr\xE1s de este cambio."
+        responseFeedback: "El estilo de comunicaci\xF3n asertivo se caracteriza por
+          mensajes claros y directos. Esto te permite expresar tus pensamientos y
+          necesidades de manera respetuosa."
     - characterName: Wise Woman
       portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
-      text: Thanks for your opinion!
+      text: Gracias por tu opinion!
       requiresResponse: 0
       responseOptions: []
     requiresAllFeedback: 1
@@ -144,73 +147,76 @@ MonoBehaviour:
   - dialogues:
     - characterName: Wise Man
       portrait: {fileID: 21300000, guid: 8c68f6b9ce088b641a9b60416829e8d6, type: 3}
-      text: "Tell me\u2026 Have you ever had a friend like this?"
+      text: "Dime... \xBFHas tenido alguna vez un amigo as\xED?"
       requiresResponse: 1
       responseOptions:
-      - responseText: "Yes, I have (or had) a friend who always criticizes the way
-          the other friends either dress when they go out (\"you are so out of fashion\")
-          or criticizes their gaming skills\u2026 but is unwilling to explain why
-          or open to dialogue."
+      - responseText: "S\xED, tengo (o ten\xEDa) un amigo que siempre critica la
+          forma de vestir del resto de amigos (\u201Cest\xE1s tan pasado de moda\u201D)
+          o critica su forma de jugar a videojuegos... pero no est\xE1 dispuesto
+          a explicar por qu\xE9 ni abierto al di\xE1logo."
         responseFeedback: 
       - responseText: 
         responseFeedback: 
-      - responseText: "Yes,  I have a friend who never says no. A friend who never
-          complains even if they is unhappy with the situation\u2026"
+      - responseText: "S\xED, tengo un amigo que nunca dice que no. Un amigo que
+          nunca se queja aunque est\xE9 descontento con la situaci\xF3n..."
         responseFeedback: 
     requiresAllFeedback: 0
     isBranchingConflict: 1
   - dialogues:
     - characterName: Wise Woman
       portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
-      text: "Now, listen carefully\u2026 find your inner silence to be able to go
-        beyond words\u2026 What do you think is really happening?"
+      text: "Ahora, escucha atentamente\u2026 encuentra tu silencio interior para
+        poder ir m\xE1s all\xE1 de las palabras\u2026 \xBFQu\xE9 crees que est\xE1
+        ocurriendo realmente?"
       requiresResponse: 0
       responseOptions: []
     - characterName: Wise Woman
       portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
-      text: "Someone who is always criticizing the decisions you make\u2026"
+      text: "Alguien que siempre est\xE1 criticando las decisiones que tomas..."
       requiresResponse: 1
       responseOptions:
-      - responseText: "Maybe is afraid of something\u2026 "
-        responseFeedback: "very well, yes... we can't be sure, but that may be it\u2026
-          To be a good listener you have to pay attention not only to the words,
-          but the underlying meaning of them, try to understand what is really important
-          for this person."
-      - responseText: "Maybe just doesn\u2019t like us..."
-        responseFeedback: "very well, yes... we can't be sure, but that may be it\u2026
-          To be a good listener you have to pay attention not only to the words,
-          but the underlying meaning of them, try to understand what is really important
-          for this person."
-      - responseText: Maybe is been hurt in the past and is still angry
-        responseFeedback: "very well, yes... we can't be sure, but that may be it\u2026
-          To be a good listener you have to pay attention not only to the words,
-          but the underlying meaning of them, try to understand what is really important
-          for this person."
+      - responseText: Tal vez tenga miedo de algo...
+        responseFeedback: "Muy bien, s\xED... no podemos estar seguros, pero puede
+          que sea eso... Para ser bueno escuchando hay que prestar atenci\xF3n no
+          s\xF3lo a las palabras, sino al significado subyacente de las mismas, tratar
+          de entender qu\xE9 es lo realmente importante para esa persona."
+      - responseText: "Tal vez simplemente no le gustamos\u2026"
+        responseFeedback: "Muy bien, s\xED... no podemos estar seguros, pero puede
+          que sea eso... Para ser bueno escuchando hay que prestar atenci\xF3n no
+          s\xF3lo a las palabras, sino al significado subyacente de las mismas, tratar
+          de entender qu\xE9 es lo realmente importante para esa persona."
+      - responseText: "Tal vez le hayan hecho da\xF1o en el pasado y siga enfadado."
+        responseFeedback: "Muy bien, s\xED... no podemos estar seguros, pero puede
+          que sea eso... Para ser bueno escuchando hay que prestar atenci\xF3n no
+          s\xF3lo a las palabras, sino al significado subyacente de las mismas, tratar
+          de entender qu\xE9 es lo realmente importante para esa persona."
     - characterName: Wise Man
       portrait: {fileID: 21300000, guid: 8c68f6b9ce088b641a9b60416829e8d6, type: 3}
-      text: How can you respond to them?
+      text: "\xBFC\xF3mo podr\xEDas responderles?"
       requiresResponse: 0
       responseOptions: []
     - characterName: Wise Man
       portrait: {fileID: 21300000, guid: 8c68f6b9ce088b641a9b60416829e8d6, type: 3}
-      text: "To the one who is always criticizing the decisions you make\u2026"
+      text: "Al que siempre est\xE1 criticando las decisiones que tomas..."
       requiresResponse: 1
       responseOptions:
-      - responseText: I think you should be less abrasive to people, it is not nice!
-        responseFeedback: Well, your message is clear but perhaps not very compassionate
-          with this person.
-      - responseText: Well, from now on I will criticize everything you say!
-        responseFeedback: Maybe you are acting too impulsively, your behavior is
-          the same you criticize!
-      - responseText: 'I have the impression that something is eating you up. Do
-          you wanna talk about it? '
-        responseFeedback: "Great, you are being clear but compassionate. To be respectful,
-          always think about how you would want to be told\u2026 "
+      - responseText: "Creo que deber\xEDas ser menos brusco con la gente, \xA1no
+          es agradable!"
+        responseFeedback: Bueno, tu mensaje es claro pero tal vez no muy compasivo
+          con esa persona.
+      - responseText: "Pues a partir de ahora criticar\xE9 todo lo que digas!"
+        responseFeedback: "Quiz\xE1 act\xFAas demasiado impulsivamente, \xA1tu comportamiento
+          es el mismo que criticas!"
+      - responseText: "Tengo la impresi\xF3n de que algo te reconcome. \xBFQuieres
+          hablar de ello?"
+        responseFeedback: "Genial, est\xE1s siendo claro/a pero compasivo/a. Para
+          ser respetuoso, piensa siempre en c\xF3mo te gustar\xEDa que te lo dijeran
+          a ti..."
     - characterName: Wise Woman
       portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
-      text: What you have just practiced is what we call the ABC of good communication.
-        No matter what stage of a relationship you are in, it is important to communicate
-        in the right way so that everyone feels safe...
+      text: "Lo que acabas de practicar es lo que llamamos el ABC de la buena comunicaci\xF3n.
+        No importa en qu\xE9 etapa de la relaci\xF3n te encuentres, es importante
+        comunicarse de la manera correcta para que todos se sientan seguros..."
       requiresResponse: 0
       responseOptions: []
     requiresAllFeedback: 0
@@ -250,59 +256,62 @@ MonoBehaviour:
       responseOptions: []
     - characterName: Wise Man
       portrait: {fileID: 21300000, guid: 8c68f6b9ce088b641a9b60416829e8d6, type: 3}
-      text: "To the one who is unhappy with the planned activity but says nothing\u2026"
+      text: "Al que no est\xE1 contento/a con la actividad prevista pero no dice
+        nada..."
       requiresResponse: 1
       responseOptions:
-      - responseText: "You never say what\u2019s on your mind, what you really think.
-          It is very difficult to be your friend!"
-        responseFeedback: Well, your message is clear but perhaps not very compassionate
-          with this person.
-      - responseText: "You are a dear friend of us, please do not think that we don\u2019t
-          want to hear your opinions. Your opinions are important and we want to
-          know them"
-        responseFeedback: "Great, you are being clear but compassionate. To be respectful,
-          always think about how you would want to be told\u2026"
-      - responseText: "Sometimes I think you don\u2019t have a mind of your own.
-          Do you ever have an opinion on something?"
-        responseFeedback: Well, your message is clear but perhaps not very compassionate
-          with this person.
+      - responseText: "Nunca dices lo que tienes en mente, lo que realmente piensas.
+          \xA1Es muy dif\xEDcil ser tu amigo/a!"
+        responseFeedback: "Bueno, tu mensaje es claro pero quiz\xE1s no muy compasivo
+          con esa persona."
+      - responseText: Eres un amigo muy querido, por favor, no pienses que no queremos
+          escuchar tus opiniones. Tus opiniones son importantes y queremos conocerlas.
+        responseFeedback: "Genial, est\xE1s siendo claro/a pero compasivo/a. Para
+          ser respetuoso, piensa siempre en c\xF3mo te gustar\xEDa que te lo dijeran
+          a ti..."
+      - responseText: "A veces pienso que no tienes criterio propio. \xBFAlguna vez
+          opinas sobre algo?"
+        responseFeedback: Bueno, tu mensaje es claro pero tal vez no muy compasivo
+          con esa persona.
     - characterName: Wise Woman
       portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
-      text: What you have just practiced is what we call the ABC of good communication.
-        No matter what stage of a relationship you are in, it is important to communicate
-        in the right way so that everyone feels safe...
+      text: "Lo que acabas de practicar es lo que llamamos el ABC de la buena comunicaci\xF3n.
+        No importa en qu\xE9 etapa de la relaci\xF3n te encuentres, es importante
+        comunicarse de la manera correcta para que todos se sientan seguros..."
       requiresResponse: 0
       responseOptions: []
     requiresAllFeedback: 0
     isBranchingConflict: 0
   conflict1Concepts:
-  - term: Respectful
-    description: That means trying to understand and showing interest in the experience
-      and perspective of others, although you disagree.
+  - term: Respetuoso/a
+    description: "Significa intentar comprender y mostrar inter\xE9s por la experiencia
+      y la perspectiva de los dem\xE1s, aunque no est\xE9s de acuerdo."
   - term: Real
-    description: That means being authentic and sincere, not fake. Expressing your
-      true beliefs, even if they may be challenging, disappointing, or uncomfortable
-      for others.
-  - term: Responsible
-    description: That means being accountable for your actions and feelings. Not
-      blaming others for your problems.
-  - term: Responsive
-    description: That means avoiding impulsive reactions. Responding with compassion
-      and understanding.
+    description: "Significa ser aut\xE9ntico/a y sincero/a, no ser falso. Expresar
+      tus verdaderas creencias, aunque puedan resultar desafiantes, decepcionantes
+      o inc\xF3modas para los dem\xE1s."
+  - term: Responsable
+    description: "Significa ser responsable de tus actos y sentimientos. No culpar
+      a los dem\xE1s de tus problemas."
+  - term: Receptivo/a
+    description: "Esto significa evitar reacciones impulsivas. Responder con compasi\xF3n
+      y comprensi\xF3n."
   conflict3Concepts:
-  - term: Active listening
-    description: is the practice of giving your full attention to the person who
-      is talking to you, practicing non-judgment. To be a good listener you have
-      to make an inner silence to allow the other person message to be clearly received.
-      Be careful when the other person talks to you, go beyond the words and do your
-      best to look for meaning. What is important for this person?
-  - term: Brief messages
-    description: "Keep your message as brief as possible, but complete. A good communicator
-      tries to get his or her point across effectively, with detail but without unnecessary
-      detail. To be clear, think about what is really important in what you want
-      to say and say it as concisely as possible.\r"
-  - term: Compassion
-    description: Empathetic communication is characterized by understanding and sharing
-      the feelings of others. This people-oriented communication prioritizes building
-      and nurturing relationships. To be respectful, think about how you would like
-      people to be addressed.
+  - term: Buen escuchador/a
+    description: " La escucha activa es la pr\xE1ctica de prestar toda tu atenci\xF3n
+      a la persona que te habla, sin juzgarla. Para ser bueno escuchando hay que
+      guardar un silencio interior que te permita recibir con claridad el mensaje
+      de la otra persona. Ten cuidado cuando la otra persona te est\xE9 hablando,
+      ve m\xE1s all\xE1 de las palabras y haz lo posible por buscar el significado.
+      \xBFQu\xE9 es importante para esa persona?\r\n"
+  - term: Claro/a
+    description: "Mensajes breves: Haz que tu mensaje sea lo m\xE1s breve posible,
+      aunque completo. Un buen comunicador intenta transmitir su punto de vista de
+      forma eficaz, con detalles pero sin datos innecesarios. Para ser claro/a, piensa
+      en lo realmente importante de lo que quieres decir y dilo de la forma m\xE1s
+      concisa posible"
+  - term: "Compasi\xF3n"
+    description: "La comunicaci\xF3n emp\xE1tica se caracteriza por comprender y
+      compartir los sentimientos de los dem\xE1s. Esta comunicaci\xF3n centrada en
+      las personas da prioridad a construir y cuidar las relaciones. Para ser respetuoso/a,
+      piensa en c\xF3mo te gustar\xEDa que se dirigieran a ti."

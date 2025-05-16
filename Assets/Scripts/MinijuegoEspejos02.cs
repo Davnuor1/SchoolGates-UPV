@@ -116,6 +116,10 @@ public class MinijuegoEspejos02 : MonoBehaviour
         {
             escaleras2.FadeIn();
             playerMovement = GameManager.instance.player.GetComponent<PlayerMovement>();
+            if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+            {
+                GameManager.instance.tabletUI.SetActive(true);
+            }
             playerMovement.enabled = true;
             minijuegoEntero.SetActive(false);
         }

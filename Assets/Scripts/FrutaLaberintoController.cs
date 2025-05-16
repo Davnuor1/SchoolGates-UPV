@@ -7,7 +7,9 @@ public class FrutaLaberintoController : MonoBehaviour
     public float followDistance = 1f; // Distancia deseada entre la fruta y el jugador
     public bool isFollowing = false;
     private Vector3 velocity = Vector3.zero;
-    
+
+    private static FrutaLaberintoController frutaActualSiguiendo = null;
+
 
     private void Update()
     {
@@ -26,15 +28,21 @@ public class FrutaLaberintoController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Asegurarse de que solo el jugador puede hacer que la fruta lo siga
-        
+        if (other.CompareTag("Player") && frutaActualSiguiendo == null)
+        {
             player = other.transform;
             isFollowing = true;
-        
+            frutaActualSiguiendo = this;
+        }
+
     }
     public void DeactivateFruit()
     {
         isFollowing = false;
+        if (frutaActualSiguiendo == this)
+        {
+            frutaActualSiguiendo = null;
+        }
         gameObject.SetActive(false); // Desactivar la fruta
     }
 }

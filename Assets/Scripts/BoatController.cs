@@ -11,13 +11,20 @@ public class BoatController : MonoBehaviour
     private Collider2D boatCollider;
 
     private Vector2 boatMovement;
+    private JoystickVirtual joystick; //  NUEVO
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        boatCollider = GetComponent<Collider2D>(); // Obtener el collider de la barca
-        rb.gravityScale = 0; // Ensure gravity scale is zero
+        boatCollider = GetComponent<Collider2D>();
+        rb.gravityScale = 0;
+
+        // Detectar joystick si estamos en tablet
+        if (DeviceDetector.isTouchDevice)
+        {
+            joystick = FindObjectOfType<JoystickVirtual>();
+        }
     }
 
     void FixedUpdate()
@@ -26,8 +33,19 @@ public class BoatController : MonoBehaviour
         {
             boatMovement = Vector2.zero;
 
-            float horizontalInput = Input.GetAxisRaw("Horizontal");
-            float verticalInput = Input.GetAxisRaw("Vertical");
+            float horizontalInput;
+            float verticalInput;
+
+            if (DeviceDetector.isTouchDevice && joystick != null)
+            {
+                horizontalInput = joystick.Horizontal();
+                verticalInput = joystick.Vertical();
+            }
+            else
+            {
+                horizontalInput = Input.GetAxisRaw("Horizontal");
+                verticalInput = Input.GetAxisRaw("Vertical");
+            }
 
             if (Mathf.Abs(horizontalInput) > Mathf.Abs(verticalInput))
             {
@@ -44,7 +62,7 @@ public class BoatController : MonoBehaviour
         }
         else
         {
-            rb.velocity = Vector2.zero; // Stop the boat when the player is not on board
+            rb.velocity = Vector2.zero;
         }
     }
 
@@ -62,7 +80,7 @@ public class BoatController : MonoBehaviour
         else
         {
             animator.SetBool("Moving", false);
-            rb.velocity = Vector2.zero; // Stop the boat when there is no input
+            rb.velocity = Vector2.zero;
         }
     }
 
@@ -79,7 +97,6 @@ public class BoatController : MonoBehaviour
         player.transform.SetParent(transform);
         playerAnimator = player.GetComponent<Animator>();
 
-        // Mantener la posición Z del jugador sin cambios y ajustar la posición Y a 0.8 unidades más arriba
         Vector3 playerPosition = player.transform.localPosition;
         player.transform.localPosition = new Vector3(0, 0.8f, playerPosition.z);
     }
@@ -88,12 +105,12 @@ public class BoatController : MonoBehaviour
     {
         player.transform.SetParent(null);
         playerOnBoard = false;
-        rb.velocity = Vector2.zero; // Stop the boat when the player gets off
+        rb.velocity = Vector2.zero;
         this.enabled = false;
     }
 
     public void SetBoatCollider(bool isActive)
     {
-        boatCollider.enabled = isActive; // Activar o desactivar el collider de la barca
+        boatCollider.enabled = isActive;
     }
 }

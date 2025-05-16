@@ -12,6 +12,11 @@ public class MinigameTriggerCH1 : MonoBehaviour
         {
             FindObjectOfType<WiseManPracticesGameManager>().ShowNextVignette();
             minigameStarted = true;
+            if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+            {
+                GameManager.instance.tabletUI.SetActive(false);
+            }
+
 
             // Opcional: Desactivar el trigger después de activarlo
             gameObject.SetActive(false);

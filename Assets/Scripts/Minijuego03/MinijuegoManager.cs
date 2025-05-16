@@ -98,6 +98,10 @@ public class MinijuegoManager : MonoBehaviour
         this.gameObject.SetActive(false);
         playerMovement = GameManager.instance.player.GetComponent<PlayerMovement>();
         playerMovement.enabled = true;
+        if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+        {
+            GameManager.instance.tabletUI.SetActive(true);
+        }
         portalSalida.SetActive(true);
     }
 }

@@ -124,6 +124,10 @@ public class MinijuegoEspejos01 : MonoBehaviour
         minijuegoEntero.SetActive(false);
         playerMovement = GameManager.instance.player.GetComponent<PlayerMovement>();
         playerMovement.enabled = true;
+        if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+        {
+            GameManager.instance.tabletUI.SetActive(true);
+        }
         escaleras.FadeIn();
 
         // Preparar los datos para el generador de figuras geométricas

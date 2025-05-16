@@ -311,6 +311,10 @@ public class WiseManPracticesGameManager : MonoBehaviour
     {
         Debug.Log("Minijuego Finalizado.");
         panelDialogue.SetActive(false);
+        if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+        {
+            GameManager.instance.tabletUI.SetActive(true);
+        }
     }
 
     public void OpenConflictPanel(int conflictNumber)

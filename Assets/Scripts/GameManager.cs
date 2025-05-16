@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public SceneController sceneController;
     public StatsManager statsManager;
     public BookOfCluesManager bookOfCluesManager;
+    public GameObject tabletUI;
 
     //public Canvas menuGeneral;
     public Player player;
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
         sceneController = GetComponent<SceneController>();
         statsManager = GetComponent<StatsManager>();
         bookOfCluesManager= GetComponent<BookOfCluesManager>();
+        
 
         //menuGeneral = FindObjectOfType<Canvas>();
         //menuGeneral = GetComponent<Canvas>();

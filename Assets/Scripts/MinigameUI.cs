@@ -12,6 +12,10 @@ public class MinigameUI : MonoBehaviour
         UIminijuego.SetActive(true);
         playerMovement=GameManager.instance.player.GetComponent<PlayerMovement>();
         playerMovement.enabled = false;
+        if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+        {
+            GameManager.instance.tabletUI.SetActive(false);
+        }
         this.gameObject.SetActive(false);
     }
 }

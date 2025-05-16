@@ -32641,6 +32641,7 @@ GameObject:
   - component: {fileID: 1306847831}
   - component: {fileID: 1306847830}
   - component: {fileID: 1306847829}
+  - component: {fileID: 1306847835}
   m_Layer: 5
   m_Name: Canvas_wallOfGratitude
   m_TagString: Untagged
@@ -32663,6 +32664,7 @@ MonoBehaviour:
   panelMain: {fileID: 1207378065}
   panelStoneView: {fileID: 1068747336}
   panelGratitudeWall: {fileID: 520470560}
+  canvasMinijuego: {fileID: 1306847828}
   textUpperMain: {fileID: 1429124874}
   textUpperStoneView: {fileID: 102257212}
   textUpperGratitudeWall: {fileID: 873439826}
@@ -32785,6 +32787,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1306847835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306847828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1639af39d86d9ac4fa3728bb06383c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  togglePlayerMovement: {fileID: 1464177802}
 --- !u!1 &1322281806
 GameObject:
   m_ObjectHideFlags: 0
@@ -34688,6 +34703,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1464177801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1464177803}
+  - component: {fileID: 1464177802}
+  m_Layer: 0
+  m_Name: MovementBlocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1464177802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464177801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3096588d1b572ed41965de19c95f9de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desactivarNPC: 0
+  NpcADesactivar: {fileID: 0}
+  mantenerMovimientoDesactivado: 0
+--- !u!4 &1464177803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464177801}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1464496860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -170601,7 +170663,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1970805832
 RectTransform:

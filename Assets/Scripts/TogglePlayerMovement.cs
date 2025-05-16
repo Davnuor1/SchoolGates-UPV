@@ -12,6 +12,7 @@ public class TogglePlayerMovement : MonoBehaviour
     public bool desactivarNPC;
     public GameObject NpcADesactivar;
     public bool mantenerMovimientoDesactivado;
+    private GameObject tabletUI;
     void Start()
     {
         // Intentar encontrar al jugador al inicio
@@ -31,6 +32,7 @@ public class TogglePlayerMovement : MonoBehaviour
         // Buscar al jugador por su tag
         player = GameObject.FindGameObjectWithTag("Player");
         playerAnimator = player.GetComponent<Animator>();
+        tabletUI = GameManager.instance.tabletUI;
 
         if (player == null)
         {
@@ -65,6 +67,10 @@ public class TogglePlayerMovement : MonoBehaviour
             playerAnimator.SetBool("moving", false);
             playerMovement = player.GetComponent<PlayerMovement>();
             playerMovement.enabled = false; // Desactiva el movimiento del jugador
+            if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+            {
+                GameManager.instance.tabletUI.SetActive(false);
+            }
 
         }
     }
@@ -75,11 +81,16 @@ public class TogglePlayerMovement : MonoBehaviour
             
             DialogueManager.instance.GetComponentInChildren<StandardUIQuestTracker>().ShowTracker();
             GameManager.instance.uiManager.canToggle = true;
+            if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+            {
+                GameManager.instance.tabletUI.SetActive(true);
+            }
             if (mantenerMovimientoDesactivado)
             {
-                
+                Debug.Log("MantenemosMovimientoDesactivado");
             } else
             {
+                Debug.Log("MantenemosMovimientoACTIVADO");
                 playerMovement = player.GetComponent<PlayerMovement>();
                 playerMovement.enabled = true; // Desactiva el movimiento del jugador
             }
@@ -105,6 +116,10 @@ public class TogglePlayerMovement : MonoBehaviour
         playerAnimator.SetBool("moving", false);
         playerMovement = player.GetComponent<PlayerMovement>();
         playerMovement.enabled = false; // Desactiva el movimiento del jugador
+        if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+        {
+            GameManager.instance.tabletUI.SetActive(false);
+        }
     }
     public void ToggleMovementPlayerON()
     {
@@ -112,5 +127,9 @@ public class TogglePlayerMovement : MonoBehaviour
         GameManager.instance.uiManager.canToggle = true;
         playerMovement = player.GetComponent<PlayerMovement>();
         playerMovement.enabled = true; // Activa el movimiento del jugador
+        if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+        {
+            GameManager.instance.tabletUI.SetActive(true);
+        }
     }
 }
