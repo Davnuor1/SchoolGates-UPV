@@ -7,7 +7,7 @@ public class AltarTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (playerNearby && Input.GetKeyDown(KeyCode.E))
+        if (playerNearby && VirtualInput.GetKeyDownE())
         {
             canvasMinigame.SetActive(true);
         }

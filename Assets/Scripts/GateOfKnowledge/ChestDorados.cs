@@ -15,7 +15,7 @@ public class ChestDorados : MonoBehaviour
 
     void Update()
     {
-        if (playerInRange && !hasBeenOpened && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange && !hasBeenOpened && VirtualInput.GetKeyDownE())
         {
             hasBeenOpened = true;
             if (myCollider != null)

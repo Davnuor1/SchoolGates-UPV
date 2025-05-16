@@ -32,7 +32,7 @@ public class NPCProximityTrigger : MonoBehaviour
         if (Vector2.Distance(transform.position, player.transform.position) <= interactionDistance)
         {
             isPlayerNearby = true;
-            if (Input.GetKeyDown(KeyCode.E))
+            if (VirtualInput.GetKeyDownE())
             {
                 StartConversation();
             }

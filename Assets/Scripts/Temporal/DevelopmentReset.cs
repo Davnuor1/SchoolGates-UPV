@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DevelopmentReset : MonoBehaviour
 {
+    public GameObject verSoloEnTablet;
     private void Awake()
     {
         Debug.Log("DevelopmentReset Awake called");
@@ -16,5 +17,7 @@ public class DevelopmentReset : MonoBehaviour
         // Desbloqueas los sets 0 y 1
         //GameManager.instance.bookOfCluesManager.UnlockPageSet(0);
         GameManager.instance.bookOfCluesManager.UnlockPageSet(1);
+        
     }
+  
 }

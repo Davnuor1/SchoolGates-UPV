@@ -9,7 +9,7 @@ public class AgoraLever : MonoBehaviour
 
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange && VirtualInput.GetKeyDownE())
         {
             AgoraAltarManager.Instance.TryFusion();
         }

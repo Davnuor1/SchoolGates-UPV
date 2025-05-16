@@ -89,7 +89,7 @@ public class FrutaManager : MonoBehaviour
     private void Update()
     {
         // Detecta si el jugador presiona la tecla E para interactuar
-        if (Input.GetKeyDown(KeyCode.E))
+        if (VirtualInput.GetKeyDownE())
         {
             EntregarFruta();
         }

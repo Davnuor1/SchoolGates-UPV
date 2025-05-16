@@ -1,21 +1,17 @@
-// Code written by tutmo (youtube.com/tutmo)
-// For help, check out the tutorial - https://youtu.be/PNWK5o9l54w
-
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // ~~ 1. Controls All Player Movement
-    // ~~ 2. Updates Animator to Play Idle & Walking Animations
-
     private float speed = 4f;
     private Rigidbody2D myRigidbody;
     private Vector3 playerMovement;
     private Animator animator;
-    [SerializeField]  private SpriteRenderer spriteRendererBody;
-    [SerializeField]  private SpriteRenderer spriteRendererHair;
-    [SerializeField]  private SpriteRenderer spriteRendererTorso;
-    [SerializeField]  private SpriteRenderer spriteRendererLegs;
+    [SerializeField] private SpriteRenderer spriteRendererBody;
+    [SerializeField] private SpriteRenderer spriteRendererHair;
+    [SerializeField] private SpriteRenderer spriteRendererTorso;
+    [SerializeField] private SpriteRenderer spriteRendererLegs;
+
+    private JoystickVirtual joystick; //  añadido
 
     private void Start()
     {
@@ -26,22 +22,31 @@ public class PlayerMovement : MonoBehaviour
         spriteRendererHair = GetComponent<SpriteRenderer>();
         spriteRendererTorso = GetComponent<SpriteRenderer>();
         spriteRendererLegs = GetComponent<SpriteRenderer>();
+
+        if (DeviceDetector.isTouchDevice)
+        {
+            joystick = FindObjectOfType<JoystickVirtual>();
+        }
     }
 
     private void FixedUpdate()
     {
         playerMovement = Vector3.zero;
-        //playerMovement.x = Input.GetAxisRaw("Horizontal");
-        //playerMovement.y = Input.GetAxisRaw("Vertical");
 
-        //float horizontalInput = Input.GetAxisRaw("Horizontal");
-        //float verticalInput = Input.GetAxisRaw("Vertical");
-        FrustratedInputOverride inputOverride = GetComponent<FrustratedInputOverride>();
+        float horizontalInput;
+        float verticalInput;
 
-        float horizontalInput = inputOverride != null ? inputOverride.GetHorizontal() : Input.GetAxisRaw("Horizontal");
-        float verticalInput = inputOverride != null ? inputOverride.GetVertical() : Input.GetAxisRaw("Vertical");
-       
-
+        if (DeviceDetector.isTouchDevice && joystick != null)
+        {
+            horizontalInput = joystick.Horizontal();
+            verticalInput = joystick.Vertical();
+        }
+        else
+        {
+            FrustratedInputOverride inputOverride = GetComponent<FrustratedInputOverride>();
+            horizontalInput = inputOverride != null ? inputOverride.GetHorizontal() : Input.GetAxisRaw("Horizontal");
+            verticalInput = inputOverride != null ? inputOverride.GetVertical() : Input.GetAxisRaw("Vertical");
+        }
 
         if (Mathf.Abs(horizontalInput) > Mathf.Abs(verticalInput))
         {

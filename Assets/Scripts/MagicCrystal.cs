@@ -9,7 +9,7 @@ public class MagicCrystal : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && WithinInteractionRange())
+        if (VirtualInput.GetKeyDownE() && WithinInteractionRange())
         {
             StartCoroutine(ToggleCrystalsWithDelay());
         }

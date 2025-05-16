@@ -28,7 +28,7 @@ public class BoatInteraction : MonoBehaviour
             }
             else
             {
-                if (Input.GetKeyDown(KeyCode.E)) // Tecla para bajar de la barca
+                if (VirtualInput.GetKeyDownE()) // Tecla para bajar de la barca
                 {
                     TryGetOffBoat();
                 }
@@ -49,7 +49,7 @@ public class BoatInteraction : MonoBehaviour
 
     void CheckForBoatInteraction()
     {
-        if (Input.GetKeyDown(KeyCode.E)) // Clic izquierdo
+        if (VirtualInput.GetKeyDownE()) // Clic izquierdo
         {
             Vector2 clickPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             float distanceToBoat = Vector2.Distance(player.transform.position, boat.transform.position);

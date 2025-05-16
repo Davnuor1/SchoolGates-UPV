@@ -14,7 +14,7 @@ public class Altar : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (VirtualInput.GetKeyDownE())
         {
             Collider2D hit = Physics2D.OverlapCircle(transform.position, interactionRadius, playerLayer);
             if (hit != null)

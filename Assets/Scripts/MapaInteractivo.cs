@@ -29,9 +29,13 @@ public class MapaInteractivo : MonoBehaviour
             // Calcular la distancia entre el jugador y el objeto que representa el mapa
             float distancia = Vector2.Distance(transform.position, player.transform.position);
             //Debug.Log(distancia);
-
+            if (VirtualInput.GetKeyDownE())
+            {
+                //Debug.Log("MapaInteractivo: frame update. E: " + VirtualInput.GetKeyDownE());
+            }
+            
             // Si la distancia es menor o igual a la distancia de activación y se presiona la tecla "E"
-            if (distancia <= distanciaActivacion && Input.GetKeyDown(KeyCode.E))
+            if (distancia <= distanciaActivacion && VirtualInput.GetKeyDownE())
             {
                 // Activar o desactivar el panel del mapa
                 Debug.Log("entramos tercer if");
