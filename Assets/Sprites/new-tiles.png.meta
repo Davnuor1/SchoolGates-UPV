@@ -26615,7 +26615,7 @@ TextureImporter:
         width: 44
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -26623,6 +26623,27 @@ TextureImporter:
       bones: []
       spriteID: 463403526f9258746a37f387e1b8de4f
       internalID: 1178251314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gold-chest
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 464
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8015eef1b0f55f34b85e608a4c43affc
+      internalID: -1125947304
       vertices: []
       indices: 
       edges: []
@@ -26954,13 +26975,13 @@ TextureImporter:
       escalera-lateral-1: -1794231363
       cave-wall-7: -706879380
       swamp-zen-temple-carpet-4: -451490213
-      swamp-zen-temple-carpet-7: 1542724112
+      escalera-casa-2: -953738678
       carpet-1-4-tile: 1014135950
       swamp-zen-6: 146329349
       planta-casa-tile: 146502401
       cliff-stones-6: -415022630
       lab-chair: 1833050163
-      escalera-casa-2: -953738678
+      swamp-zen-temple-carpet-7: 1542724112
       knowledge-rock-3: -1134077948
       carpet-1-1-tile: -139038409
       carpet-3-9: -173771523
@@ -27303,18 +27324,18 @@ TextureImporter:
       flowers-parents: 1073485100
       cyberpunk-building-12: -1575027772
       cyberpunk-floor-22: -441954812
-      knowledge-schools-patern-2: 2110139216
+      school-double-table-2: -971345064
       school-door-left-1-tile: 1031136207
       knowledge-schools-carpet-17: 1368543083
-      monster-lair-29: 289190150
-      swamp-rock-3: -1723662751
+      knowledge-schools-patern-2: 2110139216
+      scenery-10-tile: 148623166
       swamp-zen-19: 1308863427
-      school-double-table-2: -971345064
+      monster-lair-1: 125548363
       coffee-machine-tile: -824626271
       kowledge-road-2: -2139084858
-      scenery-10-tile: 148623166
+      swamp-rock-3: -1723662751
       knowledge-water-5: -373789221
-      monster-lair-1: 125548363
+      monster-lair-29: 289190150
       escalera-arr-de: -316600300
       barranco-grass-5: 1585880883
       tech-building-24: 693321873
@@ -27419,6 +27440,7 @@ TextureImporter:
       canasta-3: -2084488714
       kowledge-road-3: 267319709
       knowledge-interior-agua-13: 594098108
+      gold-chest: -1125947304
       light-3: -1743024014
       knowledge-schools-22: 735829359
       swamp-bridge-2: 831369236

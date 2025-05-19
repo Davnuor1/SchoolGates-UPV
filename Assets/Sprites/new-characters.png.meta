@@ -6164,7 +6164,7 @@ TextureImporter:
         width: 17
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6185,7 +6185,7 @@ TextureImporter:
         width: 14
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6206,7 +6206,7 @@ TextureImporter:
         width: 14
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6227,7 +6227,7 @@ TextureImporter:
         width: 16
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6248,7 +6248,7 @@ TextureImporter:
         width: 25
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6256,6 +6256,27 @@ TextureImporter:
       bones: []
       spriteID: 00303f9cfaa68ec4aaefcd3d165362da
       internalID: -950423340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: final-boss-1
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 206
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128ee780cbc0d1a44986981342df03c7
+      internalID: -878090991
       vertices: []
       indices: 
       edges: []
@@ -6273,7 +6294,8 @@ TextureImporter:
     nameFileIdTable:
       ui-cave-n3-2: 1681536045
       epileptic-2: 559101109
-      ui-portrait-3: -295834246
+      final-boss-1: -878090991
+      ui-cave-selector-2-9: 1182428391
       character-16: -1129677351
       ui-skilltree-icon-leadership: 750855392
       burka-1: 392959875
@@ -6403,9 +6425,9 @@ TextureImporter:
       new-characters_31: 1993481078
       grandma-1: -295834246
       character-23: 595111709
-      village-character-8: 58754398
-      new-characters_18: 1923606441
       brother-3: 938032582
+      new-characters_18: 1923606441
+      village-character-8: 58754398
       ui-cave-mirror: -963784562
       ui-knowledge-icon-3: 1685461430
       character-17: -240255844
@@ -6561,8 +6583,8 @@ TextureImporter:
       ui-knowledge-menu-4: -1327501235
       ui-stats-icon-3: -1586706121
       cat-2: -1608951249
-      ui-cave-selector-2-9: 1182428391
       ui-stats-icon-1: 522103729
+      ui-portrait-3: -295834246
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
