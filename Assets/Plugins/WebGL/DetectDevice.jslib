@@ -1,6 +1,8 @@
 mergeInto(LibraryManager.library, {
-    DetectTouchDevice: function () {
-        var isTouch = /android|ipad|iphone|ipod/i.test(navigator.userAgent);
-        SendMessage('DeviceDetector', 'SetTouchMode', isTouch ? 'true' : 'false');
+    IsTouchDevice: function () {
+        if (typeof navigator !== "undefined") {
+            return (navigator.maxTouchPoints > 0 || 'ontouchstart' in window || 'ontouchstart' in document.documentElement) ? 1 : 0;
+        }
+        return 0;
     }
 });

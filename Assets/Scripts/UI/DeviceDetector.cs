@@ -1,31 +1,22 @@
 using UnityEngine;
+using System.Runtime.InteropServices;
 
-public class DeviceDetector : MonoBehaviour
+public static class DeviceDetector
 {
-    public static bool isTouchDevice = false;
+#if UNITY_WEBGL && !UNITY_EDITOR
+    [DllImport("__Internal")]
+    private static extern int IsTouchDevice();
+#endif
 
-    [Header("Solo para pruebas")]
-    public GameObject verSoloEnTablet;
-    public GameObject touchControlsUI;
-
-    public void SetTouchMode(string value)
+    public static bool isTouchDevice
     {
-        isTouchDevice = value == "true";
-        Debug.Log("¿Dispositivo táctil?: " + isTouchDevice);
-
-        if (touchControlsUI != null)
+        get
         {
-            touchControlsUI.SetActive(isTouchDevice);
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return IsTouchDevice() == 1;
+#else
+            return Input.touchSupported;
+#endif
         }
     }
-
-    private void Start()
-    {
-#if UNITY_WEBGL && !UNITY_EDITOR
-        DetectTouchDevice();
-#endif
-    }
-
-    [System.Runtime.InteropServices.DllImport("__Internal")]
-    private static extern void DetectTouchDevice();
 }

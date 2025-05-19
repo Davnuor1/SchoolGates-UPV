@@ -15,7 +15,7 @@ public class GatePeopleController : MonoBehaviour
         else
             Destroy(gameObject);
 
-        portal.SetActive(false); // Asegúrate de que el portal esté desactivado inicialmente
+        //portal.SetActive(false); // Asegúrate de que el portal esté desactivado inicialmente
     }
 
     public void IncrementarFrutasDesactivadas()
