@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a61ef5f9b69e544ba75093eb10ed3d, type: 3}
+  m_Name: WallOfGratitudeLocalization_DE
+  m_EditorClassIdentifier: 
+  upperTextMain: "Es gibt immer etwas, wof\xFCr man dankbar sein kann... Denke dar\xFCber
+    nach, wof\xFCr Du dankbar bist, und setze den Stein in die Mauer..."
+  upperTextStoneView: "M\xF6chten Sie diesen Stein zu Ihrer Dankeswand hinzuf\xFCgen?"
+  upperTextGratitudeWall: Dies ist Ihre Dankbarkeitsmauer
+  finishButton: Fertigstellung
+  addToWallButton: "Zur Wand hinzuf\xFCgen"
+  backButton: "Zur\xFCck"
+  nextButton: Weiter
+  previousButton: "Zur\xFCck"
+  gratitudeWallTitle: Nose
+  stones:
+  - title: 'Freunde und Beziehungen '
+    descriptions:
+    - "Treue Freunde haben/einen besten Freund haben\r"
+    - "Von den Menschen, die mir wichtig sind, unterst\xFCtzt und geliebt werden"
+    - "Einen Partner oder eine Partnerin haben, der mich liebt und unterst\xFCtzt"
+    - "Eine sch\xF6ne Zeit mit meinen Freunden verbringen"
+  - title: Familie
+    descriptions:
+    - "Eine f\xFCrsorgliche und unterst\xFCtzende Familie/Geschwister haben"
+    - "Das Gef\xFChl haben, um Hilfe bitten zu k\xF6nnen und Hilfe zu bekommen"
+    - "Zugeh\xF6rt und anerkannt werden"
+    - "Sch\xF6ne Erinnerungen und Erfahrungen teilen"
+  - title: Freiheit und Sicherheit
+    descriptions:
+    - "Meine Gef\xFChle und Gedanken ausdr\xFCcken k\xF6nnen"
+    - "Unterst\xFCtzung haben, wenn man diskriminiert oder ausgeschlossen wurde"
+    - In Frieden und Sicherheit leben
+  - title: "Grundbed\xFCrfnisse"
+    descriptions:
+    - Essen haben
+    - Ein sicheres Zuhause haben
+    - Zugang zu sauberem Wasser haben
+  - title: Bildung
+    descriptions:
+    - "Zur Schule gehen und neue Dinge lernen k\xF6nnen"
+    - Gute Lehrer haben
+    - "Mein Potenzial ausbauen und entwickeln k\xF6nnen"
+  - title: Zeit
+    descriptions:
+    - "Freizeit haben k\xF6nnen"
+    - "Momente f\xFCr mich selbst haben"
+    - Gelegenheiten zur Selbstreflexion haben
+  - title: "Pers\xF6nliche Erfolge"
+    descriptions:
+    - "Von meiner Zukunft tr\xE4umen k\xF6nnen"
+    - "Schwierigkeiten gemeistert und \xFCberwunden haben"
+    - Meine Ziele erreichen
+  - title: Gesundheit und Wohlbefinden
+    descriptions:
+    - "Bei guter geistiger und k\xF6rperlicher Gesundheit sein"
+    - Zugang zu guter Gesundheitsversorgung haben
+    - "Mit meinem Leben zufrieden und erf\xFCllt sein\r\n"
+  - title: Natur
+    descriptions:
+    - Zugang zu frischer Luft und einer sauberen Umwelt
+    - "Sch\xF6ne Landschaften genie\xDFen, in der Natur sein\r\n"
+  - title: Technologie
+    descriptions:
+    - Freier Zugang zu Informationen
+    - "Digitale Ger\xE4te (Handy, Tablet, PC) mit Internetzugang haben"
