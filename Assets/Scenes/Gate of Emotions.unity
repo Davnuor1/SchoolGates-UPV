@@ -4856,6 +4856,7 @@ GameObject:
   - component: {fileID: 45268689}
   - component: {fileID: 45268691}
   - component: {fileID: 45268690}
+  - component: {fileID: 45268692}
   m_Layer: 0
   m_Name: Actividad
   m_TagString: Untagged
@@ -4917,6 +4918,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.2883797, y: 8.534128}
   m_EdgeRadius: 0
+--- !u!114 &45268692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45268688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3096588d1b572ed41965de19c95f9de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desactivarNPC: 0
+  NpcADesactivar: {fileID: 0}
+  mantenerMovimientoDesactivado: 0
 --- !u!1 &51156997
 GameObject:
   m_ObjectHideFlags: 0
@@ -48027,7 +48043,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70307,7 +70323,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -76691,6 +76707,7 @@ GameObject:
   - component: {fileID: 715100492}
   - component: {fileID: 715100494}
   - component: {fileID: 715100493}
+  - component: {fileID: 715100495}
   m_Layer: 0
   m_Name: Actividad
   m_TagString: Untagged
@@ -76752,6 +76769,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.2883797, y: 8.534128}
   m_EdgeRadius: 0
+--- !u!114 &715100495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715100491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3096588d1b572ed41965de19c95f9de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desactivarNPC: 0
+  NpcADesactivar: {fileID: 0}
+  mantenerMovimientoDesactivado: 0
 --- !u!1 &719570531
 GameObject:
   m_ObjectHideFlags: 0
@@ -81144,7 +81176,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -83706,6 +83738,7 @@ GameObject:
   - component: {fileID: 823484478}
   - component: {fileID: 823484480}
   - component: {fileID: 823484479}
+  - component: {fileID: 823484481}
   m_Layer: 0
   m_Name: Actividad
   m_TagString: Untagged
@@ -83767,6 +83800,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.2883797, y: 8.534128}
   m_EdgeRadius: 0
+--- !u!114 &823484481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823484477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3096588d1b572ed41965de19c95f9de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desactivarNPC: 0
+  NpcADesactivar: {fileID: 0}
+  mantenerMovimientoDesactivado: 0
 --- !u!1001 &824800688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86400,6 +86448,7 @@ GameObject:
   - component: {fileID: 862464283}
   - component: {fileID: 862464285}
   - component: {fileID: 862464284}
+  - component: {fileID: 862464286}
   m_Layer: 0
   m_Name: Actividad
   m_TagString: Untagged
@@ -86461,6 +86510,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.2883797, y: 8.534128}
   m_EdgeRadius: 0
+--- !u!114 &862464286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862464282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3096588d1b572ed41965de19c95f9de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desactivarNPC: 0
+  NpcADesactivar: {fileID: 0}
+  mantenerMovimientoDesactivado: 0
 --- !u!1 &872412764
 GameObject:
   m_ObjectHideFlags: 0
@@ -100714,6 +100778,7 @@ GameObject:
   - component: {fileID: 1105342442}
   - component: {fileID: 1105342444}
   - component: {fileID: 1105342443}
+  - component: {fileID: 1105342445}
   m_Layer: 0
   m_Name: Actividad
   m_TagString: Untagged
@@ -100775,6 +100840,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.2883797, y: 8.534128}
   m_EdgeRadius: 0
+--- !u!114 &1105342445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105342441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3096588d1b572ed41965de19c95f9de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desactivarNPC: 0
+  NpcADesactivar: {fileID: 0}
+  mantenerMovimientoDesactivado: 0
 --- !u!1 &1106818174
 GameObject:
   m_ObjectHideFlags: 0
@@ -115101,6 +115181,7 @@ GameObject:
   - component: {fileID: 1325751194}
   - component: {fileID: 1325751196}
   - component: {fileID: 1325751195}
+  - component: {fileID: 1325751197}
   m_Layer: 0
   m_Name: Actividad
   m_TagString: Untagged
@@ -115162,6 +115243,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.2883797, y: 8.534128}
   m_EdgeRadius: 0
+--- !u!114 &1325751197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325751193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3096588d1b572ed41965de19c95f9de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desactivarNPC: 0
+  NpcADesactivar: {fileID: 0}
+  mantenerMovimientoDesactivado: 0
 --- !u!1 &1325943009
 GameObject:
   m_ObjectHideFlags: 0
@@ -118532,7 +118628,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5626235431481843960, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5626235431481843960, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -118584,7 +118680,7 @@ PrefabInstance:
       objectReference: {fileID: 104605437}
     - target: {fileID: 5626235431481843963, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
       propertyPath: textoNombreEscena
-      value: Cyberpunk City
+      value: Ciudad cyberpunk
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
@@ -124981,7 +125077,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -128225,7 +128321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 938096135610520558, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 938096135610520558, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -128815,6 +128911,7 @@ GameObject:
   - component: {fileID: 1515200374}
   - component: {fileID: 1515200375}
   - component: {fileID: 1515200376}
+  - component: {fileID: 1515200377}
   m_Layer: 0
   m_Name: Actividad
   m_TagString: Untagged
@@ -128876,6 +128973,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationName: ActividadAnger
+--- !u!114 &1515200377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515200373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3096588d1b572ed41965de19c95f9de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desactivarNPC: 0
+  NpcADesactivar: {fileID: 0}
+  mantenerMovimientoDesactivado: 0
 --- !u!1001 &1515362043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130558,7 +130670,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -138416,7 +138528,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -147714,7 +147826,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -274047,6 +274159,7 @@ GameObject:
   - component: {fileID: 2052396304}
   - component: {fileID: 2052396306}
   - component: {fileID: 2052396305}
+  - component: {fileID: 2052396307}
   m_Layer: 0
   m_Name: Actividad
   m_TagString: Untagged
@@ -274108,6 +274221,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.2883797, y: 8.534128}
   m_EdgeRadius: 0
+--- !u!114 &2052396307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052396303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3096588d1b572ed41965de19c95f9de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desactivarNPC: 0
+  NpcADesactivar: {fileID: 0}
+  mantenerMovimientoDesactivado: 0
 --- !u!1001 &2052877572
 PrefabInstance:
   m_ObjectHideFlags: 0

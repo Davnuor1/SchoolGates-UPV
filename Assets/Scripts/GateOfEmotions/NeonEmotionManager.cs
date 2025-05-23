@@ -46,8 +46,13 @@ public class NeonEmotionManager : MonoBehaviour
     public void ChangeNeonsToEmotion(string emotion)
     {
         InitializeIfNeeded();
+        Debug.Log("Entramos a changeneonstoemotion");
         int offset = GetEmotionOffset(emotion.ToLower());
         Color targetColor = GetEmotionColor(emotion.ToLower());
+        Debug.Log("Emotion:" + emotion.ToLower());
+        Debug.Log("offset:"+offset);
+        Debug.Log("targetColor:" + targetColor);
+
 
         foreach (var entry in neonDataDict)
         {
@@ -114,10 +119,10 @@ public class NeonEmotionManager : MonoBehaviour
     {
         return emotion switch
         {
-            "anger" => 1,
-            "fear" => 2,
-            "joy" => 3,
-            "sadness" => 4,
+            "ira" => 1,
+            "miedo" => 2,
+            "felicidad" => 3,
+            "tristeza" => 4,
             _ => 0
         };
     }
@@ -126,10 +131,10 @@ public class NeonEmotionManager : MonoBehaviour
     {
         return emotion switch
         {
-            "anger" => new Color32(183, 48, 53, 255),     // #B73035
-            "fear" => new Color32(151, 219, 206, 255),    // #97DBCE
-            "joy" => new Color32(216, 219, 37, 255),      // #D8DB25
-            "sadness" => new Color32(47, 94, 241, 255),   // #2F5EF1
+            "ira" => new Color32(183, 48, 53, 255),     // #B73035
+            "miedo" => new Color32(151, 219, 206, 255),    // #97DBCE
+            "felicidad" => new Color32(216, 219, 37, 255),      // #D8DB25
+            "tristeza" => new Color32(47, 94, 241, 255),   // #2F5EF1
             _ => Color.white
         };
     }

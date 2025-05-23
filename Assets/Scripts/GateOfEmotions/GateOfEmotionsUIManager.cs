@@ -265,7 +265,7 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         else
         {
             string feedback = GetFeedbackForEmotion(emotion);
-            textFeedback.text = $"This seems accurate… It is ok to feel {emotion}. {feedback} Now, go back to the city and find a way to follow your path through the labyrinth…";
+            textFeedback.text = $"Esto parece acertado... Esta bien sentir {emotion}. {feedback} Ahora, vuelve a la ciudad y encuentra una manera de seguir tu camino por el laberinto...";
 
 
             if (neonManager != null)
@@ -325,4 +325,5 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         todas.Remove(e2.ToLower());
         return todas;
     }
+    
 }

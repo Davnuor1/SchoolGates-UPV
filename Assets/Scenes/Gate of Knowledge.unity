@@ -176706,6 +176706,53 @@ RectTransform:
   m_AnchoredPosition: {x: 173, y: 0}
   m_SizeDelta: {x: 112.5, y: 112.5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &269330327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 269330329}
+  - component: {fileID: 269330328}
+  m_Layer: 0
+  m_Name: MovementBlocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &269330328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269330327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3096588d1b572ed41965de19c95f9de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desactivarNPC: 0
+  NpcADesactivar: {fileID: 0}
+  mantenerMovimientoDesactivado: 0
+--- !u!4 &269330329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269330327}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &276591383
 GameObject:
   m_ObjectHideFlags: 0
@@ -209335,6 +209382,7 @@ GameObject:
   - component: {fileID: 1242202297}
   - component: {fileID: 1242202296}
   - component: {fileID: 1242202295}
+  - component: {fileID: 1242202298}
   m_Layer: 5
   m_Name: AgoraChestCanvas
   m_TagString: Untagged
@@ -209427,6 +209475,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1242202298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242202293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1639af39d86d9ac4fa3728bb06383c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  togglePlayerMovement: {fileID: 269330328}
 --- !u!1 &1243552427
 GameObject:
   m_ObjectHideFlags: 0
@@ -216069,6 +216130,7 @@ GameObject:
   - component: {fileID: 1500952392}
   - component: {fileID: 1500952394}
   - component: {fileID: 1500952393}
+  - component: {fileID: 1500952395}
   m_Layer: 5
   m_Name: FusionErrorPanel
   m_TagString: Untagged
@@ -216136,6 +216198,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500952391}
   m_CullTransparentMesh: 1
+--- !u!114 &1500952395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500952391}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1639af39d86d9ac4fa3728bb06383c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  togglePlayerMovement: {fileID: 269330328}
 --- !u!1001 &1505171214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -378967,6 +379042,7 @@ GameObject:
   - component: {fileID: 1897339373}
   - component: {fileID: 1897339375}
   - component: {fileID: 1897339374}
+  - component: {fileID: 1897339376}
   m_Layer: 5
   m_Name: FusionSuccesPanel
   m_TagString: Untagged
@@ -379034,6 +379110,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897339372}
   m_CullTransparentMesh: 1
+--- !u!114 &1897339376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897339372}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1639af39d86d9ac4fa3728bb06383c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  togglePlayerMovement: {fileID: 269330328}
 --- !u!1 &1897956082
 GameObject:
   m_ObjectHideFlags: 0
@@ -380099,7 +380188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984555139572783563, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7966831593528305840, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_Pivot.x

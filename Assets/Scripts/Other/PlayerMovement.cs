@@ -6,12 +6,13 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRigidbody;
     private Vector3 playerMovement;
     private Animator animator;
+
     [SerializeField] private SpriteRenderer spriteRendererBody;
     [SerializeField] private SpriteRenderer spriteRendererHair;
     [SerializeField] private SpriteRenderer spriteRendererTorso;
     [SerializeField] private SpriteRenderer spriteRendererLegs;
 
-    private JoystickVirtual joystick; //  añadido
+    private JoystickVirtual joystick;
 
     private void Start()
     {
@@ -36,16 +37,23 @@ public class PlayerMovement : MonoBehaviour
         float horizontalInput;
         float verticalInput;
 
-        if (DeviceDetector.isTouchDevice && joystick != null)
+        // Prioridad: FrustratedInputOverride > Joystick > Teclado
+        FrustratedInputOverride inputOverride = GetComponent<FrustratedInputOverride>();
+
+        if (inputOverride != null)
+        {
+            horizontalInput = inputOverride.GetHorizontal();
+            verticalInput = inputOverride.GetVertical();
+        }
+        else if (DeviceDetector.isTouchDevice && joystick != null)
         {
             horizontalInput = joystick.Horizontal();
             verticalInput = joystick.Vertical();
         }
         else
         {
-            FrustratedInputOverride inputOverride = GetComponent<FrustratedInputOverride>();
-            horizontalInput = inputOverride != null ? inputOverride.GetHorizontal() : Input.GetAxisRaw("Horizontal");
-            verticalInput = inputOverride != null ? inputOverride.GetVertical() : Input.GetAxisRaw("Vertical");
+            horizontalInput = Input.GetAxisRaw("Horizontal");
+            verticalInput = Input.GetAxisRaw("Vertical");
         }
 
         if (Mathf.Abs(horizontalInput) > Mathf.Abs(verticalInput))

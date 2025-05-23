@@ -87,10 +87,10 @@ public class TogglePlayerMovement : MonoBehaviour
             }
             if (mantenerMovimientoDesactivado)
             {
-                Debug.Log("MantenemosMovimientoDesactivado");
+                //Debug.Log("MantenemosMovimientoDesactivado");
             } else
             {
-                Debug.Log("MantenemosMovimientoACTIVADO");
+                //Debug.Log("MantenemosMovimientoACTIVADO");
                 playerMovement = player.GetComponent<PlayerMovement>();
                 playerMovement.enabled = true; // Desactiva el movimiento del jugador
             }

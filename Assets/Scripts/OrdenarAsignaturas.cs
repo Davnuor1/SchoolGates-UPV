@@ -96,6 +96,10 @@ public class OrdenarAsignaturas : MonoBehaviour
 
         playerMovement = GameManager.instance.player.GetComponent<PlayerMovement>();
         playerMovement.enabled = true;
+        if (DeviceDetector.isTouchDevice && GameManager.instance.tabletUI != null)
+        {
+            GameManager.instance.tabletUI.SetActive(true);
+        }
     }
     private void RetirarGuardias()
     {
