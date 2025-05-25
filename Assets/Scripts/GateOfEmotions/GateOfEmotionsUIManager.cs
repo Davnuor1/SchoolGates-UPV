@@ -285,10 +285,10 @@ public class GateOfEmotionsUIManager : MonoBehaviour
     {
         switch (emotion.ToLower())
         {
-            case "anger": return localization.feedbackAnger;
-            case "fear": return localization.feedbackFear;
-            case "joy": return localization.feedbackJoy;
-            case "sadness": return localization.feedbackSadness;
+            case "ira": return localization.feedbackAnger;
+            case "miedo": return localization.feedbackFear;
+            case "felicidad": return localization.feedbackJoy;
+            case "tristeza": return localization.feedbackSadness;
             default: return "";
         }
     }
