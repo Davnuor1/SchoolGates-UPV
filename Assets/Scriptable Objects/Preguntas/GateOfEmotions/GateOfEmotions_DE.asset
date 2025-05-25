@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ed8fbac4f95a646a385ee421129d7d, type: 3}
+  m_Name: GateOfEmotions_DE
+  m_EditorClassIdentifier: 
+  introductionText: Sie sind dabei, einen anderen Bewusstseinszustand zu erreichen...
+  selectTwoEmotionsText: "Welche Emotionen empfindest Du h\xE4ufiger?"
+  anger: Wut
+  fear: Angst
+  joy: Freude
+  sadness: Traurigkeit
+  question1: "Wie angenehm oder unangenehm f\xFChlst Du Dich?"
+  question2: Wie hoch oder niedrig ist Deine Energie?
+  question3: "Wie w\xFCrdest Du dieses Gef\xFChl nennen?"
+  pleasant: Angenehm
+  unpleasant: Unangenehm
+  highEnergy: Hohe Energie
+  lowEnergy: Niedrige Energie
+  feedbackIncorrect: "Das scheint nicht das Gef\xFChl zu sein, dass Du gerade empfindest.
+    Versuche es noch einmal \u2026"
+  feedbackAnger: "Wut wird ausgel\xF6st, wenn uns jemand in irgendeiner Weise verletzt,
+    weil es die Grenzen eines Wertes wie Respekt, F\xFCrsorge oder Gerechtigkeit
+    \xFCberschreitet... Es erf\xFCllt Dich mit Energie, weil Du sie brauchst, um
+    etwas Wertvolles f\xFCr Dich zu sch\xFCtzen."
+  feedbackFear: "Angst wird ausgel\xF6st, wenn wir wahrnehmen, dass etwas Wertvolles
+    in Gefahr ist. Sie l\xE4hmt Dich, damit Du diese Gefahr einsch\xE4tzen kannst,
+    um dann zu fliehen oder wegzulaufen, damit Du davor gesch\xFCtzt bist."
+  feedbackJoy: "Freude wird ausgel\xF6st, wenn wir etwas Wertvolles erreichen. Sie
+    ist wie eine emotionale Belohnung, sie erf\xFCllt Dich mit Vitalit\xE4t und Optimismus,
+    damit Du Deinen Pl\xE4nen weiter verfolgen kannst und weiterhin das machst, was
+    dir Spa\xDF macht."
+  feedbackSadness: "Traurigkeit wird ausgel\xF6st, wenn wir den Verlust von etwas
+    Wertvollem erleiden. Sie kann \xFCberw\xE4ltigend sein... Aber sie hat eine Funktion:
+    Sie raubt Dir die Energie, damit Du Inne halten kannst zum, weinen, trauern,
+    erinnern, reflektieren... und Dich wieder sammeln kannst."
+  questionPart2: "Welches Gef\xFChl f\xFChlt er/sie?"
+  feedbackIncorrectPart2: "Das scheint nicht die Emotion zu sein, die er/sie gerade
+    empfindet. Versuche es noch einmal \u2026"
+  respuestaJugador1: "Ich glaube, Sie f\xFChlen, dass"
+  respuestaNPC1: "Aber ich will mich nicht so f\xFChlen"
+  botonesRespuestaJugador2:
+  - "Ich wei\xDF, es ist hart, aber es ist okay, sich so zu f\xFChlen..."
+  - "Mach Dir keine Sorgen, wenn Du Dich so f\xFChlst, das geht irgendwann vorbei..."
+  - Mir ging es manchmal selbst so... Lass uns etwas Sinnvolles tun...
+  feedbackAnger_Part2: "OK! Wut wird ausgel\xF6st, wenn uns jemand in irgendeiner
+    Weise verletzt, weil es die Grenzen eines Wertes wie Respekt, F\xFCrsorge oder
+    Gerechtigkeit \xFCberschreitet... Es erf\xFCllt Dich mit Energie, weil Du sie
+    brauchst, um etwas Wertvolles f\xFCr Dich zu sch\xFCtzen.Geh jetzt zur\xFCck
+    in die Stadt und hilf ihr/ihm auf dem Weg der Emotionen \u2026"
+  feedbackFear_Part2: "OK! Angst wird ausgel\xF6st, wenn wir wahrnehmen, dass etwas
+    Wertvolles in Gefahr ist. Sie l\xE4hmt Dich, damit Du diese Gefahr einsch\xE4tzen
+    kannst, um dann zu fliehen oder wegzulaufen, damit Du davor gesch\xFCtzt bist.Geh
+    jetzt zur\xFCck in die Stadt und hilf ihr/ihm auf dem Weg der Emotionen \u2026"
+  feedbackJoy_Part2: "OK! Freude wird ausgel\xF6st, wenn wir etwas Wertvolles erreichen.
+    Sie ist wie eine emotionale Belohnung, sie erf\xFCllt Dich mit Vitalit\xE4t und
+    Optimismus, damit Du Deinen Pl\xE4nen weiter verfolgen kannst und weiterhin das
+    machst, was dir Spa\xDF macht.Geh jetzt zur\xFCck in die Stadt und hilf ihr/ihm
+    auf dem Weg der Emotionen \u2026"
+  feedbackSadness_Part2: "OK! Traurigkeit wird ausgel\xF6st, wenn wir den Verlust
+    von etwas Wertvollem erleiden. Sie kann \xFCberw\xE4ltigend sein... Aber sie
+    hat eine Funktion: Sie raubt Dir die Energie, damit Du Inne halten kannst zum,
+    weinen, trauern, erinnern, reflektieren... und Dich wieder sammeln kannst.Geh
+    jetzt zur\xFCck in die Stadt und hilf ihr/ihm auf dem Weg der Emotionen \u2026"
