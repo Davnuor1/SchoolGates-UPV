@@ -312,6 +312,7 @@ public class GateOfEmotionsUIManager : MonoBehaviour
             Debug.Log("Has completado ambas situaciones del Gate of Emotions.");
             // Parte 1 completada. Lanzamos la Parte 2.
             List<string> emocionesRestantes = GetUnchosenEmotions(selectedEmotion1, selectedEmotion2);
+            Debug.Log("Emocionesrestantes:" + emocionesRestantes);
             part2Manager.StartSecondStage(emocionesRestantes);
 
         }
@@ -320,7 +321,7 @@ public class GateOfEmotionsUIManager : MonoBehaviour
     }
     private List<string> GetUnchosenEmotions(string e1, string e2)
     {
-        var todas = new List<string> { "anger", "fear", "joy", "sadness" };
+        var todas = new List<string> { "ira", "miedo", "felicidad", "tristeza" };
         todas.Remove(e1.ToLower());
         todas.Remove(e2.ToLower());
         return todas;

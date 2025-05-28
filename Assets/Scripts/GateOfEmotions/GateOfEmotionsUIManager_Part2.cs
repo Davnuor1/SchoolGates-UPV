@@ -47,6 +47,7 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
     public void StartSecondStage(List<string> emocionesDescartadas)
     {
         emocionesRestantes = emocionesDescartadas;
+        Debug.Log("Emociones restantes ya en parte 2:" + emocionesRestantes);
         currentNPCIndex = 0;
         canvasGateOfEmotionsPart2.SetActive(false);
         SpawnNextNPC();
@@ -64,7 +65,11 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
         npcActualEmotion = emocionesRestantes[currentNPCIndex];
 
         if (currentNPCIndex == 0)
+        {
+            Debug.Log("Spawning:" + npcActualEmotion);
             npcManager.SpawnThirdNPC(npcActualEmotion);
+        }
+            
         else if (currentNPCIndex == 1)
             npcManager.SpawnFourthNPC(npcActualEmotion);
     }
@@ -114,10 +119,10 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
         buttonGuessJoy.onClick.RemoveAllListeners();
         buttonGuessSadness.onClick.RemoveAllListeners();
 
-        buttonGuessAnger.onClick.AddListener(() => GuessEmotion("anger"));
-        buttonGuessFear.onClick.AddListener(() => GuessEmotion("fear"));
-        buttonGuessJoy.onClick.AddListener(() => GuessEmotion("joy"));
-        buttonGuessSadness.onClick.AddListener(() => GuessEmotion("sadness"));
+        buttonGuessAnger.onClick.AddListener(() => GuessEmotion("ira"));
+        buttonGuessFear.onClick.AddListener(() => GuessEmotion("miedo"));
+        buttonGuessJoy.onClick.AddListener(() => GuessEmotion("felicidad"));
+        buttonGuessSadness.onClick.AddListener(() => GuessEmotion("tristeza"));
     }
 
     private void GuessEmotion(string guess)
@@ -197,10 +202,10 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
     {
         return emotion switch
         {
-            "anger" => localization.feedbackAnger_Part2,
-            "fear" => localization.feedbackFear_Part2,
-            "joy" => localization.feedbackJoy_Part2,
-            "sadness" => localization.feedbackSadness_Part2,
+            "ira" => localization.feedbackAnger_Part2,
+            "miedo" => localization.feedbackFear_Part2,
+            "felicidad" => localization.feedbackJoy_Part2,
+            "tristeza" => localization.feedbackSadness_Part2,
             _ => ""
         };
     }
