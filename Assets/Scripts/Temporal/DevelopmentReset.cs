@@ -8,8 +8,10 @@ public class DevelopmentReset : MonoBehaviour
         Debug.Log("DevelopmentReset Awake called");
         // Llama a la función ResetPortalStates al iniciar el juego
         ActivableObject.ResetPortalStates();
+        CinematicTriggerCollider.ResetTriggerByID("intro");
+        CinematicTriggerCollider.ResetTriggerByID("final");
 
-        
+
     }
 
     private void Start()

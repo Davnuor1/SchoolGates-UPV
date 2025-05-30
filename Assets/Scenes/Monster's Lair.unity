@@ -20476,6 +20476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28106817d6fcb40449b47daca01dde98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uniqueID: final
   cinematicManager: {fileID: 1488592908}
   cinematicData: {fileID: 11400000, guid: d32f525433d4cec4cafbe1ff7ec29d59, type: 2}
 --- !u!61 &503981033
@@ -20488,7 +20489,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.37680054, y: 2.7856474}
@@ -194037,6 +194038,14 @@ PrefabInstance:
       value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 134.18
       objectReference: {fileID: 0}
@@ -194079,7 +194088,7 @@ PrefabInstance:
     - target: {fileID: 2135700768534257472, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7f27104a85b4b8941b5826f2a622f6ff, type: 3}
+      objectReference: {fileID: -878090991, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}
     - target: {fileID: 3717819807398951174, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -212299,7 +212308,7 @@ PrefabInstance:
       objectReference: {fileID: 618624512}
     - target: {fileID: 5626235431481843963, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
       propertyPath: textoNombreEscena
-      value: Scuola
+      value: Monster's Lair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
