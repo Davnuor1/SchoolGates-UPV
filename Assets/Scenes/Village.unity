@@ -1206,6 +1206,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1821887234}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: persistentDataSettings.includeAllItemData
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.localizationSettings.language
       value: it
       objectReference: {fileID: 0}
@@ -153960,6 +153964,24 @@ MonoBehaviour:
   key: 106
   buttonName: Button_Misions
   questLogWindow: {fileID: 0}
+--- !u!114 &1059469976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059469970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689b4b1238e337d4590a91183947bcd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: 
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  skipApplyDataAfterFramesIfApplyImmediate: 1
+  saveRawData: 0
 --- !u!1 &1064148891
 GameObject:
   m_ObjectHideFlags: 0
@@ -164669,6 +164691,7 @@ GameObject:
   - component: {fileID: 1297653466}
   - component: {fileID: 1297653467}
   - component: {fileID: 1297653468}
+  - component: {fileID: 1297653469}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -164776,6 +164799,7 @@ MonoBehaviour:
   sceneController: {fileID: 0}
   statsManager: {fileID: 0}
   bookOfCluesManager: {fileID: 0}
+  userDataManager: {fileID: 0}
   tabletUI: {fileID: 667493725}
   player: {fileID: 5482149406558429230, guid: 9ec60cd538707f144bb4278f0b222bd4, type: 3}
 --- !u!4 &1297653464
@@ -164879,6 +164903,26 @@ MonoBehaviour:
   pageSets:
   - {fileID: 446651239}
   - {fileID: 1910120505}
+--- !u!114 &1297653469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297653454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e8938577803f1941ab1179047c739b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentUserData:
+    tan: 
+    totalPlayTime: 0
+    currentWorldIndex: 0
+    challengesCompleted: 
+    totalChallengesCompleted: 0
+    timesGameOpened: 0
+    dialogueSystemSaveData: 
 --- !u!1 &1303831600
 GameObject:
   m_ObjectHideFlags: 0
@@ -168611,6 +168655,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516637461}
   m_CullTransparentMesh: 1
+--- !u!1 &1527466968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1527466972}
+  - component: {fileID: 1527466971}
+  - component: {fileID: 1527466970}
+  - component: {fileID: 1527466969}
+  m_Layer: 0
+  m_Name: SaveSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1527466969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527466968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad4d3f2fce70b2441bd76f6c5777e8ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_playerPrefsKeyBase: Save_
+  encrypt: 0
+  encryptionPassword: My Password
+  m_debug: 0
+--- !u!114 &1527466970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527466968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fbafe64f40b0694b8d4ec9c082f8bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_prettyPrint: 0
+--- !u!114 &1527466971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527466968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc03036aad05c334eab057a96938959a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_version: 0
+  m_saveCurrentScene: 1
+  m_maxSaveSlot: 99999
+  m_framesToWaitBeforeApplyData: 1
+  m_debug: 0
+--- !u!4 &1527466972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527466968}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.365762, y: -3.6091866, z: 6.820159}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1536243932
 GameObject:
   m_ObjectHideFlags: 0
