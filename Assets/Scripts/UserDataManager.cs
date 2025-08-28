@@ -56,7 +56,7 @@ public class UserDataManager : MonoBehaviour
         SnapshotDialogueSystemState();
 
         // Aquí, en Fase 3, añadiremos la escritura a disco:
-         SaveSystem.SaveUserData(currentUserData);
+         //SaveSystem.SaveUserData(currentUserData);
     }
     private void OnApplicationQuit()
     {
