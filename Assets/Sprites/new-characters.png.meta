@@ -6269,7 +6269,7 @@ TextureImporter:
         width: 47
         height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6277,6 +6277,174 @@ TextureImporter:
       bones: []
       spriteID: 128ee780cbc0d1a44986981342df03c7
       internalID: -878090991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main-menu-base
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 14
+        width: 289
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7577e8604b8c204d9f115edc5b239ba
+      internalID: 1412929463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main-menu-logo
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 190
+        width: 149
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1975cb6b6c9284d8dc6ed3645b17b1
+      internalID: 1942951466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main-menu-button-1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 239
+        width: 65
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b47005f8cbe4d45969b96efe79e415
+      internalID: 358343133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main-menu-button-2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 239
+        width: 65
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd13d6624d47e6b4b9f7bcf2e9f61c6b
+      internalID: -1575653644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main-menu-button-4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 229
+        width: 45
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb56c8f791bc22d4191bbfc28acdce34
+      internalID: 1213999935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main-menu-button-3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 229
+        width: 45
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d07e307c3edca845a5e9f13d8a1f807
+      internalID: -765181966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main-menu-button-5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 239
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73410bb28e8f6bf4fae868b81a4bc047
+      internalID: 726575337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main-menu-button-6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 229
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6438c3d279c85534c8222e8b37455cb2
+      internalID: -1007221690
       vertices: []
       indices: 
       edges: []
@@ -6294,8 +6462,9 @@ TextureImporter:
     nameFileIdTable:
       ui-cave-n3-2: 1681536045
       epileptic-2: 559101109
-      ui-portrait-3: -295834246
+      main-menu-button-3: -765181966
       final-boss-1: -878090991
+      ui-stats-icon-1: 522103729
       character-16: -1129677351
       ui-skilltree-icon-leadership: 750855392
       burka-1: 392959875
@@ -6352,6 +6521,7 @@ TextureImporter:
       new-characters_38: -1549576776
       ui-knowledge-icon-6: 620595595
       cat-3: 395494375
+      main-menu-button-2: -1575653644
       ui-skilltree-icon-meaning: -615930045
       knowledge-icon-4: -566849752
       knowledge-icon-3: 1253979381
@@ -6375,6 +6545,7 @@ TextureImporter:
       ui-cave-selector-2-2: -739479008
       ui-cave-selector-2-7: 139811768
       maligor-left-1: 1506819868
+      main-menu-button-6: -1007221690
       village-character-5: 1478303168
       new-characters_10: -512474146
       ui-cave-selector-3-7: -1400109381
@@ -6391,6 +6562,7 @@ TextureImporter:
       village-character-3: 1167645946
       ui-skilltree-base-5: -1361216438
       ui-skilltree-base-4: 456591768
+      main-menu-base: 1412929463
       ui-knowledge-symbols-3: 1322475363
       ui-cave-selector-2-6: -196650041
       village-character-7: -1535043408
@@ -6425,9 +6597,9 @@ TextureImporter:
       new-characters_31: 1993481078
       grandma-1: -295834246
       character-23: 595111709
-      village-character-8: 58754398
-      new-characters_18: 1923606441
       brother-3: 938032582
+      new-characters_18: 1923606441
+      village-character-8: 58754398
       ui-cave-mirror: -963784562
       ui-knowledge-icon-3: 1685461430
       character-17: -240255844
@@ -6480,6 +6652,7 @@ TextureImporter:
       new-characters_1: -337959782
       ui-cave-selector-3-8: -1431234216
       new-characters_16: 1180972389
+      main-menu-button-5: 726575337
       new-characters_26: -1223151959
       new-characters_7: 2025930080
       ui-knowledge-bullet-2: -1308193910
@@ -6523,6 +6696,7 @@ TextureImporter:
       ui-knowledge-button-1: -1504567267
       new-characters_33: 518375403
       new-characters_43: 478191194
+      main-menu-button-1: 358343133
       ui-skilltree-icon-optimism: -206775698
       ui-knowledge-counter-4: 558511730
       blind-3: 985618652
@@ -6530,6 +6704,7 @@ TextureImporter:
       character-21: -1516853790
       ui-cave-thumdown-2: 532146851
       epileptic-1: -548387938
+      main-menu-button-4: 1213999935
       ui-knowledge-bullet-1: -1451375041
       ui-knowledge-counter-5: -1082262724
       village-character-1: -1813793071
@@ -6554,6 +6729,7 @@ TextureImporter:
       blind-1: 1088083067
       sister-2: -472286918
       epileptic-4: 710745739
+      main-menu-logo: 1942951466
       ui-knowledge-menu-order-3: 1590310990
       mum-2: 994987885
       ui-stats-bar-3: 574539874
@@ -6583,8 +6759,8 @@ TextureImporter:
       ui-knowledge-menu-4: -1327501235
       ui-stats-icon-3: -1586706121
       cat-2: -1608951249
-      ui-stats-icon-1: 522103729
       ui-cave-selector-2-9: 1182428391
+      ui-portrait-3: -295834246
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
