@@ -109,7 +109,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 3
+        y: 574
         width: 353
         height: 238
       alignment: 0
@@ -130,11 +130,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 358
-        y: 1
+        y: 572
         width: 362
         height: 245
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,11 +151,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 728
-        y: 4
+        y: 575
         width: 362
         height: 245
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,6 +163,132 @@ TextureImporter:
       bones: []
       spriteID: 6240d5a32ca9423459d70d08049afe4d
       internalID: -1188037035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa_pantano_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 319
+        width: 353
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ff528d0357ff240a4f6b765a41c1eb
+      internalID: 856869721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa_pantano_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 315
+        width: 295
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59a492b070596647a234c216d2a27f0
+      internalID: 417681596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa_pantano_3
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 317
+        width: 295
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db8eb7276b7f454a9ab22030bfe2617
+      internalID: -798037017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa_knowledge
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 38
+        width: 349
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48392ec093d68144dbfc92fb083c8d61
+      internalID: 984535428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa_emotions
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 41
+        width: 349
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdb8323e09ca3c48808b1a3e9db2de2
+      internalID: -957386490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapa_cuevas
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 33
+        width: 333
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7749093ddf216fe4093c961744a895cd
+      internalID: -2114508846
       vertices: []
       indices: 
       edges: []
@@ -178,9 +304,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      mapa_pantano_1: 856869721
+      mapa_knowledge: 984535428
       mapas-school-1: -106177549
+      mapa_pantano_3: 417681596
       map-village-main: -491722757
+      mapa_cuevas: -2114508846
       mapas-school-2: -1188037035
+      mapa_pantano_2: 856869721
+      mapa_emotions: -957386490
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
