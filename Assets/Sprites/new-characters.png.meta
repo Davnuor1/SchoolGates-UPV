@@ -6290,7 +6290,7 @@ TextureImporter:
         width: 289
         height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6307,11 +6307,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 190
-        width: 149
-        height: 34
+        y: 177
+        width: 159
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6332,7 +6332,7 @@ TextureImporter:
         width: 65
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6353,7 +6353,7 @@ TextureImporter:
         width: 65
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6374,7 +6374,7 @@ TextureImporter:
         width: 45
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6395,7 +6395,7 @@ TextureImporter:
         width: 45
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6416,7 +6416,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6437,7 +6437,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6445,6 +6445,90 @@ TextureImporter:
       bones: []
       spriteID: 6438c3d279c85534c8222e8b37455cb2
       internalID: -1007221690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon-knowledge
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 428
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf59caa6ba98b049b640e52aedf9a61
+      internalID: -1575823524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon-psyche
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 385
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001778f93b6bff7408e2b85f6765e9d0
+      internalID: -1011977251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon-emotions
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 436
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cddf1eba384b4540934b3f9a77259b6
+      internalID: 1358059981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon-people
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 389
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5ea25dea0822a4eb6cf4c14f1c640b
+      internalID: 1461258711
       vertices: []
       indices: 
       edges: []
@@ -6462,9 +6546,9 @@ TextureImporter:
     nameFileIdTable:
       ui-cave-n3-2: 1681536045
       epileptic-2: 559101109
-      main-menu-button-3: -765181966
+      ui-portrait-3: -295834246
       final-boss-1: -878090991
-      ui-stats-icon-1: 522103729
+      ui-cave-selector-2-9: 1182428391
       character-16: -1129677351
       ui-skilltree-icon-leadership: 750855392
       burka-1: 392959875
@@ -6503,6 +6587,7 @@ TextureImporter:
       burka-4: -1386075786
       new-characters_25: -701335264
       ui-knowledge-menu-order-2: -1472017369
+      icon-emotions: 1358059981
       maligor-front-4: 1912139523
       new-characters_39: 1774479336
       dad-1: -530660394
@@ -6586,6 +6671,7 @@ TextureImporter:
       agora-character-3: 983586239
       dad-3: -1385524053
       ui-menu-quests: 1307001150
+      icon-knowledge: -1575823524
       ui-cave-menu-5: -757305381
       ui-knowledge-menu-3: 516109778
       ui-knowledge-button-4: 1284975836
@@ -6595,6 +6681,7 @@ TextureImporter:
       ui-agora-question-1: 334379786
       ui-cave-selector-2-10: 1982894282
       new-characters_31: 1993481078
+      icon-psyche: -1011977251
       grandma-1: -295834246
       character-23: 595111709
       brother-3: 938032582
@@ -6653,6 +6740,7 @@ TextureImporter:
       ui-cave-selector-3-8: -1431234216
       new-characters_16: 1180972389
       main-menu-button-5: 726575337
+      icon-people: 1461258711
       new-characters_26: -1223151959
       new-characters_7: 2025930080
       ui-knowledge-bullet-2: -1308193910
@@ -6759,8 +6847,8 @@ TextureImporter:
       ui-knowledge-menu-4: -1327501235
       ui-stats-icon-3: -1586706121
       cat-2: -1608951249
-      ui-cave-selector-2-9: 1182428391
-      ui-portrait-3: -295834246
+      ui-stats-icon-1: 522103729
+      main-menu-button-3: -765181966
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
