@@ -4,7 +4,7 @@ using TMPro;
 
 public class MinijuegoEspejos02 : MonoBehaviour
 {
-    [SerializeField] private MinijuegoEspejos02Localization localizacion;
+    //[SerializeField] private MinijuegoEspejos02Localization localizacion;
     [SerializeField] private GameObject minijuegoEntero;
     [SerializeField] private GameObject botonLike;
     [SerializeField] private GameObject botonDislike;
@@ -23,13 +23,30 @@ public class MinijuegoEspejos02 : MonoBehaviour
     private List<(string nombre, int id)> espejosLike = new List<(string nombre, int id)>();
     private int idEspejo = 0;
     [SerializeField] private FadeInObject escaleras2;
+    [Header("Traducciones")]
+    [SerializeField] private MinijuegoEspejos02Localization localizacionES;
+    [SerializeField] private MinijuegoEspejos02Localization localizacionIT;
+    [SerializeField] private MinijuegoEspejos02Localization localizacionDE;
+    [SerializeField] private MinijuegoEspejos02Localization localizacionEN;
+    [SerializeField] private MinijuegoEspejos02Localization localizacionFI;
+    private MinijuegoEspejos02Localization localizacion;
+    private string codeLanguage;
 
     private void Start()
     {
+        defineLanguage();
         textoPreguntas.text = localizacion.textoPreguntaInicial;
         textoEspejos.text = localizacion.espejos[idEspejo].nombre;
     }
-
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { localizacion = localizacionES; }
+        else if (codeLanguage == "it") { localizacion = localizacionIT; }
+        else if (codeLanguage == "de") { localizacion = localizacionDE; }
+        else if (codeLanguage == "en") { localizacion = localizacionEN; }
+        else if (codeLanguage == "fi") { localizacion = localizacionFI; }
+    }
     public void darBotonLike()
     {
         botonLike.SetActive(false);

@@ -7,7 +7,15 @@ using System.Collections.Generic;
 public class GateOfEmotionsUIManager : MonoBehaviour
 {
     [Header("Localización")]
+    //public GateOfEmotionsLocalization localization;
+    [Header("Traducciones")]
+    [SerializeField] private GateOfEmotionsLocalization localizacionES;
+    [SerializeField] private GateOfEmotionsLocalization localizacionIT;
+    [SerializeField] private GateOfEmotionsLocalization localizacionDE;
+    [SerializeField] private GateOfEmotionsLocalization localizacionEN;
+    [SerializeField] private GateOfEmotionsLocalization localizacionFI;
     public GateOfEmotionsLocalization localization;
+    private string codeLanguage;
 
     [Header("Paneles")]
     public GameObject panelIntro;
@@ -63,6 +71,7 @@ public class GateOfEmotionsUIManager : MonoBehaviour
 
     private void Start()
     {
+        defineLanguage();
         panelIntro.SetActive(true);
         panelEmotionSelector.SetActive(false);
         panelHeaven.SetActive(false);
@@ -78,7 +87,15 @@ public class GateOfEmotionsUIManager : MonoBehaviour
 
         textFeedback.text = "";
     }
-
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { localization = localizacionES; }
+        else if (codeLanguage == "it") { localization = localizacionIT; }
+        else if (codeLanguage == "de") { localization = localizacionDE; }
+        else if (codeLanguage == "en") { localization = localizacionEN; }
+        else if (codeLanguage == "fi") { localization = localizacionFI; }
+    }
     public void StartIntro()
     {
         panelIntro.SetActive(true);

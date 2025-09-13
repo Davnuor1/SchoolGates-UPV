@@ -11,10 +11,32 @@ public class EmotionsGardenUI : MonoBehaviour
     public Button buttonNext;
 
     [Header("Localization")]
+    //public EmotionsFrustrationLocalization localization;
+    [Header("Traducciones")]
+    [SerializeField] private EmotionsFrustrationLocalization localizacionES;
+    [SerializeField] private EmotionsFrustrationLocalization localizacionIT;
+    [SerializeField] private EmotionsFrustrationLocalization localizacionDE;
+    [SerializeField] private EmotionsFrustrationLocalization localizacionEN;
+    [SerializeField] private EmotionsFrustrationLocalization localizacionFI;
     public EmotionsFrustrationLocalization localization;
+    private string codeLanguage;
 
     private int currentStep = 0;
 
+    private void Start()
+    {
+        defineLanguage();
+       
+    }
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { localization = localizacionES; }
+        else if (codeLanguage == "it") { localization = localizacionIT; }
+        else if (codeLanguage == "de") { localization = localizacionDE; }
+        else if (codeLanguage == "en") { localization = localizacionEN; }
+        else if (codeLanguage == "fi") { localization = localizacionFI; }
+    }
     public void StartGardenIntro()
     {
         canvasGateOfEmotions.SetActive(true);

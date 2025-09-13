@@ -33,7 +33,15 @@ public class WallOfGratitudeManager : MonoBehaviour
     public GameObject prefabGratitudeStone;
 
     [Header("Localization")]
+    //public WallOfGratitudeLocalization localizationData;
+    [Header("Traducciones")]
+    [SerializeField] private WallOfGratitudeLocalization localizacionES;
+    [SerializeField] private WallOfGratitudeLocalization localizacionIT;
+    [SerializeField] private WallOfGratitudeLocalization localizacionDE;
+    [SerializeField] private WallOfGratitudeLocalization localizacionEN;
+    [SerializeField] private WallOfGratitudeLocalization localizacionFI;
     public WallOfGratitudeLocalization localizationData;
+    private string codeLanguage;
 
     [Header("Stone Buttons in Main Panel")] //  Lista de botones de piedras en Panel_Main
     public List<Button> stoneButtons;
@@ -47,6 +55,7 @@ public class WallOfGratitudeManager : MonoBehaviour
 
     private void Start()
     {
+        defineLanguage();
         LoadLocalization();
         LoadStones();
         AssignStoneTitles();
@@ -54,7 +63,15 @@ public class WallOfGratitudeManager : MonoBehaviour
         //  Buscar la imagen de la piedra dentro del Panel_StoneView
         stoneImage = panelStoneView.GetComponentInChildren<Image>();
     }
-
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { localizationData = localizacionES; }
+        else if (codeLanguage == "it") { localizationData = localizacionIT; }
+        else if (codeLanguage == "de") { localizationData = localizacionDE; }
+        else if (codeLanguage == "en") { localizationData = localizacionEN; }
+        else if (codeLanguage == "fi") { localizationData = localizacionFI; }
+    }
     void LoadLocalization()
     {
         if (localizationData == null)

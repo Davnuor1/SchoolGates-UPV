@@ -6,7 +6,15 @@ using UnityEngine.UI;
 
 public class WiseManPracticesGameManager : MonoBehaviour
 {
+    //public WiseManPracticesLocalization localizationData;
+    [Header("Traducciones")]
+    [SerializeField] private WiseManPracticesLocalization localizacionES;
+    [SerializeField] private WiseManPracticesLocalization localizacionIT;
+    [SerializeField] private WiseManPracticesLocalization localizacionDE;
+    [SerializeField] private WiseManPracticesLocalization localizacionEN;
+    [SerializeField] private WiseManPracticesLocalization localizacionFI;
     public WiseManPracticesLocalization localizationData;
+    private string codeLanguage;
 
     [Header("UI Panels")]
     public GameObject panelVignettes;
@@ -41,6 +49,7 @@ public class WiseManPracticesGameManager : MonoBehaviour
 
     private void Start()
     {
+        defineLanguage();
         // Inicializar UI
         panelConflicts1.SetActive(false);
         panelConflicts3.SetActive(false);
@@ -56,7 +65,15 @@ public class WiseManPracticesGameManager : MonoBehaviour
 
         //ShowNextVignette();
     }
-
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { localizationData = localizacionES; }
+        else if (codeLanguage == "it") { localizationData = localizacionIT; }
+        else if (codeLanguage == "de") { localizationData = localizacionDE; }
+        else if (codeLanguage == "en") { localizationData = localizacionEN; }
+        else if (codeLanguage == "fi") { localizationData = localizacionFI; }
+    }
     private void Update()
     {
         // Activar el botón de ayuda solo en los conflictos correspondientes

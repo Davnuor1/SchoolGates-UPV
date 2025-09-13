@@ -20478,6 +20478,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uniqueID: final
   cinematicManager: {fileID: 1488592908}
+  localizacionES: {fileID: 11400000, guid: d32f525433d4cec4cafbe1ff7ec29d59, type: 2}
+  localizacionIT: {fileID: 11400000, guid: d32f525433d4cec4cafbe1ff7ec29d59, type: 2}
+  localizacionDE: {fileID: 11400000, guid: 09737e87209ce4c42b8bd2233b1da41e, type: 2}
+  localizacionEN: {fileID: 11400000, guid: e0bcf4c179dabc146b3351a4bf9dd31c, type: 2}
+  localizacionFI: {fileID: 11400000, guid: d32f525433d4cec4cafbe1ff7ec29d59, type: 2}
   cinematicData: {fileID: 11400000, guid: d32f525433d4cec4cafbe1ff7ec29d59, type: 2}
 --- !u!61 &503981033
 BoxCollider2D:
@@ -25150,6 +25155,67 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1001 &626281173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3078634188470450189, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_Name
+      value: ContadorTiempoGates
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -59.91536
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.239035
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.052979916
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392551612698700971, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: gateId
+      value: MonsterLair
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
 --- !u!1001 &626922561
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -30,13 +30,33 @@ public class EmotionsFrustrationMeditation : MonoBehaviour
     public float pauseDuration = 5f;
 
     [Header("Localization")]
+    //public EmotionsFrustrationLocalization localization;
+    [Header("Traducciones")]
+    [SerializeField] private EmotionsFrustrationLocalization localizacionES;
+    [SerializeField] private EmotionsFrustrationLocalization localizacionIT;
+    [SerializeField] private EmotionsFrustrationLocalization localizacionDE;
+    [SerializeField] private EmotionsFrustrationLocalization localizacionEN;
+    [SerializeField] private EmotionsFrustrationLocalization localizacionFI;
     public EmotionsFrustrationLocalization localization;
+    private string codeLanguage;
     [Header("Overlay negro estático")]
     public GameObject blackOverlay;
 
     private List<string> messages = new();
     private int currentIndex = 0;
-
+    public void Start()
+    {
+        defineLanguage();
+    }
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { localization = localizacionES; }
+        else if (codeLanguage == "it") { localization = localizacionIT; }
+        else if (codeLanguage == "de") { localization = localizacionDE; }
+        else if (codeLanguage == "en") { localization = localizacionEN; }
+        else if (codeLanguage == "fi") { localization = localizacionFI; }
+    }
     public void StartMeditation()
     {
         canvasGateOfEmotions.SetActive(true);

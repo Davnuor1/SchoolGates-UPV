@@ -7,7 +7,15 @@ public class AgoraChestManager : MonoBehaviour
     public static AgoraChestManager Instance;
 
     [Header("Localización")]
+    //public AgoraCH2Localization localization;
+    [Header("Traducciones")]
+    [SerializeField] private AgoraCH2Localization localizacionES;
+    [SerializeField] private AgoraCH2Localization localizacionIT;
+    [SerializeField] private AgoraCH2Localization localizacionDE;
+    [SerializeField] private AgoraCH2Localization localizacionEN;
+    [SerializeField] private AgoraCH2Localization localizacionFI;
     public AgoraCH2Localization localization;
+    private string codeLanguage;
 
     [Header("UI")]
     public GameObject canvasRoot;
@@ -30,6 +38,7 @@ public class AgoraChestManager : MonoBehaviour
 
     public void OpenChest(string chestID)
     {
+        defineLanguage();
         var entry = GetChestEntry(chestID);
         if (entry == null) return;
 
@@ -40,7 +49,15 @@ public class AgoraChestManager : MonoBehaviour
         canvasRoot.SetActive(true);
         chestPanel.SetActive(true);
     }
-
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { localization = localizacionES; }
+        else if (codeLanguage == "it") { localization = localizacionIT; }
+        else if (codeLanguage == "de") { localization = localizacionDE; }
+        else if (codeLanguage == "en") { localization = localizacionEN; }
+        else if (codeLanguage == "fi") { localization = localizacionFI; }
+    }
     public void CloseChest()
     {
         chestPanel.SetActive(false);

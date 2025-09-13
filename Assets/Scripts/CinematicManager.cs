@@ -5,7 +5,7 @@ using TMPro;
 
 public class CinematicManager : MonoBehaviour
 {
-    public CinematicData cinematicData;
+    //public CinematicData cinematicData;
     public Image vignetteImage;
     public TextMeshProUGUI dialogueText;
     public Button nextButton;
@@ -15,7 +15,14 @@ public class CinematicManager : MonoBehaviour
 
     private int currentVignetteIndex = 0;
     private bool isTransitioning = false;
-
+    [Header("Traducciones")]
+    [SerializeField] private CinematicData localizacionES;
+    [SerializeField] private CinematicData localizacionIT;
+    [SerializeField] private CinematicData localizacionDE;
+    [SerializeField] private CinematicData localizacionEN;
+    [SerializeField] private CinematicData localizacionFI;
+    public CinematicData cinematicData;
+    private string codeLanguage;
     private void Awake()
     {
         fadePanel.alpha = 1; // Asegurar que empieza en negro
@@ -28,13 +35,22 @@ public class CinematicManager : MonoBehaviour
 
     private void Start()
     {
+        defineLanguage();
         if (cinematicData != null)
         {
             nextButtonText.text = cinematicData.nextButtonText;
             StartCoroutine(StartCinematic());
         }
     }
-
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { cinematicData = localizacionES; }
+        else if (codeLanguage == "it") { cinematicData = localizacionIT; }
+        else if (codeLanguage == "de") { cinematicData = localizacionDE; }
+        else if (codeLanguage == "en") { cinematicData = localizacionEN; }
+        else if (codeLanguage == "fi") { cinematicData = localizacionFI; }
+    }
     private IEnumerator StartCinematic()
     {
         yield return FadeIn(); // Hacer fade in

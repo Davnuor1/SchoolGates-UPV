@@ -7,17 +7,34 @@ public class CinematicTriggerCollider : MonoBehaviour
     [Header("Configuración")]
     public string uniqueID; // ID único para este trigger
     public CinematicManager cinematicManager; // Referencia al manager de la cinemática
-    public CinematicData cinematicData; // Referencia al ScriptableObject
+    //public CinematicData cinematicData; // Referencia al ScriptableObject
+    [Header("Traducciones")]
+    [SerializeField] private CinematicData localizacionES;
+    [SerializeField] private CinematicData localizacionIT;
+    [SerializeField] private CinematicData localizacionDE;
+    [SerializeField] private CinematicData localizacionEN;
+    [SerializeField] private CinematicData localizacionFI;
+    public CinematicData cinematicData;
+    private string codeLanguage;
 
     private void Start()
     {
+        defineLanguage();
         // Comprobar si este trigger ya fue usado
         if (PlayerPrefs.GetInt("TriggerUsed_" + uniqueID, 0) == 1)
         {
             this.gameObject.SetActive(false);
         }
     }
-
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { cinematicData = localizacionES; }
+        else if (codeLanguage == "it") { cinematicData = localizacionIT; }
+        else if (codeLanguage == "de") { cinematicData = localizacionDE; }
+        else if (codeLanguage == "en") { cinematicData = localizacionEN; }
+        else if (codeLanguage == "fi") { cinematicData = localizacionFI; }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

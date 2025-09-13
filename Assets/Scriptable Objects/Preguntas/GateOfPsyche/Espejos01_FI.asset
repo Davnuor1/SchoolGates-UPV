@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457a34b01ea1a0147ac69562ed6959ec, type: 3}
+  m_Name: Espejos01_FI
+  m_EditorClassIdentifier: 
+  textoPreguntaInicial: Valitse peili, johon samaistut ja tuhoa muut.
+  textoPreguntaRating: "Arvioi asteikolla 1-10, miten paljon samaistut t\xE4h\xE4n
+    peiliin."
+  textoPreguntaParte2: "Katsotaanpa, miten totuudenmukainen se on\u2026 Oletko sin\xE4
+    todella t\xE4m\xE4?"
+  textoPreEspejoParte2: "Mik\xE4 on todellinen todiste siit\xE4, ett\xE4 olet "
+  textoPostEspejoParte2: 
+  textoFeedbackCorrecto: "Olet oikeassa\u2026 t\xE4m\xE4 on luultavasti todiste siit\xE4,
+    ett\xE4 olet "
+  textoFeedbackCorrectoDetras: 
+  textoFeedbackIncorrectoParte1: "Et ehk\xE4 ole niin"
+  textoFeedbackIncorrectoParte2: " kuin luulet\u2026 N\xE4in tapahtuu kaikille joskus\u2026"
+  espejos:
+  - nombre: "Pelokas / j\xE4nnittynyt"
+    respuestaCorrecta: Uudet asiat pelottavat minua
+    respuestaIncorrecta: "Minua hermostuttaa, kun tapaan uusia ihmisi\xE4 "
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: Optimistinen
+    respuestaCorrecta: 'Vaikeina aikoina minulla on taipumus toivoa parasta '
+    respuestaIncorrecta: "Minulle ei voi tapahtua mit\xE4\xE4n pahaa"
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: Impulsiivinen
+    respuestaCorrecta: "En yleens\xE4 mieti sit\xE4, millaisia seurauksia teoillani
+      tai sanomisillani on  "
+    respuestaIncorrecta: "Kadun joskus sit\xE4, mit\xE4 olen sanonut tai tehnyt"
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: Avoin kokemuksille
+    respuestaCorrecta: "Kokeilen mielell\xE4ni uusia asioita"
+    respuestaIncorrecta: "Tykk\xE4\xE4n tehd\xE4 asiat omalla tavallani"
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: "Hyv\xE4ksynt\xE4\xE4 hakeva tai siit\xE4 riippuvainen"
+    respuestaCorrecta: "Teen yleens\xE4 niin kuin yst\xE4v\xE4ni haluavat minun tekev\xE4n."
+    respuestaIncorrecta: "Minusta tuntuu ep\xE4mukavalta, kun joku suuttuu minulle."
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: "Itsen\xE4inen"
+    respuestaCorrecta: "Viet\xE4n mielell\xE4ni aikaa toisten ihmisten kanssa, mutta
+      minua ei haittaa tehd\xE4 asioita yksin "
+    respuestaIncorrecta: Jos olen surullinen, olen mieluummin yksin
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: Alisuorittaja
+    respuestaCorrecta: "Minulla ei ole selkeit\xE4 tavoitteita el\xE4m\xE4ss\xE4ni"
+    respuestaIncorrecta: "Joskus ep\xE4ilen itse\xE4ni ja sit\xE4, miten parhaiten
+      selviytyisin jostakin teht\xE4v\xE4st\xE4"
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: "P\xE4\xE4tt\xE4v\xE4inen"
+    respuestaCorrecta: "Haastavat teht\xE4v\xE4t motivoivat minua"
+    respuestaIncorrecta: "Olen luopunut el\xE4m\xE4ss\xE4ni joistakin asioista"
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: "Syyllist\xE4v\xE4 / ep\xE4varma"
+    respuestaCorrecta: "Tunnen oloni kyvytt\xF6m\xE4ksi, kun kohtaan esteit\xE4 ja
+      vaikeuksia "
+    respuestaIncorrecta: " Tunnen oloni ep\xE4varmaksi, kun teen virheit\xE4"
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: Neuvokas
+    respuestaCorrecta: "Mielest\xE4ni el\xE4m\xE4ll\xE4ni on selke\xE4 tarkoitus
+      ja suunta "
+    respuestaIncorrecta: "Minusta ei aina tunnu silt\xE4, ett\xE4 minulla olisi valinnanvaraa"
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: Empaattinen / kiltti
+    respuestaCorrecta: "Yrit\xE4n kohdella ihmisi\xE4 reilusti"
+    respuestaIncorrecta: "En joskus ymm\xE4rr\xE4 toisia ihmisi\xE4"
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: Vihamielinen
+    respuestaCorrecta: 'Minulla on taipumus kostaa niille, jotka ovat loukanneet
+      minua '
+    respuestaIncorrecta: Olen joskus hyvin vihainen
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: ' Uskollinen vai idealistinen'
+    respuestaCorrecta: Minusta kaikki ihmiset ovat tasa-arvoisia
+    respuestaIncorrecta: "Joskus ep\xE4ilen sit\xE4, ett\xE4 parempi maailma on mahdollinen"
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
+  - nombre: Materialistinen
+    respuestaCorrecta: "Uskon vain siihen, mit\xE4 n\xE4en "
+    respuestaIncorrecta: "Pid\xE4n lahjojen saamisesta "
+    figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}

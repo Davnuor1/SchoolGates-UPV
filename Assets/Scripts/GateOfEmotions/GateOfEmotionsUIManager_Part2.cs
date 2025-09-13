@@ -7,8 +7,15 @@ using UnityEngine.UI;
 public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
 {
     [Header("Localización")]
+    //public GateOfEmotionsLocalization localization;
+    [Header("Traducciones")]
+    [SerializeField] private GateOfEmotionsLocalization localizacionES;
+    [SerializeField] private GateOfEmotionsLocalization localizacionIT;
+    [SerializeField] private GateOfEmotionsLocalization localizacionDE;
+    [SerializeField] private GateOfEmotionsLocalization localizacionEN;
+    [SerializeField] private GateOfEmotionsLocalization localizacionFI;
     public GateOfEmotionsLocalization localization;
-
+    private string codeLanguage;
     [Header("Paneles")]
     public GameObject canvasGateOfEmotionsPart2;
     public GameObject panelHeavenPart2;
@@ -44,6 +51,19 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
     private int currentNPCIndex = 0;
     private string npcActualEmotion = "";
 
+    public void Start()
+    {
+        defineLanguage();
+    }
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { localization = localizacionES; }
+        else if (codeLanguage == "it") { localization = localizacionIT; }
+        else if (codeLanguage == "de") { localization = localizacionDE; }
+        else if (codeLanguage == "en") { localization = localizacionEN; }
+        else if (codeLanguage == "fi") { localization = localizacionFI; }
+    }
     public void StartSecondStage(List<string> emocionesDescartadas)
     {
         emocionesRestantes = emocionesDescartadas;

@@ -32,4 +32,25 @@ public static class LocalJsonSave
 #endif
         return null;
     }
+
+    public static bool ExistsUserData(string tan)
+    {
+#if !UNITY_WEBGL || UNITY_EDITOR
+        return File.Exists(GetPath(tan));
+#else
+        return false;
+#endif
+    }
+
+    public static void DeleteUserData(string tan)
+    {
+#if !UNITY_WEBGL || UNITY_EDITOR
+        string path = GetPath(tan);
+        if (File.Exists(path))
+        {
+            File.Delete(path);
+            Debug.Log("UserData JSON borrado: " + path);
+        }
+#endif
+    }
 }

@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e583b4c22b793db448789db36fb2579b, type: 3}
+  m_Name: Espejos03_FI
+  m_EditorClassIdentifier: 
+  textoPreguntaInicial: "\xBFQu\xE9 tipo de personas conoces que se preocupan por
+    esto tanto como t\xFA?"
+  textoInstruccionesPrimeraFase: "Piensa en una experiencia significativa o agradable
+    en tu vida... \xBFQu\xE9 es lo que realmente necesitas? Selecciona el espejo
+    si crees que es importante o r\xF3mpelo si no lo es."
+  textoInstruccionesSegundaFase: "Entonces, dices que esto es importante para ti,
+    pero \xBFcu\xE1nto te est\xE1s preocupando realmente por ello? \xBFCu\xE1nta
+    atenci\xF3n y tiempo le est\xE1s dedicando?"
+  textoValoracion: Valora la importancia de estas cosas para ti.
+  textoCuidadoValores: "\xBFQu\xE9 puedes hacer ahora para cuidar mejor tus valores?"
+  textoAccionFinal: 
+  espejos:
+  - nombre: "Itsen\xE4isyys"
+    respuestas:
+    - "Omien p\xE4\xE4t\xF6sten tekeminen"
+    - "Oman el\xE4m\xE4ns\xE4 hallinta tietyss\xE4 m\xE4\xE4rin"
+    - Mahdollisuus ansaita ja hallita rahaa itse
+  - nombre: "Yst\xE4vyydet ja sosiaaliset suhteet"
+    respuestas:
+    - " L\xE4heiset yst\xE4v\xE4t, joiden kanssa voin jakaa ajatuksiani ja puhua
+      tunteistani"
+    - "Ajan viett\xE4minen yst\xE4vieni kanssa"
+    - Seurustelusuhde
+    - Paljon seuraajia sosiaalisessa mediassa
+    - " Osallistuminen yhteiskuntaan ja maailmanlaajuisiin yhteis\xF6ihin"
+  - nombre: Identiteetin etsiminen
+    respuestas:
+    - "Mahdollisuus tutkia ja ilmaista omaa identiteetti\xE4ni"
+    - "Mahdollisuus k\xE4ytt\xE4\xE4 vaatteita, joista pid\xE4n, kuunnella lempimusiikkiani
+      aina, kun haluan"
+    - " Mahdollisuus kokeilla uusia asioita, saada uusia el\xE4m\xE4nkokemuksia"
+    - Matkustelu
+  - nombre: Harrastukset / kiinnostuksen kohteet, yksityisyys
+    respuestas:
+    - Taiteen, musiikin tai kirjoittamisen harjoittaminen
+    - Harpeeksi aikaa harrastuksilleni tai kiinnostukseni kohteille
+    - "Tarpeeksi yksityisyytt\xE4 ja omaa henkil\xF6kohtaista tilaa"
+  - nombre: Perhe ja koti
+    respuestas:
+    - Perhe, joka tukee minua
+    - Perhe, joka kuuntelee minua
+    - "Ajan viett\xE4minen perheeni kanssa"
+    - Turvallinen olo kotona
+  - nombre: ' Koulutus ja koulu'
+    respuestas:
+    - "Hyv\xE4t arvosanat koulussa"
+    - Merkityksellisten asioiden oppiminen koulussa
+    - "Vapaus valita aineet/ura, joista min\xE4 pid\xE4n"
+    - Olla suosittu koulussa
+  - nombre: Kunto ja terveys
+    respuestas:
+    - "S\xE4\xE4nn\xF6llinen kuntoilu"
+    - Terveellinen ruoka
+    - "Riitt\xE4v\xE4 uni"
+    - 'Terveyteni ja hyvinvointini parantaminen '

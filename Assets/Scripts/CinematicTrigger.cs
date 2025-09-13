@@ -7,7 +7,8 @@ public class CinematicTrigger : MonoBehaviour
 
     private void Start()
     {
-        if (PlayerPrefs.GetInt("Cinematic_" + cinematicData.name, 0) == 0) // Si no se ha visto
+        var key = cinematicData.name.Substring(0, cinematicData.name.Length - 2);
+        if (PlayerPrefs.GetInt("Cinematic_" + key, 0) == 0) // Si no se ha visto
         {
             cinematicManager.gameObject.SetActive(true); // Activar cinemática
         }

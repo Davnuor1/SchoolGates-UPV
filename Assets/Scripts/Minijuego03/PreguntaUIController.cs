@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class PreguntaUIController : MonoBehaviour
 {
-    [SerializeField] private MinijuegoEspejos03Localization localizacion;
+    
 
     public TextMeshProUGUI tituloEspejo;
     public TextMeshProUGUI preguntaTexto;
@@ -16,16 +16,33 @@ public class PreguntaUIController : MonoBehaviour
     public GameObject ruletaDerecha;
 
     private MinijuegoManager minijuegoManager;
+    [Header("Traducciones")]
+    [SerializeField] private MinijuegoEspejos03Localization localizacionES;
+    [SerializeField] private MinijuegoEspejos03Localization localizacionIT;
+    [SerializeField] private MinijuegoEspejos03Localization localizacionDE;
+    [SerializeField] private MinijuegoEspejos03Localization localizacionEN;
+    [SerializeField] private MinijuegoEspejos03Localization localizacionFI;
+    public MinijuegoEspejos03Localization localizacion;
+    private string codeLanguage;
 
     void Start()
     {
+        defineLanguage();
         minijuegoManager = FindObjectOfType<MinijuegoManager>();
         MostrarBotonesSiNo(true);
         ruletaUnica.SetActive(false);
         ruletaIzquierda.SetActive(false);
         ruletaDerecha.SetActive(false);
     }
-
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { localizacion = localizacionES; }
+        else if (codeLanguage == "it") { localizacion = localizacionIT; }
+        else if (codeLanguage == "de") { localizacion = localizacionDE; }
+        else if (codeLanguage == "en") { localizacion = localizacionEN; }
+        else if (codeLanguage == "fi") { localizacion = localizacionFI; }
+    }
     public void MostrarEspejo(int idEspejo)
     {
         tituloEspejo.text = localizacion.espejos[idEspejo].nombre;

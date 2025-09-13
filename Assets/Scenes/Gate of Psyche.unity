@@ -641,7 +641,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 225363bfcd1301a49abadd4c08a59705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localizacion: {fileID: 11400000, guid: 3b9cdf014f5272b4fb866868fa9faceb, type: 2}
   minijuegoEntero: {fileID: 7650945}
   botonLike: {fileID: 1672289023}
   botonDislike: {fileID: 2011223358}
@@ -657,6 +656,11 @@ MonoBehaviour:
   textoFeedback: {fileID: 1146954642}
   botonSiguiente: {fileID: 2108006215}
   escaleras2: {fileID: 1738599860}
+  localizacionES: {fileID: 0}
+  localizacionIT: {fileID: 0}
+  localizacionDE: {fileID: 0}
+  localizacionEN: {fileID: 0}
+  localizacionFI: {fileID: 0}
 --- !u!114 &7650947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189008,6 +189012,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 938096135610520556, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
+      propertyPath: portalFinalGate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 938096135610520556, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
       propertyPath: ChangeSceneAnimator
       value: 
       objectReference: {fileID: 1916149739}
@@ -214346,6 +214354,26 @@ PrefabInstance:
       propertyPath: cinematicData
       value: 
       objectReference: {fileID: 11400000, guid: b23a63cdf7843f443895b15d7b32d8b9, type: 2}
+    - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
+      propertyPath: localizacionDE
+      value: 
+      objectReference: {fileID: 11400000, guid: f91b7936a273b294a873436da6399439, type: 2}
+    - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
+      propertyPath: localizacionEN
+      value: 
+      objectReference: {fileID: 11400000, guid: f61c8425abfc1ce418dcfb3d09ee586b, type: 2}
+    - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
+      propertyPath: localizacionES
+      value: 
+      objectReference: {fileID: 11400000, guid: b23a63cdf7843f443895b15d7b32d8b9, type: 2}
+    - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
+      propertyPath: localizacionFI
+      value: 
+      objectReference: {fileID: 11400000, guid: b23a63cdf7843f443895b15d7b32d8b9, type: 2}
+    - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
+      propertyPath: localizacionIT
+      value: 
+      objectReference: {fileID: 11400000, guid: b23a63cdf7843f443895b15d7b32d8b9, type: 2}
     - target: {fileID: 1214734306023692703, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -214501,7 +214529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cinematicManager: {fileID: 864904216}
-  cinematicData: {fileID: 11400000, guid: e7d0f281c8186cf428b018dc562f9674, type: 2}
+  cinematicData: {fileID: 11400000, guid: f61c8425abfc1ce418dcfb3d09ee586b, type: 2}
 --- !u!1001 &869122492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -265411,6 +265439,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f46e7ee1ad97344c8e94136f1ad133d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localizacionES: {fileID: 11400000, guid: 4513d1ef676ae12459f95023c0529e64, type: 2}
+  localizacionIT: {fileID: 11400000, guid: 4513d1ef676ae12459f95023c0529e64, type: 2}
+  localizacionDE: {fileID: 11400000, guid: 3631ef4c829270041a7ea895edfb30dc, type: 2}
+  localizacionEN: {fileID: 11400000, guid: f6a79dc276ef52e4b829152bb12e2eac, type: 2}
+  localizacionFI: {fileID: 11400000, guid: 4513d1ef676ae12459f95023c0529e64, type: 2}
   localizacion: {fileID: 11400000, guid: 4513d1ef676ae12459f95023c0529e64, type: 2}
   canvasMinijuego: {fileID: 1809681883}
   topMessageText: {fileID: 101873484}
@@ -270644,10 +270677,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168de312e95260745995e6b2e64383f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localizacion: {fileID: 11400000, guid: 56356800faffb8c40b93ed10936b4ad3, type: 2}
   indiceEspejoActual: 0
   portalSalida: {fileID: 649410856}
   preguntaUIController: {fileID: 1915347605}
+  localizacionES: {fileID: 11400000, guid: 56356800faffb8c40b93ed10936b4ad3, type: 2}
+  localizacionIT: {fileID: 11400000, guid: c08ed629660595a46967c1009bb53543, type: 2}
+  localizacionDE: {fileID: 11400000, guid: ccb31db110029b940bf3aabd57ff3ae6, type: 2}
+  localizacionEN: {fileID: 11400000, guid: 38d31312faad2294daab12e0fe256b54, type: 2}
+  localizacionFI: {fileID: 11400000, guid: 56356800faffb8c40b93ed10936b4ad3, type: 2}
+  localizacion: {fileID: 11400000, guid: 56356800faffb8c40b93ed10936b4ad3, type: 2}
   espejosSegundaFase: 
 --- !u!114 &1915347605
 MonoBehaviour:
@@ -270661,7 +270699,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88ef2d2a031f9cf4baf46d94ce5b798e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localizacion: {fileID: 11400000, guid: 56356800faffb8c40b93ed10936b4ad3, type: 2}
   tituloEspejo: {fileID: 1235794200}
   preguntaTexto: {fileID: 506756134}
   botonSi: {fileID: 651155097}
@@ -270669,6 +270706,12 @@ MonoBehaviour:
   ruletaUnica: {fileID: 1530349782}
   ruletaIzquierda: {fileID: 627002291}
   ruletaDerecha: {fileID: 509710099}
+  localizacionES: {fileID: 11400000, guid: 56356800faffb8c40b93ed10936b4ad3, type: 2}
+  localizacionIT: {fileID: 11400000, guid: c08ed629660595a46967c1009bb53543, type: 2}
+  localizacionDE: {fileID: 11400000, guid: ccb31db110029b940bf3aabd57ff3ae6, type: 2}
+  localizacionEN: {fileID: 11400000, guid: 38d31312faad2294daab12e0fe256b54, type: 2}
+  localizacionFI: {fileID: 11400000, guid: 56356800faffb8c40b93ed10936b4ad3, type: 2}
+  localizacion: {fileID: 11400000, guid: 56356800faffb8c40b93ed10936b4ad3, type: 2}
 --- !u!114 &1915347606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270775,7 +270818,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cb79e85b881c8547acf0ffa1a2446d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localizacion: {fileID: 11400000, guid: 56356800faffb8c40b93ed10936b4ad3, type: 2}
   preguntaTexto: {fileID: 506756134}
   panelSeleccionMultiple: {fileID: 1755723490}
   botonesPlantilla:
@@ -270786,6 +270828,12 @@ MonoBehaviour:
   - {fileID: 591370988}
   - {fileID: 1768225852}
   - {fileID: 1768225852}
+  localizacionES: {fileID: 11400000, guid: 56356800faffb8c40b93ed10936b4ad3, type: 2}
+  localizacionIT: {fileID: 11400000, guid: c08ed629660595a46967c1009bb53543, type: 2}
+  localizacionDE: {fileID: 11400000, guid: ccb31db110029b940bf3aabd57ff3ae6, type: 2}
+  localizacionEN: {fileID: 11400000, guid: 38d31312faad2294daab12e0fe256b54, type: 2}
+  localizacionFI: {fileID: 11400000, guid: 56356800faffb8c40b93ed10936b4ad3, type: 2}
+  localizacion: {fileID: 11400000, guid: 56356800faffb8c40b93ed10936b4ad3, type: 2}
 --- !u!1001 &1915559252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -271771,6 +271819,67 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
+--- !u!1001 &1921346095
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3078634188470450189, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_Name
+      value: ContadorTiempoGates
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -59.91536
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.239035
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.052979916
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392551612698700971, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: gateId
+      value: Psyche
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
 --- !u!1001 &1921728195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -275043,7 +275152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07262f57c8658ae4da03475efd72799b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localizacion: {fileID: 11400000, guid: 37c1d42fd59ef964e95ff0839c1b23f9, type: 2}
   minijuegoEntero: {fileID: 1972500383}
   botonLike: {fileID: 75155735}
   botonDislike: {fileID: 1170751668}
@@ -275056,6 +275164,11 @@ MonoBehaviour:
   textoFeedback: {fileID: 2038988161}
   botonSiguiente: {fileID: 2099902322}
   geometricShapesGenerator: {fileID: 1349831362}
+  localizacionES: {fileID: 11400000, guid: 37c1d42fd59ef964e95ff0839c1b23f9, type: 2}
+  localizacionIT: {fileID: 11400000, guid: 10a644ad23d202c418a9986f3c0e8a98, type: 2}
+  localizacionDE: {fileID: 11400000, guid: c8b6f1638062977438291f5b11e282c8, type: 2}
+  localizacionEN: {fileID: 11400000, guid: a9e62b8562eb50f438233a8b4427d227, type: 2}
+  localizacionFI: {fileID: 11400000, guid: 37c1d42fd59ef964e95ff0839c1b23f9, type: 2}
   escaleras: {fileID: 1703308894}
 --- !u!1001 &1973844307
 PrefabInstance:

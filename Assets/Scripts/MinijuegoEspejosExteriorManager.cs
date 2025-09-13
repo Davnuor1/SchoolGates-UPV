@@ -6,8 +6,15 @@ using TMPro;
 
 public class MinijuegoEspejosExteriorManager : MonoBehaviour
 {
-    [Header("Localization")]
-    [SerializeField] private MinijuegoEspejosExteriorLocalization localizacion;
+    
+    [Header("Traducciones")]
+    [SerializeField] private MinijuegoEspejosExteriorLocalization localizacionES;
+    [SerializeField] private MinijuegoEspejosExteriorLocalization localizacionIT;
+    [SerializeField] private MinijuegoEspejosExteriorLocalization localizacionDE;
+    [SerializeField] private MinijuegoEspejosExteriorLocalization localizacionEN;
+    [SerializeField] private MinijuegoEspejosExteriorLocalization localizacionFI;
+    public MinijuegoEspejosExteriorLocalization localizacion;
+    private string codeLanguage;
 
     [Header("UI References")]
     [SerializeField] private GameObject canvasMinijuego;  // Canvas del minijuego
@@ -38,6 +45,7 @@ public class MinijuegoEspejosExteriorManager : MonoBehaviour
 
     private void Start()
     {
+        defineLanguage();
         // Asignar los textos de los botones de fase 1 según la localización
         buttonRepeat.GetComponentInChildren<TMP_Text>().text = localizacion.buttonRepeatText;
         buttonRespond.GetComponentInChildren<TMP_Text>().text = localizacion.buttonRespondText;
@@ -46,7 +54,15 @@ public class MinijuegoEspejosExteriorManager : MonoBehaviour
         //canvasMinijuego.SetActive(false);
         panelResponseOptions.SetActive(false);
     }
-
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { localizacion = localizacionES; }
+        else if (codeLanguage == "it") { localizacion = localizacionIT; }
+        else if (codeLanguage == "de") { localizacion = localizacionDE; }
+        else if (codeLanguage == "en") { localizacion = localizacionEN; }
+        else if (codeLanguage == "fi") { localizacion = localizacionFI; }
+    }
     // Se llama cuando el jugador entra en contacto con el objeto trigger
     public void StartMinijuego()
     {

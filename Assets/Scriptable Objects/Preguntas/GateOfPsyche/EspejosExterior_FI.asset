@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12378fb498d283642a330e1ccd91f0bf, type: 3}
+  m_Name: EspejosExterior_FI
+  m_EditorClassIdentifier: 
+  topMessageInitial: Responde a este demonio si quieres avanzar...
+  topMessageRespondFormat: "\xBFC\xF3mo le respondes al rumiador de {0}?"
+  topMessageSecondRound: "\xBFQu\xE9 m\xE1s puedes decirles?"
+  buttonRepeatText: Repetir
+  buttonRespondText: Responder
+  espejos:
+  - mirrorTitle: "\xC9xito"
+    mirrorText: "Tienes que tener \xE9xito en todo lo que haces o ser\xE1s un fracasado/a"
+    responses:
+    - 'No siempre gano, pero eso no me convierte en un fracasado/a '
+    - "Cometer errores es parte del \xE9xito"
+    - Nadie puede ser el mejor en todo
+  - mirrorTitle: Culpa
+    mirrorText: "T\xFA tienes la culpa, no mereces ser feliz"
+    responses:
+    - 'Todos merecen la oportunidad de ser felices '
+    - 'Las personas a veces cometen errores, pero siempre merecen una segunda oportunidad  '
+    - "No soy ni menos ni m\xE1s que nadie"
+  - mirrorTitle: Cuerpo ideal
+    mirrorText: Tu cuerpo no es perfecto, pero tiene que serlo
+    responses:
+    - "Mi cuerpo es perfecto tal y como es, digan lo que digan los dem\xE1s"
+    - Soy guapo/a y fuerte
+    - El cuerpo perfecto no existe
+  - mirrorTitle: Envidia
+    mirrorText: "Todos son mejores que t\xFA y tienen mejores cosas que t\xFA"
+    responses:
+    - Cada persona tiene diferentes fortalezas y debilidades.
+    - Todas las personas tiene sus propios miedos y problemas
+    - No tengo todo lo que quiero, pero estoy agradecido/a por lo que tengo
+  - mirrorTitle: "Autodestrucci\xF3n"
+    mirrorText: "No eres suficiente, nunca ganar\xE1s"
+    responses:
+    - Aunque a veces me equivoque, puedo hacer las cosas bien
+    - No siempre se gana y no siempre se pierde
+    - "Al menos puedo dar lo mejor de m\xED, y eso merece la pena"

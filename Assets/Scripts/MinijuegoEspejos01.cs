@@ -4,7 +4,8 @@ using TMPro;
 
 public class MinijuegoEspejos01 : MonoBehaviour
 {
-    [SerializeField] private MinijuegoEspejos01Localization localizacion;
+    //[SerializeField] private MinijuegoEspejos01Localization localizacion;
+    
     [SerializeField] private GameObject minijuegoEntero;
     [SerializeField] private GameObject botonLike;
     [SerializeField] private GameObject botonDislike;
@@ -18,7 +19,14 @@ public class MinijuegoEspejos01 : MonoBehaviour
     [SerializeField] private GameObject botonSiguiente;
 
     [SerializeField] private GeometricShapesGenerator geometricShapesGenerator; // Generador de figuras geométricas
-
+    [Header("Traducciones")]
+    [SerializeField] private MinijuegoEspejos01Localization localizacionES;
+    [SerializeField] private MinijuegoEspejos01Localization localizacionIT;
+    [SerializeField] private MinijuegoEspejos01Localization localizacionDE;
+    [SerializeField] private MinijuegoEspejos01Localization localizacionEN;
+    [SerializeField] private MinijuegoEspejos01Localization localizacionFI;
+    private MinijuegoEspejos01Localization localizacion;
+    private string codeLanguage;
     private List<(string nombre, int id, int rating)> espejosLike = new List<(string nombre, int id, int rating)>();
     private int idEspejo = 0;
     private PlayerMovement playerMovement;
@@ -26,10 +34,19 @@ public class MinijuegoEspejos01 : MonoBehaviour
 
     private void Start()
     {
+        defineLanguage();
         textoPregunta.text = localizacion.textoPreguntaInicial;
         textoEspejos.text = localizacion.espejos[idEspejo].nombre;
     }
-
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if(codeLanguage=="es") { localizacion = localizacionES; }
+        else if (codeLanguage == "it") { localizacion = localizacionIT; }
+        else if (codeLanguage == "de") { localizacion = localizacionDE; }
+        else if (codeLanguage == "en") { localizacion = localizacionEN; }
+        else if (codeLanguage == "fi") { localizacion = localizacionFI; }
+    }
     public void darBotonLike()
     {
         botonLike.SetActive(false);

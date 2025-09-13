@@ -5,7 +5,7 @@ using TMPro;
 
 public class SeleccionMultipleController : MonoBehaviour
 {
-    [SerializeField] private MinijuegoEspejos03Localization localizacion;
+    
     public TextMeshProUGUI preguntaTexto;
     public GameObject panelSeleccionMultiple;
     public List<Button> botonesPlantilla;
@@ -13,12 +13,27 @@ public class SeleccionMultipleController : MonoBehaviour
     private List<string> respuestasSeleccionadas = new List<string>();
     private int idEspejoActual;
     private MinijuegoManager minijuegoManager;
-
+    [SerializeField] private MinijuegoEspejos03Localization localizacionES;
+    [SerializeField] private MinijuegoEspejos03Localization localizacionIT;
+    [SerializeField] private MinijuegoEspejos03Localization localizacionDE;
+    [SerializeField] private MinijuegoEspejos03Localization localizacionEN;
+    [SerializeField] private MinijuegoEspejos03Localization localizacionFI;
+    public MinijuegoEspejos03Localization localizacion;
+    private string codeLanguage;
     private void Start()
     {
+        defineLanguage();
         minijuegoManager = FindObjectOfType<MinijuegoManager>();
     }
-
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { localizacion = localizacionES; }
+        else if (codeLanguage == "it") { localizacion = localizacionIT; }
+        else if (codeLanguage == "de") { localizacion = localizacionDE; }
+        else if (codeLanguage == "en") { localizacion = localizacionEN; }
+        else if (codeLanguage == "fi") { localizacion = localizacionFI; }
+    }
     public void MostrarSeleccionMultiple(int idEspejo)
     {
         idEspejoActual = idEspejo;

@@ -17,17 +17,39 @@ public class EmotionsFrustrationManager : MonoBehaviour
     public GameObject panelFrustrationIntro;
     public TextMeshProUGUI textIntro;
     public Button buttonNext;
-    public EmotionsFrustrationLocalization localization;
+    //public EmotionsFrustrationLocalization localization;
     public GameObject canvasGateOfEmotions;
     public EmotionsFrustrationMeditation meditationManager;
     private float timer = 0f;
     private bool gameActive = false;
     private bool isPaused = false;
+
+    [Header("Traducciones")]
+    [SerializeField] private EmotionsFrustrationLocalization localizacionES;
+    [SerializeField] private EmotionsFrustrationLocalization localizacionIT;
+    [SerializeField] private EmotionsFrustrationLocalization localizacionDE;
+    [SerializeField] private EmotionsFrustrationLocalization localizacionEN;
+    [SerializeField] private EmotionsFrustrationLocalization localizacionFI;
+    public EmotionsFrustrationLocalization localization;
+    private string codeLanguage;
     private Coroutine minigameCoroutine;
     
 
     private FrustratedInputOverride inputOverride;
 
+    public void Start()
+    {
+        defineLanguage();
+    }
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { localization = localizacionES; }
+        else if (codeLanguage == "it") { localization = localizacionIT; }
+        else if (codeLanguage == "de") { localization = localizacionDE; }
+        else if (codeLanguage == "en") { localization = localizacionEN; }
+        else if (codeLanguage == "fi") { localization = localizacionFI; }
+    }
     public void StartFrustrationMinigame()
     {
         player = GameObject.FindGameObjectWithTag("Player");

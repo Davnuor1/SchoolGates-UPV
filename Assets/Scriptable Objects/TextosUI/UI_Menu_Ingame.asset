@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68aadbb53980c4c48a77f7da50c3cd69, type: 3}
+  m_Name: UI_Menu_Ingame
+  m_EditorClassIdentifier: 
+  entries:
+  - key: Skill Tree
+    es: Arbol de habilidades
+    en: Skill Tree
+    de: Fertigkeitsbaum
+    it: "Albero delle abilit\xE0"
+    fi: Taitopuu
+  - key: Stats
+    es: "Estad\xEDsticas"
+    en: Stats
+    de: Statistiken
+    it: Statistiche
+    fi: Tilastot
+  - key: Travel journal
+    es: Diario de viaje
+    en: Travel journal
+    de: Reisetagebuch
+    it: Diario di viaggio
+    fi: "P\xE4iv\xE4kirja"
+  - key: Book of clues
+    es: Libro de pistas
+    en: Book of clues
+    de: Hinweisbuch
+    it: Libro degli indizi
+    fi: Vihjekirja
+  - key: Exit
+    es: Cerrar el juego
+    en: Quit Game
+    de: Spiel beenden
+    it: Chiudere il gioco
+    fi: Sulje peli

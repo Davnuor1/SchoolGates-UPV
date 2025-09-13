@@ -4730,6 +4730,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3393566829866776182, guid: 34a83a5431c134546b1f0168e2842a17, type: 3}
   m_PrefabInstance: {fileID: 228033298}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &236224047
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3078634188470450189, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_Name
+      value: ContadorTiempoGates
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -59.91536
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.239035
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.052979916
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491302408310008926, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392551612698700971, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: gateId
+      value: People
+      objectReference: {fileID: 0}
+    - target: {fileID: 9096188138300451630, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d0333cbe02160f4fa4399c8170182a5, type: 3}
 --- !u!1001 &237757502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6035,6 +6100,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62af8ff8897712c48b67df6666c346df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localizacionES: {fileID: 11400000, guid: 8ca9c85e4cd66f043bb9b62049a70e93, type: 2}
+  localizacionIT: {fileID: 11400000, guid: 8ca9c85e4cd66f043bb9b62049a70e93, type: 2}
+  localizacionDE: {fileID: 11400000, guid: 83bd51ebea0b4ef498c39170ba2926e9, type: 2}
+  localizacionEN: {fileID: 11400000, guid: 48ae39c39d2b6554eb04088eea8947d9, type: 2}
+  localizacionFI: {fileID: 11400000, guid: 8ca9c85e4cd66f043bb9b62049a70e93, type: 2}
   localizationData: {fileID: 11400000, guid: 8ca9c85e4cd66f043bb9b62049a70e93, type: 2}
   panelVignettes: {fileID: 815782883}
   panelDialogue: {fileID: 242014423}
@@ -32789,7 +32859,12 @@ MonoBehaviour:
   containerStoneDescription: {fileID: 1297131362}
   containerGratitudeWall: {fileID: 407226965}
   prefabGratitudeStone: {fileID: 1480072865897385163, guid: 597f1a94636b64e4aabd5f9d81a92134, type: 3}
-  localizationData: {fileID: 11400000, guid: 4b34351760a0c3c49b013c8f578668b8, type: 2}
+  localizacionES: {fileID: 11400000, guid: 4b34351760a0c3c49b013c8f578668b8, type: 2}
+  localizacionIT: {fileID: 11400000, guid: 4b34351760a0c3c49b013c8f578668b8, type: 2}
+  localizacionDE: {fileID: 11400000, guid: b8cee4713e09e824eb263ad16836e851, type: 2}
+  localizacionEN: {fileID: 11400000, guid: 8b8ed34760e5c8b468cb2b7af221eedb, type: 2}
+  localizacionFI: {fileID: 11400000, guid: 4b34351760a0c3c49b013c8f578668b8, type: 2}
+  localizationData: {fileID: 0}
   stoneButtons:
   - {fileID: 1702011418}
   - {fileID: 280291479}
