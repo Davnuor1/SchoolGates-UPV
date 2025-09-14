@@ -71,6 +71,10 @@ public class AgoraAltarManager : MonoBehaviour
         {
             fusionSuccessPanel.SetActive(false);
             CheckAndCloseCanvas();
+            GameManager.instance.skillTreeController.Unlock("2");
+            GameManager.instance.skillTreeController.Unlock("3");
+            GameManager.instance.uiManager.ToggleSkillTreeUI();
+            
         });
     }
     public void defineLanguage()
@@ -197,6 +201,7 @@ public class AgoraAltarManager : MonoBehaviour
         fusionSuccessPanel.SetActive(true);
         cofreDoradoFinal.SetActive(true);
         Debug.Log("Fusión completada correctamente.");
+        
     }
 
 }

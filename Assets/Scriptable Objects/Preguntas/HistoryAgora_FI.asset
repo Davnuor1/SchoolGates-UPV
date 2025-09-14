@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: HistoryAgora_FI
+  m_EditorClassIdentifier: 
+  collectionName: Historia
+  questions:
+  - questionText: "Mik\xE4 on Uuden-Seelannin p\xE4\xE4kaupunki? "
+    answers:
+    - Wellington
+    - Minsk
+    - Santiago
+    - Nairobi
+    correctAnswerIndex: 0
+  - questionText: "Mik\xE4 on Chilen p\xE4\xE4kaupunki?"
+    answers:
+    - Wellington
+    - Minsk
+    - Santiago
+    - Nairobi
+    correctAnswerIndex: 2
+  - questionText: "Milloin ensimm\xE4inen maailmansota alkoi?"
+    answers:
+    - 1879
+    - 1492
+    - 1914
+    - 1939
+    correctAnswerIndex: 2
+  - questionText: Milloin toinen maailmansota alkoi?
+    answers:
+    - 1879
+    - 1492
+    - 1939
+    - 2020
+    correctAnswerIndex: 2
+  - questionText: "Mik\xE4 maa hyv\xE4ksyi ensimm\xE4isen\xE4 lopullisesti naisten
+      yleisen \xE4\xE4nioikeuden?"
+    answers:
+    - Saksa
+    - Espanja
+    - Italia
+    - Uusi-Seelanti
+    correctAnswerIndex: 3
+  - questionText: "Mik\xE4 maa on suurempi kuin Pluto?"
+    answers:
+    - Espanja
+    - Italia
+    - Saksa
+    - "Ven\xE4j\xE4"
+    correctAnswerIndex: 3
+  - questionText: "Miss\xE4 Hadrianuksen muuri sijaitsee?"
+    answers:
+    - Italiassa
+    - Ranskassa
+    - Portugalissa
+    - Englannissa
+    correctAnswerIndex: 3
+  - questionText: "Ketk\xE4 keksiv\xE4t kirjoituksen?"
+    answers:
+    - "egyptil\xE4iset"
+    - kreikkalaiset
+    - sumerilaiset
+    - roomalaiset
+    correctAnswerIndex: 2
+  - questionText: "Mik\xE4 maa valitsi demokraattisesti ensimm\xE4isen\xE4 maailmassa
+      naispuolisen valtionjohtajan vuonna 1980?"
+    answers:
+    - USA
+    - Englanti
+    - Kiina
+    - Islanti
+    correctAnswerIndex: 3
+  - questionText: "Milloin ihmisoikeuksien yleismaailmallinen julistus hyv\xE4ksyttiin?"
+    answers:
+    - 1879
+    - 1918
+    - 1948
+    - 1978
+    correctAnswerIndex: 2
+  collectionIcon: {fileID: 980677572, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

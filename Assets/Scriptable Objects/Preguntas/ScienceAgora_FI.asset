@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: ScienceAgora_FI
+  m_EditorClassIdentifier: 
+  collectionName: Scientia
+  questions:
+  - questionText: "Mik\xE4 on ihmisen kehon ainoa osa, joka ei voi parantua itsest\xE4\xE4n?"
+    answers:
+    - iho
+    - hampaat
+    - hiukset
+    - maksa
+    correctAnswerIndex: 1
+  - questionText: " Miss\xE4 katkaravun syd\xE4n sijaitsee?"
+    answers:
+    - "p\xE4\xE4ss\xE4"
+    - jaloissa
+    - tuntokarvoissa
+    - kehossa
+    correctAnswerIndex: 0
+  - questionText: "Mik\xE4 on ainoa planeetta, joka py\xF6rii my\xF6t\xE4p\xE4iv\xE4\xE4n?"
+    answers:
+    - mars
+    - Maa
+    - venus
+    - jupiter
+    correctAnswerIndex: 2
+  - questionText: "Mik\xE4 el\xE4in ei nuku koskaan?"
+    answers:
+    - karhu
+    - muurahainen
+    - katkarapu
+    - hevonen
+    correctAnswerIndex: 1
+  - questionText: "Kuinka monta litraa vett\xE4 yksi \xF6ljypisara saastuttaa?"
+    answers:
+    - 1 litran
+    - 25 litraa
+    - 100 litraa
+    - 1000 litraa
+    correctAnswerIndex: 1
+  - questionText: "Kuinka monta litraa vett\xE4 tarvitaan yhden coca-cola-litran
+      valmistamiseen?"
+    answers:
+    - 2 litraa
+    - 20 litraa
+    - 200 litraa
+    - "ei lainkaan vett\xE4"
+    correctAnswerIndex: 2
+  - questionText: " Miten kauan ihminen selvi\xE4\xE4 juomatta vett\xE4?"
+    answers:
+    - "1 p\xE4iv\xE4n"
+    - "3 p\xE4iv\xE4a"
+    - "7 p\xE4iv\xE4a"
+    - "10 p\xE4iv\xE4a"
+    correctAnswerIndex: 2
+  - questionText: "Mink\xE4 v\xE4rinen valkosarvikuono on?"
+    answers:
+    - valkoinen
+    - harmaa
+    - pinkki
+    - 'ei valkosarvikuonoa ole olemassa '
+    correctAnswerIndex: 0
+  - questionText: "Ihmisen verenkiertoelimist\xF6 muodostaa verkoston, jonka pituus
+      on noin:"
+    answers:
+    - 10 m
+    - 10 km
+    - 1000 km
+    - 100000 km
+    correctAnswerIndex: 3
+  - questionText: "Mink\xE4tyyppinen lamppu on energiatehokkain?"
+    answers:
+    - hehkulamppu
+    - CFL
+    - LED
+    - halogeeni
+    correctAnswerIndex: 2
+  collectionIcon: {fileID: 219575835, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

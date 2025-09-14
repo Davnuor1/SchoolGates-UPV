@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a61ef5f9b69e544ba75093eb10ed3d, type: 3}
+  m_Name: WallOfGratitudeLocalization_FI
+  m_EditorClassIdentifier: 
+  upperTextMain: "Aina on jotakin, mist\xE4 olla kiitollinen... Mieti, mist\xE4 olet
+    kiitollinen ja aseta kivi sein\xE4\xE4n..."
+  upperTextStoneView: "Haluatko lis\xE4t\xE4 t\xE4m\xE4n kiven kiitollisuuden sein\xE4lle?"
+  upperTextGratitudeWall: "T\xE4m\xE4 on sinun kiitollisuuden sein\xE4si."
+  finishButton: Valmis
+  addToWallButton: "Lis\xE4\xE4 sein\xE4lle"
+  backButton: Takaisin
+  nextButton: Seuraava
+  previousButton: Edellinen
+  gratitudeWallTitle: "Kiitollisuuden sein\xE4"
+  stones:
+  - title: "Yst\xE4v\xE4t ja ihmissuhteet"
+    descriptions:
+    - "Uskolliset yst\xE4v\xE4t / paras yst\xE4v\xE4"
+    - "Minulle t\xE4rkeiden ihmisten tarjoama tuki ja rakkaus"
+    - "Hyv\xE4 kumppani, joka rakastaa ja tukee minua"
+    - "Viihtyminen yst\xE4vieni kanssa"
+  - title: Perhe
+    descriptions:
+    - "Perhe/sisarukset, jotka v\xE4litt\xE4v\xE4t minusta ja tukevat minua"
+    - "Tunne siit\xE4, ett\xE4 voin pyyt\xE4\xE4 ja saada apua"
+    - "Minua kuunnellaan ja minut hyv\xE4ksyt\xE4\xE4n"
+    - Onnellisten muistojen ja kokemusten jakaminen
+  - title: Vapaus ja turvallisuus
+    descriptions:
+    - Mahdollisuus tunteiden ja ajatusten ilmaisemiseen
+    - "Tuki silloin, kun olen joutunut syrjinn\xE4n kohteeksi tai minut on j\xE4tetty
+      ulkopuolelle"
+    - "Rauhallinen ja turvallinen el\xE4m\xE4"
+  - title: Perustarpeet
+    descriptions:
+    - Tarpeeksi ruokaa
+    - Turvallinen koti
+    - "Puhdasta vett\xE4"
+  - title: Koulutus
+    descriptions:
+    - "Voin menn\xE4 kouluun ja oppia uusia asioita"
+    - "Hyv\xE4t opettajat ja mentorit"
+    - "Mahdollisuus kasvaa ja kehitty\xE4"
+  - title: Aika
+    descriptions:
+    - Mahdollisuus vapaa-aikaan
+    - ' Mahdollisuus omaan aikaan'
+    - Mahdollisuudet itsetutkintaan
+  - title: "Henkil\xF6kohtaiset saavutukset"
+    descriptions:
+    - Mahdollisuus unelmoida tulevaisuudestani
+    - Vaikeuksien kohtaaminen ja voittaminen
+    - "Tavoitteitteni saavuttaminen\r"
+  - title: Terveys & hyvinvointi
+    descriptions:
+    - "Hyv\xE4 henkinen ja fyysinen terveys"
+    - "Mahdollisuus hyv\xE4\xE4n terveydenhoitoon"
+    - "Tyytyv\xE4isyys el\xE4m\xE4\xE4n, t\xE4ytel\xE4inen el\xE4m\xE4"
+  - title: Luonto
+    descriptions:
+    - Raitis ilma ja puhdas luonto
+    - Kauniista maisemista nauttiminen, luonnossa oleskelu
+  - title: Teknologia
+    descriptions:
+    - Tietojen vapaa saatavuus
+    - Digitaalilaitteet (matkapuhelin, tablettitietokone, PC) ja yhteys toisiin internetin
+      kautta

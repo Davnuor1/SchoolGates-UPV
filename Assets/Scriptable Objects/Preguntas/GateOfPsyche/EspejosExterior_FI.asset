@@ -12,39 +12,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12378fb498d283642a330e1ccd91f0bf, type: 3}
   m_Name: EspejosExterior_FI
   m_EditorClassIdentifier: 
-  topMessageInitial: Responde a este demonio si quieres avanzar...
-  topMessageRespondFormat: "\xBFC\xF3mo le respondes al rumiador de {0}?"
-  topMessageSecondRound: "\xBFQu\xE9 m\xE1s puedes decirles?"
-  buttonRepeatText: Repetir
-  buttonRespondText: Responder
+  topMessageInitial: "Vastaa t\xE4lle demonille, jos haluat menn\xE4 eteenp\xE4in\u2026"
+  topMessageRespondFormat: "Miten vastaat {0 }:n \xE4\xE4nelle"
+  topMessageSecondRound: "Mit\xE4 muuta voisit kertoa sille?"
+  buttonRepeatText: Toista
+  buttonRespondText: Vastaa
   espejos:
-  - mirrorTitle: "\xC9xito"
-    mirrorText: "Tienes que tener \xE9xito en todo lo que haces o ser\xE1s un fracasado/a"
+  - mirrorTitle: Menestys
+    mirrorText: "Sinun on menestytt\xE4v\xE4 kaikessa, mit\xE4 teet, tai olet luuseri"
     responses:
-    - 'No siempre gano, pero eso no me convierte en un fracasado/a '
-    - "Cometer errores es parte del \xE9xito"
-    - Nadie puede ser el mejor en todo
-  - mirrorTitle: Culpa
-    mirrorText: "T\xFA tienes la culpa, no mereces ser feliz"
+    - En aina voita, mutta se ei tee minusta luuseria
+    - "Virheiden tekeminen on osa menestymist\xE4"
+    - Kukaan ei voi olla paras kaikessa
+  - mirrorTitle: "Syytt\xE4m\xE4ll\xE4"
+    mirrorText: Syy on sinun, et ansaitse olla onnellinen
     responses:
-    - 'Todos merecen la oportunidad de ser felices '
-    - 'Las personas a veces cometen errores, pero siempre merecen una segunda oportunidad  '
-    - "No soy ni menos ni m\xE1s que nadie"
-  - mirrorTitle: Cuerpo ideal
-    mirrorText: Tu cuerpo no es perfecto, pero tiene que serlo
+    - Jokainen ansaitsee mahdollisuuden onnellisuuteen
+    - " Ihmiset tekev\xE4t joskus virheit\xE4, mutta he ansaitsevat aina toisen mahdollisuuden "
+    - "En ole v\xE4hemm\xE4n tai enemm\xE4n kuin kukaan muu"
+  - mirrorTitle: Ihanteellinen vartalo
+    mirrorText: "Vartalosi ei ole t\xE4ydellinen, mutta sen on oltava."
     responses:
-    - "Mi cuerpo es perfecto tal y como es, digan lo que digan los dem\xE1s"
-    - Soy guapo/a y fuerte
-    - El cuerpo perfecto no existe
-  - mirrorTitle: Envidia
-    mirrorText: "Todos son mejores que t\xFA y tienen mejores cosas que t\xFA"
+    - "Vartaloni on t\xE4ydellinen juuri sellaisena kuin se on, riippumatta siit\xE4,
+      mit\xE4 muut ihmiset sanovat"
+    - Olen kaunis ja vahva
+    - "T\xE4ydellist\xE4 vartaloa ei ole olemassa"
+  - mirrorTitle: Kateus
+    mirrorText: "Kaikki muut ovat parempia kuin sin\xE4 ja heill\xE4 on parempia
+      tavaroita kuin sinulla"
     responses:
-    - Cada persona tiene diferentes fortalezas y debilidades.
-    - Todas las personas tiene sus propios miedos y problemas
-    - No tengo todo lo que quiero, pero estoy agradecido/a por lo que tengo
-  - mirrorTitle: "Autodestrucci\xF3n"
-    mirrorText: "No eres suficiente, nunca ganar\xE1s"
+    - "Eri ihmisill\xE4 on erilaisia vahvuuksia ja heikkouksia"
+    - Jokaisella on omat pelkonsa ja ongelmansa
+    - "Minulla ei ole kaikkea, mit\xE4 haluan, mutta olen kiitollinen siit\xE4, mit\xE4
+      minulla on"
+  - mirrorTitle: Itsesabotaasi
+    mirrorText: "Sin\xE4 et ole tarpeeksi, sin\xE4 et voita koskaan"
     responses:
-    - Aunque a veces me equivoque, puedo hacer las cosas bien
-    - No siempre se gana y no siempre se pierde
-    - "Al menos puedo dar lo mejor de m\xED, y eso merece la pena"
+    - "Vaikka joskus olenkin v\xE4\xE4r\xE4ss\xE4, voin tehd\xE4 asioita oikein"
+    - "Et aina voita etk\xE4 aina h\xE4vi\xE4"
+    - "Ainakin voin yritt\xE4\xE4 parhaani ja sill\xE4 on arvoa"

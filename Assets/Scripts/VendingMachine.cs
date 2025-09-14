@@ -47,6 +47,10 @@ public class VendingMachine : MonoBehaviour
             //GameManager.instance.statsManager.SetSpirituality(90);
             Debug.Log("Interacted with vending machine: Energy +20, Karma set to 37");
             //GameManager.instance.userDataManager.SaveAndUpdateTime();
+
+            //SkillTreeController.Instance.Unlock("ocho");
+            //GameManager.instance.skillTreeController.Unlock("ocho",saveNow: true);
+            //Debug.Log("Desbloqueado casilla 8 skill tree");
         }
     }
 }

@@ -332,6 +332,8 @@ public class WiseManPracticesGameManager : MonoBehaviour
         {
             GameManager.instance.tabletUI.SetActive(true);
         }
+        GameManager.instance.skillTreeController.Unlock("12");
+        GameManager.instance.uiManager.ToggleSkillTreeUI();
     }
 
     public void OpenConflictPanel(int conflictNumber)

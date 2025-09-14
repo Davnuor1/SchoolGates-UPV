@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public SceneController sceneController;
     public StatsManager statsManager;
     public BookOfCluesManager bookOfCluesManager;
+    public SkillTreeController skillTreeController;
     //public UserDataManager userDataManager;
     public GameObject tabletUI;
 
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour
         sceneController = GetComponent<SceneController>();
         statsManager = GetComponent<StatsManager>();
         bookOfCluesManager= GetComponent<BookOfCluesManager>();
+        skillTreeController= GetComponent<SkillTreeController>();
         //userDataManager = GetComponent<UserDataManager>();
 
 

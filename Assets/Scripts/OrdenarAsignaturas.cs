@@ -100,6 +100,8 @@ public class OrdenarAsignaturas : MonoBehaviour
         {
             GameManager.instance.tabletUI.SetActive(true);
         }
+        GameManager.instance.skillTreeController.Unlock("1");
+        GameManager.instance.uiManager.ToggleSkillTreeUI();
     }
     private void RetirarGuardias()
     {

@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: HumanitiesAgora_FI
+  m_EditorClassIdentifier: 
+  collectionName: Humanitatis
+  questions:
+  - questionText: "Miten suuri osuus siit\xE4, mist\xE4 olemme huolissamme, ei koskaan
+      tapahdu?"
+    answers:
+    - 20%
+    - 50%
+    - 80%
+    - 100%
+    correctAnswerIndex: 2
+  - questionText: "Miten kauan aivoilla kest\xE4\xE4 muodostaa ensivaikutelma ihmisest\xE4?"
+    answers:
+    - 5 sekuntia
+    - 30 sekuntia
+    - 1 minuutti
+    - 1 tunti
+    correctAnswerIndex: 1
+  - questionText: "Millaisia viestej\xE4 aivot ymm\xE4rt\xE4v\xE4t parhaiten?"
+    answers:
+    - positiivisia
+    - negatiivisia
+    - neutraaleja
+    - "pitki\xE4"
+    correctAnswerIndex: 0
+  - questionText: "Milloin olemme kaikkein herkimpi\xE4 vaikutteille? Kun olemme:"
+    answers:
+    - surullisia
+    - vihaisia
+    - nukkuessamme
+    - "sy\xF6dess\xE4mme"
+    correctAnswerIndex: 0
+  - questionText: " \u201DRomanttinen rakkaus\u201D on erotettavissa biokemiallisesti:"
+    answers:
+    - "akavasta pakko-oireisesta h\xE4iri\xF6st\xE4"
+    - juoksusta
+    - nukkumisesta
+    - "sy\xF6misest\xE4"
+    correctAnswerIndex: 0
+  - questionText: " Ihmisell\xE4 kest\xE4\xE4 unohtaa suuri rakkaus keskim\xE4\xE4rin:"
+    answers:
+    - 3 kuukautta
+    - yksi vuosi
+    - "17 kuukautta ja 26 p\xE4iv\xE4\xE4"
+    - suurta rakkautta ei unohda koskaan
+    correctAnswerIndex: 2
+  - questionText: "Rakastamansa ihmisen valokuvan katsominen voi v\xE4hent\xE4\xE4
+      fyysist\xE4 kipua yht\xE4 hyvin kuin kipul\xE4\xE4ke enint\xE4\xE4n"
+    answers:
+    - 7%
+    - 16%
+    - 44%
+    - 88%
+    correctAnswerIndex: 2
+  - questionText: "Kuka sanoi \u201DKeskity siihen, mit\xE4 voit hallita\u201D?"
+    answers:
+    - Socrates
+    - Platon
+    - Epicurus
+    - Epictetus
+    correctAnswerIndex: 3
+  - questionText: " Kuka sanoi, ett\xE4 meid\xE4n on toimittava niiden arvojen mukaisesti,
+      joiden haluaisimme olevan universaaleja lakeja? "
+    answers:
+    - Kant
+    - Socrates
+    - Nietzsche
+    - Obama
+    correctAnswerIndex: 0
+  - questionText: "Kuka kirjoitti teoksen \u201DToinen sukupuoli\u201D, jossa pohditaan
+      ihmisoikeuksia ja naisten oikeuksia?"
+    answers:
+    - Simone de Beauvoir
+    - Simone Weil
+    - Simone Biles
+    - Edith Stein
+    correctAnswerIndex: 0
+  collectionIcon: {fileID: 1168092969, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

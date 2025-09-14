@@ -194,6 +194,8 @@ public class MinijuegoEspejosExteriorManager : MonoBehaviour
 
         canvasMinijuego.SetActive(false);
         espejoParaQuitar.SetActive(false);
+        GameManager.instance.skillTreeController.Unlock("10");
+        GameManager.instance.uiManager.ToggleSkillTreeUI();
         // Aquí podrías reactivar el control del jugador, etc.
     }
 }

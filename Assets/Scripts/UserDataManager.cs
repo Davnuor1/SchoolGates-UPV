@@ -200,4 +200,28 @@ public class UserDataManager : MonoBehaviour
         list.Add(finalId);
         currentUserData.finalsChosen = list.ToArray();
     }
+    public bool IsSkillUnlocked(string skillId)
+    {
+        if (currentUserData == null || currentUserData.unlockedSkills == null) return false;
+        return System.Array.IndexOf(currentUserData.unlockedSkills, skillId) >= 0;
+    }
+
+    // Desbloquea y devuelve true si realmente cambia algo
+    public bool UnlockSkillId(string skillId, bool saveNow = false)
+    {
+        if (string.IsNullOrEmpty(skillId) || currentUserData == null) return false;
+
+        if (IsSkillUnlocked(skillId)) return false;
+
+        var list = new List<string>(currentUserData.unlockedSkills ?? new string[0]);
+        list.Add(skillId);
+        currentUserData.unlockedSkills = list.ToArray();
+
+        if (saveNow)
+        {
+            // guardado ligero: no hace falta tocar PixelCrushers ahora mismo
+            LocalJsonSave.SaveUserData(currentUserData);
+        }
+        return true;
+    }
 }

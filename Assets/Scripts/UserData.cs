@@ -29,4 +29,6 @@ public class UserData
     public string languageCode = "es"; // valor por defecto que quieras (es/it/en/de/fi)
     // MUY IMPORTANTE: conservamos el snapshot del Dialogue System
     public string dialogueSystemSaveData;
+    public string[] unlockedSkills = new string[0]; // ids de skills desbloqueadas
+
 }

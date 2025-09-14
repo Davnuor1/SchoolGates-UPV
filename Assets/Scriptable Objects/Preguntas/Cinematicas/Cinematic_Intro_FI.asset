@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3830def2b6bbf848807d7aea15f27b5, type: 3}
+  m_Name: Cinematic_Intro_FI
+  m_EditorClassIdentifier: 
+  vignettes:
+  - image: {fileID: -647518916, guid: 8daea5f1a0355414fa9e574714b6b6e3, type: 3}
+    text: "Olet juuri saapunut Soul-kyl\xE4\xE4n pitk\xE4n matkan j\xE4lkeen ja haluat
+      aloittaa uuden luvun el\xE4m\xE4ss\xE4si, vaikka muutoksesta tuntuu hieman
+      raskaalta."
+  - image: {fileID: 2080672292, guid: 8daea5f1a0355414fa9e574714b6b6e3, type: 3}
+    text: "Pian huomaat, ett\xE4 koko paikassa vallitsee synkk\xE4 ilmapiiri, jonka
+      vain sin\xE4 olet havainnut,  ja haluat syd\xE4mesi pohjasta ratkaista ongelman."
+  - image: {fileID: -1095716158, guid: 8daea5f1a0355414fa9e574714b6b6e3, type: 3}
+    text: "Koulu n\xE4ytt\xE4\xE4 olevan t\xE4m\xE4n sairauden p\xE4\xE4asiallinen
+      keskittym\xE4, joten p\xE4\xE4t\xE4t tutkia asiaa l\xF6yt\xE4\xE4ksesi johtolankoja."
+  - image: {fileID: 1475702569, guid: 8daea5f1a0355414fa9e574714b6b6e3, type: 3}
+    text: "Yht\xE4kki\xE4, kuin taikaiskusta, taskustasi l\xF6ytyy lappu, joka h\xE4mm\xE4stytt\xE4\xE4
+      sinut t\xE4ysin. Lappu kehottaa sinua etsim\xE4\xE4n nelj\xE4 maagista ovea,
+      jotka sijaitsevat huoneessasi, koulun luokassa, koulun pihalla ja juhlasalissa."
+  nextButtonText: Seuraava

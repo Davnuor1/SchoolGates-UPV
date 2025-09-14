@@ -51,5 +51,7 @@ public class CavesConflic03Manager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.5f);
+        GameManager.instance.skillTreeController.Unlock("11");
+        GameManager.instance.uiManager.ToggleSkillTreeUI();
     }
 }

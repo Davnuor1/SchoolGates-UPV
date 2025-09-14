@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: MathsAgora_FI
+  m_EditorClassIdentifier: 
+  collectionName: Mathematica
+  questions:
+  - questionText: "Mik\xE4 on pii?"
+    answers:
+    - 3.14159
+    - 0.314159
+    - 9.61672
+    - 103.87267
+    correctAnswerIndex: 0
+  - questionText: "Mik\xE4 on numeroa 10 suurempi pienin alkuluku?"
+    answers:
+    - 7
+    - 11
+    - 13
+    - 17
+    correctAnswerIndex: 1
+  - questionText: "Jos heit\xE4t tasaista kuusisivuista noppaa, mill\xE4 todenn\xE4k\xF6isyydell\xE4
+      saat parillisen numeron?"
+    answers:
+    - 16.67%
+    - 25%
+    - 50%
+    - 86%
+    correctAnswerIndex: 2
+  - questionText: "Juna kulkee 240 km 4 tunnissa. Mik\xE4 on sen keskinopeus?"
+    answers:
+    - 24 km/h
+    - 30 km/h
+    - 60 km/h
+    - 100 km/h
+    correctAnswerIndex: 2
+  - questionText: "Jos ympyr\xE4n halkaisija on 15 cm, mik\xE4 on sen s\xE4de?"
+    answers:
+    - 5 cm
+    - 7.5 cm
+    - 10 cm
+    - 15 cm
+    correctAnswerIndex: 1
+  - questionText: ' Paljonko on 2 - 6 : 3 - 1?'
+    answers:
+    - 1
+    - -1
+    - 2
+    - -2
+    correctAnswerIndex: 1
+  - questionText: "Paljonko on 3 \u2022 2 + 2 \u2022 5?"
+    answers:
+    - 16
+    - 40
+    - 60
+    - 100
+    correctAnswerIndex: 0
+  - questionText: "Mik\xE4 on 87 asteen kulman nimitys?"
+    answers:
+    - "ter\xE4v\xE4"
+    - "tylpp\xE4"
+    - suora
+    - "t\xE4ysi"
+    correctAnswerIndex: 0
+  - questionText: "Paljonko on x yht\xE4l\xF6ss\xE4 5 = 7 + x?"
+    answers:
+    - 5/7
+    - 7/5
+    - 2
+    - -2
+    correctAnswerIndex: 3
+  - questionText: Paljonko on MCCXXII + XXXIV?
+    answers:
+    - MMCCL
+    - MCCLVI
+    - MCCCIX
+    - MCCCIV
+    correctAnswerIndex: 1
+  collectionIcon: {fileID: 112390163, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

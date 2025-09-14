@@ -249,5 +249,7 @@ public class WallOfGratitudeManager : MonoBehaviour
         {
             GameManager.instance.tabletUI.SetActive(true);
         }
+        GameManager.instance.skillTreeController.Unlock("13");
+        GameManager.instance.uiManager.ToggleSkillTreeUI();
     }
 }

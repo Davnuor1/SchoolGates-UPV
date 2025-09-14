@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ed8fbac4f95a646a385ee421129d7d, type: 3}
+  m_Name: GateOfEmotions_FI
+  m_EditorClassIdentifier: 
+  introductionText: "Olet aikeissa siirty\xE4 eri tietoisuuden tilaan..."
+  selectTwoEmotionsText: "Mit\xE4 tunteita koet useimmin? Valitse 2."
+  anger: Suuttumus
+  fear: Pelko
+  joy: Ilo
+  sadness: Surullisuus
+  question1: "Miten miellytt\xE4v\xE4 tai ep\xE4miellytt\xE4v\xE4 olo sinulla on?"
+  question2: "Miten paljon tai v\xE4h\xE4n energiaa sinulla on?"
+  question3: "Miksi kutsuisit t\xE4t\xE4 tunnetta?"
+  pleasant: "Miellytt\xE4v\xE4"
+  unpleasant: "Ep\xE4miellytt\xE4v\xE4"
+  highEnergy: Energinen
+  lowEnergy: "V\xE4h\xE4inen energia"
+  feedbackIncorrect: "T\xE4m\xE4 ei vaikuta olevan tunne, jonka tunnet juuri nyt,
+    yrit\xE4 uudelleen..."
+  feedbackAnger: "Koemme suuttumusta, kun joku loukkaa meit\xE4 jollakin tavalla,
+    koska se ylitt\xE4\xE4 jonkin arvon, kuten esimerkiksi kunnioituksen, v\xE4litt\xE4misen
+    tai oikeudenmukaisuuden, rajat.... Se t\xE4ytt\xE4\xE4 sinut energialla, koska
+    sinun on suojeltava jotakin sinulle arvokasta."
+  feedbackFear: "Koemme pelkoa, kun havaitsemme, ett\xE4 jokin arvokas on vaarassa.
+    Se lamauttaa sinut siten, ett\xE4 voit arvioida vaaran ja saa sinut haluamaan
+    paeta tai juosta pois suojellaksesi silt\xE4 itse\xE4si."
+  feedbackJoy: "Koemme iloa, kun saavutamme jotakin arvokasta Ilo on kuin emotionaalinen
+    palkinto, se t\xE4ytt\xE4\xE4 sinut elinvoimalla ja optimismilla, jolloin voit
+    edet\xE4 suunnitelmissasi ja jatkaa t\xE4rkeiden asioiden tekemist\xE4."
+  feedbackSadness: "Tunnemme surua, kun menet\xE4mme jotakin arvokasta. Tunne voi
+    olla musertava. Mutta se toimii: se tyhjent\xE4\xE4 sinusta energian, jotta voit
+    pys\xE4hty\xE4, itke\xE4, surra, muistella, mietiskell\xE4... ja ryhdist\xE4yty\xE4"
+  questionPart2: "Mik\xE4 h\xE4nen tunteensa on?"
+  feedbackIncorrectPart2: "T\xE4m\xE4 ei vaikuta olevan tunne, jonka h\xE4n tuntee
+    juuri nyt, yrit\xE4 uudelleen..."
+  respuestaJugador1: "Luulen, ett\xE4 olet"
+  respuestaNPC1: Mutta en halua olla
+  botonesRespuestaJugador2:
+  - "Tied\xE4n, ett\xE4 se on vaikeaa, mutta on okei tuntea t\xE4ll\xE4 tavalla."
+  - "\xC4l\xE4 ole huolissasi siit\xE4, ett\xE4 sinusta tuntuu t\xE4lt\xE4, se menee
+    kyll\xE4 ohi."
+  - "Minustakin on tuntunut t\xE4lt\xE4 aina joskus\u2026 Keksit\xE4\xE4n jotain
+    hy\xF6dyllist\xE4 tekemist\xE4\u2026"
+  feedbackAnger_Part2: "OK! Koemme suuttumusta, kun joku loukkaa meit\xE4 jollakin
+    tavalla, koska se ylitt\xE4\xE4 jonkin arvon, kuten esimerkiksi kunnioituksen,
+    v\xE4litt\xE4misen tai oikeudenmukaisuuden, rajat.... Se t\xE4ytt\xE4\xE4 sinut
+    energialla, koska sinun on suojeltava jotakin sinulle arvokasta. Mene nyt takaisin
+    kaupunkiin ja auta h\xE4nt\xE4 tunteiden polulla..."
+  feedbackFear_Part2: "OK! Koemme pelkoa, kun havaitsemme, ett\xE4 jokin arvokas
+    on vaarassa. Se lamauttaa sinut siten, ett\xE4 voit arvioida vaaran ja saa sinut
+    haluamaan paeta tai juosta pois suojellaksesi silt\xE4 itse\xE4si. Mene nyt takaisin
+    kaupunkiin ja auta h\xE4nt\xE4 tunteiden polulla..."
+  feedbackJoy_Part2: "OK! Koemme iloa, kun saavutamme jotakin arvokasta Ilo on kuin
+    emotionaalinen palkinto, se t\xE4ytt\xE4\xE4 sinut elinvoimalla ja optimismilla,
+    jolloin voit edet\xE4 suunnitelmissasi ja jatkaa t\xE4rkeiden asioiden tekemist\xE4.
+    Mene nyt takaisin kaupunkiin ja auta h\xE4nt\xE4 tunteiden polulla..."
+  feedbackSadness_Part2: "OK! Tunnemme surua, kun menet\xE4mme jotakin arvokasta.
+    Tunne voi olla musertava. Mutta se toimii: se tyhjent\xE4\xE4 sinusta energian,
+    jotta voit pys\xE4hty\xE4, itke\xE4, surra, muistella, mietiskell\xE4... ja ryhdist\xE4yty\xE4.
+    Mene nyt takaisin kaupunkiin ja auta h\xE4nt\xE4 tunteiden polulla..."

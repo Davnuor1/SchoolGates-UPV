@@ -117,6 +117,12 @@ public class MinijuegoManager : MonoBehaviour
         {
             GameManager.instance.tabletUI.SetActive(true);
         }
+        //SkillTreeController.Instance.Unlock("8");
+        
         portalSalida.SetActive(true);
+
+        GameManager.instance.skillTreeController.Unlock("8");
+        GameManager.instance.skillTreeController.Unlock("9");
+        GameManager.instance.uiManager.ToggleSkillTreeUI();
     }
 }

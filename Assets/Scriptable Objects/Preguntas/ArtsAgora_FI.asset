@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1783e3926f384dc46a6fcc382274a08e, type: 3}
+  m_Name: ArtsAgora_FI
+  m_EditorClassIdentifier: 
+  collectionName: Arts
+  questions:
+  - questionText: "Kuka kirjoitti kaikista pisimm\xE4n kirjan ikin\xE4?"
+    answers:
+    - Marcel Proust
+    - Cervantes
+    - Leo Tolstoi
+    - Stephen King
+    correctAnswerIndex: 0
+  - questionText: Kuka kirjoitti kirjan Dorian Grayn muotokuva?
+    answers:
+    - Dorian Gray
+    - J.K. Rowling
+    - Oscar Wilde
+    - Emile Zola
+    correctAnswerIndex: 2
+  - questionText: "Mist\xE4 maasta Wolfgang Amadeus Mozart oli kotoisin?"
+    answers:
+    - Saksasta
+    - "It\xE4vallasta"
+    - Ruotsista
+    - Alankomaista
+    correctAnswerIndex: 1
+  - questionText: " T\xE4m\xE4 amerikkalainen r\xE4pp\xE4ri on tunnettu yhteiskunnallisesti
+      tiedostavista sanoituksistaan ja aktivismista. Kuka h\xE4n on?"
+    answers:
+    - Kendrick Lamar
+    - Jay-Z
+    - Eminem
+    - Drake
+    correctAnswerIndex: 0
+  - questionText: "Kuka meksikolainen kuvataiteilija on tunnettu surrealistisista
+      omakuvistaan ja Meksikon alkuper\xE4isv\xE4est\xF6n kulttuurin kuvauksista?"
+    answers:
+    - Frida Kahlo
+    - Georgia O'Keeffe
+    - Yayoi Kusama
+    - Tamara de Lempicka
+    correctAnswerIndex: 0
+  - questionText: "Kenen tekem\xE4 veistos Piet\xE0 on?"
+    answers:
+    - Da Vinci
+    - Michelangelon
+    - Raphaelin
+    - Titianin
+    correctAnswerIndex: 1
+  - questionText: "Mik\xE4 on Harper Leen kirjoittaman \u201DKuin surmaisi satakielen\u201D
+      -romaanin moraalisesta suoraselk\xE4isyydest\xE4\xE4n tunnetun p\xE4\xE4henkil\xF6n
+      nimi?"
+    answers:
+    - "Rolando Garc\xEDa"
+    - Atticus Finch
+    - Dorian Gray
+    - Phoebe Weatherfield
+    correctAnswerIndex: 1
+  - questionText: "Mik\xE4 on Yhdistyneess\xE4 kuningaskunnassa noin 1977 alkanut
+      musiikki- ja kulttuurisuuntaus?"
+    answers:
+    - Rap
+    - Trap
+    - Punk
+    - Bossanova
+    correctAnswerIndex: 2
+  - questionText: "Mik\xE4 on Leo Tolstoin \u201DSota ja rauha\u201D -romaanin aihe?"
+    answers:
+    - "ensimm\xE4inen maailmansota"
+    - "Napoleonin sotaretki Ven\xE4j\xE4lle"
+    - toinen maailmansota
+    - Vietnamin sota
+    correctAnswerIndex: 1
+  - questionText: "Mik\xE4 on \u201DTaru sormusten herrasta\u201D -romaanin kirjallisuuden
+      laji?"
+    answers:
+    - Fantasia
+    - Realismi
+    - Surrealismi
+    - Runous
+    correctAnswerIndex: 0
+  collectionIcon: {fileID: -449540351, guid: cd191b1f2452b4a49936754476ef1e03, type: 3}

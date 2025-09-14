@@ -124,5 +124,7 @@ public class Challenge03Manager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.5f);
+        GameManager.instance.skillTreeController.Unlock("14");
+        GameManager.instance.uiManager.ToggleSkillTreeUI();
     }
 }
