@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68aadbb53980c4c48a77f7da50c3cd69, type: 3}
+  m_Name: UI_Menu_Tutorial
+  m_EditorClassIdentifier: 
+  entries:
+  - key: Movimiento
+    es: Movimiento
+    en: Movement
+    de: Bewegung
+    it: Movimento
+    fi: Liike
+  - key: Interactuar
+    es: Interactuar
+    en: Interact
+    de: Interagieren
+    it: Interagire
+    fi: Vuorovaikutus
+  - key: Abrir menu
+    es: Abrir menu
+    en: Open menu
+    de: "Men\xFC \xF6ffnen"
+    it: 'Apri menu '
+    fi: Avaa valikko
+  - key: Abrir ayuda
+    es: Abrir ayuda
+    en: Open help
+    de: "Hilfe \xF6ffnen"
+    it: 'Apri aiuto '
+    fi: Avaa ohje
+  - key: Escoger respuestas
+    es: Escoger respuestas, dialogos, interacturar con las interfaces
+    en: Open help
+    de: "Antworten ausw\xE4hlen, Dialoge f\xFChren, mit den Schnittstellen interagieren"
+    it: Scegliere risposte, dialoghi, interagire con le interfacce
+    fi: "Valitse vastaukset, vuoropuhelut, vuorovaikutus k\xE4ytt\xF6liittymien kanssa"
+  - key: Clic izquierdo
+    es: Clic izquierdo
+    en: Left click
+    de: Linksklick
+    it: Clic sinistro
+    fi: Vasen hiiren painike
+  - key: Jugar
+    es: Jugar
+    en: Play
+    de: Spielen
+    it: Giocare
+    fi: Pelaa

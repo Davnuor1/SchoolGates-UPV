@@ -9,7 +9,8 @@ public class NPCProximityTrigger : MonoBehaviour
     public float interactionDistance = 2f;  // Distancia mínima para la interacción
     private GameObject player;
     private bool isPlayerNearby = false;
-    
+    private string codeLanguage;
+
 
     void Start()
     {
@@ -17,8 +18,17 @@ public class NPCProximityTrigger : MonoBehaviour
         //Debug.Log("Lenguaje cambiado a español");
         // Intentar encontrar al jugador al inicio
         FindPlayer();
+        defineLanguage();
     }
-
+    public void defineLanguage()
+    {
+        codeLanguage = LocalizationManager.Instance.CurrentLanguage;
+        if (codeLanguage == "es") { DialogueManager.SetLanguage("es"); }
+        else if (codeLanguage == "it") { DialogueManager.SetLanguage("it"); }
+        else if (codeLanguage == "de") { DialogueManager.SetLanguage("de"); }
+        else if (codeLanguage == "en") { DialogueManager.SetLanguage("en"); }
+        else if (codeLanguage == "fi") { DialogueManager.SetLanguage("fi"); }
+    }
     void Update()
     {
         // Si no se ha encontrado el jugador, intentar encontrarlo

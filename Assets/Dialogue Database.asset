@@ -253,7 +253,7 @@ MonoBehaviour:
 
 '
       type: 4
-      typeString: 
+      typeString: CustomFieldType_Localization
   - id: 2
     fields:
     - title: Name
@@ -311,7 +311,7 @@ MonoBehaviour:
   - id: 3
     fields:
     - title: Name
-      value: Demo Mision
+      value: Mision
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -386,7 +386,7 @@ MonoBehaviour:
     - title: Name
       value: Gate of Psyche
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -394,19 +394,19 @@ MonoBehaviour:
     - title: Description
       value: Search in the caves and complete minigames
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Success Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Failure Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: State
       value: unassigned
       type: 0
-      typeString: 
+      typeString: CustomFieldType_QuestState
     - title: Is Item
       value: False
       type: 2
@@ -430,7 +430,7 @@ MonoBehaviour:
     - title: Description it
       value: Cercare nelle grotte e completare i minigiochi.
       type: 4
-      typeString: 
+      typeString: CustomFieldType_Localization
   - id: 5
     fields:
     - title: Name
@@ -615,6 +615,245 @@ MonoBehaviour:
       type: 4
       typeString: CustomFieldType_Localization
     - title: Entry 1 it
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+  - id: 8
+    fields:
+    - title: Name
+      value: Complete the Cave Trials
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: Make your way through the caves and complete the three trials related
+        to Mirrors. Watch out for the spikes...
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description de
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Name de
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Description es
+      value: Avanza por las cuevas y completa las tres pruebas relacionadas con Espejos.
+        Cuidado con los pinchos...
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Description it
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Entry Count
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+  - id: 9
+    fields:
+    - title: Name
+      value: Find the last cave
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: Advance through the cliffs and overcome the ruminants.
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description de
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Name de
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Description es
+      value: "Avanza a trav\xE9s de los acantilados y supera a los rumiadores"
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Description it
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+  - id: 10
+    fields:
+    - title: Name
+      value: Complete the Gate of Psyche
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: Explore the cave and help those inside find the way out.
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description de
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Name de
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Description es
+      value: Explora la cueva y ayuda a los que se encuentran dentro para hallar
+        la salida
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Description it
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+  - id: 11
+    fields:
+    - title: Name
+      value: Reach the Gardens
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: Make your way through the cyberpunk maze, overcoming whatever you encounter
+        until you reach the centre of the city, the gardens.
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description de
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Name de
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Description es
+      value: "Avanza a trav\xE9s del laberinto cyberpunk superando lo que encuentres
+        hasta llegar al centro de la ciudad, los jardines."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Description it
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+  - id: 12
+    fields:
+    - title: Name
+      value: Complete the Gate of Emotions
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: Help the 3 NPCs here to exit this magic world and continue your adventure!
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description de
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Name de
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Description es
+      value: 
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Description it
       value: 
       type: 4
       typeString: CustomFieldType_Localization
