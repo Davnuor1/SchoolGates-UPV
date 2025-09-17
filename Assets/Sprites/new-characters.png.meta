@@ -6458,7 +6458,7 @@ TextureImporter:
         width: 35
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6479,7 +6479,7 @@ TextureImporter:
         width: 29
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6500,7 +6500,7 @@ TextureImporter:
         width: 36
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6521,7 +6521,7 @@ TextureImporter:
         width: 36
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6529,6 +6529,90 @@ TextureImporter:
       bones: []
       spriteID: 7a5ea25dea0822a4eb6cf4c14f1c640b
       internalID: 1461258711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cards-1
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 498
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb45419e7b432640b3b1316febfc413
+      internalID: 457217256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cards-2
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 497
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e895f4ab2a920846a4ba94a0b75b4a3
+      internalID: -1423378971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cards-3
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 497
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8777eca22570f740846d7604230c8b6
+      internalID: -1227643603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cards-4
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 429
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70aae4351c8bb434898779c6a18e93a6
+      internalID: 1492948312
       vertices: []
       indices: 
       edges: []
@@ -6546,9 +6630,9 @@ TextureImporter:
     nameFileIdTable:
       ui-cave-n3-2: 1681536045
       epileptic-2: 559101109
-      ui-portrait-3: -295834246
+      main-menu-button-3: -765181966
       final-boss-1: -878090991
-      ui-cave-selector-2-9: 1182428391
+      ui-stats-icon-1: 522103729
       character-16: -1129677351
       ui-skilltree-icon-leadership: 750855392
       burka-1: 392959875
@@ -6563,6 +6647,7 @@ TextureImporter:
       ui-cave-n1-2: 851971579
       ui-cave-selector-2-5: 1317254456
       dad-2: -757681283
+      cards-3: -1227643603
       brother-2: 1453974807
       ui-cave-selector-3-2: 1357895232
       character-10: -274128659
@@ -6745,6 +6830,7 @@ TextureImporter:
       new-characters_7: 2025930080
       ui-knowledge-bullet-2: -1308193910
       ui-cave-selector-6: -573183872
+      cards-2: -1423378971
       ui-cave-menu-6: 1722407043
       new-characters_0: 588989896
       ui-cave-thumdown-1: 14406621
@@ -6759,11 +6845,13 @@ TextureImporter:
       agora-guardian-1: 628375872
       new-characters_29: 1453556996
       agora-guardian-4: 1466170488
+      cards-1: 457217256
       ui-cave-n9-2: 1624166244
       character-13: 922937691
       ui-book-base: -551824344
       swamp-character-2: -387731309
       ui-stats-bar-4: -1695437820
+      cards-4: 1492948312
       ui-stats-bar-1: 130138540
       agora-character-2: -893407903
       sister-4: -498248613
@@ -6847,8 +6935,8 @@ TextureImporter:
       ui-knowledge-menu-4: -1327501235
       ui-stats-icon-3: -1586706121
       cat-2: -1608951249
-      ui-stats-icon-1: 522103729
-      main-menu-button-3: -765181966
+      ui-cave-selector-2-9: 1182428391
+      ui-portrait-3: -295834246
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
