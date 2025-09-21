@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3830def2b6bbf848807d7aea15f27b5, type: 3}
+  m_Name: Cinematic_Intro_IT
+  m_EditorClassIdentifier: 
+  vignettes:
+  - image: {fileID: -647518916, guid: 8daea5f1a0355414fa9e574714b6b6e3, type: 3}
+    text: Sei appena arrivato a Soul Village dopo un lungo viaggio, desideroso di
+      iniziare un nuovo capitolo della tua vita, anche se ti senti un po' sopraffatto
+      dal cambiamento.
+  - image: {fileID: 2080672292, guid: 8daea5f1a0355414fa9e574714b6b6e3, type: 3}
+    text: Presto ti rendi conto che un'aura oscura prevale in tutto il luogo, qualcosa
+      che solo tu hai percepito,  e desideri dal profondo del tuo cuore risolvere.
+  - image: {fileID: -1095716158, guid: 8daea5f1a0355414fa9e574714b6b6e3, type: 3}
+    text: 'La scuola sembra essere il punto focale di questo affare, quindi decidi
+      di indagare per trovare qualche indizio. '
+  - image: {fileID: 1475702569, guid: 8daea5f1a0355414fa9e574714b6b6e3, type: 3}
+    text: All'improvviso, come per magia, un biglietto appare nella tua tasca e tu
+      rimani completamente sbalordito. Il biglietto ti dice che devi trovare le quattro
+      porte magiche situate nella tua stanza, in un'aula della scuola, nel cortile
+      della scuola e nella sala riunioni.
+  nextButtonText: Avanti

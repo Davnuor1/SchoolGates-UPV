@@ -1,0 +1,313 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f125b745d539af443b514f6298b234dc, type: 3}
+  m_Name: WiseManPracticesLocalization_IT
+  m_EditorClassIdentifier: 
+  vignettes:
+  - backgroundImage: {fileID: 1251884205, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: "Questo \xE8 un posto molto pericoloso\u2026"
+    placement: 0
+  - backgroundImage: {fileID: -1636791454, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: "Quando incontriamo qualcuno per la prima volta, la prima cosa che facciamo
+      \xE8 esplorare chi e come \xE8, se abbiamo cose in comune, se condividiamo
+      hobby o valori... Queste sono le basi, gli elementi costitutivi di una relazione.
+      Gli individui iniziano a condividere pi\xF9 dettagli personali e a testare
+      i confini della loro connessione"
+    placement: 1
+  - backgroundImage: {fileID: 1595807204, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: "C'\xE8 sempre qualcosa in comune con tutti, ma devi avvicinarti a quella
+      persona per scoprirlo. Pi\xF9 condividi, pi\xF9 \xE8 probabile che diventi
+      amico. E se diventerete amici, avrete stabilito un legame con quella persona"
+    placement: 1
+  - backgroundImage: {fileID: -1554177124, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: "Se tutto va bene, quel legame pu\xF2 durare tutta la vita, ed \xE8 fantastico!
+      Ma ci sono sempre discussioni o disaccordi che devono essere risolti"
+    placement: 1
+  - backgroundImage: {fileID: 1245444621, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: "Incontrare persone e creare legami \xE8 fantastico... Ma le relazioni
+      possono cambiare, possono sorgere difficolt\xE0 ed \xE8 importante sapere come
+      affrontarle per costruire connessioni durature e di successo."
+    placement: 2
+  - backgroundImage: {fileID: 686330089, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: "Inoltre, le relazioni possono deteriorarsi. A volte le persone cambiano,
+      o la vita ci porta su strade diverse... E allora, gli amici o le coppie possono
+      sentirsi sempre pi\xF9 disconnessi, sempre pi\xF9 distanti... Fino alla fine
+      della relazione. Anche se dire addio pu\xF2 essere doloroso, a volte \xE8 meglio
+      lasciare andare qualcuno\u2026"
+    placement: 2
+  - backgroundImage: {fileID: 1657986904, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: "Ma una volta era pacifico\u2026"
+    placement: 0
+  - backgroundImage: {fileID: 533894941, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: Le creature dall'aspetto orribile che hai visto
+    placement: 0
+  - backgroundImage: {fileID: -243137760, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: una volta erano persone, come noi.
+    placement: 0
+  - backgroundImage: {fileID: -713351420, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: "Poi, hanno ceduto all'ingiustizia verso gli altri, sono stati fatti credere
+      che avrebbero potuto avere tutto ci\xF2 che desideravano."
+    placement: 0
+  - backgroundImage: {fileID: 5121602, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: "Hanno perso tutta l\u2019umanit\xE0 in loro "
+    placement: 0
+  - backgroundImage: {fileID: -736844791, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: "e ora la loro anima \xE8 persa da qualche parte\u2026"
+    placement: 0
+  - backgroundImage: {fileID: -1772837806, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: "Affinch\xE9 la palude sia di nuovo sicura, tutti devono essere trattati
+      con equit\xE0, tutti meritano di trovare un posto sicuro... Ti insegneremo
+      quello che devi sapere... per salvarli... per combattere le disuguaglianze
+      una volta per tutte\u2026 Portate qui con noi queste povere anime\u2026"
+    placement: 0
+  - backgroundImage: {fileID: 1657986904, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
+    text: "Affinch\xE9 la palude sia di nuovo sicura, tutti devono essere trattati
+      con equit\xE0, tutti meritano di trovare un posto sicuro... Ti insegneremo
+      quello che devi sapere... per salvarli... per combattere le disuguaglianze
+      una volta per tutte\u2026 Portate qui con noi queste povere anime\u2026"
+    placement: 5
+  conflicts:
+  - dialogues:
+    - characterName: Wise Man
+      portrait: {fileID: 21300000, guid: 8c68f6b9ce088b641a9b60416829e8d6, type: 3}
+      text: "Permettimi di presentarti Eva, \xE8 davvero una brava giocatrice di
+        calcio.."
+      requiresResponse: 0
+      responseOptions: []
+    - characterName: Eve
+      portrait: {fileID: 21300000, guid: 04816276ad4c8b64d80af5a19987b4b4, type: 3}
+      text: Ti piace il calcio?
+      requiresResponse: 1
+      responseOptions:
+      - responseText: No
+        responseFeedback: "Eva \xE8 un po' confusa adesso, sei stato sincero , ma
+          forse non cos\xEC rispettoso o responsabile ... penso che Eva non si senta
+          pi\xF9 a suo agio nel parlare con te.."
+      - responseText: "No, ma mi interessa la tua esperienza. Raccontami di pi\xF9
+          di te\u2026"
+        responseFeedback: 
+      - responseText: "S\xEC, mi piace molto!"
+        responseFeedback: "Eva si sente bene adesso perch\xE9 nota il tuo interesse
+          ed \xE8 disposta a conoscerti. Sei stato onesto, responsabile, reattivo
+          e rispettoso . Grande! "
+    - characterName: Eve
+      portrait: {fileID: 21300000, guid: 04816276ad4c8b64d80af5a19987b4b4, type: 3}
+      text: Forse possiamo fondare una squadra di calcio femminile
+      requiresResponse: 0
+      responseOptions: []
+    requiresAllFeedback: 0
+    isBranchingConflict: 0
+  - dialogues:
+    - characterName: Wise Woman
+      portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
+      text: "Immagina che tu, Anna e i tuoi amici state pianificando da tempo l'apertura
+        della squadra di calcio femminile, ma all'ultimo minuto non \xE8 possibile
+        portarla avanti... In questi esempi, chi pensi che comunichi in modo pi\xF9
+        efficace?"
+      requiresResponse: 1
+      responseOptions:
+      - responseText: Uno di loro critica gli altri per la loro opinione/atteggiamento/comportamento
+        responseFeedback: "Sono un po' aggressivi, non credi? Ci\xF2 accade quando
+          qualcuno esprime i propri pensieri e sentimenti senza riguardo per gli
+          altri. La comunicazione aggressiva sembra dominare e controllare, interrompendo
+          spesso gli altri, invadendo lo spazio personale e sminuendo gli altri per
+          far capire il proprio punto di vista. Questo porta al conflitto e al risentimento "
+      - responseText: "Uno di loro si \xE8 dimostrato scontento fin dall'inizio delle
+          attivit\xE0 previste per l'inaugurazione, ma non dice nulla dei suoi sentimenti
+          per paura di sembrare un \"guastafeste"
+        responseFeedback: "Sono un po' passivi o sottomessi, non credi? Ci\xF2 accade
+          quando qualcuno evita di esprimere i propri pensieri o sentimenti, spesso
+          per paura di un conflitto\r\n"
+      - responseText: Uno di loro afferma che l'apertura deve essere posticipata
+          di un altro giorno spiegando le ragioni di questo cambiamento
+        responseFeedback: "Lo stile di comunicazione assertivo \xE8 caratterizzato
+          da messaggi chiari e diretti. Ci\xF2 ti consente di esprimere i tuoi pensieri
+          e i tuoi bisogni in modo rispettoso."
+    - characterName: Wise Woman
+      portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
+      text: Grazie per la tua opinione!
+      requiresResponse: 0
+      responseOptions: []
+    requiresAllFeedback: 1
+    isBranchingConflict: 0
+  - dialogues:
+    - characterName: Wise Man
+      portrait: {fileID: 21300000, guid: 8c68f6b9ce088b641a9b60416829e8d6, type: 3}
+      text: "Dimmi... hai mai avuto un amico cos\xEC?"
+      requiresResponse: 1
+      responseOptions:
+      - responseText: "S\xEC, ho (o ho avuto) un amico che critica sempre il modo
+          in cui gli altri amici si vestono quando escono (\"sei cos\xEC fuori moda\")
+          o critica le loro abilit\xE0 di gioco\u2026 ma non \xE8 disposto a farlo
+          spiegare il perch\xE9 o aprirsi al dialogo"
+        responseFeedback: 
+      - responseText: 
+        responseFeedback: 
+      - responseText: "S\xEC, ho un amico che non dice mai di no. Un amico che non
+          si lamenta mai anche se \xE8 scontento della situazione\u2026"
+        responseFeedback: 
+    requiresAllFeedback: 0
+    isBranchingConflict: 1
+  - dialogues:
+    - characterName: Wise Woman
+      portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
+      text: "Ora ascolta attentamente\u2026 trova il tuo silenzio interiore per poter
+        andare oltre le parole\u2026 Cosa pensi che stia realmente accadendo?"
+      requiresResponse: 0
+      responseOptions: []
+    - characterName: Wise Woman
+      portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
+      text: Qualcuno che critica sempre le decisioni che prendi...
+      requiresResponse: 1
+      responseOptions:
+      - responseText: "Forse hanno paura di qualcosa\u2026"
+        responseFeedback: "Molto bene, s\xEC.. . non possiamo esserne sicuri, ma
+          potrebbe essere\u2026 Per essere un buon ascoltatore devi prestare attenzione
+          non solo alle parole, ma al loro significato nascosto, cercare di capire
+          cosa \xE8 veramente importante per questa persona."
+      - responseText: Forse semplicemente non gli piacciamo...
+        responseFeedback: "Molto bene, s\xEC.. . non possiamo esserne sicuri, ma
+          potrebbe essere\u2026 Per essere un buon ascoltatore devi prestare attenzione
+          non solo alle parole, ma al loro significato nascosto, cercare di capire
+          cosa \xE8 veramente importante per questa persona."
+      - responseText: Forse sono stati feriti in passato e sono ancora arrabbiati
+        responseFeedback: "Molto bene, s\xEC.. . non possiamo esserne sicuri, ma
+          potrebbe essere\u2026 Per essere un buon ascoltatore devi prestare attenzione
+          non solo alle parole, ma al loro significato nascosto, cercare di capire
+          cosa \xE8 veramente importante per questa persona."
+    - characterName: Wise Man
+      portrait: {fileID: 21300000, guid: 8c68f6b9ce088b641a9b60416829e8d6, type: 3}
+      text: Come puoi rispondere?
+      requiresResponse: 0
+      responseOptions: []
+    - characterName: Wise Man
+      portrait: {fileID: 21300000, guid: 8c68f6b9ce088b641a9b60416829e8d6, type: 3}
+      text: "A colui che critica sempre le decisioni che prendi\u2026"
+      requiresResponse: 1
+      responseOptions:
+      - responseText: "Penso che dovresti essere meno sgradevole con le persone,
+          non \xE8 carino!"
+        responseFeedback: "Bene, il tuo messaggio \xE8 chiaro ma forse non sei molto
+          rispettoso con questa persona."
+      - responseText: "Ebbene, d\u2019ora in poi criticher\xF2 tutto quello che dici!"
+        responseFeedback: "Forse ti comporti in modo troppo impulsivo, il tuo comportamento
+          \xE8 lo stesso che critichi!"
+      - responseText: "Ho l\u2019impressione che ci sia qualcosa che ti disturba.
+          Ne vuoi parlare?"
+        responseFeedback: "Fantastico, sei chiaro ma compassionevole . Per essere
+          rispettoso, pensa sempre a come vorresti che ti venisse detto\u2026"
+    - characterName: Wise Woman
+      portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
+      text: "Ci\xF2 che hai appena messo in pratica \xE8 ci\xF2 che chiamiamo l\u2019ABC
+        di una buona comunicazione. Non importa in quale fase di una relazione ci
+        si trova, \xE8 importante comunicare nel modo giusto affinch\xE9 tutti si
+        sentano al sicuro\u2026"
+      requiresResponse: 0
+      responseOptions: []
+    requiresAllFeedback: 0
+    isBranchingConflict: 0
+  - dialogues:
+    - characterName: Wise Woman
+      portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
+      text: "Ora ascolta attentamente\u2026 trova il tuo silenzio interiore per poter
+        andare oltre le parole\u2026 Cosa pensi che stia realmente accadendo?"
+      requiresResponse: 0
+      responseOptions: []
+    - characterName: Wise Woman
+      portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
+      text: "Colui che \xE8 infelice ma non dice nulla\u2026"
+      requiresResponse: 1
+      responseOptions:
+      - responseText: Forse ha paura di essere rifiutato dagli altri amici
+        responseFeedback: "Molto bene, s\xEC.. . non possiamo esserne sicuri, ma
+          potrebbe essere\u2026 Per essere un buon ascoltatore devi prestare attenzione
+          non solo alle parole, ma al loro significato nascosto, cercare di capire
+          cosa \xE8 veramente importante per questa persona."
+      - responseText: Forse ha bisogno che gli si facciano domande per potersi esprimere
+        responseFeedback: "very well, yes... Molto bene, s\xEC.. . non possiamo esserne
+          sicuri, ma potrebbe essere\u2026 Per essere un buon ascoltatore devi prestare
+          attenzione non solo alle parole, ma al loro significato nascosto, cercare
+          di capire cosa \xE8 veramente importante per questa persona.e can't be
+          sure, but that may be it\u2026 To be a good listener you have to pay attention
+          not only to the words, but the underlying meaning of them, try to understand
+          what is really important for this person."
+      - responseText: Forse pensa che i loro amici non apprezzeranno i suoi pensieri
+        responseFeedback: "Molto bene, s\xEC.. . non possiamo esserne sicuri, ma
+          potrebbe essere\u2026 Per essere un buon ascoltatore devi prestare attenzione
+          non solo alle parole, ma al loro significato nascosto, cercare di capire
+          cosa \xE8 veramente importante per questa persona."
+    - characterName: Wise Man
+      portrait: {fileID: 21300000, guid: 8c68f6b9ce088b641a9b60416829e8d6, type: 3}
+      text: Come puoi rispondere?
+      requiresResponse: 0
+      responseOptions: []
+    - characterName: Wise Man
+      portrait: {fileID: 21300000, guid: 8c68f6b9ce088b641a9b60416829e8d6, type: 3}
+      text: "A chi non \xE8 soddisfatto dell\u2019attivit\xE0 pianificata ma non
+        dice nulla\u2026"
+      requiresResponse: 1
+      responseOptions:
+      - responseText: "Non dici mai quello che hai in mente, quello che pensi veramente.
+          \xC8 molto difficile essere tuo amico!"
+        responseFeedback: "Bene, il tuo messaggio \xE8 chiaro ma forse non sei molto
+          compassionevole con questa persona."
+      - responseText: Sei un nostro caro amico, per favore non pensare che non vogliamo
+          sentire le tue opinioni. Le tue opinioni sono importanti e vogliamo conoscerle
+        responseFeedback: "Fantastico, sei chiaro ma compassionevole . Per essere
+          rispettoso, pensa sempre a come vorresti che ti venisse detto\u2026"
+      - responseText: A volte penso che tu non abbia una idee tue. Hai mai un'opinione
+          su qualcosa?
+        responseFeedback: "Bene, il tuo messaggio \xE8 chiaro ma forse non sei molto
+          compassionevole con questa persona."
+    - characterName: Wise Woman
+      portrait: {fileID: 21300000, guid: 5fb8cbc286be4a5429407a23e048c481, type: 3}
+      text: "Ci\xF2 che hai appena messo in pratica \xE8 ci\xF2 che chiamiamo l\u2019ABC
+        di una buona comunicazione. Non importa in quale fase di una relazione ci
+        si trova, \xE8 importante comunicare nel modo giusto affinch\xE9 tutti si
+        sentano al sicuro\u2026"
+      requiresResponse: 0
+      responseOptions: []
+    requiresAllFeedback: 0
+    isBranchingConflict: 0
+  conflict1Concepts:
+  - term: Rispettoso
+    description: "ci\xF2 significa cercare di comprendere e mostrare interesse per
+      l'esperienza e il punto di vista degli altri, anche se non sei d'accordo ."
+  - term: Reale
+    description: "Ci\xF2 significa essere autentici e sinceri, non falsi. Esprimere
+      le tue vere convinzioni, anche se possono essere impegnative, deludenti o scomode
+      per gli altri "
+  - term: Responsabile
+    description: That means being accountable for your actions and feelings. Not
+      blaming others for your problems.
+  - term: Responsive
+    description: "Ci\xF2 significa essere responsabile delle proprie azioni e sentimenti.
+      Non incolpare gli altri per i tuoi problemi "
+  conflict3Concepts:
+  - term: Buon ascoltatore
+    description: "L'ascolto attivo significa prestare tutta la propria attenzione
+      alla persona che ti sta parlando, praticando il non giudizio. Per essere un
+      buon ascoltatore devi fare silenzio dentro di te per permettere che il messaggio
+      dell'altra persona venga recepito con chiarezza. Fai attenzione quando l'altra
+      persona ti parla, vai oltre le parole e fai del tuo meglio per cercare il significato.
+      Cosa \xE8 importante per questa persona? \r\n"
+  - term: Messaggi brevi
+    description: "mantieni il tuo messaggio il pi\xF9 breve possibile, ma completo.
+      Un buon comunicatore cerca di esprimere il suo punto di vista in modo efficace,
+      senza dettagli inutili. Per essere chiari, pensa a ci\xF2 che \xE8 veramente
+      importante in ci\xF2 che vuoi dire e dillo nel modo pi\xF9 conciso possibile."
+  - term: Compassione
+    description: "La comunicazione empatica \xE8 caratterizzata dalla comprensione
+      e dalla condivisione dei sentimenti degli altri. Questa comunicazione orientata
+      alle persone d\xE0 priorit\xE0 alla costruzione e al mantenimento delle relazioni.
+      Per essere rispettoso, pensa a come vorresti che le persone si rivolgessero
+      a te."

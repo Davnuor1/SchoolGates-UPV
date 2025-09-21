@@ -18670,8 +18670,6 @@ Transform:
   - {fileID: 130079168}
   - {fileID: 976270166}
   - {fileID: 2069671342}
-  - {fileID: 5283370011097880022}
-  - {fileID: 1720212676}
   m_Father: {fileID: 1389102190}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -211925,6 +211923,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5482149406558429224, guid: 9ec60cd538707f144bb4278f0b222bd4, type: 3}
     - target: {fileID: 5626235431481843963, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
+      propertyPath: tablaLanguage
+      value: 
+      objectReference: {fileID: 11400000, guid: 7948a239c15d60a40b60be8c7e98a893, type: 2}
+    - target: {fileID: 5626235431481843963, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
       propertyPath: textoNombreEscena
       value: Cuevas
       objectReference: {fileID: 0}
@@ -214514,11 +214516,11 @@ PrefabInstance:
     - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: localizacionFI
       value: 
-      objectReference: {fileID: 11400000, guid: b23a63cdf7843f443895b15d7b32d8b9, type: 2}
+      objectReference: {fileID: 11400000, guid: e6d3111e9b8ab2440ac3f521e70994a4, type: 2}
     - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: localizacionIT
       value: 
-      objectReference: {fileID: 11400000, guid: b23a63cdf7843f443895b15d7b32d8b9, type: 2}
+      objectReference: {fileID: 11400000, guid: 4a0996d24937c8a43beb1bcd1b036bf6, type: 2}
     - target: {fileID: 1214734306023692703, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -214557,7 +214559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984555139572783563, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7966831593528305840, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_Pivot.x
@@ -242878,6 +242880,8 @@ Transform:
   - {fileID: 724335530}
   - {fileID: 756098578}
   - {fileID: 2024476133}
+  - {fileID: 5283370011097880022}
+  - {fileID: 1720212676}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -259886,6 +259890,7 @@ GameObject:
   - component: {fileID: 1720212676}
   - component: {fileID: 1720212678}
   - component: {fileID: 1720212677}
+  - component: {fileID: 1720212679}
   m_Layer: 0
   m_Name: mapa (2)
   m_TagString: Untagged
@@ -259905,8 +259910,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 327565930}
-  m_RootOrder: 167
+  m_Father: {fileID: 1389102190}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1720212677
 BoxCollider2D:
@@ -259986,6 +259991,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &1720212679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720212675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54fa781489dc224d8aa487b19c46e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanciaActivacion: 3
+  teclaAbrir: 101
+  player: {fileID: 0}
+  mapaSprite: {fileID: -2114508846, guid: 0baf7de0dda102f4cb85318e031dcf30, type: 3}
+  usarPosNormalizada: 1
+  posNormalizada: {x: 0.65, y: 0.8}
+  posPixeles: {x: 0, y: 0}
+  offsetPixeles: {x: 0, y: 0}
 --- !u!1 &1720417250
 GameObject:
   m_ObjectHideFlags: 0
@@ -574717,8 +574742,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 327565930}
-  m_RootOrder: 166
+  m_Father: {fileID: 1389102190}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5381087090733445315
 PrefabInstance:
@@ -575809,6 +575834,7 @@ GameObject:
   - component: {fileID: 5283370011097880022}
   - component: {fileID: 6170499317339169811}
   - component: {fileID: 5519323622774841200}
+  - component: {fileID: 8777788478779590691}
   m_Layer: 0
   m_Name: mapa (1)
   m_TagString: Untagged
@@ -575816,6 +575842,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8777788478779590691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8777788478779590690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54fa781489dc224d8aa487b19c46e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanciaActivacion: 3
+  teclaAbrir: 101
+  player: {fileID: 0}
+  mapaSprite: {fileID: -2114508846, guid: 0baf7de0dda102f4cb85318e031dcf30, type: 3}
+  usarPosNormalizada: 1
+  posNormalizada: {x: 0.13, y: 0.2}
+  posPixeles: {x: 0, y: 0}
+  offsetPixeles: {x: 0, y: 0}
 --- !u!1001 &8980145634887766268
 PrefabInstance:
   m_ObjectHideFlags: 0

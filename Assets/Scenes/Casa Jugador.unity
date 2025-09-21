@@ -244,6 +244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 13546249}
   - component: {fileID: 13546250}
+  - component: {fileID: 13546251}
   m_Layer: 0
   m_Name: Emoji
   m_TagString: Untagged
@@ -318,6 +319,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &13546251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13546248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bc3fba0ca6c94b4ca61893068caaad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableName: Miniquest02Completed
+  target: {fileID: 0}
+  pollInterval: 0.2
+  oneShot: 1
 --- !u!1001 &89401713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1415,6 +1432,10 @@ PrefabInstance:
       propertyPath: camara
       value: 
       objectReference: {fileID: 1559691133}
+    - target: {fileID: 5626235431481843963, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
+      propertyPath: tablaLanguage
+      value: 
+      objectReference: {fileID: 11400000, guid: 7948a239c15d60a40b60be8c7e98a893, type: 2}
     - target: {fileID: 5626235431481843963, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
       propertyPath: textoNombreEscena
       value: Casa
@@ -2651,7 +2672,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3717819807398951174, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: conversationName
-      value: Miniquest01
+      value: Miniquest02
       objectReference: {fileID: 0}
     - target: {fileID: 9078730417640464501, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_Size.y
@@ -2667,7 +2688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9107953002171006482, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_Name
-      value: NPCMiniquest01
+      value: NPCMiniquest02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
@@ -11710,7 +11731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3717819807398951174, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: conversationName
-      value: Miniquest05
+      value: Miniquest08
       objectReference: {fileID: 0}
     - target: {fileID: 9078730417640464501, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_Size.y
@@ -12087,6 +12108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2076397153}
   - component: {fileID: 2076397154}
+  - component: {fileID: 2076397155}
   m_Layer: 0
   m_Name: Emoji
   m_TagString: Untagged
@@ -12161,6 +12183,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2076397155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076397152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bc3fba0ca6c94b4ca61893068caaad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variableName: Miniquest08Completed
+  target: {fileID: 0}
+  pollInterval: 0.2
+  oneShot: 1
 --- !u!4 &2133837868 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 452899121715678858, guid: da7d63fb521b2ea40b31eed170c7dce9, type: 3}

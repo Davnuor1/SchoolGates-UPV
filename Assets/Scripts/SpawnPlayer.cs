@@ -10,6 +10,8 @@ public class SpawnPlayer : MonoBehaviour
     [SerializeField] GameObject panelNombreEscena;
     [SerializeField] string textoNombreEscena;
     [SerializeField] TextMeshProUGUI textMeshNombreEscena;
+    [SerializeField] SimpleTextTable tablaLanguage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +30,10 @@ public class SpawnPlayer : MonoBehaviour
 
         if (textoNombreEscena!= null)
         {
+            Debug.Log("estamos definiendo el nombre de la escena");
+            var lang = LocalizationManager.Instance.CurrentLanguage;
             panelNombreEscena.SetActive(true);
+            textoNombreEscena = tablaLanguage.Get(textoNombreEscena, lang);
             textMeshNombreEscena.text = textoNombreEscena;
             StartCoroutine(DesactivarPanelDespuesDeTiempo(5f)); // Llama a la corrutina para esperar 5 segundos
         }

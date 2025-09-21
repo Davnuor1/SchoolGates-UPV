@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68aadbb53980c4c48a77f7da50c3cd69, type: 3}
+  m_Name: UI_QuizAgora
+  m_EditorClassIdentifier: 
+  entries:
+  - key: Ciencia
+    es: Ciencias
+    en: Science
+    de: Wissenschaft
+    it: Scienze
+    fi: Tieteet
+  - key: Mates
+    es: "Matem\xE1ticas"
+    en: Mathematics
+    de: Mathematik
+    it: Matematica
+    fi: Matematiikka
+  - key: Humanidades
+    es: Humanidades
+    en: Humanities
+    de: Geisteswissenschaften
+    it: Lettere
+    fi: Humanistiset
+  - key: Historia
+    es: Historia
+    en: History
+    de: Geschichte
+    it: Storia
+    fi: Historia
+  - key: Arte
+    es: Arte
+    en: Art
+    de: Kunst
+    it: Arte
+    fi: Taide
+  - key: Salir
+    es: Salir
+    en: Leave
+    de: Beenden
+    it: Esci
+    fi: Poistu
+  - key: Incorrecto1
+    es: Incorrecto!
+    en: 'Incorrect! '
+    de: 'Falsch! '
+    it: 'Sbagliato! '
+    fi: "V\xE4\xE4r\xE4! "
+  - key: Incorrecto2
+    es: Prueba de nuevo...
+    en: 'Try again... '
+    de: 'Versuchen Sie es erneut... '
+    it: 'Riprova... '
+    fi: "Yrit\xE4 uudelleen..."
+  - key: Continuar
+    es: Continuar
+    en: Continue
+    de: Weiter
+    it: Continua
+    fi: Jatka
+  - key: Correcto1
+    es: Correcto!
+    en: 'Correct! '
+    de: 'Richtig! '
+    it: 'Corretto! '
+    fi: Oikein!
+  - key: Correcto2
+    es: Bien!
+    en: 'Well done! '
+    de: 'Gut! '
+    it: 'Bene! '
+    fi: "Hyv\xE4!"
+  - key: Continuar2
+    es: Continuar
+    en: Continue
+    de: Weiter
+    it: Continua
+    fi: Jatka
+  - key: "Contrase\xF1a"
+    es: "Enhorabuena, has conseguido la contrase\xF1a"
+    en: 'Congratulations, you have obtained the password. '
+    de: "Herzlichen Gl\xFCckwunsch, Sie haben das Passwort erhalten. "
+    it: 'Congratulazioni, hai ottenuto la password '
+    fi: Onnittelut, olet saanut salasanan
+  - key: Siguiente
+    es: Siguiente
+    en: Next
+    de: Weiter
+    it: Avanti
+    fi: Seuraava
+  - key: Reset
+    es: Reset
+    en: Reset
+    de: "Zur\xFCcksetzen"
+    it: Reimposta
+    fi: Nollaa

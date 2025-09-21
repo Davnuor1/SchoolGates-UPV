@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ed8fbac4f95a646a385ee421129d7d, type: 3}
+  m_Name: GateOfEmotions_IT
+  m_EditorClassIdentifier: 
+  introductionText: Stai per entrare in uno stato di consapevolezza diverso...
+  selectTwoEmotionsText: "Quali emozioni provi pi\xF9 frequentemente?"
+  anger: Rabbia
+  fear: Paura
+  joy: Gioia
+  sadness: Tristezza
+  question1: "Quanto \xE8 piacevole o spiacevole quello che provi?"
+  question2: "Quanto \xE8 alta o bassa la tua energia?"
+  question3: Come chiameresti questa sensazione?
+  pleasant: Piacevole
+  unpleasant: Sgradevole
+  highEnergy: Energico
+  lowEnergy: Poco energico
+  feedbackIncorrect: Questa non sembra essere l'emozione che stai provando in questo
+    momento, riprova...
+  feedbackAnger: "La rabbia si scatena quando qualcuno ci ferisce in qualche modo,
+    perch\xE9 oltrepassa i confini di un valore, come il rispetto, la cura o la giustizia...
+    Ti riempie di energia perch\xE9 ne hai bisogno per proteggere qualcosa di prezioso
+    per te"
+  feedbackFear: "La paura si scatena quando percepiamo che qualcosa di prezioso \xE8
+    in pericolo. Ti paralizza in modo che tu possa valutare quel pericolo e ti fa
+    desiderare di fuggire o scappare per proteggerti da esso"
+  feedbackJoy: "La gioia si innesca quando realizziamo qualcosa di prezioso. \xC8
+    come una ricompensa emotiva, ti riempie di vitalit\xE0 e ottimismo cos\xEC puoi
+    andare avanti con i tuoi piani e continuare a fare cose importanti."
+  feedbackSadness: "La tristezza si scatena quando soffriamo la perdita di qualcosa
+    di prezioso. Pu\xF2 essere travolgente... Ma ha una funzione: ti prosciuga l'energia
+    cos\xEC puoi fermarti, piangere, soffrire, ricordare, riflettere... e rimetterti
+    in sesto"
+  questionPart2: Quale emozione sta provando?
+  feedbackIncorrectPart2: Questa non sembra essere l'emozione che sta provando in
+    questo momento, riprova..
+  respuestaJugador1: "Penso che tu ti senta cos\xEC"
+  respuestaNPC1: "Ma io non voglio sentirmi cos\xEC"
+  botonesRespuestaJugador2:
+  - "So che \xE8 dura, ma va bene sentirsi cos\xEC..."
+  - Don't worry about feeling this way, it will pass at some point...
+  - "I've felt that way myself at times\u2026 Let\u2019s find something useful to
+    do\u2026"
+  feedbackAnger_Part2: "OK! La rabbia si scatena quando qualcuno ci ferisce in qualche
+    modo, perch\xE9 oltrepassa i confini di un valore, come il rispetto, la cura
+    o la giustizia... Ti riempie di energia perch\xE9 ne hai bisogno per proteggere
+    qualcosa di prezioso per te . Ora, torna in citt\xE0 e aiutalo/a nel percorso
+    delle emozioni\u2026"
+  feedbackFear_Part2: "OK! La paura si scatena quando percepiamo che qualcosa di
+    prezioso \xE8 in pericolo. Ti paralizza in modo che tu possa valutare quel pericolo
+    e ti fa desiderare di fuggire o scappare per proteggerti da esso. Ora, torna
+    in citt\xE0 e aiutalo/a nel percorso delle emozioni\u2026"
+  feedbackJoy_Part2: "OK! La gioia si innesca quando realizziamo qualcosa di prezioso.
+    \xC8 come una ricompensa emotiva, ti riempie di vitalit\xE0 e ottimismo cos\xEC
+    puoi andare avanti con i tuoi piani e continuare a fare cose importanti. . Ora,
+    torna in citt\xE0 e aiutalo/a nel percorso delle emozioni\u2026"
+  feedbackSadness_Part2: "OK! La tristezza si scatena quando soffriamo la perdita
+    di qualcosa di prezioso. Pu\xF2 essere travolgente... Ma ha una funzione: ti
+    prosciuga l'energia cos\xEC puoi fermarti, piangere, soffrire, ricordare, riflettere...
+    e rimetterti in sesto . Ora, torna in citt\xE0 e aiutalo/a nel percorso delle
+    emozioni\u2026"

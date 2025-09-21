@@ -101,11 +101,35 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: final-2_0
+      name: final1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 134412f61d795d244bbf8772a6c07e21
-      internalID: -223178366
+      spriteID: 735ac5da9cc533f4bbf3ca6339e4dc56
+      internalID: -1938916930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: final-2_1
+      name: final1_1
       rect:
         serializedVersion: 2
         x: 400
-        y: 259
+        y: 258
         width: 371
-        height: 215
+        height: 216
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37df91e4966dae94896568b9087a65f5
-      internalID: -602796506
+      spriteID: ab90f287f0cb1784fad1248a56df2fad
+      internalID: 598505627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: final-2_2
+      name: final1_2
       rect:
         serializedVersion: 2
         x: 0
@@ -161,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 428c4218a3f1b23459584f29cbd77eb6
-      internalID: -1592454501
+      spriteID: 0cac20a4f2ed80342bf99d76e8d64884
+      internalID: -1263350829
       vertices: []
       indices: 
       edges: []
@@ -178,9 +202,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      final-2_2: -1592454501
-      final-2_1: -602796506
-      final-2_0: -223178366
+      final1_2: -1263350829
+      final1_0: -1938916930
+      final1_1: 598505627
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

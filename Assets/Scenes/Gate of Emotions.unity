@@ -46237,8 +46237,6 @@ Transform:
   - {fileID: 934640955}
   - {fileID: 1924902111}
   - {fileID: 504235204}
-  - {fileID: 411392805}
-  - {fileID: 1417176176}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -58889,19 +58887,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 201904991}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1623625755671406122, guid: 21f12fb50b83b70478864eb5828f53c1, type: 3}
       propertyPath: m_RootOrder
-      value: 236
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 1623625755671406122, guid: 21f12fb50b83b70478864eb5828f53c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.98
+      value: 3.35
       objectReference: {fileID: 0}
     - target: {fileID: 1623625755671406122, guid: 21f12fb50b83b70478864eb5828f53c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.79
+      value: 3.89
       objectReference: {fileID: 0}
     - target: {fileID: 1623625755671406122, guid: 21f12fb50b83b70478864eb5828f53c1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -58949,11 +58947,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21f12fb50b83b70478864eb5828f53c1, type: 3}
---- !u!4 &411392805 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1623625755671406122, guid: 21f12fb50b83b70478864eb5828f53c1, type: 3}
+--- !u!1 &411392805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3881288120336390545, guid: 21f12fb50b83b70478864eb5828f53c1, type: 3}
   m_PrefabInstance: {fileID: 411392804}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &411392806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411392805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54fa781489dc224d8aa487b19c46e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanciaActivacion: 3
+  teclaAbrir: 101
+  player: {fileID: 0}
+  mapaSprite: {fileID: -957386490, guid: 0baf7de0dda102f4cb85318e031dcf30, type: 3}
+  usarPosNormalizada: 1
+  posNormalizada: {x: 0.5, y: 0.09}
+  posPixeles: {x: 0, y: 0}
+  offsetPixeles: {x: 0, y: 0}
 --- !u!1 &415986901
 GameObject:
   m_ObjectHideFlags: 0
@@ -118057,7 +118075,7 @@ PrefabInstance:
     - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: localizacionDE
       value: 
-      objectReference: {fileID: 11400000, guid: 7724d116c5e73394498e6d8cb9c18aca, type: 2}
+      objectReference: {fileID: 11400000, guid: ed01c2e9f3beb4447a72d55f93a7489a, type: 2}
     - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: localizacionEN
       value: 
@@ -118069,11 +118087,11 @@ PrefabInstance:
     - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: localizacionFI
       value: 
-      objectReference: {fileID: 11400000, guid: 159a8106771b23149a9f1e747484f224, type: 2}
+      objectReference: {fileID: 11400000, guid: 1455d0955a77cb74da2c2f2a49afe10d, type: 2}
     - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: localizacionIT
       value: 
-      objectReference: {fileID: 11400000, guid: 159a8106771b23149a9f1e747484f224, type: 2}
+      objectReference: {fileID: 11400000, guid: 9dfba1edc24dbd2448df9a5fc32507a2, type: 2}
     - target: {fileID: 1088447845592336125, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -118116,7 +118134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984555139572783563, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7966831593528305840, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_Pivot.x
@@ -119294,6 +119312,10 @@ PrefabInstance:
       propertyPath: camara
       value: 
       objectReference: {fileID: 104605437}
+    - target: {fileID: 5626235431481843963, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
+      propertyPath: tablaLanguage
+      value: 
+      objectReference: {fileID: 11400000, guid: 7948a239c15d60a40b60be8c7e98a893, type: 2}
     - target: {fileID: 5626235431481843963, guid: 38d5f7265cf778944abcf4e1fbbadec3, type: 3}
       propertyPath: textoNombreEscena
       value: Ciudad cyberpunk
@@ -121841,11 +121863,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 201904991}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1623625755671406122, guid: 21f12fb50b83b70478864eb5828f53c1, type: 3}
       propertyPath: m_RootOrder
-      value: 237
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 1623625755671406122, guid: 21f12fb50b83b70478864eb5828f53c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -121905,11 +121927,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21f12fb50b83b70478864eb5828f53c1, type: 3}
---- !u!4 &1417176176 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1623625755671406122, guid: 21f12fb50b83b70478864eb5828f53c1, type: 3}
+--- !u!1 &1417176176 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3881288120336390545, guid: 21f12fb50b83b70478864eb5828f53c1, type: 3}
   m_PrefabInstance: {fileID: 1417176175}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1417176177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417176176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54fa781489dc224d8aa487b19c46e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanciaActivacion: 3
+  teclaAbrir: 101
+  player: {fileID: 0}
+  mapaSprite: {fileID: -957386490, guid: 0baf7de0dda102f4cb85318e031dcf30, type: 3}
+  usarPosNormalizada: 1
+  posNormalizada: {x: 0.32, y: 0.6}
+  posPixeles: {x: 0, y: 0}
+  offsetPixeles: {x: 0, y: 0}
 --- !u!1 &1420770224
 GameObject:
   m_ObjectHideFlags: 0

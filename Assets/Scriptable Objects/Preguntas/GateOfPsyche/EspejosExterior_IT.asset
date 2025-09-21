@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12378fb498d283642a330e1ccd91f0bf, type: 3}
+  m_Name: EspejosExterior_IT
+  m_EditorClassIdentifier: 
+  topMessageInitial: Rumiatore ti sta parlando, cosa vuoi fare?
+  topMessageRespondFormat: Come reagisci al demone di {0}?
+  topMessageSecondRound: "Cos\u2019altro puoi dirgli?"
+  buttonRepeatText: Ripeti
+  buttonRespondText: Rispondi
+  espejos:
+  - mirrorTitle: Successo
+    mirrorText: "Devi avere successo in tutto ci\xF2 che fai o sarai un perdente "
+    responses:
+    - "\uF0B7Non vinco sempre, ma questo non mi rende un perdente "
+    - "Commettere errori \xE8 parte del successo "
+    - "Nessuno pu\xF2 essere il migliore in tutto"
+  - mirrorTitle: Colpa
+    mirrorText: 'Sei tu quello da incolpare, non meriti di essere felice '
+    responses:
+    - "Tutti meritano la possibilit\xE0 di essere felici "
+    - "Le persone a volte commettono errori, ma meritano sempre una seconda possibilit\xE0"
+    - "Non sono n\xE9 pi\xF9 n\xE9 meno di chiunque altro"
+  - mirrorTitle: Corpo ideale
+    mirrorText: "Il tuo corpo non \xE8 perfetto ma deve esserlo "
+    responses:
+    - "Il mio corpo \xE8 perfetto cos\xEC com'\xE8, non importa cosa dicono gli altri"
+    - Sono bella/o e forte
+    - Il corpo perfetto non esiste
+  - mirrorTitle: Invidia
+    mirrorText: 'Tutti sono migliori di te e hanno cose migliori di te '
+    responses:
+    - 'Persone diverse hanno punti di forza e di debolezza diversi '
+    - Ognuno ha le proprie paure e problemi
+    - "Non ho tutto ci\xF2 che desidero, ma sono grato per quello che ho"
+  - mirrorTitle: Autosabotaggio
+    mirrorText: 'Non sei abbastanza, non vincerai mai '
+    responses:
+    - Anche se a volte sbaglio, posso fare le cose bene
+    - Non sempre vinci e non sempre perdi
+    - Almeno posso fare del mio meglio e ne vale la pena

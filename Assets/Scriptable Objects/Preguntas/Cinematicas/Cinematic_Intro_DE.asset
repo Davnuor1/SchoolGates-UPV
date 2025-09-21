@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3830def2b6bbf848807d7aea15f27b5, type: 3}
+  m_Name: Cinematic_Intro_DE
+  m_EditorClassIdentifier: 
+  vignettes:
+  - image: {fileID: -647518916, guid: 8daea5f1a0355414fa9e574714b6b6e3, type: 3}
+    text: "Du bist gerade nach einer langen Reise in Soul Village angekommen und
+      freust dich darauf, ein neues Kapitel in deinem Leben zu beginnen, auch wenn
+      du dich von der Ver\xE4nderung ein wenig \xFCberfordert f\xFChlst."
+  - image: {fileID: 2080672292, guid: 8daea5f1a0355414fa9e574714b6b6e3, type: 3}
+    text: "Bald stellen Dufest, dass eine dunkle Aura \xFCber dem ganzen Ort liegt,
+      etwas, das nur Sie gesp\xFCrt haben, und Sie w\xFCnschen sich von ganzem Herzen,
+      es zu l\xF6sen."
+  - image: {fileID: -1095716158, guid: 8daea5f1a0355414fa9e574714b6b6e3, type: 3}
+    text: "Die Schule scheint der Schwerpunkt dieser Krankheit zu sein, also beschlie\xDFt
+      du, sie zu untersuchen, um Hinweise zu finden."
+  - image: {fileID: 1475702569, guid: 8daea5f1a0355414fa9e574714b6b6e3, type: 3}
+    text: "Pl\xF6tzlich taucht wie von Geisterhand ein Zettel in deiner Tasche auf,
+      und du bist v\xF6llig verbl\xFCfft. Auf dem Zettel steht, dass du die vier
+      magischen T\xFCren in deinem Zimmer, in einem Klassenzimmer, auf dem Schulhof
+      und in der Aula finden sollst."
+  nextButtonText: Weiter
