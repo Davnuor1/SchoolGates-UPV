@@ -752,7 +752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 938096135610520555, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 938096135610520556, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
       propertyPath: aQueEscena
@@ -153831,7 +153831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1022760238
 Transform:
   m_ObjectHideFlags: 0
@@ -158160,7 +158160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984555139572783563, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7966831593528305840, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_Pivot.x
@@ -165728,9 +165728,9 @@ RectTransform:
   m_Father: {fileID: 1818040868}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -417.75012, y: 7.464264}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 21.5, y: -32.5}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1296334501
@@ -174169,7 +174169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07622715c7d19f24a91adaa0f1eac5a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversationName: Dialogo de prueba
+  conversationName: NPC pueblo 1
   interactionDistance: 2
 --- !u!1 &1749430692
 GameObject:
@@ -178257,7 +178257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 938096135610520555, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 938096135610520556, guid: 9c054537095788f45b4e81bfc03a486e, type: 3}
       propertyPath: aQueEscena

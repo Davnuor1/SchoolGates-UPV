@@ -213,8 +213,8 @@ MonoBehaviour:
       type: 3
       typeString: CustomFieldType_Files
     - title: Description
-      value: Hemos llegado a una plaza con varios edificios... Deberiamos de encontrar
-        el edificio del critical thinkers
+      value: We have arrived at a square with several buildings... We should find
+        the Critical Thinkers building.
       type: 0
       typeString: CustomFieldType_Text
     - title: Success Description
@@ -258,6 +258,31 @@ MonoBehaviour:
 '
       type: 4
       typeString: CustomFieldType_Localization
+    - title: Description fi
+      value: "Olemme saapuneet aukiolle, jossa on useita rakennuksia... Meid\xE4n
+        pit\xE4isi l\xF6yt\xE4\xE4 Kriittisten ajattelijoiden rakennus."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name es
+      value: "Encuentra el edificio de los pensadores cr\xEDticos."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name it
+      value: Trova l'edificio dei pensatori critici.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name de
+      value: "Finde das Geb\xE4ude der kritischen Denker."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name fi
+      value: Etsi kriittisten ajattelijoiden rakennus
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name
+      value: Find the Critical Thinkers Building
+      type: 0
+      typeString: 
   - id: 2
     fields:
     - title: Name
@@ -269,8 +294,8 @@ MonoBehaviour:
       type: 3
       typeString: CustomFieldType_Files
     - title: Description
-      value: Ahora que estamos en el critical thinkers building, deberiamos encontrar
-        un mapa de la zona!
+      value: Now that we are in the Critical Thinkers building, we should find a
+        map of the area!
       type: 0
       typeString: 
     - title: Success Description
@@ -312,10 +337,35 @@ MonoBehaviour:
         una mappa della zona!\r"
       type: 4
       typeString: 
+    - title: Description fi
+      value: "Nyt kun olemme Kriittisten ajattelijoiden rakennuksessa, meid\xE4n
+        pit\xE4isi l\xF6yt\xE4\xE4 kartta alueesta!"
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name es
+      value: Encuentra el mapa
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name it
+      value: Trova la mappa.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name de
+      value: Finde die Karte.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name fi
+      value: Etsi kartta
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name
+      value: Find the map
+      type: 0
+      typeString: 
   - id: 3
     fields:
     - title: Name
-      value: Mision
+      value: Mission
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -323,8 +373,8 @@ MonoBehaviour:
       type: 3
       typeString: CustomFieldType_Files
     - title: Description
-      value: "Descubre donde estan los 4 portales m\xE1gicos y avanza por sus mundos
-        m\xE1gicos"
+      value: Discover where the four magical portals are and advance through their
+        magical worlds.
       type: 0
       typeString: CustomFieldType_Text
     - title: Success Description
@@ -358,13 +408,13 @@ MonoBehaviour:
     - title: Entry 1 State
       value: active
       type: 0
-      typeString: 
+      typeString: CustomFieldType_QuestState
     - title: Entry 1
-      value: '[var=PortalesNumEntrados]/4 Encontrados'
+      value: '[var=PortalesNumEntrados]/4 '
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: de
-      value: 
+      value: Mision Alemania
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description de
@@ -384,7 +434,32 @@ MonoBehaviour:
     - title: Description it
       value: Scoprire dove sono i 4 portali magici e avanzare nei loro mondi magici.
       type: 4
+      typeString: CustomFieldType_Localization
+    - title: Description fi
+      value: "L\xF6yd\xE4 nelj\xE4 maagista portaalia ja etene niiden maagisten maailmojen
+        l\xE4pi."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name es
+      value: "Misi\xF3n"
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name
+      value: Mission
+      type: 0
       typeString: 
+    - title: Display Name it
+      value: Missione.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name de
+      value: Mission
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name fi
+      value: "Teht\xE4v\xE4"
+      type: 4
+      typeString: CustomFieldType_Localization
   - id: 4
     fields:
     - title: Name
@@ -435,6 +510,30 @@ MonoBehaviour:
       value: Cercare nelle grotte e completare i minigiochi.
       type: 4
       typeString: CustomFieldType_Localization
+    - title: Description fi
+      value: "Etsi luolista ja suorita minipelej\xE4."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name es
+      value: Puerta de la psique.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name it
+      value: Porta della psiche.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name de
+      value: Tor der Psyche
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name fi
+      value: Psyyken portti
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name
+      value: Gate of Psyche
+      type: 0
+      typeString: 
   - id: 5
     fields:
     - title: Name
@@ -481,6 +580,30 @@ MonoBehaviour:
       value: Esplorare la palude e completare il labirinto.
       type: 4
       typeString: 
+    - title: Description fi
+      value: Tutki suota ja suorita labyrintti.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name es
+      value: Puerta de las personas.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name it
+      value: Porta delle persone.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name de
+      value: Tor der Menschen
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name fi
+      value: Ihmisten portti
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name
+      value: Gate of People
+      type: 0
+      typeString: 
   - id: 6
     fields:
     - title: Name
@@ -513,7 +636,9 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description de
-      value: 
+      value: "Es gibt viele Menschen, die auf kleinen Inseln im Sumpf gefangen sind.
+        Finde sie und gib ihnen diesen magischen Kristall, mit dem sie sich an einen
+        sicheren Ort teleportieren k\xF6nnen!"
       type: 4
       typeString: CustomFieldType_Localization
     - title: Name de
@@ -521,11 +646,14 @@ MonoBehaviour:
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description es
-      value: 
+      value: "Hay muchas personas atrapadas en peque\xF1as islas en el pantano. \xA1Encu\xE9ntralas
+        y dales este cristal m\xE1gico, que las teletransportar\xE1 a un lugar seguro!"
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description it
-      value: 
+      value: "Ci sono molte persone intrappolate in piccole isole nella palude, trovatele
+        e date loro questo cristallo magico, che le teletrasporter\xE0 in un luogo
+        sicuro!"
       type: 4
       typeString: CustomFieldType_Localization
     - title: Abandonable
@@ -549,9 +677,35 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_QuestState
     - title: Entry 1
-      value: '[var=PeopleTrappedSwamp.numSaved]/5 Saved'
+      value: '[var=PeopleTrappedSwamp.numSaved]/5 '
       type: 0
       typeString: CustomFieldType_Text
+    - title: Description fi
+      value: "Suolla on monia ihmisi\xE4 loukussa pienill\xE4 saarilla. Etsi heid\xE4t
+        ja anna heille maaginen kristalli, joka siirt\xE4\xE4 heid\xE4t turvalliseen
+        paikkaan!"
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name es
+      value: "\xA1Salva a las personas atrapadas en el pantano!"
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name it
+      value: Salva le persone intrappolate nella palude!
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name de
+      value: Rette die Menschen, die im Sumpf gefangen sind!
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name fi
+      value: Pelasta suolla loukussa olevat ihmiset!
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name
+      value: Save the people trapped on the Swamp!
+      type: 0
+      typeString: 
   - id: 7
     fields:
     - title: Name
@@ -575,7 +729,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: State
-      value: active
+      value: unassigned
       type: 0
       typeString: CustomFieldType_QuestState
     - title: Is Item
@@ -583,7 +737,8 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description de
-      value: 
+      value: "Hilf den 5 NPCs, die Pr\xFCfungen im Sumpf zu bestehen, um die Mission
+        zu erf\xFCllen!"
       type: 4
       typeString: CustomFieldType_Localization
     - title: Name de
@@ -591,11 +746,12 @@ MonoBehaviour:
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description es
-      value: 
+      value: "\xA1Ayuda a los 5 NPC a superar las pruebas en el pantano para completar
+        la misi\xF3n!"
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description it
-      value: 
+      value: Aiutate i 5 NPC a superare le prove nella palude per completare la missione!
       type: 4
       typeString: CustomFieldType_Localization
     - title: Entry Count
@@ -622,6 +778,31 @@ MonoBehaviour:
       value: 
       type: 4
       typeString: CustomFieldType_Localization
+    - title: Description fi
+      value: "Auta viitt\xE4 NPC-hahmoa suolla olevien koettelemusten l\xE4pi, jotta
+        teht\xE4v\xE4 voidaan suorittaa loppuun!"
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name es
+      value: Completa las pruebas del pantano.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name it
+      value: Completa le prove della palude.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name de
+      value: "Schlie\xDFe die Sumpfpr\xFCfungen ab."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name fi
+      value: Suorita suokokeet
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name
+      value: Complete the Swamp Trials
+      type: 0
+      typeString: 
   - id: 8
     fields:
     - title: Name
@@ -654,7 +835,8 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description de
-      value: 
+      value: "Bahne dir deinen Weg durch die H\xF6hlen und absolviere die drei Pr\xFCfungen,
+        die mit Spiegeln zu tun haben. Achte auf die Stacheln ..."
       type: 4
       typeString: CustomFieldType_Localization
     - title: Name de
@@ -667,13 +849,39 @@ MonoBehaviour:
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description it
-      value: 
+      value: Fatti strada attraverso le caverne e supera le tre prove relative agli
+        specchi. Fai attenzione alle punte...
       type: 4
       typeString: CustomFieldType_Localization
     - title: Entry Count
       value: 0
       type: 1
       typeString: CustomFieldType_Number
+    - title: Description fi
+      value: "Etene luolien l\xE4pi ja suorita kolme peileihin liittyv\xE4\xE4 koetta.
+        Varo piikkej\xE4..."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name es
+      value: Completa las pruebas de la cueva.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name it
+      value: Completa le prove della caverna.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name de
+      value: "Schlie\xDFe die H\xF6hlenpr\xFCfungen ab."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name fi
+      value: Suorita luolakokeet
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name
+      value: Complete the Cave Trials
+      type: 0
+      typeString: 
   - id: 9
     fields:
     - title: Name
@@ -705,7 +913,7 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description de
-      value: 
+      value: "Bahne dir deinen Weg durch die Klippen und \xFCberwinde die Wiederk\xE4uer."
       type: 4
       typeString: CustomFieldType_Localization
     - title: Name de
@@ -717,9 +925,33 @@ MonoBehaviour:
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description it
-      value: 
+      value: Avanzate attraverso le scogliere e superate i ruminanti.
       type: 4
       typeString: CustomFieldType_Localization
+    - title: Description fi
+      value: "Etene kallioiden l\xE4pi ja voita m\xE4rehtij\xE4t."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name es
+      value: "Encuentra la \xFAltima cueva."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name it
+      value: Trova l'ultima caverna.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name de
+      value: "Finde die letzte H\xF6hle."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name fi
+      value: Etsi viimeinen luola
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name
+      value: Find the last cave
+      type: 0
+      typeString: 
   - id: 10
     fields:
     - title: Name
@@ -751,7 +983,8 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description de
-      value: 
+      value: "Erkunde die H\xF6hle und hilf den Menschen darin, den Weg nach drau\xDFen
+        zu finden."
       type: 4
       typeString: CustomFieldType_Localization
     - title: Name de
@@ -764,9 +997,35 @@ MonoBehaviour:
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description it
-      value: 
+      value: Esplora la caverna e aiuta chi si trova all'interno a trovare la via
+        d'uscita.
       type: 4
       typeString: CustomFieldType_Localization
+    - title: Description fi
+      value: "Tutki luolaa ja auta sen sis\xE4ll\xE4 olevia l\xF6yt\xE4m\xE4\xE4n
+        ulosp\xE4\xE4sy."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name es
+      value: Completa la puerta de la psique.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name it
+      value: Completa la Porta della psiche.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name de
+      value: "Schlie\xDFe das Tor der Psyche ab."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name fi
+      value: Suorita Psyyken portti
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name
+      value: Complete the Gate of Psyche
+      type: 0
+      typeString: 
   - id: 11
     fields:
     - title: Name
@@ -799,7 +1058,8 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description de
-      value: 
+      value: "Bahne dir deinen Weg durch das Cyberpunk-Labyrinth und \xFCberwinde
+        alle Hindernisse, bis du das Zentrum der Stadt, die G\xE4rten, erreichst."
       type: 4
       typeString: CustomFieldType_Localization
     - title: Name de
@@ -812,9 +1072,35 @@ MonoBehaviour:
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description it
-      value: 
+      value: "Fatti strada attraverso il labirinto cyberpunk, superando qualsiasi
+        ostacolo incontri fino a raggiungere il centro della citt\xE0, i giardini."
       type: 4
       typeString: CustomFieldType_Localization
+    - title: Description fi
+      value: Etene cyberpunk-sokkelossa ja voita kaikki kohtaamasi esteet, kunnes
+        saavut kaupungin keskustaan, puutarhoihin.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name es
+      value: Llega a los jardines.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name it
+      value: Raggiungi i giardini.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name de
+      value: "Erreiche die G\xE4rten."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name fi
+      value: Saavuta puutarhat
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name
+      value: Reach the Gardens
+      type: 0
+      typeString: 
   - id: 12
     fields:
     - title: Name
@@ -846,7 +1132,8 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description de
-      value: 
+      value: Hilf den 3 NPCs hier, diese magische Welt zu verlassen, und setze dein
+        Abenteuer fort!
       type: 4
       typeString: CustomFieldType_Localization
     - title: Name de
@@ -854,13 +1141,40 @@ MonoBehaviour:
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description es
-      value: 
+      value: "\xA1Ayuda a los 3 NPC que hay aqu\xED a salir de este mundo m\xE1gico
+        y contin\xFAa tu aventura!"
       type: 4
       typeString: CustomFieldType_Localization
     - title: Description it
-      value: 
+      value: Aiuta i 3 NPC qui presenti a uscire da questo mondo magico e continua
+        la tua avventura!
       type: 4
       typeString: CustomFieldType_Localization
+    - title: Description fi
+      value: "Auta kolmea NPC:t\xE4 poistumaan t\xE4st\xE4 maagisesta maailmasta
+        ja jatka seikkailuasi!"
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name es
+      value: Completa la puerta de las emociones.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name it
+      value: Completa la Porta delle emozioni.
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name de
+      value: "Schlie\xDFe das Tor der Emotionen ab."
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name fi
+      value: Suorita Tunteiden portti
+      type: 4
+      typeString: CustomFieldType_Localization
+    - title: Display Name
+      value: Complete the Gate of Emotions
+      type: 0
+      typeString: 
   locations:
   - id: 1
     fields:
@@ -41039,7 +41353,12 @@ MonoBehaviour:
     de","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"Name
     de","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"Description
     es","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"Description
-    it","value":"","type":4,"typeString":"CustomFieldType_Localization"}],"locationFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"}],"variableFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Initial
+    it","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"Description
+    fi","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"Display
+    Name es","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"Display
+    Name it","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"Display
+    Name de","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"Display
+    Name fi","value":"","type":4,"typeString":"CustomFieldType_Localization"}],"locationFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"}],"variableFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Initial
     Value","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""}],"conversationFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"0","type":5,"typeString":"CustomFieldType_Actor"}],"dialogueEntryFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Menu
     Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Dialogue
     Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Sequence","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"es","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"de","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"it","value":"","type":4,"typeString":"CustomFieldType_Localization"},{"title":"fi","value":"","type":4,"typeString":"CustomFieldType_Localization"}],"actorPrimaryFieldTitles":[],"itemPrimaryFieldTitles":[],"questPrimaryFieldTitles":[],"locationPrimaryFieldTitles":[],"variablePrimaryFieldTitles":[],"conversationPrimaryFieldTitles":[],"dialogueEntryPrimaryFieldTitles":[],"npcLineColor":{"r":1.0,"g":0.0,"b":0.0,"a":1.0},"pcLineColor":{"r":0.0,"g":0.0,"b":1.0,"a":1.0},"repeatLineColor":{"r":0.5,"g":0.5,"b":0.5,"a":1.0}}'
