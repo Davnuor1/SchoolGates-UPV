@@ -4406,6 +4406,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
   m_PrefabInstance: {fileID: 131537606}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &131537608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107953002171006482, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+  m_PrefabInstance: {fileID: 131537606}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &131537609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131537608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: 
+  persistentDataName: 
+  portrait: {fileID: 0}
+  spritePortrait: {fileID: 0}
+  barkUISettings:
+    barkUI: {fileID: 0}
+    barkUIOffset: {x: 0, y: 2, z: 0}
+  standardDialogueUISettings:
+    subtitlePanelNumber: 0
+    customSubtitlePanel: {fileID: 0}
+    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
+    menuPanelNumber: 0
+    customMenuPanel: {fileID: 0}
+    customMenuPanelOffset: {x: 0, y: 0, z: 0}
+    useMenuPanelFor: 0
+    portraitAnimatorController: {fileID: 0}
+    setSubtitleColor: 1
+    applyColorToPrependedName: 0
+    prependActorNameSeparator: ': '
+    prependActorNameFormat: '{0}{1}'
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
 --- !u!1 &136680830
 GameObject:
   m_ObjectHideFlags: 0
@@ -5357,6 +5395,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
   m_PrefabInstance: {fileID: 220622994}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &220622996 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107953002171006482, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+  m_PrefabInstance: {fileID: 220622994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &220622997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220622996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: 
+  persistentDataName: 
+  portrait: {fileID: 0}
+  spritePortrait: {fileID: 0}
+  barkUISettings:
+    barkUI: {fileID: 0}
+    barkUIOffset: {x: 0, y: 2, z: 0}
+  standardDialogueUISettings:
+    subtitlePanelNumber: 0
+    customSubtitlePanel: {fileID: 0}
+    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
+    menuPanelNumber: 0
+    customMenuPanel: {fileID: 0}
+    customMenuPanelOffset: {x: 0, y: 0, z: 0}
+    useMenuPanelFor: 0
+    portraitAnimatorController: {fileID: 0}
+    setSubtitleColor: 1
+    applyColorToPrependedName: 0
+    prependActorNameSeparator: ': '
+    prependActorNameFormat: '{0}{1}'
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
 --- !u!1001 &222430623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6303,11 +6379,11 @@ MonoBehaviour:
     customMenuPanelOffset: {x: 0, y: 0, z: 0}
     useMenuPanelFor: 0
     portraitAnimatorController: {fileID: 0}
-    setSubtitleColor: 0
+    setSubtitleColor: 1
     applyColorToPrependedName: 0
     prependActorNameSeparator: ': '
     prependActorNameFormat: '{0}{1}'
-    subtitleColor: {r: 1, g: 1, b: 1, a: 1}
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
 --- !u!4 &290371243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
@@ -10330,6 +10406,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
   m_PrefabInstance: {fileID: 350645531}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &350645533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107953002171006482, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+  m_PrefabInstance: {fileID: 350645531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &350645534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350645533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: 
+  persistentDataName: 
+  portrait: {fileID: 0}
+  spritePortrait: {fileID: 0}
+  barkUISettings:
+    barkUI: {fileID: 0}
+    barkUIOffset: {x: 0, y: 2, z: 0}
+  standardDialogueUISettings:
+    subtitlePanelNumber: 0
+    customSubtitlePanel: {fileID: 0}
+    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
+    menuPanelNumber: 0
+    customMenuPanel: {fileID: 0}
+    customMenuPanelOffset: {x: 0, y: 0, z: 0}
+    useMenuPanelFor: 0
+    portraitAnimatorController: {fileID: 0}
+    setSubtitleColor: 1
+    applyColorToPrependedName: 0
+    prependActorNameSeparator: ': '
+    prependActorNameFormat: '{0}{1}'
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
 --- !u!1001 &350708543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10532,6 +10646,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
   m_PrefabInstance: {fileID: 363951911}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &363951913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107953002171006482, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+  m_PrefabInstance: {fileID: 363951911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &363951914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363951913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: 
+  persistentDataName: 
+  portrait: {fileID: 0}
+  spritePortrait: {fileID: 0}
+  barkUISettings:
+    barkUI: {fileID: 0}
+    barkUIOffset: {x: 0, y: 2, z: 0}
+  standardDialogueUISettings:
+    subtitlePanelNumber: 0
+    customSubtitlePanel: {fileID: 0}
+    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
+    menuPanelNumber: 0
+    customMenuPanel: {fileID: 0}
+    customMenuPanelOffset: {x: 0, y: 0, z: 0}
+    useMenuPanelFor: 0
+    portraitAnimatorController: {fileID: 0}
+    setSubtitleColor: 1
+    applyColorToPrependedName: 0
+    prependActorNameSeparator: ': '
+    prependActorNameFormat: '{0}{1}'
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
 --- !u!1001 &367564815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14107,11 +14259,11 @@ MonoBehaviour:
     customMenuPanelOffset: {x: 0, y: 0, z: 0}
     useMenuPanelFor: 0
     portraitAnimatorController: {fileID: 0}
-    setSubtitleColor: 0
+    setSubtitleColor: 1
     applyColorToPrependedName: 0
     prependActorNameSeparator: ': '
     prependActorNameFormat: '{0}{1}'
-    subtitleColor: {r: 1, g: 1, b: 1, a: 1}
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
 --- !u!114 &510401144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18983,6 +19135,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
   m_PrefabInstance: {fileID: 705650301}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &705650303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107953002171006482, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+  m_PrefabInstance: {fileID: 705650301}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &705650304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705650303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: 
+  persistentDataName: 
+  portrait: {fileID: 0}
+  spritePortrait: {fileID: 0}
+  barkUISettings:
+    barkUI: {fileID: 0}
+    barkUIOffset: {x: 0, y: 2, z: 0}
+  standardDialogueUISettings:
+    subtitlePanelNumber: 0
+    customSubtitlePanel: {fileID: 0}
+    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
+    menuPanelNumber: 0
+    customMenuPanel: {fileID: 0}
+    customMenuPanelOffset: {x: 0, y: 0, z: 0}
+    useMenuPanelFor: 0
+    portraitAnimatorController: {fileID: 0}
+    setSubtitleColor: 1
+    applyColorToPrependedName: 0
+    prependActorNameSeparator: ': '
+    prependActorNameFormat: '{0}{1}'
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
 --- !u!1 &709076741
 GameObject:
   m_ObjectHideFlags: 0
@@ -19232,6 +19422,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
   m_PrefabInstance: {fileID: 719889710}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &719889712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107953002171006482, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+  m_PrefabInstance: {fileID: 719889710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &719889713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719889712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: 
+  persistentDataName: 
+  portrait: {fileID: 0}
+  spritePortrait: {fileID: 0}
+  barkUISettings:
+    barkUI: {fileID: 0}
+    barkUIOffset: {x: 0, y: 2, z: 0}
+  standardDialogueUISettings:
+    subtitlePanelNumber: 0
+    customSubtitlePanel: {fileID: 0}
+    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
+    menuPanelNumber: 0
+    customMenuPanel: {fileID: 0}
+    customMenuPanelOffset: {x: 0, y: 0, z: 0}
+    useMenuPanelFor: 0
+    portraitAnimatorController: {fileID: 0}
+    setSubtitleColor: 1
+    applyColorToPrependedName: 0
+    prependActorNameSeparator: ': '
+    prependActorNameFormat: '{0}{1}'
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
 --- !u!1001 &721497925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80661,6 +80889,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
   m_PrefabInstance: {fileID: 1285859134}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1285859136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107953002171006482, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+  m_PrefabInstance: {fileID: 1285859134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1285859137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285859136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: 
+  persistentDataName: 
+  portrait: {fileID: 0}
+  spritePortrait: {fileID: 0}
+  barkUISettings:
+    barkUI: {fileID: 0}
+    barkUIOffset: {x: 0, y: 2, z: 0}
+  standardDialogueUISettings:
+    subtitlePanelNumber: 0
+    customSubtitlePanel: {fileID: 0}
+    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
+    menuPanelNumber: 0
+    customMenuPanel: {fileID: 0}
+    customMenuPanelOffset: {x: 0, y: 0, z: 0}
+    useMenuPanelFor: 0
+    portraitAnimatorController: {fileID: 0}
+    setSubtitleColor: 1
+    applyColorToPrependedName: 0
+    prependActorNameSeparator: ': '
+    prependActorNameFormat: '{0}{1}'
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
 --- !u!1001 &1286756586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -173964,6 +174230,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
   m_PrefabInstance: {fileID: 1683143519}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1683143521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107953002171006482, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+  m_PrefabInstance: {fileID: 1683143519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1683143522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683143521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: 
+  persistentDataName: 
+  portrait: {fileID: 0}
+  spritePortrait: {fileID: 0}
+  barkUISettings:
+    barkUI: {fileID: 0}
+    barkUIOffset: {x: 0, y: 2, z: 0}
+  standardDialogueUISettings:
+    subtitlePanelNumber: 0
+    customSubtitlePanel: {fileID: 0}
+    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
+    menuPanelNumber: 0
+    customMenuPanel: {fileID: 0}
+    customMenuPanelOffset: {x: 0, y: 0, z: 0}
+    useMenuPanelFor: 0
+    portraitAnimatorController: {fileID: 0}
+    setSubtitleColor: 1
+    applyColorToPrependedName: 0
+    prependActorNameSeparator: ': '
+    prependActorNameFormat: '{0}{1}'
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
 --- !u!1001 &1697738583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -179207,7 +179511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9078730417640464501, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9107953002171006482, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
       propertyPath: m_Name
@@ -179253,11 +179557,11 @@ MonoBehaviour:
     customMenuPanelOffset: {x: 0, y: 0, z: 0}
     useMenuPanelFor: 0
     portraitAnimatorController: {fileID: 0}
-    setSubtitleColor: 0
+    setSubtitleColor: 1
     applyColorToPrependedName: 0
     prependActorNameSeparator: ': '
     prependActorNameFormat: '{0}{1}'
-    subtitleColor: {r: 1, g: 1, b: 1, a: 1}
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
 --- !u!114 &1899699431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181342,6 +181646,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
   m_PrefabInstance: {fileID: 2059722941}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2059722943 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107953002171006482, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+  m_PrefabInstance: {fileID: 2059722941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2059722944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059722943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: 
+  persistentDataName: 
+  portrait: {fileID: 0}
+  spritePortrait: {fileID: 0}
+  barkUISettings:
+    barkUI: {fileID: 0}
+    barkUIOffset: {x: 0, y: 2, z: 0}
+  standardDialogueUISettings:
+    subtitlePanelNumber: 0
+    customSubtitlePanel: {fileID: 0}
+    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
+    menuPanelNumber: 0
+    customMenuPanel: {fileID: 0}
+    customMenuPanelOffset: {x: 0, y: 0, z: 0}
+    useMenuPanelFor: 0
+    portraitAnimatorController: {fileID: 0}
+    setSubtitleColor: 1
+    applyColorToPrependedName: 0
+    prependActorNameSeparator: ': '
+    prependActorNameFormat: '{0}{1}'
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}
 --- !u!1001 &2070511088
 PrefabInstance:
   m_ObjectHideFlags: 0

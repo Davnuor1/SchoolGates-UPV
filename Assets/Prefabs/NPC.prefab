@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9078730417640464501}
   - component: {fileID: 3717819807398951174}
   - component: {fileID: 4655998347347083467}
+  - component: {fileID: 1345523802908930790}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -139,3 +140,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3096588d1b572ed41965de19c95f9de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  desactivarNPC: 0
+  NpcADesactivar: {fileID: 0}
+  mantenerMovimientoDesactivado: 0
+--- !u!114 &1345523802908930790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107953002171006482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actor: 
+  persistentDataName: 
+  portrait: {fileID: 0}
+  spritePortrait: {fileID: 0}
+  barkUISettings:
+    barkUI: {fileID: 0}
+    barkUIOffset: {x: 0, y: 2, z: 0}
+  standardDialogueUISettings:
+    subtitlePanelNumber: 0
+    customSubtitlePanel: {fileID: 0}
+    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
+    menuPanelNumber: 0
+    customMenuPanel: {fileID: 0}
+    customMenuPanelOffset: {x: 0, y: 0, z: 0}
+    useMenuPanelFor: 0
+    portraitAnimatorController: {fileID: 0}
+    setSubtitleColor: 1
+    applyColorToPrependedName: 0
+    prependActorNameSeparator: ': '
+    prependActorNameFormat: '{0}{1}'
+    subtitleColor: {r: 0.16078432, g: 0.16078432, b: 0.16078432, a: 1}

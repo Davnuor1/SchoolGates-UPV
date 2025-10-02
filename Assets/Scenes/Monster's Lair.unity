@@ -94745,7 +94745,7 @@ MonoBehaviour:
   cacheBarkLines: 0
   conversation: New Conversation 66
   conversationConversant: {fileID: 0}
-  conversationActor: {fileID: 0}
+  conversationActor: {fileID: 1556323368}
   startConversationEntryID: -1
   startConversationEntryTitle: 
   overrideDialogueUI: {fileID: 0}
@@ -196846,6 +196846,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+--- !u!4 &1556323368 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1012346113895725549, guid: 0e81eabeab910f04aa19c49992added5, type: 3}
+  m_PrefabInstance: {fileID: 1556323367}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1560618163
 GameObject:
   m_ObjectHideFlags: 0
@@ -207215,7 +207220,7 @@ MonoBehaviour:
   cacheBarkLines: 0
   conversation: Monster's Lair Intro
   conversationConversant: {fileID: 0}
-  conversationActor: {fileID: 0}
+  conversationActor: {fileID: 1556323368}
   startConversationEntryID: -1
   startConversationEntryTitle: 
   overrideDialogueUI: {fileID: 0}
