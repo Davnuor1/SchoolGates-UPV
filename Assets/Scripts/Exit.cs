@@ -42,4 +42,34 @@ public class Exit : MonoBehaviour
         // 2.c) Volver al login
         SceneManager.LoadScene("LoginScene");
     }
+    public void GuardarSolo()
+    {
+        if (SceneManager.GetActiveScene().name == "LoginScene") return;
+
+        // 1) Actualiza tiempo + snapshot DS + etc.
+        UserDataManager.Instance.SaveAndUpdateTime();
+
+        // 2) Solo guardar (local + Sheets), sin cambiar de escena
+        StartCoroutine(SaveOnlyCoroutine());
+    }
+
+    private IEnumerator SaveOnlyCoroutine()
+    {
+        // 2.a) Guardado local (Pixel Crushers)
+        PixelCrushers.SaveSystem.SaveToSlot(1);
+
+        // 2.b) Construir DTO y enviar a Sheets
+        var udm = UserDataManager.Instance;
+        var dto = SnapshotBuilder.FromUserData(udm.currentUserData);
+        string tan = udm.currentUserData.tan;
+
+        yield return SheetsService.Instance.StartCoroutine(
+            SheetsService.Instance.SaveAsync(tan, dto, res =>
+            {
+                if (!res.ok) Debug.LogWarning("Save online fallido (cacheado para reintentar): " + res.error);
+            })
+        );
+
+        // 2.c) No hacemos nada más (no cambiamos de escena)
+    }
 }
