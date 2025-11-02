@@ -155372,7 +155372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1075319692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158248,7 +158248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: cinematicId
-      value: intro
+      value: IntroJuego
       objectReference: {fileID: 0}
     - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: cinematicData
@@ -158276,7 +158276,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 4109cbdea0babd94a9547b3a2d3734f0, type: 2}
     - target: {fileID: 944919655189342262, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: includeLanguageInId
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1214734306023692703, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_AnchorMax.x
@@ -158316,7 +158316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984555139572783563, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7966831593528305840, guid: 0b83864bb8cd35d4c9c519650ca7f722, type: 3}
       propertyPath: m_Pivot.x
@@ -165433,7 +165433,7 @@ Tilemap:
       - {fileID: -1973172094, guid: f33855a2c14d9a24da734b7a3e1ea828, type: 3}
       - {fileID: -147612782, guid: f33855a2c14d9a24da734b7a3e1ea828, type: 3}
       - {fileID: -1892596587, guid: f33855a2c14d9a24da734b7a3e1ea828, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -6, y: -1, z: 0}
@@ -169401,7 +169401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1453974142
 MonoBehaviour:
   m_ObjectHideFlags: 0
