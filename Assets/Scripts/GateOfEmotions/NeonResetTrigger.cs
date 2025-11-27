@@ -8,8 +8,10 @@ public class NeonResetTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player") && neonManager != null)
         {
-            neonManager.RestoreNeonsToBase();
-            gameObject.SetActive(false); // Opcional: desactivar el trigger después de usarlo
+            // Sirve con cualquiera de las dos (tenemos ambos métodos):
+            neonManager.ResetNeonsToBase();
+            // neonManager.RestoreNeonsToBase();
+            gameObject.SetActive(false);
         }
     }
 }

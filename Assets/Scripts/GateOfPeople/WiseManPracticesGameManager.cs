@@ -41,6 +41,7 @@ public class WiseManPracticesGameManager : MonoBehaviour
     public Button buttonHelpConflict3;
     public Button buttonCloseConflicts1;
     public Button buttonCloseConflicts3;
+    public GameObject minijuegoPiedras;
 
     private int currentVignetteIndex = 0;
     private int currentConflictIndex = 0;
@@ -334,6 +335,7 @@ public class WiseManPracticesGameManager : MonoBehaviour
         }
         GameManager.instance.skillTreeController.Unlock("12");
         GameManager.instance.uiManager.ToggleSkillTreeUI();
+        //minijuegoPiedras.SetActive(true);
     }
 
     public void OpenConflictPanel(int conflictNumber)

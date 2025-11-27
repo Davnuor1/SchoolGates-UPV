@@ -1,3 +1,4 @@
+#if false
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -306,3 +307,4 @@ public class GateOfEmotionsUIManagerCopy : MonoBehaviour
         changeSceneAnimator.SetTrigger("FadeIn");
     }
 }
+#endif

@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457a34b01ea1a0147ac69562ed6959ec, type: 3}
   m_Name: Espejos01_ES
   m_EditorClassIdentifier: 
-  textoPreguntaInicial: "Elige los espejos con los que te identifiques y rompe los
-    dem\xE1s."
+  textoPreguntaInicial: Elige los espejos que reflejan quien eres realmente
   textoPreguntaRating: "Valora del 1 al 10 cu\xE1nto te identificas con este espejo."
   textoPreguntaParte2: "Veamos lo real que es... \xBFEres realmente t\xFA?"
   textoPreEspejoParte2: "Cu\xE1l es una prueba real de ser "
@@ -25,60 +24,58 @@ MonoBehaviour:
   textoFeedbackIncorrectoParte2: como piensas... Esto le sucede a todo el  mundo
     de vez en cuando...
   espejos:
-  - nombre: 'Temeroso/a / Ansioso/a '
+  - nombre: Miedoso/a
     respuestaCorrecta: Me asustan las cosas nuevas
     respuestaIncorrecta: Me pongo nervioso cuando conozco a gente nueva
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
-  - nombre: Optimista
+  - nombre: Positivo
     respuestaCorrecta: "En tiempos dif\xEDciles tiendo a esperar lo mejor"
     respuestaIncorrecta: No puede ocurrirme nada malo
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
-  - nombre: 'Impulsivo/a '
-    respuestaCorrecta: No suelo pensar en las consecuencias de lo que digo o hago
-    respuestaIncorrecta: ' A veces me arrepiento de algo que he dicho o hecho'
+  - nombre: Impaciente
+    respuestaCorrecta: Tiendo a actuar precipitadamente, sin pensar en las consecuencias.
+    respuestaIncorrecta: A veces me arrepiento de las cosas que hago o digo.
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
   - nombre: Abierto/a a experimentar
     respuestaCorrecta: Me gusta probar cosas nuevas
     respuestaIncorrecta: Me gusta hacer las cosas a mi manera
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
-  - nombre: "n busca de aprobaci\xF3n o dependiente"
+  - nombre: "Depende de la opini\xF3n de los dem\xE1s "
     respuestaCorrecta: Suelo hacer lo que mis amigos quieren que haga.
     respuestaIncorrecta: No me siento bien cuando alguien se enfada conmigo.
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
   - nombre: Independiente
-    respuestaCorrecta: ' Me gusta pasar tiempo con gente, pero no me importa hacer
-      cosas por mi cuenta'
+    respuestaCorrecta: Me gusta pasar tiempo con gente, pero no me importa hacer
+      cosas solo/a
     respuestaIncorrecta: Si estoy disgustado, prefiero estar solo
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
   - nombre: "Poco exigente con uno m\xEDsmo "
     respuestaCorrecta: No tengo objetivos claros en mi vida
-    respuestaIncorrecta: "A veces dudo de m\xED mismo y de la mejor manera de realizar
-      la tarea"
+    respuestaIncorrecta: "A veces no estoy seguro de c\xF3mo hacer bien las cosas."
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
-  - nombre: 'Decidido/a '
-    respuestaCorrecta: Me motivan las tareas desafiantes
-    respuestaIncorrecta: He renunciado a algunas cosas en mi vida
+  - nombre: "Seguro/a de m\xED mismo/a "
+    respuestaCorrecta: Me gustan los retos.
+    respuestaIncorrecta: "He dejado atr\xE1s algunas cosas en mi vida."
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
-  - nombre: Culpabilidad / Inseguridad
-    respuestaCorrecta: "Me siento incompetente cuando me enfrento a obst\xE1culos
-      y dificultades"
+  - nombre: ' Inseguridad'
+    respuestaCorrecta: Si hay dificultades, a menudo pienso que no puedo con ellas.
     respuestaIncorrecta: Me siento inseguro cuando hago las cosas mal
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
   - nombre: 'Resolutivo/a '
-    respuestaCorrecta: "Siento que mi vida tiene un sentido y una direcci\xF3n claros"
-    respuestaIncorrecta: "No siempre siento que tengo elecci\xF3n"
+    respuestaCorrecta: "Tengo claro lo que quiero en la vida y por qu\xE9"
+    respuestaIncorrecta: "A veces siento que no tengo elecci\xF3n"
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
-  - nombre: "Emp\xE1tico/a / Amable "
+  - nombre: Amable
     respuestaCorrecta: Intento tratar a la gente de manera justa
     respuestaIncorrecta: A veces no entiendo a la gente que me rodea
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
-  - nombre: Hostil
+  - nombre: Enfadado/a
     respuestaCorrecta: "Tiendo a vengarme de los que me han hecho da\xF1o"
     respuestaIncorrecta: En ocasiones me enfado mucho
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
-  - nombre: Esperanzador o Idealista
+  - nombre: "So\xF1ador/a "
     respuestaCorrecta: Creo que todos somos iguales
-    respuestaIncorrecta: A veces dudo de que un mundo mejor sea posible
+    respuestaIncorrecta: "Sue\xF1o con un mundo mejor, pero a veces me parece imposible."
     figuraGeometrica: {fileID: 21300000, guid: e4a933647502b024da4ed14b8cbec31b, type: 3}
   - nombre: Materialista
     respuestaCorrecta: "S\xF3lo creo en lo que veo"

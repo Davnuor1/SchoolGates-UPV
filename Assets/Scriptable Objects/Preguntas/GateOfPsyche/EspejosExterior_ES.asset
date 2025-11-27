@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12378fb498d283642a330e1ccd91f0bf, type: 3}
   m_Name: EspejosExterior_ES
   m_EditorClassIdentifier: 
-  topMessageInitial: Responde a este demonio si quieres avanzar...
+  topMessageInitial: "Ruminator te lanza una pregunta\u2026 \xBFte atreves a contestar?"
   topMessageRespondFormat: "\xBFC\xF3mo le respondes al rumiador de {0}?"
   topMessageSecondRound: "\xBFQu\xE9 m\xE1s puedes decirles?"
   buttonRepeatText: Repetir
@@ -39,7 +39,7 @@ MonoBehaviour:
   - mirrorTitle: Envidia
     mirrorText: "Todos son mejores que t\xFA y tienen mejores cosas que t\xFA"
     responses:
-    - Cada persona tiene diferentes fortalezas y debilidades.
+    - Cada persona tiene diferentes cosas buenas y malas
     - Todas las personas tiene sus propios miedos y problemas
     - No tengo todo lo que quiero, pero estoy agradecido/a por lo que tengo
   - mirrorTitle: "Autodestrucci\xF3n"

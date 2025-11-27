@@ -12,28 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e583b4c22b793db448789db36fb2579b, type: 3}
   m_Name: Espejos03_ES
   m_EditorClassIdentifier: 
-  textoPreguntaInicial: "\xBFQu\xE9 tipo de personas conoces que se preocupan por
-    esto tanto como t\xFA?"
-  textoInstruccionesPrimeraFase: "Piensa en una experiencia significativa o agradable
-    en tu vida... \xBFQu\xE9 es lo que realmente necesitas? Selecciona el espejo
-    si crees que es importante o r\xF3mpelo si no lo es."
-  textoInstruccionesSegundaFase: "Entonces, dices que esto es importante para ti,
-    pero \xBFcu\xE1nto te est\xE1s preocupando realmente por ello? \xBFCu\xE1nta
-    atenci\xF3n y tiempo le est\xE1s dedicando?"
+  textoPreguntaInicial: "\xBFQui\xE9n se preocupa por esto tanto como t\xFA?"
+  textoInstruccionesPrimeraFase: "Piensa en las cosas buenas e importantes de la
+    vida. .... Selecciona lo que m\xE1s valoras"
+  textoInstruccionesSegundaFase: "\xBFQu\xE9 importancia tiene esto para ti? \xBFCu\xE1nta
+    atenci\xF3n y tiempo le dedicas?"
   textoValoracion: Valora la importancia de estas cosas para ti.
-  textoCuidadoValores: "\xBFQu\xE9 puedes hacer ahora para cuidar mejor tus valores?"
+  textoCuidadoValores: "\xBFQu\xE9 puedes hacer para cuidar mejor lo que de verdad
+    te importa?"
   textoAccionFinal: 
   espejos:
   - nombre: Independencia
     respuestas:
     - Tomar mis propias decisiones
-    - Tener cierto nivel de control sobre mi vida
+    - Tener control sobre mi vida
     - Ser capaz de ganar y administrar mi propio dinero
   - nombre: Amistades y relaciones sociales
     respuestas:
     - "Tener amigos \xEDntimos con los que pueda compartir mis pensamientos y sentimientos"
     - Pasar tiempo con mis amigos
-    - "Tener una relaci\xF3n sentimental"
+    - "Tener una relaci\xF3n amorosa"
     - ener muchos seguidores en las redes sociales
     - Ser parte de una comunidad y de causas globales
   - nombre: "B\xFAsqueda de la identidad"
@@ -56,12 +54,12 @@ MonoBehaviour:
   - nombre: "Educaci\xF3n y escuela"
     respuestas:
     - Sacar buenas notas en la escuela
-    - Aprender cosas significativas en la escuela
+    - Aprender cosas importantes en la escuela
     - Elegir las asignaturas o la carrera que me gustan
     - Ser popular en la escuela
   - nombre: Fitness y salud
     respuestas:
-    - Hacer ejercicio regularmente
+    - Hacer deporte a menudo
     - Comer sano
     - Dormir suficientes horas
     - Mejorar mi salud y bienestar

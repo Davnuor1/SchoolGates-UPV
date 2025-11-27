@@ -20,11 +20,16 @@ public class LoginAndMenuUI : MonoBehaviour
     [SerializeField] private Button btnContinue;
 
     [Header("Scenes")]
-    [SerializeField] private int newGameSceneBuildIndex = 0;          // escena inicial del juego (Hub)
-    [SerializeField] private int continueFallbackSceneBuildIndex = 0;  // si no hay slot local, cargar esta (normalmente la misma Hub)
+    [SerializeField] private int newGameSceneBuildIndex = 0;          // escena inicial (New Game)
+    [SerializeField] private int continueFallbackSceneBuildIndex = 0; // escena a la que llevar con Continue en WebGL (ej: plaza principal)
 
     private bool loggedIn = false;
-    private bool hasServerProgress = false; // nuevo: progreso detectado en snapshot del backend
+
+    // Hay progreso remoto en Sheets (snapshot con datos).
+    private bool hasServerProgress = false;
+
+    // Último snapshot recibido del backend (por si lo quieres usar).
+    private SnapshotDto lastBackendSnapshot;
 
     private void Awake()
     {
@@ -33,6 +38,9 @@ public class LoginAndMenuUI : MonoBehaviour
         if (txtError != null) txtError.text = "";
     }
 
+    // ------------------------------------------------------
+    // BOTÓN ENTER (LOGIN)
+    // ------------------------------------------------------
     public void OnClick_Enter()
     {
         string tan = inputTan != null ? inputTan.text.Trim() : "";
@@ -53,28 +61,51 @@ public class LoginAndMenuUI : MonoBehaviour
 
     private IEnumerator LoginFlow(string tan, string pwd, string chosenLangCode)
     {
+        // Dejar TAN/Password globalmente accesibles
         TANManager.CurrentTAN = tan;
         TANManager.CurrentPassword = pwd;
+
+        if (UserDataManager.Instance == null)
+        {
+            Debug.LogError("Falta UserDataManager en la escena de Login.");
+            ShowError("Error interno de configuración.");
+            yield break;
+        }
+
+        // Inicializa UserDataManager (carga JSON local si existe)
         UserDataManager.Instance.Init(tan);
 
-        // Online primero
-        bool triedOnline = SheetsService.Instance != null;
+        bool triedOnline = (SheetsService.Instance != null);
         bool onlineOk = false;
         string onlineErr = "";
         LoginResponse onlineResp = null;
 
+        // ------------------------------
+        // 1) Intento ONLINE (backend)
+        // ------------------------------
         if (triedOnline)
         {
             bool done = false;
-            yield return StartCoroutine(SheetsService.Instance.LoginAsync(tan, pwd, result =>
-            {
-                if (!result.ok) { onlineOk = false; onlineErr = result.error; }
-                else { onlineOk = true; onlineResp = result.value; }
-                done = true;
-            }));
+            yield return StartCoroutine(
+                SheetsService.Instance.LoginAsync(tan, pwd, result =>
+                {
+                    if (!result.ok)
+                    {
+                        onlineOk = false;
+                        onlineErr = result.error;
+                    }
+                    else
+                    {
+                        onlineOk = true;
+                        onlineResp = result.value;
+                    }
+                    done = true;
+                })
+            );
             while (!done) yield return null;
         }
 
+        // Si el backend responde OK: usamos snapshot remoto
         if (triedOnline && onlineOk && onlineResp != null)
         {
             ApplyOnlineSnapshotAndPersist(onlineResp, chosenLangCode, pwd);
@@ -83,15 +114,21 @@ public class LoginAndMenuUI : MonoBehaviour
         }
         else if (triedOnline && !onlineOk && !string.IsNullOrEmpty(onlineErr))
         {
-            if (onlineErr.ToLower().Contains("invalid") || onlineErr.ToLower().Contains("credential"))
+            // Si el backend dice credenciales inválidas, no tiene sentido seguir
+            string lower = onlineErr.ToLower();
+            if (lower.Contains("invalid") || lower.Contains("credential"))
             {
                 ShowError("TAN o contraseña incorrectos.");
                 yield break;
             }
-            // si es error de red, caerá a offline
+
+            // Si es error de red, seguimos con fallback offline
+            Debug.LogWarning("Login backend falló, usando modo offline. Err=" + onlineErr);
         }
 
-        // Offline fallback
+        // ------------------------------
+        // 2) Fallback OFFLINE
+        // ------------------------------
         var existing = LocalJsonSave.LoadUserData(tan);
         if (existing != null)
         {
@@ -101,60 +138,77 @@ public class LoginAndMenuUI : MonoBehaviour
                 yield break;
             }
 
-            // Usa idioma elegido en login
-            UserDataManager.Instance.currentUserData.languageCode = chosenLangCode;
-            LocalJsonSave.SaveUserData(UserDataManager.Instance.currentUserData);
+            var udm = UserDataManager.Instance;
+            udm.currentUserData = existing;
+            udm.currentUserData.languageCode = chosenLangCode;
+            LocalJsonSave.SaveUserData(udm.currentUserData);
 
-            // Estima progreso offline si quieres (opcional)
-            hasServerProgress = false; // sin servidor no lo sabemos con certeza
+            hasServerProgress = false;
+            lastBackendSnapshot = null;
             ProceedToMenu();
         }
         else
         {
-            // Crear perfil nuevo offline
-            UserDataManager.Instance.SetPassword(pwd);
-            UserDataManager.Instance.currentUserData.languageCode = chosenLangCode;
-            LocalJsonSave.SaveUserData(UserDataManager.Instance.currentUserData);
+            var udm = UserDataManager.Instance;
+            udm.CreateNewUserData(tan);
+            udm.SetPassword(pwd);
+            udm.currentUserData.languageCode = chosenLangCode;
+            LocalJsonSave.SaveUserData(udm.currentUserData);
 
             hasServerProgress = false;
+            lastBackendSnapshot = null;
             ProceedToMenu();
         }
     }
 
+    // Aplica snapshot del backend a UserData y guarda
     private void ApplyOnlineSnapshotAndPersist(LoginResponse resp, string chosenLangCode, string pwd)
     {
         var udm = UserDataManager.Instance;
         var ud = udm.currentUserData;
 
-        ud.timesGameOpened++;
+        if (ud == null)
+        {
+            udm.CreateNewUserData(TANManager.CurrentTAN);
+            ud = udm.currentUserData;
+        }
 
+        lastBackendSnapshot = resp.snapshot;
+
+        // Aquí usas tu propio método para volcar el snapshot al UserData
+        // (tiempos, gates completadas, finales, miniquests, DS, etc.)
         SnapshotBuilder.ApplyToUserData(resp.snapshot, ud, true, chosenLangCode);
-        ud.password = pwd;
 
+        // Garantizar password en el JSON local
+        ud.password = pwd;
+        LocalJsonSave.SaveUserData(ud);
+
+        // Idioma preferido
         if (LocalizationManager.Instance != null)
             LocalizationManager.Instance.SetLanguage(ud.languageCode);
 
-        LocalJsonSave.SaveUserData(ud);
-
-        // Detecta progreso de servidor para habilitar Continue sin slot local
         hasServerProgress = HasProgress(resp.snapshot);
     }
 
     private bool HasProgress(SnapshotDto snap)
     {
         if (snap == null) return false;
-        if (snap.totalPlayTime > 0) return true;
+        if (snap.totalPlayTime > 0f) return true;
         if (!string.IsNullOrEmpty(snap.gatesCompletedCSV)) return true;
         if (snap.miniquestsCompleted > 0) return true;
         if (snap.finalsJSON != null && snap.finalsJSON.Length > 0) return true;
-        // Añade otros indicadores si quieres (por ejemplo, si guardas última escena)
+        // Añade más señales si quieres (por ejemplo, tiempo en alguna gate específica)
         return false;
     }
 
+    // ------------------------------------------------------
+    // PASO AL MENÚ
+    // ------------------------------------------------------
     private void ProceedToMenu()
     {
         loggedIn = true;
 
+        // Aplicar idioma a la UI
         if (UserDataManager.Instance != null && UserDataManager.Instance.currentUserData != null)
         {
             if (LocalizationManager.Instance != null)
@@ -165,36 +219,80 @@ public class LoginAndMenuUI : MonoBehaviour
         if (panelMenu != null) panelMenu.SetActive(true);
 
         bool hasLocalSlot = PixelCrushers.SaveSystem.HasSavedGameInSlot(1);
+
+#if UNITY_WEBGL && !UNITY_EDITOR
+        // En WebGL: el continue real con SaveSystem es frágil entre builds/links.
+        // Chapuza razonable: solo habilitamos Continue si hay progreso remoto.
+        if (btnContinue != null) btnContinue.interactable = hasServerProgress;
+#else
+        // En Editor/Standalone: si hay slot local o progreso remoto, podemos continuar.
         if (btnContinue != null) btnContinue.interactable = (hasLocalSlot || hasServerProgress);
+#endif
 
         if (txtError != null) txtError.text = "";
     }
 
+    // ------------------------------------------------------
+    // BOTÓN NEW GAME
+    // ------------------------------------------------------
     public void OnClick_NewGame()
     {
-        if (!loggedIn) { ShowError("Inicia sesión primero."); return; }
+        if (!loggedIn)
+        {
+            ShowError("Inicia sesión primero.");
+            return;
+        }
+
         SceneManager.LoadScene(newGameSceneBuildIndex);
     }
 
+    // ------------------------------------------------------
+    // BOTÓN CONTINUE
+    // ------------------------------------------------------
     public void OnClick_Continue()
     {
-        if (!loggedIn) { ShowError("Inicia sesión primero."); return; }
-
-        if (PixelCrushers.SaveSystem.HasSavedGameInSlot(1))
+        if (!loggedIn)
         {
-            PixelCrushers.SaveSystem.LoadFromSlot(1);
+            ShowError("Inicia sesión primero.");
+            return;
         }
-        else if (hasServerProgress)
+
+#if UNITY_WEBGL && !UNITY_EDITOR
+        // WEBGL / itch.io:
+        // Ignoramos el SaveSystem local (puede no existir o estar roto entre links/builds).
+        // Si hay datos en el backend, hacemos "soft-continue" a una escena segura.
+        if (hasServerProgress && continueFallbackSceneBuildIndex >= 0)
         {
-            // No hay slot local pero hay progreso en servidor: carga escena base y deja que el Restorer aplique DS
+            Debug.Log("[LoginAndMenuUI] Continue (WebGL): soft-continue a escena " + continueFallbackSceneBuildIndex);
             SceneManager.LoadScene(continueFallbackSceneBuildIndex);
         }
         else
         {
             ShowError("No hay partida guardada.");
         }
+#else
+        // EDITOR / STANDALONE:
+        // Primero intentamos el continue real con SaveSystem.
+        if (PixelCrushers.SaveSystem.HasSavedGameInSlot(1))
+        {
+            PixelCrushers.SaveSystem.LoadFromSlot(1);
+        }
+        else if (hasServerProgress && continueFallbackSceneBuildIndex >= 0)
+        {
+            // Si no hay slot local pero sí progreso remoto, usamos soft-continue.
+            Debug.Log("[LoginAndMenuUI] Continue: sin slot local pero con progreso remoto. Escena fallback " + continueFallbackSceneBuildIndex);
+            SceneManager.LoadScene(continueFallbackSceneBuildIndex);
+        }
+        else
+        {
+            ShowError("No hay partida guardada.");
+        }
+#endif
     }
 
+    // ------------------------------------------------------
+    // UTIL
+    // ------------------------------------------------------
     private void ShowError(string msg)
     {
         if (txtError != null) txtError.text = msg;

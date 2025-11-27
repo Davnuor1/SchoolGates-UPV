@@ -6,8 +6,6 @@ using System.Collections.Generic;
 
 public class GateOfEmotionsUIManager : MonoBehaviour
 {
-    [Header("Localización")]
-    //public GateOfEmotionsLocalization localization;
     [Header("Traducciones")]
     [SerializeField] private GateOfEmotionsLocalization localizacionES;
     [SerializeField] private GateOfEmotionsLocalization localizacionIT;
@@ -55,23 +53,26 @@ public class GateOfEmotionsUIManager : MonoBehaviour
 
     [Header("Canvas del Minijuego")]
     public GameObject canvasGateOfEmotions;
+
     [Header("Gestor de Neones")]
     public NeonEmotionManager neonManager;
+
     [Header("Parte 2")]
     public GateOfEmotionsUIManager_Part2 part2Manager;
 
-    private List<string> selectedEmotions = new List<string>();
-    private string selectedEmotion1 = "";
-    private string selectedEmotion2 = "";
+    private List<EmotionId> selectedEmotions = new List<EmotionId>();
+    private EmotionId selectedEmotion1;
+    private EmotionId selectedEmotion2;
+
     private int currentHeavenStep = 0;
     private string answerPleasantness = "";
     private string answerEnergy = "";
-
     private bool isAfterFirstNPC = true;
 
     private void Start()
     {
         defineLanguage();
+
         panelIntro.SetActive(true);
         panelEmotionSelector.SetActive(false);
         panelHeaven.SetActive(false);
@@ -87,15 +88,18 @@ public class GateOfEmotionsUIManager : MonoBehaviour
 
         textFeedback.text = "";
     }
+
     public void defineLanguage()
     {
         codeLanguage = LocalizationManager.Instance.CurrentLanguage;
-        if (codeLanguage == "es") { localization = localizacionES; }
-        else if (codeLanguage == "it") { localization = localizacionIT; }
-        else if (codeLanguage == "de") { localization = localizacionDE; }
-        else if (codeLanguage == "en") { localization = localizacionEN; }
-        else if (codeLanguage == "fi") { localization = localizacionFI; }
+        if (codeLanguage == "es") localization = localizacionES;
+        else if (codeLanguage == "it") localization = localizacionIT;
+        else if (codeLanguage == "de") localization = localizacionDE;
+        else if (codeLanguage == "en") localization = localizacionEN;
+        else if (codeLanguage == "fi") localization = localizacionFI;
+        else localization = localizacionEN;
     }
+
     public void StartIntro()
     {
         panelIntro.SetActive(true);
@@ -104,12 +108,9 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         panelFeedback.SetActive(false);
 
         selectedEmotions.Clear();
-        selectedEmotion1 = "";
-        selectedEmotion2 = "";
         currentHeavenStep = 0;
         answerPleasantness = "";
         answerEnergy = "";
-
         isAfterFirstNPC = true;
     }
 
@@ -119,7 +120,13 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         panelEmotionSelector.SetActive(true);
     }
 
-    public void SelectEmotion(string emotion)
+    // Estos 4 métodos puedes conectarlos directamente en los botones del selector inicial.
+    public void SelectAnger() => SelectEmotion(EmotionId.Anger);
+    public void SelectFear() => SelectEmotion(EmotionId.Fear);
+    public void SelectJoy() => SelectEmotion(EmotionId.Joy);
+    public void SelectSadness() => SelectEmotion(EmotionId.Sadness);
+
+    private void SelectEmotion(EmotionId emotion)
     {
         if (!selectedEmotions.Contains(emotion))
         {
@@ -135,7 +142,6 @@ public class GateOfEmotionsUIManager : MonoBehaviour
                 canvasGateOfEmotions.SetActive(false);
                 panelEmotionSelector.SetActive(false);
                 npcManager.SpawnFirstNPC(selectedEmotion1);
-                // El cielo se mostrará después de la conversación automáticamente
             }
         }
     }
@@ -149,9 +155,7 @@ public class GateOfEmotionsUIManager : MonoBehaviour
     {
         changeSceneAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(fadeDuration);
-
         StartHeavenSequence();
-
         changeSceneAnimator.SetTrigger("FadeIn");
     }
 
@@ -167,10 +171,6 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         panelEmotionSelector.SetActive(false);
 
         ShowCurrentHeavenQuestion();
-
-        // Aplica el efecto visual de los neones con la emoción sentida en el cielo anterior
-
-
     }
 
     private void ShowCurrentHeavenQuestion()
@@ -183,7 +183,6 @@ public class GateOfEmotionsUIManager : MonoBehaviour
 
             buttonOption1.onClick.RemoveAllListeners();
             buttonOption2.onClick.RemoveAllListeners();
-
             buttonOption1.onClick.AddListener(() => AnswerPleasantness(true));
             buttonOption2.onClick.AddListener(() => AnswerPleasantness(false));
         }
@@ -195,11 +194,10 @@ public class GateOfEmotionsUIManager : MonoBehaviour
 
             buttonOption1.onClick.RemoveAllListeners();
             buttonOption2.onClick.RemoveAllListeners();
-
             buttonOption1.onClick.AddListener(() => AnswerEnergy(true));
             buttonOption2.onClick.AddListener(() => AnswerEnergy(false));
         }
-        else if (currentHeavenStep == 2)
+        else // step 2
         {
             textQuestion.text = localization.question3;
             panelButtons.SetActive(false);
@@ -209,10 +207,10 @@ public class GateOfEmotionsUIManager : MonoBehaviour
             buttonJoy.onClick.RemoveAllListeners();
             buttonSadness.onClick.RemoveAllListeners();
 
-            buttonAnger.onClick.AddListener(() => FinalEmotionSelected(localization.anger));
-            buttonFear.onClick.AddListener(() => FinalEmotionSelected(localization.fear));
-            buttonJoy.onClick.AddListener(() => FinalEmotionSelected(localization.joy));
-            buttonSadness.onClick.AddListener(() => FinalEmotionSelected(localization.sadness));
+            buttonAnger.onClick.AddListener(() => FinalEmotionSelected(EmotionId.Anger));
+            buttonFear.onClick.AddListener(() => FinalEmotionSelected(EmotionId.Fear));
+            buttonJoy.onClick.AddListener(() => FinalEmotionSelected(EmotionId.Joy));
+            buttonSadness.onClick.AddListener(() => FinalEmotionSelected(EmotionId.Sadness));
 
             panelEmotionSelector.SetActive(true);
         }
@@ -232,39 +230,31 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         ShowCurrentHeavenQuestion();
     }
 
-    private void FinalEmotionSelected(string emotion)
+    private void FinalEmotionSelected(EmotionId id)
     {
-        List<string> correctEmotions = GetCorrectEmotions();
-
-        if (correctEmotions.Contains(emotion.ToLower()))
-        {
-            ShowFeedback(true, emotion.ToLower());
-        }
-        else
-        {
-            ShowFeedback(false, "");
-        }
+        var correct = GetCorrectEmotionIds();
+        if (correct.Contains(id)) ShowFeedback(true, id);
+        else ShowFeedback(false, id);
     }
 
-    private List<string> GetCorrectEmotions()
+    private List<EmotionId> GetCorrectEmotionIds()
     {
-        var result = new List<string>();
+        var result = new List<EmotionId>();
 
         if (answerPleasantness == "unpleasant" && answerEnergy == "low")
-            result.Add(localization.sadness.ToLower());
+            result.Add(EmotionId.Sadness);
         else if (answerPleasantness == "pleasant" && answerEnergy == "high")
-            result.Add(localization.joy.ToLower());
+            result.Add(EmotionId.Joy);
         else if (answerPleasantness == "unpleasant" && answerEnergy == "high")
         {
-            result.Add(localization.fear.ToLower());
-            result.Add(localization.anger.ToLower()); //  ahora también es válida
+            result.Add(EmotionId.Fear);
+            result.Add(EmotionId.Anger);
         }
 
         return result;
     }
 
-
-    private void ShowFeedback(bool isCorrect, string emotion)
+    private void ShowFeedback(bool isCorrect, EmotionId emotionId)
     {
         panelEmotionSelector.SetActive(false);
         panelFeedback.SetActive(true);
@@ -281,14 +271,13 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         }
         else
         {
-            string feedback = GetFeedbackForEmotion(emotion);
-            textFeedback.text = $"Esto parece acertado... Esta bien sentir {emotion}. {feedback} Ahora, vuelve a la ciudad y encuentra una manera de seguir tu camino por el laberinto...";
-
+            string localized = EmotionUtils.GetLocalizedName(localization, emotionId);
+            string extra = GetFeedbackForEmotion(emotionId);
+            textFeedback.text =
+                $"Esto parece acertado... Esta bien sentir {localized}. {extra} Ahora, vuelve a la ciudad y encuentra una manera de seguir tu camino por el laberinto...";
 
             if (neonManager != null)
-            {
-                neonManager.ChangeNeonsToEmotion(emotion);
-            }
+                neonManager.ChangeNeonsToEmotion(emotionId);
 
             buttonNextFromFeedback.onClick.RemoveAllListeners();
             buttonNextFromFeedback.onClick.AddListener(() =>
@@ -298,14 +287,14 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         }
     }
 
-    private string GetFeedbackForEmotion(string emotion)
+    private string GetFeedbackForEmotion(EmotionId id)
     {
-        switch (emotion.ToLower())
+        switch (id)
         {
-            case "ira": return localization.feedbackAnger;
-            case "miedo": return localization.feedbackFear;
-            case "felicidad": return localization.feedbackJoy;
-            case "tristeza": return localization.feedbackSadness;
+            case EmotionId.Anger: return localization.feedbackAnger;
+            case EmotionId.Fear: return localization.feedbackFear;
+            case EmotionId.Joy: return localization.feedbackJoy;
+            case EmotionId.Sadness: return localization.feedbackSadness;
             default: return "";
         }
     }
@@ -325,23 +314,19 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         }
         else
         {
-            // Aquí podrías activar el final del minijuego o una nueva etapa
-            Debug.Log("Has completado ambas situaciones del Gate of Emotions.");
-            // Parte 1 completada. Lanzamos la Parte 2.
-            List<string> emocionesRestantes = GetUnchosenEmotions(selectedEmotion1, selectedEmotion2);
-            Debug.Log("Emocionesrestantes:" + emocionesRestantes);
-            part2Manager.StartSecondStage(emocionesRestantes);
-
+            var restantes = GetUnchosenEmotions(selectedEmotion1, selectedEmotion2);
+            part2Manager.StartSecondStage(restantes);
         }
+
         canvasGateOfEmotions.SetActive(false);
         changeSceneAnimator.SetTrigger("FadeIn");
     }
-    private List<string> GetUnchosenEmotions(string e1, string e2)
+
+    private List<EmotionId> GetUnchosenEmotions(EmotionId e1, EmotionId e2)
     {
-        var todas = new List<string> { "ira", "miedo", "felicidad", "tristeza" };
-        todas.Remove(e1.ToLower());
-        todas.Remove(e2.ToLower());
-        return todas;
+        var all = new List<EmotionId> { EmotionId.Anger, EmotionId.Fear, EmotionId.Joy, EmotionId.Sadness };
+        all.Remove(e1);
+        all.Remove(e2);
+        return all;
     }
-    
 }

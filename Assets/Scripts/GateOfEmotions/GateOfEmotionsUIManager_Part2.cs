@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
 {
-    [Header("Localización")]
-    //public GateOfEmotionsLocalization localization;
     [Header("Traducciones")]
     [SerializeField] private GateOfEmotionsLocalization localizacionES;
     [SerializeField] private GateOfEmotionsLocalization localizacionIT;
@@ -16,6 +14,7 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
     [SerializeField] private GateOfEmotionsLocalization localizacionFI;
     public GateOfEmotionsLocalization localization;
     private string codeLanguage;
+
     [Header("Paneles")]
     public GameObject canvasGateOfEmotionsPart2;
     public GameObject panelHeavenPart2;
@@ -47,27 +46,29 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
     [Header("Gestor de Neones")]
     public NeonEmotionManager neonManager;
 
-    private List<string> emocionesRestantes = new();
+    private List<EmotionId> emocionesRestantes = new();
     private int currentNPCIndex = 0;
-    private string npcActualEmotion = "";
+    private EmotionId npcActualEmotionId;
 
     public void Start()
     {
         defineLanguage();
     }
+
     public void defineLanguage()
     {
         codeLanguage = LocalizationManager.Instance.CurrentLanguage;
-        if (codeLanguage == "es") { localization = localizacionES; }
-        else if (codeLanguage == "it") { localization = localizacionIT; }
-        else if (codeLanguage == "de") { localization = localizacionDE; }
-        else if (codeLanguage == "en") { localization = localizacionEN; }
-        else if (codeLanguage == "fi") { localization = localizacionFI; }
+        if (codeLanguage == "es") localization = localizacionES;
+        else if (codeLanguage == "it") localization = localizacionIT;
+        else if (codeLanguage == "de") localization = localizacionDE;
+        else if (codeLanguage == "en") localization = localizacionEN;
+        else if (codeLanguage == "fi") localization = localizacionFI;
+        else localization = localizacionEN;
     }
-    public void StartSecondStage(List<string> emocionesDescartadas)
+
+    public void StartSecondStage(List<EmotionId> emocionesDescartadas)
     {
         emocionesRestantes = emocionesDescartadas;
-        Debug.Log("Emociones restantes ya en parte 2:" + emocionesRestantes);
         currentNPCIndex = 0;
         canvasGateOfEmotionsPart2.SetActive(false);
         SpawnNextNPC();
@@ -77,21 +78,14 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
     {
         if (currentNPCIndex >= emocionesRestantes.Count)
         {
-            Debug.Log("Parte 2 completada.");
             canvasGateOfEmotionsPart2.SetActive(false);
             return;
         }
 
-        npcActualEmotion = emocionesRestantes[currentNPCIndex];
+        npcActualEmotionId = emocionesRestantes[currentNPCIndex];
 
-        if (currentNPCIndex == 0)
-        {
-            Debug.Log("Spawning:" + npcActualEmotion);
-            npcManager.SpawnThirdNPC(npcActualEmotion);
-        }
-            
-        else if (currentNPCIndex == 1)
-            npcManager.SpawnFourthNPC(npcActualEmotion);
+        if (currentNPCIndex == 0) npcManager.SpawnThirdNPC(npcActualEmotionId);
+        else if (currentNPCIndex == 1) npcManager.SpawnFourthNPC(npcActualEmotionId);
     }
 
     public void StartFadeToHeavenPart2()
@@ -103,9 +97,7 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
     {
         changeSceneAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(fadeDuration);
-
         ShowHeavenPart2();
-
         changeSceneAnimator.SetTrigger("FadeIn");
     }
 
@@ -128,7 +120,6 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
         buttonPlayerResponse2.gameObject.SetActive(false);
         buttonPlayerResponse3.gameObject.SetActive(false);
 
-        //  Asignar textos localizados a los botones de emoción
         buttonGuessAnger.GetComponentInChildren<TextMeshProUGUI>().text = localization.anger;
         buttonGuessFear.GetComponentInChildren<TextMeshProUGUI>().text = localization.fear;
         buttonGuessJoy.GetComponentInChildren<TextMeshProUGUI>().text = localization.joy;
@@ -139,21 +130,21 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
         buttonGuessJoy.onClick.RemoveAllListeners();
         buttonGuessSadness.onClick.RemoveAllListeners();
 
-        buttonGuessAnger.onClick.AddListener(() => GuessEmotion("ira"));
-        buttonGuessFear.onClick.AddListener(() => GuessEmotion("miedo"));
-        buttonGuessJoy.onClick.AddListener(() => GuessEmotion("felicidad"));
-        buttonGuessSadness.onClick.AddListener(() => GuessEmotion("tristeza"));
+        buttonGuessAnger.onClick.AddListener(() => GuessEmotion(EmotionId.Anger));
+        buttonGuessFear.onClick.AddListener(() => GuessEmotion(EmotionId.Fear));
+        buttonGuessJoy.onClick.AddListener(() => GuessEmotion(EmotionId.Joy));
+        buttonGuessSadness.onClick.AddListener(() => GuessEmotion(EmotionId.Sadness));
     }
 
-    private void GuessEmotion(string guess)
+    private void GuessEmotion(EmotionId guess)
     {
-        if (guess.ToLower() == npcActualEmotion.ToLower())
+        if (guess == npcActualEmotionId)
         {
             textFeedbackPart2.text = localization.respuestaJugador1;
             buttonNextPart2.gameObject.SetActive(true);
 
             if (neonManager != null)
-                neonManager.ChangeNeonsToEmotion(npcActualEmotion);
+                neonManager.ChangeNeonsToEmotion(npcActualEmotionId);
 
             buttonNextPart2.onClick.RemoveAllListeners();
             buttonNextPart2.onClick.AddListener(ShowNPCResponse);
@@ -195,7 +186,7 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
 
     private void FinalFeedback()
     {
-        string feedback = GetFeedbackForEmotion(npcActualEmotion.ToLower());
+        string feedback = GetFeedbackForEmotion(npcActualEmotionId);
         textFeedbackPart2.text = feedback;
         buttonNextPart2.gameObject.SetActive(true);
 
@@ -214,19 +205,20 @@ public class GateOfEmotionsUIManager_Part2 : MonoBehaviour
         panelHeavenPart2.SetActive(false);
         canvasGateOfEmotionsPart2.SetActive(false);
         changeSceneAnimator.SetTrigger("FadeIn");
+
         currentNPCIndex++;
         SpawnNextNPC();
     }
 
-    private string GetFeedbackForEmotion(string emotion)
+    private string GetFeedbackForEmotion(EmotionId id)
     {
-        return emotion switch
+        switch (id)
         {
-            "ira" => localization.feedbackAnger_Part2,
-            "miedo" => localization.feedbackFear_Part2,
-            "felicidad" => localization.feedbackJoy_Part2,
-            "tristeza" => localization.feedbackSadness_Part2,
-            _ => ""
-        };
+            case EmotionId.Anger: return localization.feedbackAnger_Part2;
+            case EmotionId.Fear: return localization.feedbackFear_Part2;
+            case EmotionId.Joy: return localization.feedbackJoy_Part2;
+            case EmotionId.Sadness: return localization.feedbackSadness_Part2;
+            default: return "";
+        }
     }
 }

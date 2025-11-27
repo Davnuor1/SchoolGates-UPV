@@ -1,141 +1,93 @@
-using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.Rendering.Universal;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class NeonEmotionManager : MonoBehaviour
 {
-    [Header("GameObjects de neones (puedes arrastrarlos todos de golpe)")]
-    public List<GameObject> neonObjects;
-
-    [Header("Todos los sprites de neones (lights_0 a lights_291)")]
-    public Sprite[] neonSprites;
-
-    private class NeonData
+    [System.Serializable]
+    public class NeonTarget
     {
-        public SpriteRenderer spriteRenderer;
-        public Sprite originalSprite;
-        public Light2D light2D;
-        public Color originalColor;
-    }
+        [Header("Render de este neón (elige uno)")]
+        public SpriteRenderer spriteRenderer; // Mundo 2D
+        public Image uiImage;                 // UI (opcional)
 
-    private Dictionary<GameObject, NeonData> neonDataDict = new Dictionary<GameObject, NeonData>();
-    private bool initialized = false;
+        [Header("Sprites por emoción")]
+        public Sprite baseSprite;
+        public Sprite angerSprite;
+        public Sprite fearSprite;
+        public Sprite joySprite;
+        public Sprite sadnessSprite;
 
-    private void InitializeIfNeeded()
-    {
-        if (initialized) return;
-
-        foreach (var obj in neonObjects)
+        // Devuelve el sprite correcto o base si falta
+        public Sprite GetSpriteFor(EmotionId id)
         {
-            if (obj == null) continue;
-
-            NeonData data = new NeonData();
-
-            data.spriteRenderer = obj.GetComponent<SpriteRenderer>();
-            data.originalSprite = data.spriteRenderer != null ? data.spriteRenderer.sprite : null;
-
-            data.light2D = obj.GetComponentInChildren<Light2D>();
-            data.originalColor = data.light2D != null ? data.light2D.color : Color.white;
-
-            neonDataDict[obj] = data;
+            switch (id)
+            {
+                case EmotionId.Anger: return angerSprite != null ? angerSprite : baseSprite;
+                case EmotionId.Fear: return fearSprite != null ? fearSprite : baseSprite;
+                case EmotionId.Joy: return joySprite != null ? joySprite : baseSprite;
+                case EmotionId.Sadness: return sadnessSprite != null ? sadnessSprite : baseSprite;
+                default: return baseSprite;
+            }
         }
 
-        initialized = true;
-    }
-
-    public void ChangeNeonsToEmotion(string emotion)
-    {
-        InitializeIfNeeded();
-        Debug.Log("Entramos a changeneonstoemotion");
-        int offset = GetEmotionOffset(emotion.ToLower());
-        Color targetColor = GetEmotionColor(emotion.ToLower());
-        Debug.Log("Emotion:" + emotion.ToLower());
-        Debug.Log("offset:"+offset);
-        Debug.Log("targetColor:" + targetColor);
-
-
-        foreach (var entry in neonDataDict)
+        public void ApplySprite(Sprite s)
         {
-            NeonData data = entry.Value;
-
-            // Cambiar sprite
-            if (data.spriteRenderer != null && data.spriteRenderer.sprite != null)
-            {
-                string spriteName = data.spriteRenderer.sprite.name;
-                if (spriteName.StartsWith("lights_") && int.TryParse(spriteName.Substring(7), out int baseIndex))
-                {
-                    string newName = $"lights_{baseIndex + offset}";
-                    Sprite newSprite = FindSpriteByName(newName);
-                    if (newSprite != null)
-                    {
-                        data.spriteRenderer.sprite = newSprite;
-                    }
-                    else
-                    {
-                        Debug.LogWarning($"Sprite '{newName}' no encontrado.");
-                    }
-                }
-            }
-
-            // Cambiar color de luz
-            if (data.light2D != null)
-            {
-                data.light2D.color = targetColor;
-            }
+            if (spriteRenderer != null) spriteRenderer.sprite = s;
+            if (uiImage != null) uiImage.sprite = s;
         }
     }
 
-    public void RestoreNeonsToBase()
+    [Header("Lista de neones a controlar")]
+    public List<NeonTarget> neons = new List<NeonTarget>();
+
+    /* ========== API NUEVA (EmotionId) ========== */
+
+    public void ChangeNeonsToEmotion(EmotionId emotion)
     {
-        InitializeIfNeeded();
-
-        foreach (var entry in neonDataDict)
+        foreach (var n in neons)
         {
-            NeonData data = entry.Value;
-
-            if (data.spriteRenderer != null && data.originalSprite != null)
-            {
-                data.spriteRenderer.sprite = data.originalSprite;
-            }
-
-            if (data.light2D != null)
-            {
-                data.light2D.color = data.originalColor;
-            }
+            if (n == null) continue;
+            n.ApplySprite(n.GetSpriteFor(emotion));
         }
     }
 
-    private Sprite FindSpriteByName(string name)
+    public void ResetNeonsToBase()
     {
-        foreach (var sprite in neonSprites)
+        foreach (var n in neons)
         {
-            if (sprite.name == name)
-                return sprite;
+            if (n == null) continue;
+            n.ApplySprite(n.baseSprite);
         }
-        return null;
     }
 
-    private int GetEmotionOffset(string emotion)
+    public void ChangeSingleNeonToEmotion(EmotionId emotion, int index)
     {
-        return emotion switch
-        {
-            "ira" => 1,
-            "miedo" => 2,
-            "felicidad" => 3,
-            "tristeza" => 4,
-            _ => 0
-        };
+        if (index < 0 || index >= neons.Count) return;
+        var n = neons[index];
+        if (n == null) return;
+        n.ApplySprite(n.GetSpriteFor(emotion));
     }
 
-    private Color GetEmotionColor(string emotion)
+    public void ResetSingleNeonToBase(int index)
     {
-        return emotion switch
-        {
-            "ira" => new Color32(183, 48, 53, 255),     // #B73035
-            "miedo" => new Color32(151, 219, 206, 255),    // #97DBCE
-            "felicidad" => new Color32(216, 219, 37, 255),      // #D8DB25
-            "tristeza" => new Color32(47, 94, 241, 255),   // #2F5EF1
-            _ => Color.white
-        };
+        if (index < 0 || index >= neons.Count) return;
+        var n = neons[index];
+        if (n == null) return;
+        n.ApplySprite(n.baseSprite);
     }
+
+    /* ======= WRAPPERS COMPAT. ANTIGUA (strings) ======= */
+    // Reutilizan tu EmotionUtils.ToEmotionId(string)
+
+    public void ChangeNeonsToEmotion(string emotionKey)
+        => ChangeNeonsToEmotion(EmotionUtils.ToEmotionId(emotionKey));
+
+    public void RestoreNeonsToBase() => ResetNeonsToBase();
+
+    public void ChangeSingleNeonToEmotion(string emotionKey, int index)
+        => ChangeSingleNeonToEmotion(EmotionUtils.ToEmotionId(emotionKey), index);
+
+    // Mantengo el nombre exacto que usabas:
+    public void ResetSingleNeonTobase(int index) => ResetSingleNeonToBase(index);
 }

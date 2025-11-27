@@ -25,98 +25,70 @@ public class GateOfEmotionsNPCManager : MonoBehaviour
     [Header("NPCs de la segunda parte")]
     public List<NPCEmotionData> npcEmotionDataList_SecondPart;
 
-    private Dictionary<string, GameObject> emotionToNPC = new();
-    private Dictionary<string, GameObject> emotionToNPC_SecondPart = new();
+    private readonly Dictionary<EmotionId, GameObject> part1Map = new();
+    private readonly Dictionary<EmotionId, GameObject> part2Map = new();
 
     private void Awake()
     {
         foreach (var data in npcEmotionDataList)
-        {
-            string key = data.emotion.ToLower();
-            if (!emotionToNPC.ContainsKey(key))
-                emotionToNPC.Add(key, data.npcObject);
-        }
+            if (data != null && !part1Map.ContainsKey(data.emotion))
+                part1Map.Add(data.emotion, data.npcObject);
 
         foreach (var data in npcEmotionDataList_SecondPart)
-        {
-            string key = data.emotion.ToLower();
-            if (!emotionToNPC_SecondPart.ContainsKey(key))
-                emotionToNPC_SecondPart.Add(key, data.npcObject);
-        }
+            if (data != null && !part2Map.ContainsKey(data.emotion))
+                part2Map.Add(data.emotion, data.npcObject);
     }
 
-    public void SpawnFirstNPC(string emotionKey)
+    public void SpawnFirstNPC(EmotionId id)
     {
-        string key = emotionKey.ToLower();
-        if (emotionToNPC.ContainsKey(key))
-        {
-            GameObject npc = emotionToNPC[key];
-            npc.transform.position = npcPosition_First.position;
-            npc.SetActive(true);
+        if (!part1Map.TryGetValue(id, out var npc) || npc == null) return;
+        npc.transform.position = npcPosition_First.position;
+        npc.SetActive(true);
 
-            Transform child = npc.transform.childCount > 0 ? npc.transform.GetChild(0) : null;
-            if (child != null) child.position = actividadPosition_First.position;
-        }
+        var child = npc.transform.childCount > 0 ? npc.transform.GetChild(0) : null;
+        if (child != null) child.position = actividadPosition_First.position;
     }
 
-    public void SpawnSecondNPC(string emotionKey)
+    public void SpawnSecondNPC(EmotionId id)
     {
-        string key = emotionKey.ToLower();
-        if (emotionToNPC.ContainsKey(key))
-        {
-            GameObject npc = emotionToNPC[key];
-            npc.transform.position = npcPosition_Second.position;
-            npc.SetActive(true);
+        if (!part1Map.TryGetValue(id, out var npc) || npc == null) return;
+        npc.transform.position = npcPosition_Second.position;
+        npc.SetActive(true);
 
-            Transform child = npc.transform.childCount > 0 ? npc.transform.GetChild(0) : null;
-            if (child != null) child.position = actividadPosition_Second.position;
-        }
+        var child = npc.transform.childCount > 0 ? npc.transform.GetChild(0) : null;
+        if (child != null) child.position = actividadPosition_Second.position;
     }
 
-    public void SpawnThirdNPC(string emotionKey)
+    public void SpawnThirdNPC(EmotionId id)
     {
-        string key = emotionKey.ToLower();
-        if (emotionToNPC_SecondPart.ContainsKey(key))
-        {
-            GameObject npc = emotionToNPC_SecondPart[key];
-            npc.transform.position = npcPosition_Third.position;
-            npc.SetActive(true);
+        if (!part2Map.TryGetValue(id, out var npc) || npc == null) return;
+        npc.transform.position = npcPosition_Third.position;
+        npc.SetActive(true);
 
-            Transform child = npc.transform.childCount > 0 ? npc.transform.GetChild(0) : null;
-            if (child != null) child.position = actividadPosition_Third.position;
-        }
+        var child = npc.transform.childCount > 0 ? npc.transform.GetChild(0) : null;
+        if (child != null) child.position = actividadPosition_Third.position;
     }
 
-    public void SpawnFourthNPC(string emotionKey)
+    public void SpawnFourthNPC(EmotionId id)
     {
-        string key = emotionKey.ToLower();
-        if (emotionToNPC_SecondPart.ContainsKey(key))
-        {
-            GameObject npc = emotionToNPC_SecondPart[key];
-            npc.transform.position = npcPosition_Fourth.position;
-            npc.SetActive(true);
+        if (!part2Map.TryGetValue(id, out var npc) || npc == null) return;
+        npc.transform.position = npcPosition_Fourth.position;
+        npc.SetActive(true);
 
-            Transform child = npc.transform.childCount > 0 ? npc.transform.GetChild(0) : null;
-            if (child != null) child.position = actividadPosition_Fourth.position;
-        }
+        var child = npc.transform.childCount > 0 ? npc.transform.GetChild(0) : null;
+        if (child != null) child.position = actividadPosition_Fourth.position;
     }
 
-    public GameObject GetSecondPartNPC(string emotion)
+    public GameObject GetSecondPartNPC(EmotionId id)
     {
-        string key = emotion.ToLower();
-        if (emotionToNPC_SecondPart.ContainsKey(key))
-        {
-            return emotionToNPC_SecondPart[key];
-        }
-
-        Debug.LogWarning("No se encontró NPC de segunda parte para emoción: " + emotion);
-        return null;
+        part2Map.TryGetValue(id, out var npc);
+        return npc;
     }
 }
 
 [System.Serializable]
 public class NPCEmotionData
 {
-    public string emotion;
+    public EmotionId emotion;
     public GameObject npcObject;
 }
