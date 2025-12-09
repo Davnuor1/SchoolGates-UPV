@@ -12,59 +12,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e583b4c22b793db448789db36fb2579b, type: 3}
   m_Name: Espejos03_FI
   m_EditorClassIdentifier: 
-  textoPreguntaInicial: "Tunnetko muita ihmisi\xE4, jotka ovat yht\xE4 huolissaan
-    t\xE4st\xE4 asiasta kuin sin\xE4?"
-  textoInstruccionesPrimeraFase: "Ajattele mukavaa ja merkityksellist\xE4 el\xE4m\xE4\xE4\u2026
-    Mit\xE4 siihen todella tarvitaan? Valitse peili, jos se on sinusta t\xE4rke\xE4\xE4,
-    tai riko se, jos se ei ole sinusta t\xE4rke\xE4\xE4."
-  textoInstruccionesSegundaFase: "Sin\xE4 siis sanot, ett\xE4 t\xE4m\xE4 on sinulle
-    t\xE4rke\xE4\xE4, mutta miten paljon oikeasti v\xE4lit\xE4t siit\xE4? Miten paljon
-    huomiota ja aikaa k\xE4yt\xE4t todellisuudessa n\xE4ihin asioihin?"
+  textoPreguntaInicial: "Kuka muu v\xE4litt\xE4\xE4 t\xE4st\xE4 yht\xE4 paljon kuin
+    sin\xE4?"
+  textoInstruccionesPrimeraFase: "Ajattele hyvi\xE4 ja t\xE4rkeit\xE4 asioita el\xE4m\xE4ss\xE4\u2026
+    Valitse, mit\xE4 arvostat eniten."
+  textoInstruccionesSegundaFase: "Kuinka t\xE4rke\xE4\xE4 t\xE4m\xE4 on sinulle?
+    Kuinka paljon aikaa ja huomiota annat sille?"
   textoValoracion: "Arvioi n\xE4iden asioiden merkitys itsellesi"
-  textoCuidadoValores: "Mit\xE4 voit tehd\xE4 nyt v\xE4litt\xE4\xE4ksesi enemm\xE4n
-    ja paremmin arvoistasi?"
+  textoCuidadoValores: "Mit\xE4 voisit tehd\xE4 huolehtiaksesi paremmin siit\xE4,
+    mik\xE4 sinulle todella merkitsee?"
   textoAccionFinal: 
   espejos:
   - nombre: "Itsen\xE4isyys"
     respuestas:
-    - "Omien p\xE4\xE4t\xF6sten tekeminen"
-    - "Oman el\xE4m\xE4ns\xE4 hallinta tietyss\xE4 m\xE4\xE4rin"
-    - Mahdollisuus ansaita ja hallita rahaa itse
+    - "Saan tehd\xE4 omia p\xE4\xE4t\xF6ksi\xE4"
+    - "Voin vaikuttaa omaan el\xE4m\xE4\xE4ni"
+    - "Opin k\xE4ytt\xE4m\xE4\xE4n ja s\xE4\xE4st\xE4m\xE4\xE4n rahaa itse"
   - nombre: "Yst\xE4vyydet ja sosiaaliset suhteet"
     respuestas:
-    - " L\xE4heiset yst\xE4v\xE4t, joiden kanssa voin jakaa ajatuksiani ja puhua
-      tunteistani"
-    - "Ajan viett\xE4minen yst\xE4vieni kanssa"
-    - Seurustelusuhde
-    - Paljon seuraajia sosiaalisessa mediassa
-    - " Osallistuminen yhteiskuntaan ja maailmanlaajuisiin yhteis\xF6ihin"
-  - nombre: Identiteetin etsiminen
+    - "Minulla on l\xE4heisi\xE4 yst\xE4vi\xE4, joille voin kertoa ajatuksiani ja
+      tunteitani"
+    - "Viet\xE4mme aikaa yhdess\xE4 yst\xE4vien kanssa"
+    - Olen ihastunut tai seurustelen
+    - Minulla on paljon seuraajia somessa.
+    - " Olen mukana ryhm\xE4ss\xE4 tai kampanjassa, joka tekee hyv\xE4\xE4 maailmalle."
+  - nombre: Oman minuuden etsiminen
     respuestas:
-    - "Mahdollisuus tutkia ja ilmaista omaa identiteetti\xE4ni"
-    - "Mahdollisuus k\xE4ytt\xE4\xE4 vaatteita, joista pid\xE4n, kuunnella lempimusiikkiani
-      aina, kun haluan"
-    - " Mahdollisuus kokeilla uusia asioita, saada uusia el\xE4m\xE4nkokemuksia"
-    - Matkustelu
-  - nombre: Harrastukset / kiinnostuksen kohteet, yksityisyys
+    - "Saan tutkia ja n\xE4ytt\xE4\xE4, kuka oikeasti olen"
+    - Voin pukeutua kuten haluan ja kuunnella lempimusiikkiani.
+    - Kokeilen uusia asioita ja kokemuksia.
+    - "P\xE4\xE4sen matkustamaan."
+  - nombre: Harrastukset ja oma rauha
     respuestas:
-    - Taiteen, musiikin tai kirjoittamisen harjoittaminen
-    - Harpeeksi aikaa harrastuksilleni tai kiinnostukseni kohteille
-    - "Tarpeeksi yksityisyytt\xE4 ja omaa henkil\xF6kohtaista tilaa"
+    - Teen taidetta, musiikkia tai kirjoitan .
+    - Minulla on aikaa harrastuksille ja kiinnostuksen kohteille
+    - Minulla on oma rauha ja tila.
   - nombre: Perhe ja koti
     respuestas:
-    - Perhe, joka tukee minua
-    - Perhe, joka kuuntelee minua
-    - "Ajan viett\xE4minen perheeni kanssa"
-    - Turvallinen olo kotona
-  - nombre: ' Koulutus ja koulu'
+    - Minulla on perhe, joka tukee minua
+    - Perheeni kuuntelee minua
+    - "Viet\xE4mme aikaa yhdess\xE4 perheen kanssa"
+    - 'Tunnen oloni turvalliseksi kotona '
+  - nombre: Koulu ja oppiminen
     respuestas:
-    - "Hyv\xE4t arvosanat koulussa"
-    - Merkityksellisten asioiden oppiminen koulussa
-    - "Vapaus valita aineet/ura, joista min\xE4 pid\xE4n"
-    - Olla suosittu koulussa
-  - nombre: Kunto ja terveys
+    - "Saan hyvi\xE4 arvosanoja koulussa"
+    - "Opin t\xE4rkeit\xE4 asioita"
+    - Voin valita aineita tai tulevan ammatin, joka kiinnostaa minua
+    - Olen suosittu koulussa
+  - nombre: Terveys ja hyvinvointi
     respuestas:
-    - "S\xE4\xE4nn\xF6llinen kuntoilu"
-    - Terveellinen ruoka
-    - "Riitt\xE4v\xE4 uni"
-    - 'Terveyteni ja hyvinvointini parantaminen '
+    - "Liikun s\xE4\xE4nn\xF6llisesti"
+    - "Sy\xF6n terveellisesti"
+    - Nukun tarpeeksi
+    - Voin parantaa omaa oloani ja jaksamistani

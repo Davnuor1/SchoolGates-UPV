@@ -17,35 +17,30 @@ MonoBehaviour:
     text: "T\xE4m\xE4 on hyvin vaarallinen paikka..."
     placement: 0
   - backgroundImage: {fileID: -1636791454, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
-    text: "Kun tapaamme jonkun ihmisen ensimm\xE4ist\xE4 kertaa, selvit\xE4mme ensin
-      kuka ja millainen kyseinen henkil\xF6 on, onko meill\xE4 jotakin yhteist\xE4,
-      onko meill\xE4 samoja harrastuksia tai arvoja ... N\xE4m\xE4 ovat ihmissuhteen
-      perustat ja rakennuspalikat. Sen j\xE4lkeen ihmiset alkavat kertoa lis\xE4\xE4
-      itsest\xE4\xE4n ja testata suhteensa rajoja."
+    text: "Kun tapaamme uuden ihmisen, aluksi tutustumme siihen, millainen h\xE4n
+      on. Onko meill\xE4 yhteisi\xE4 kiinnostuksen kohteita tai ajattelemmeko asioista
+      samoin? Ne ovat yst\xE4vyyden perusta."
     placement: 1
   - backgroundImage: {fileID: 1595807204, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
-    text: "Kaikista ihmisist\xE4 l\xF6ytyy aina joitakin yhteisi\xE4 asioita, mutta
-      niiden l\xF6yt\xE4miseksi on tutustuttava ihmiseen paremmin. Mit\xE4 enemm\xE4n
-      jaatte asioita, sit\xE4 todenn\xE4k\xF6isemmin teist\xE4 tulee yst\xE4vi\xE4.
-      Ja jos teist\xE4 tulee yst\xE4vi\xE4, olet luonut t\xE4h\xE4n ihmiseen siteen."
+    text: "Aina l\xF6ytyy jotain yhteist\xE4, mutta joskus sen l\xF6yt\xE4miseksi
+      pit\xE4\xE4 n\xE4hd\xE4 vaivaa. Mit\xE4 enemm\xE4n jaat itsest\xE4si, sit\xE4
+      helpompaa on yst\xE4vysty\xE4."
     placement: 1
   - backgroundImage: {fileID: -1554177124, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
-    text: "Jos kaikki menee hyvin, side tulee kest\xE4m\xE4\xE4n koko el\xE4m\xE4n,
-      ja se on hienoa! Mutta aina voi tulla riitoja tai erimielisyyksi\xE4, jotka
-      on ratkaistava."
+    text: "Jos kaikki menee hyvin, yst\xE4vyys voi kest\xE4\xE4 l\xE4pi el\xE4m\xE4n.
+      Se on mahtavaa! Mutta kaikissa yst\xE4vyyssuhteissa joskus tulee riitoja tai
+      erimielisyyksi\xE4, jotka pit\xE4\xE4 ratkaista."
     placement: 1
   - backgroundImage: {fileID: 1245444621, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
-    text: "Ihmisten tapaaminen ja siteen luominen heihin on hienoa\u2026 Mutta ihmissuhteet
-      voivat muuttua ja voi tulla ongelmia. Silloin on t\xE4rke\xE4\xE4 tiet\xE4\xE4,
-      miten niist\xE4 selvit\xE4\xE4n ja voidaan luoda menestyvi\xE4 ja kest\xE4vi\xE4
-      ihmissuhteita."
+    text: "Uusien ihmisten tapaaminen ja yst\xE4vystyminen on mahtavaa\u2026 Mutta
+      joskus yst\xE4vyys voi muuttua, ja on t\xE4rke\xE4\xE4 osata k\xE4sitell\xE4
+      vaikeuksia, jotta yhteys s\xE4ilyy."
     placement: 2
   - backgroundImage: {fileID: 686330089, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
-    text: "Ihmissuhteet voivat my\xF6s rapistua. Joskus ihmiset muuttuvat tai el\xE4m\xE4
-      erottaa polkumme... Ja silloin yst\xE4v\xE4t tai pariskunnat voivat tuntea
-      olonsa aina vain et\xE4isemm\xE4ksi, aina vai kaukaisemmaksi... Kunnes ihmissuhde
-      p\xE4\xE4ttyy. Mutta vaikka hyv\xE4steleminen voi sattua, joskus on parempi
-      antaa toisen ihmisen menn\xE4\u2026"
+    text: "Joskus yst\xE4vyys hiipuu. Ihmiset muuttuvat tai el\xE4m\xE4 vie eri suuntiin\u2026
+      Silloin toinen voi tuntua et\xE4iselt\xE4, ja lopulta yst\xE4vyys p\xE4\xE4ttyy.
+      Vaikka se voi tuntua ik\xE4v\xE4lt\xE4, joskus on parempi p\xE4\xE4st\xE4\xE4
+      toisesta irti."
     placement: 2
   - backgroundImage: {fileID: 1657986904, guid: 3814edea3e5849f48ba217cf4bee6dd3, type: 3}
     text: "Mutta ennen muinoin se oli rauhallinen\u2026"
@@ -93,19 +88,16 @@ MonoBehaviour:
       requiresResponse: 1
       responseOptions:
       - responseText: En
-        responseFeedback: "Eve on nyt v\xE4h\xE4n ymm\xE4ll\xE4\xE4n, olet ollut
-          aito, mutta et ehk\xE4 kovin kunnioittava tai vastuuntuntoinen\u2026 Luulen,
-          ett\xE4 Evest\xE4 ei en\xE4\xE4 tunnu mukavalta jutella kanssasi \u2026"
+        responseFeedback: "Olit rehellinen, mutta ehk\xE4 et kovin reilu tai vastuullinen.
+          Eve ei ehk\xE4 halua en\xE4\xE4 jutella kanssasi."
       - responseText: "Eve on nyt v\xE4h\xE4n ymm\xE4ll\xE4\xE4n, olet ollut aito,
           mutta et ehk\xE4 kovin kunnioittava tai vastuuntuntoinen\u2026 Luulen,
           ett\xE4 Evest\xE4 ei en\xE4\xE4 tunnu mukavalta jutella kanssasi \u2026"
-        responseFeedback: "Evesta tuntuu nyt hyv\xE4lt\xE4, koska h\xE4n huomaa kiinnostuksesi
-          ja h\xE4n on valmis my\xF6s tutustumaan sinuun. Olet ollut aito, vastuuntuntoinen,
-          vuorovaikutteinen ja kunnioittava. Hienoa!"
-      - responseText: "Kyll\xE4, pid\xE4n siit\xE4 paljon!"
-        responseFeedback: "Evesta tuntuu nyt hyv\xE4lt\xE4, koska h\xE4n huomaa kiinnostuksesi
-          ja h\xE4n on valmis my\xF6s tutustumaan sinuun. Olet ollut aito, vastuuntuntoinen,
-          vuorovaikutteinen ja kunnioittava. Hienoa!"
+        responseFeedback: "Eve ilahtuu, koska huomaa, ett\xE4 olet kiinnostunut h\xE4nest\xE4.
+          Olit rehellinen, vastuullinen, ymm\xE4rt\xE4v\xE4inen ja reilu. Hienoa!"
+      - responseText: "Kyll\xE4, tykk\xE4\xE4n siit\xE4 tosi paljon!"
+        responseFeedback: "Eve ilahtuu, koska huomaa, ett\xE4 olet kiinnostunut h\xE4nest\xE4.
+          Olit rehellinen, vastuullinen, ymm\xE4rt\xE4v\xE4inen ja reilu. Hienoa!"
     - characterName: Eve
       portrait: {fileID: 21300000, guid: 04816276ad4c8b64d80af5a19987b4b4, type: 3}
       text: "Ehk\xE4 voisimme perustaa naisten jalkapallokerhon"
@@ -122,19 +114,16 @@ MonoBehaviour:
         esimerkeiss\xE4 tehokkaammin?"
       requiresResponse: 1
       responseOptions:
-      - responseText: "Yksi heist\xE4 kritisoi toisten mielipidett\xE4/asennetta/k\xE4yt\xF6st\xE4."
-        responseFeedback: "H\xE4n v\xE4h\xE4n aggressiivinen, eik\xF6 olekin? N\xE4in
-          k\xE4y, kun joku ilmaisee ajatuksiaan ja tunteitaan toisista v\xE4litt\xE4m\xE4tt\xE4.
-          Aggressiivinen kommunikaatio on m\xE4\xE4r\xE4ilev\xE4\xE4 ja kontrolloivaa.
-          Siin\xE4 keskeytet\xE4\xE4n usein toiset, tunkeudutaan henkil\xF6kohtaiseen
-          tilaan ja v\xE4h\xE4tell\xE4\xE4n toisia oman viestin saamiseksi perille.
-          T\xE4m\xE4 johtaa konfliktiin ja mielipahaan."
-      - responseText: "Yksi heist\xE4 on ollut alusta alkaen tyytym\xE4t\xF6n avajaisia
-          varten suunnitelluista aktiviteeteista mutta ei ole sanonut mit\xE4\xE4n,
-          koska h\xE4n on pel\xE4nnyt vaikuttavansa silloin \u201Dilonpilaajalta"
-        responseFeedback: "H\xE4n on v\xE4h\xE4n passiivinen tai alistunut, eik\xF6
-          olekin? N\xE4in k\xE4y, kun joku v\xE4ltt\xE4\xE4 ilmaisemasta ajatuksiaan
-          tai tunteitaan, usein konfliktin pelosta"
+      - responseText: "Arvostella muita heid\xE4n asenteestaan, mielipiteist\xE4\xE4n
+          ja k\xE4yt\xF6ksenst\xE4\xE4n."
+        responseFeedback: "T\xE4m\xE4 kuulostaa v\xE4h\xE4n vihamieliselt\xE4, eik\xF6?
+          Jos ilmaisee ajatuksensa v\xE4litt\xE4m\xE4tt\xE4 muista, se voi tuntua
+          hallitsevalta ja loukkaavalta. Se aiheuttaa riitoja ja pahaa mielt\xE4."
+      - responseText: "Kertoa, ett\xE4 on ollut tyytym\xE4t\xF6n suunnitelmana alusta
+          asti, vaikka ei olekaan sanonut asiasta mit\xE4\xE4n aiemmin."
+        responseFeedback: "T\xE4m\xE4 kuulostaa v\xE4lttev\xE4lt\xE4. Jos ei uskalla
+          sanoa \xE4\xE4neen omia mielipiteit\xE4\xE4n, ei voi olettaa, ett\xE4 muut
+          ymm\xE4rt\xE4isiv\xE4t niit\xE4."
       - responseText: "Yksi heist\xE4 sanoo, ett\xE4 avajaiset on siirrett\xE4v\xE4
           toiselle p\xE4iv\xE4lle, ja selitt\xE4\xE4 sen taustalla olevat syyt"
         responseFeedback: "Kommunikaation m\xE4\xE4r\xE4tietoiselle tyylille ovat
@@ -294,19 +283,19 @@ MonoBehaviour:
     requiresAllFeedback: 0
     isBranchingConflict: 0
   conflict1Concepts:
-  - term: Kunnioittava
-    description: "T\xE4m\xE4 tarkoittaa, ett\xE4 yrit\xE4t ymm\xE4rt\xE4\xE4 ja n\xE4ytt\xE4\xE4
-      kiinnostusta toisten kokemuksiin ja n\xE4k\xF6kulmiin, vaikka olisit eri mielt\xE4."
-  - term: Aito
+  - term: Reilu
+    description: "Yrit\xE4t ymm\xE4rt\xE4\xE4 toisen n\xE4k\xF6kulmaa ja osoitat
+      kiinnostusta, vaikka olisit eri mielt\xE4."
+  - term: Rehellinen
     description: "T\xE4m\xE4 tarkoittaa, ett\xE4 olet autenttinen ja vilpit\xF6n
       etk\xE4 teeskentele. Ilmaiset todelliset uskomuksesi, vaikka ne olisivat toisille
       haastavia tai ep\xE4mukavia tai aiheuttaisivat heille pettymyksen."
-  - term: Vastuuntuntoinen
-    description: "T\xE4m\xE4 tarkoittaa sit\xE4, ett\xE4 olet vastuussa teoistasi
-      ja tunteistasi. Et syyt\xE4 ongelmistasi muita."
-  - term: Vuorovaikutteinen
-    description: "T\xE4m\xE4 tarkoittaa impulsiivisten reaktioiden v\xE4ltt\xE4mist\xE4.
-      My\xF6t\xE4tuntoinen ja ymm\xE4rt\xE4v\xE4 reagointi.\r\n"
+  - term: Vastuullinen
+    description: "Otat vastuun teoistasi ja tunteistasi. Et syyt\xE4 muita omista
+      ongelmistasi."
+  - term: "Ymm\xE4rt\xE4v\xE4inen"
+    description: "Et suutu tai huuda toiselle vaan vastaat rauhallisesti ja yrit\xE4t
+      ymm\xE4rt\xE4\xE4."
   conflict3Concepts:
   - term: "HYV\xC4 KUUNTELIJA"
     description: " Aktiivinen kuuntelu tarkoittaa t\xE4yden huomion kohdistamista

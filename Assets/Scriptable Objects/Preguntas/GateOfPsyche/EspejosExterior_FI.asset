@@ -12,42 +12,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12378fb498d283642a330e1ccd91f0bf, type: 3}
   m_Name: EspejosExterior_FI
   m_EditorClassIdentifier: 
-  topMessageInitial: "Vastaa t\xE4lle demonille, jos haluat menn\xE4 eteenp\xE4in\u2026"
-  topMessageRespondFormat: "Miten vastaat {0 }:n \xE4\xE4nelle"
-  topMessageSecondRound: "Mit\xE4 muuta voisit kertoa sille?"
+  topMessageInitial: "M\xE4rehtij\xE4 esitt\xE4\xE4 sinulle kysymyksen... Uskallatko
+    vastata?"
+  topMessageRespondFormat: "Miten vastaat m\xE4rehtij\xE4lle nimelt\xE4  {0 }"
+  topMessageSecondRound: "Mit\xE4 muuta voisit sanoa heille?"
   buttonRepeatText: Toista
   buttonRespondText: Vastaa
   espejos:
   - mirrorTitle: Menestys
-    mirrorText: "Sinun on menestytt\xE4v\xE4 kaikessa, mit\xE4 teet, tai olet luuseri"
+    mirrorText: "Minun pit\xE4\xE4 aina onnistua, muuten olen ep\xE4onnistuja."
     responses:
-    - En aina voita, mutta se ei tee minusta luuseria
-    - "Virheiden tekeminen on osa menestymist\xE4"
-    - Kukaan ei voi olla paras kaikessa
+    - "Joskus ep\xE4onnistun, mutta se ei tee minusta huonoa."
+    - "Virheist\xE4 oppii \u2013 ne kuuluvat onnistumiseen."
+    - Kukaan ei voi olla paras kaikessa.
   - mirrorTitle: "Syytt\xE4m\xE4ll\xE4"
-    mirrorText: Syy on sinun, et ansaitse olla onnellinen
+    mirrorText: "Kaikki on minun syyt\xE4ni. En ansaitse olla onnellinen."
     responses:
-    - Jokainen ansaitsee mahdollisuuden onnellisuuteen
-    - " Ihmiset tekev\xE4t joskus virheit\xE4, mutta he ansaitsevat aina toisen mahdollisuuden "
-    - "En ole v\xE4hemm\xE4n tai enemm\xE4n kuin kukaan muu"
+    - 'Ansaitsen olla onnellinen, ihan niin kuin kaikki muutkin. '
+    - "Teen joskus virheit\xE4, mutta voin aina yritt\xE4\xE4 uudelleen"
+    - "Olen yht\xE4 arvokas kuin muut. "
   - mirrorTitle: Ihanteellinen vartalo
-    mirrorText: "Vartalosi ei ole t\xE4ydellinen, mutta sen on oltava."
+    mirrorText: "Vartaloni ei ole tarpeeksi hyv\xE4. Sen pit\xE4isi olla t\xE4ydellinen."
     responses:
-    - "Vartaloni on t\xE4ydellinen juuri sellaisena kuin se on, riippumatta siit\xE4,
-      mit\xE4 muut ihmiset sanovat"
-    - Olen kaunis ja vahva
-    - "T\xE4ydellist\xE4 vartaloa ei ole olemassa"
+    - "Vartaloni on hyv\xE4 juuri t\xE4llaisena, riippumatta siit\xE4, mit\xE4 muut
+      ihmiset sanovat. "
+    - 'Olen kaunis ja vahva omalla tavallani. '
+    - "T\xE4ydellist\xE4 vartaloa ei ole olemassa."
   - mirrorTitle: Kateus
-    mirrorText: "Kaikki muut ovat parempia kuin sin\xE4 ja heill\xE4 on parempia
-      tavaroita kuin sinulla"
+    mirrorText: "Kaikki muut ovat parempia kuin min\xE4 ja heill\xE4 on asiat paremmin
+      kuin minulla."
     responses:
-    - "Eri ihmisill\xE4 on erilaisia vahvuuksia ja heikkouksia"
-    - Jokaisella on omat pelkonsa ja ongelmansa
-    - "Minulla ei ole kaikkea, mit\xE4 haluan, mutta olen kiitollinen siit\xE4, mit\xE4
-      minulla on"
+    - "Kaikilla on erilaisia \u200B\u200Bhyvi\xE4 ja huonoja puolia."
+    - "Meill\xE4 jokaisella on pelkoja ja ongelmia."
+    - "En ehk\xE4 saa kaikkea, mutta minulla on paljon hyv\xE4\xE4, josta voin olla
+      kiitollinen. "
   - mirrorTitle: Itsesabotaasi
-    mirrorText: "Sin\xE4 et ole tarpeeksi, sin\xE4 et voita koskaan"
+    mirrorText: "Min\xE4 en riit\xE4. En tule koskaan onnistumaan."
     responses:
-    - "Vaikka joskus olenkin v\xE4\xE4r\xE4ss\xE4, voin tehd\xE4 asioita oikein"
-    - "Et aina voita etk\xE4 aina h\xE4vi\xE4"
-    - "Ainakin voin yritt\xE4\xE4 parhaani ja sill\xE4 on arvoa"
+    - Vaikka mokaan joskus, voin silti onnistua.
+    - "Joskus voitan, joskus en \u2013 ja se on ihan ok."
+    - "Yrit\xE4n parhaani, ja se on t\xE4rkeint\xE4."

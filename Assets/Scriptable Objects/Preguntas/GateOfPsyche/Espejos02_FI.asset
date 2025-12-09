@@ -12,108 +12,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e418474bb2a30542b702a5d9eab1987, type: 3}
   m_Name: Espejos02_FI
   m_EditorClassIdentifier: 
-  textoPreguntaInicial: "Kuinka paljon t\xE4m\xE4 peili peilaa sinua itse\xE4si?"
-  textoPreguntaRating: "Arvioi asteikolla 1-10, miten paljon samaistut t\xE4h\xE4n
-    peiliin."
-  textoFeedbackLike: "Hienoa! Jatketaanpa todellisen itsesi etsimist\xE4..."
-  textoFeedbackDislikeFinal: "Okei\u2026 pid\xE4 t\xE4m\xE4 mieless\xE4si ja jatka
-    todellisen itsesi etsimist\xE4\u2026"
+  textoPreguntaInicial: "N\xE4etk\xF6 itsesi t\xE4ss\xE4 peiliss\xE4?"
+  textoPreguntaRating: "Kuinka paljon t\xE4m\xE4 muistuttaa sinua asteikolla 1\u201310?"
+  textoFeedbackLike: "Hienoa! Jatketaan todellisen min\xE4si etsimist\xE4\u2026"
+  textoFeedbackDislikeFinal: "Ok\u2026 pid\xE4 t\xE4m\xE4 mieless\xE4 ja jatka etsimist\xE4."
   textoDoYouAgree: "Oletko samaa mielt\xE4?"
   espejos:
-  - nombre: "Minun on p\xE4rj\xE4tt\xE4v\xE4 hyvin ja saatava kaikkien minulle t\xE4rkeiden
-      ihmisten hyv\xE4ksynt\xE4, koska muuten olen arvoton ihminen."
-    feedback01: "Muista, ett\xE4 kaikki ihmiset eiv\xE4t aina voi pit\xE4\xE4 sinusta
-      ja se on ookoo."
-    feedback02: "Muista, ett\xE4 henkil\xF6kohtaisen arvosi ei tulisi olla riippuvainen
-      muiden ihmisten hyv\xE4ksynn\xE4st\xE4."
-  - nombre: "Toisten ihmisten on kohdeltava minua yst\xE4v\xE4llisesti ja oikeudenmukaisesti
-      tai muuten he ovat pahoja."
-    feedback01: "Muista, ett\xE4 ihmiset toimivat joskus ep\xE4yst\xE4v\xE4llisesti
-      ja ep\xE4reilusti, koska heill\xE4, aivan kuten sinullakin, on omat kamppailunsa
-      eiv\xE4tk\xE4 he aina pysty olemaan yst\xE4v\xE4llisi\xE4."
-    feedback02: "Pid\xE4 mieless\xE4, ett\xE4 huono k\xE4yt\xF6s ei v\xE4ltt\xE4m\xE4tt\xE4
-      ole osoitus pahantahtoisuudesta."
-  - nombre: "Minulla pit\xE4\xE4 olla helppo, miellytt\xE4v\xE4 el\xE4m\xE4 tai en
-      voi nauttia el\xE4m\xE4st\xE4 ollenkaan."
-    feedback01: "Muista, ett\xE4 el\xE4m\xE4 on arvaamatonta ja t\xE4ynn\xE4 sek\xE4
-      haasteita ett\xE4 iloa."
-    feedback02: "Muista, ett\xE4 el\xE4m\xE4n yl\xE4- ja alam\xE4et tekev\xE4t el\xE4m\xE4st\xE4
-      rikkaan ja tarkoituksellisen kokemuksen ja antavat sinulle mahdollisuuden oppia
-      & kasvaa. "
-  - nombre: "Kaikkien ihmisten, joista v\xE4lit\xE4n, on rakastettava minua ja hyv\xE4ksytt\xE4v\xE4
-      minut tai kaikki on kamalaa."
-    feedback01: "Muista, ett\xE4 ihmisill\xE4, jotka rakastavat sinua ja jotka v\xE4litt\xE4v\xE4t
-      sinusta, on omat mielipiteens\xE4 eik\xE4 heid\xE4n tarvitse olla kanssasi
-      aina samaa mielt\xE4 tai hyv\xE4ksy\xE4 kaikkea, mit\xE4 teet. Se ei tarkoita,
-      etteiv\xE4t he rakastaisi sinua tai rakastaisivat sinua v\xE4hemm\xE4n."
-    feedback02: "Muista, ett\xE4 vahva yhteys rakentuu ymm\xE4rt\xE4miselle, empatialle
-      ja kyvylle selvitt\xE4\xE4 erimielisyydet."
-  - nombre: Minun on oltava suorittaja tai muuten olen arvoton.
-    feedback01: "Muista, ett\xE4 omanarvontunto muodostuu siit\xE4, kuka sin\xE4
-      olet eik\xE4 vain siit\xE4, mit\xE4 sin\xE4 saavutat tai mit\xE4 sinulla on"
-    feedback02: "Muista, ett\xE4 virheiden tekeminen ja takaiskujen kokeminen on
-      osa ihmiskokemusta."
-  - nombre: "Kukaan ei saisi koskaan k\xE4ytt\xE4yty\xE4 huonosti ja jos joku k\xE4ytt\xE4ytyy
-      huonosti, minun tulisi tuomita h\xE4net."
-    feedback01: "Muista, ett\xE4 ihmiset eiv\xE4t ole t\xE4ydellisi\xE4 ja ett\xE4
-      valitettavat tapahtumat, kokemukset ja tunteet voivat vaikuttaa heihin siten,
-      ett\xE4 k\xE4ytt\xE4ytyv\xE4t huonosti."
-    feedback02: "Harkitse empaattisempaa ja rakentavampaa l\xE4hestymistapaa ja yrit\xE4
-      ymm\xE4rt\xE4\xE4 syit\xE4 tekojen taustalla sen sijaan, ett\xE4 tuomitset
-      huonosti k\xE4ytt\xE4ytyv\xE4t ihmiset v\xE4litt\xF6m\xE4sti."
-  - nombre: "Jos jokin ei suju hyvin, en saa turhautua, koska se osoittaisi, ett\xE4
-      en yksinkertaisesti ole tarpeeksi hyv\xE4."
-    feedback01: "Muista, ett\xE4 turhautumisessa ei ole mit\xE4\xE4n h\xE4vett\xE4v\xE4\xE4,
-      se on vain merkki siit\xE4, ett\xE4 kaikki ei suju suunnitelmien mukaan."
-    feedback02: "Muista, ett\xE4 turhautuminen on tavallinen tunne, kun ihminen kohtaa
-      esteit\xE4, viiv\xE4styksi\xE4 tai t\xE4yttym\xE4tt\xF6mi\xE4 odotuksia. Se
-      voi olla my\xF6s arvokas motivaation ja kasvun l\xE4hde ja kuuluu osana jokaisen
-      ihmisen el\xE4m\xE4\xE4n."
-  - nombre: "Tunnen oloni surkeaksi enk\xE4 pysty tekem\xE4\xE4n sille mit\xE4\xE4n,
-      kun asiat ovat hankalia ja minuun kohdistuu paineita."
-    feedback01: "Muista, ett\xE4 on ihan normaalia tuntea olonsa vaikeina aikoina
-      surkeaksi, mutta voit aina tehd\xE4 ainakin yhden asian: voit p\xE4\xE4tt\xE4\xE4,
-      miten k\xE4sittelet takaiskun."
-    feedback02: "Yrit\xE4 mietti\xE4 muita vaihtoehtoja stressin k\xE4sittelemiseen
-      ja tunnetilasi parantamiseen sen sijaan, ett\xE4 annat ep\xE4toivolle periksi."
-  - nombre: "Kun on mahdollista, ett\xE4 minulle voi tapahtua jotakin pelottavaa
-      tai vaarallista, minulle tulee siit\xE4 pakkomielle ja pyrin kiivaasti v\xE4ltt\xE4m\xE4\xE4n
-      sen."
-    feedback01: "Muista, ett\xE4 on okei olla huolestunut mahdollisista vaaroista
-      tai pelottavista tilanteista, mutta liiallinen huolestuneisuus ja ep\xE4miellytt\xE4vien
-      tilanteiden v\xE4ltt\xE4minen voi saada sinut tuntemaan olosi viel\xE4kin pelokkaammaksi."
-    feedback02: "Yrit\xE4 kohdata mahdolliset riskit objektiivisemmin ja harkitummin
-      arvioimalla niiden todenn\xE4k\xF6isyys ja vakavuus noudattaaksesi asianmukaisia
-      varotoimia."
-  - nombre: "Voin v\xE4ltell\xE4 vastuuta ja el\xE4m\xE4n hankaluuksia ja el\xE4\xE4
-      siit\xE4 huolimatta t\xE4ytt\xE4 el\xE4m\xE4\xE4."
-    feedback01: "Muista, ett\xE4 vaikka vastuun ja hankaluuksien v\xE4lttely onkin
-      houkuttelevaa, se voi est\xE4\xE4 sinua tajuamasta t\xE4ytt\xE4 potentiaaliasi
-      ja nauttimasta el\xE4m\xE4st\xE4 t\xE4ysill\xE4."
-    feedback02: "Muista, ett\xE4 haasteet, moraaliset velvoitteet ja vastuu kuuluvat
-      el\xE4m\xE4\xE4n ja yritys v\xE4ltell\xE4 niit\xE4 johtaa pitk\xE4ll\xE4 aikav\xE4lill\xE4
-      todenn\xE4k\xF6isesti suurempaan stressiin ja tyytym\xE4tt\xF6myyteen."
-  - nombre: "Menneisyys on t\xE4rkein osa el\xE4m\xE4\xE4ni ja se m\xE4\xE4ritt\xE4\xE4
-      jatkuvasti sen, milt\xE4 minusta tuntuu ja mit\xE4 min\xE4 teen. "
-    feedback01: "Muista, ett\xE4 menneisyytesi voi rajoittaa vaihtoehtojasi, mutta
-      se ei m\xE4\xE4rit\xE4 kokonaan sit\xE4, kuka sin\xE4 olet. Keskity siihen,
-      mit\xE4 voit hallita tulevaisuudessa sen sijaan, ett\xE4 velloisit menneisyydess\xE4
-      ja tuntisit olevasi sen vanki."
-    feedback02: "Muista, ett\xE4 menneisyydest\xE4si huolimatta sinulla on nykyhetkess\xE4
-      valtaa tehd\xE4 valintoja ja p\xE4\xE4t\xF6ksi\xE4, joilla voi olla vaikutus
-      tulevaisuuteesi."
-  - nombre: "Kaiken ja kaikkien tulisi aina olla t\xE4ydellisi\xE4, koska virheiden
-      tekeminen ja ep\xE4t\xE4ydellisyys on heikkous."
-    feedback01: "Muista, ett\xE4 on saavuttamaton tavoite odottaa kaiken ja kaikkien
-      olevan t\xE4ydellisi\xE4, koska el\xE4m\xE4 on t\xE4ynn\xE4 ep\xE4t\xE4ydellisyytt\xE4
-      sek\xE4 ihmisiss\xE4 ett\xE4 olosuhteissa."
-    feedback02: "Muista, ett\xE4 pyrkimys edistymiseen on luonnollinen ja jatkuva
-      prosessi, jonka tulisi olla tasapainossa realiteettien hyv\xE4ksymisen kanssa."
-  - nombre: "Voin olla mahdollisimman onnellinen tekem\xE4ll\xE4 niin v\xE4h\xE4n
-      kuin mahdollista ja vain pit\xE4m\xE4ll\xE4 hauskaa."
-    feedback01: "Muista, ett\xE4 onnellinen el\xE4m\xE4 ei tarkoita vain nautinnon
-      tavoittelua vaan my\xF6s el\xE4m\xE4n tarjoamien haasteiden hyv\xE4ksymist\xE4."
-    feedback02: "Muista, ett\xE4 onnellisuuteen kuuluu merkityksellisten tavoitteiden
-      asettaminen ja niihin pyrkiminen, toisten auttaminen ja henkil\xF6kohtainen
-      kasvu; kaikki n\xE4m\xE4 seikat vaativat ponnistuksia, vastuullisuutta ja haasteiden
-      voittamista."
+  - nombre: "Minun pit\xE4\xE4 tehd\xE4 kaikki oikein ja saada muut iloisiksi, muuten
+      olen huono."
+    feedback01: "Kaikki eiv\xE4t tule aina tykk\xE4\xE4m\xE4\xE4n sinusta \u2013
+      ja se on ihan ok."
+    feedback02: "Arvosi ei riipu siit\xE4, mit\xE4 muut sinusta ajattelevat."
+  - nombre: "Muiden pit\xE4\xE4 aina kohdella minua reilusti ja yst\xE4v\xE4llisesti
+      \u2013 muuten he ovat pahoja."
+    feedback01: "Toiset eiv\xE4t aina osaa k\xE4ytt\xE4yty\xE4 hyvin. Joskus he ovat
+      surullisia tai vihaisia."
+    feedback02: "Huono k\xE4yt\xF6s ei v\xE4ltt\xE4m\xE4tt\xE4 tarkoita, ett\xE4
+      joku on paha ihminen."
+  - nombre: "Jos el\xE4m\xE4 ei ole helppoa ja mukavaa, en voi nauttia siit\xE4. "
+    feedback01: "El\xE4m\xE4 vaihtelee: joskus on vaikeaa, joskus ihanaa. "
+    feedback02: "Jokainen yl\xE4- ja alam\xE4ki opettaa sinulle jotakin t\xE4rke\xE4\xE4. "
+  - nombre: "Kaikkien, joista v\xE4lit\xE4n, t\xE4ytyy rakastaa minua! Muuten en
+      kest\xE4. "
+    feedback01: "Rakastavat ihmiset eiv\xE4t aina ole samaa mielt\xE4 kanssasi \u2013
+      mutta he rakastavat sinua silti. "
+    feedback02: "Toisiaan rakastavat ihmiset osaavat kuunnella ja ratkaista riitoja
+      yhdess\xE4."
+  - nombre: "Minun t\xE4ytyy saavuttaa jotain suurta, muuten olen arvoton. "
+    feedback01: "Olet arvokas sellaisena kuin olet \u2013 ei siin\xE4, mit\xE4 omistat
+      tai teet. "
+    feedback02: 'Vaikeudet auttavat sinua kasvamaan ja oppimaan. '
+  - nombre: "Kukaan ei saisi k\xE4ytt\xE4yty\xE4 huonosti, ja jos joku tekee niin,
+      minun pit\xE4\xE4 sanoa siit\xE4. "
+    feedback01: "Kukaan ei ole t\xE4ydellinen. Joskus ihmiset k\xE4ytt\xE4ytyv\xE4t
+      huonosti, koska heill\xE4 on vaikeaa. "
+    feedback02: "Ennen kuin suutut, voit yritt\xE4\xE4 ymm\xE4rt\xE4\xE4, miksi toinen
+      toimi niin. "
+  - nombre: "Jos en saa mit\xE4 haluan, se tarkoittaa, etten ole tarpeeksi hyv\xE4. "
+    feedback01: 'On ihan ok olla turhautunut. Kaikki ei aina mene suunnitelmien mukaan. '
+    feedback02: "Turhautuminen on normaali tunne \u2013 ja se voi auttaa sinua oppimaan
+      uutta."
+  - nombre: "Kun kaikki tuntuu vaikealta ja olen ihan uupunut, tuntuu kamalalta eik\xE4
+      mik\xE4\xE4n auta. "
+    feedback01: "On normaalia olla alakuloinen vaikeina aikoina \u2013 mutta voit
+      aina valita, miten suhtaudut siihen."
+    feedback02: "Sen sijaan ett\xE4 luovutat, voit kokeilla keinoja, jotka auttavat
+      sinua jaksamaan paremmin. "
+  - nombre: "Jos tapahtuu jotain pahaa, en saa sit\xE4 pois mielest\xE4ni. Minun
+      pit\xE4\xE4 v\xE4ltt\xE4\xE4 sit\xE4 hinnalla mill\xE4 hyv\xE4ns\xE4."
+    feedback01: "On normaalia pel\xE4t\xE4, mutta liika miettiminen tai v\xE4lttely
+      voi tehd\xE4 olon pahemmaksi."
+    feedback02: "Kaikki pelottava ei ole oikeasti vaarallista. Kannattaa mietti\xE4:
+      onko t\xE4m\xE4 oikeasti iso juttu vai tuntuuko se vain silt\xE4?"
+  - nombre: "Voin j\xE4tt\xE4\xE4 velvollisuudet ja ongelmat huomiotta ja silti olla
+      onnellinen."
+    feedback01: "On normaalia haluta v\xE4ltell\xE4 vaikeita asioita \u2013 mutta
+      niiden kohtaaminen auttaa sinua eteenp\xE4in."
+    feedback02: "Vaikeiden asioiden pakoilu voi tuntua helpolta hetken, mutta pitk\xE4ll\xE4
+      aikav\xE4lill\xE4 se tuo enemm\xE4n stressi\xE4."
+  - nombre: "Menneisyyteni on t\xE4rkein asia el\xE4m\xE4ss\xE4ni, ja se vaikuttaa
+      aina siihen, mit\xE4 tunnen, ajattelen ja teen."
+    feedback01: "Menneisyys on osa sinua, mutta se ei m\xE4\xE4rittele sinua. Se,
+      mit\xE4 teet nyt, on t\xE4rke\xE4mp\xE4\xE4."
+    feedback02: "Menneisyys ei m\xE4\xE4rittele sinua. Voit tehd\xE4 edelleen valintoja,
+      jotka muuttavat tulevaisuuttasi."
+  - nombre: "Virheet ovat heikoille. Vain t\xE4ydellinen kelpaa. "
+    feedback01: "Jos odottaa t\xE4ydellisyytt\xE4, pettyy helposti. Kukaan ei ole
+      t\xE4ydellinen. "
+    feedback02: "On hyv\xE4 haluta kehitty\xE4, mutta pit\xE4\xE4 my\xF6s hyv\xE4ksy\xE4
+      asiat sellaisina kuin ne nyt ovat. "
+  - nombre: "Voin olla onnellinen tekem\xE4ll\xE4 mahdollisimman v\xE4h\xE4n ja vain
+      nauttimalla. "
+    feedback01: "Onnellisuus ei ole vain hauskanpitoa \u2013 siihen kuuluu my\xF6s
+      vaikeiden asioiden kohtaaminen ja oppiminen. "
+    feedback02: "Onnellisuus syntyy my\xF6s tavoitteista, toisten auttamisesta ja
+      omasta kasvusta. Se vaatii v\xE4h\xE4n vaivaa. "
