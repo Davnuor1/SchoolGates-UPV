@@ -14,6 +14,9 @@ public class CinematicManager : MonoBehaviour
     public GameObject textPanel;
     public CanvasGroup fadePanel;
 
+    public bool isFinal;
+    public GameObject CanvasTheEnd;
+
     private int currentVignetteIndex = 0;
     private bool isTransitioning = false;
 
@@ -193,6 +196,10 @@ public class CinematicManager : MonoBehaviour
         PlayerPrefs.SetInt(seenKey, 1);
         PlayerPrefs.Save();
         gameObject.SetActive(false);
+        if (isFinal)
+        {
+            CanvasTheEnd.SetActive(true);
+        }
     }
 
     // ====== Reset helpers para usar desde DevelopmentReset u otros ======

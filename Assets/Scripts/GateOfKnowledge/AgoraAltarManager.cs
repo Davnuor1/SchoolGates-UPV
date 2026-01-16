@@ -54,6 +54,8 @@ public class AgoraAltarManager : MonoBehaviour
         fusionErrorPanel.SetActive(false);
         fusionSuccessPanel.SetActive(false);
         cofreDoradoFinal.SetActive(false);
+        fusionErrorPanel.GetComponentInChildren<TextMeshProUGUI>().text = localization.fusionErrorText;
+        fusionSuccessPanel.GetComponentInChildren<TextMeshProUGUI>().text = localization.fusionSuccessText;
 
         closeClueButton.onClick.AddListener(() =>
         {

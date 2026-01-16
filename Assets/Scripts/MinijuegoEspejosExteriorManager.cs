@@ -87,6 +87,7 @@ public class MinijuegoEspejosExteriorManager : MonoBehaviour
 
     private void ShowCurrentMirror()
     {
+        defineLanguage();
         // Configurar el mensaje superior al valor inicial
         topMessageText.text = localizacion.topMessageInitial;
 

@@ -98,7 +98,7 @@ public class MinijuegoEspejos01 : MonoBehaviour
         textoPregunta.text = localizacion.textoPreguntaParte2;
 
         var (nombre, id, _) = espejosLike[idEspejo];
-        textoEspejos.text = localizacion.textoPreEspejoParte2 + nombre + localizacion.textoPostEspejoParte2;
+        textoEspejos.text = localizacion.textoPreEspejoParte2 +" "+ nombre+" " + localizacion.textoPostEspejoParte2;
         textoCorrecto.text = localizacion.espejos[id].respuestaCorrecta;
         textoIncorrecto.text = localizacion.espejos[id].respuestaIncorrecta;
     }
@@ -106,14 +106,14 @@ public class MinijuegoEspejos01 : MonoBehaviour
     public void pulsarCorrecto()
     {
         var (nombre, _, _) = espejosLike[idEspejo];
-        textoFeedback.text = localizacion.textoFeedbackCorrecto + nombre + localizacion.textoFeedbackCorrectoDetras;
+        textoFeedback.text = localizacion.textoFeedbackCorrecto + " " + nombre + " " + localizacion.textoFeedbackCorrectoDetras;
         botonSiguiente.SetActive(true);
     }
 
     public void pulsarIncorrecto()
     {
         var (nombre, _, _) = espejosLike[idEspejo];
-        textoFeedback.text = localizacion.textoFeedbackIncorrectoParte1 + nombre + localizacion.textoFeedbackIncorrectoParte2;
+        textoFeedback.text = localizacion.textoFeedbackIncorrectoParte1 + " " + nombre + " " + localizacion.textoFeedbackIncorrectoParte2;
         botonSiguiente.SetActive(true);
     }
 
@@ -130,7 +130,7 @@ public class MinijuegoEspejos01 : MonoBehaviour
             textoFeedback.text = "";
 
             var (nombre, id, _) = espejosLike[idEspejo];
-            textoEspejos.text = localizacion.textoPreEspejoParte2 + nombre + localizacion.textoPostEspejoParte2;
+            textoEspejos.text = localizacion.textoPreEspejoParte2 + " " + nombre + " " + localizacion.textoPostEspejoParte2;
             textoCorrecto.text = localizacion.espejos[id].respuestaCorrecta;
             textoIncorrecto.text = localizacion.espejos[id].respuestaIncorrecta;
         }

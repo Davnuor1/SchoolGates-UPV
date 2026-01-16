@@ -2914,6 +2914,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97849988d01bd2d4d8447ac988fd607f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoCollect: 1
+  neonRoot: {fileID: 645829045}
+  includeInactive: 1
+  rebuildOnAwake: 1
+  resourcesPath: Sprites/lights
+  sheetSprites: []
+  affectLights: 1
+  intensityMultiplier: 1
+  angerLightColor: {r: 1, g: 0, b: 0, a: 1}
+  fearLightColor: {r: 0, g: 1, b: 1, a: 1}
+  joyLightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  sadnessLightColor: {r: 0, g: 0, b: 1, a: 1}
+  debugLogging: 1
   neons: []
 --- !u!1001 &34845053
 PrefabInstance:
@@ -133123,10 +133136,10 @@ MonoBehaviour:
   breathingDuration: 10
   pauseDuration: 10
   localizacionES: {fileID: 11400000, guid: ffbb884647f370c48a9765b0361de7aa, type: 2}
-  localizacionIT: {fileID: 11400000, guid: ffbb884647f370c48a9765b0361de7aa, type: 2}
+  localizacionIT: {fileID: 11400000, guid: 01fc903bad8087848b6f2c051e689197, type: 2}
   localizacionDE: {fileID: 11400000, guid: 96b97cfb6d28de947a47174c5b9d5374, type: 2}
   localizacionEN: {fileID: 11400000, guid: d2d8f9a26063e754ea1c06e19875cce9, type: 2}
-  localizacionFI: {fileID: 11400000, guid: ffbb884647f370c48a9765b0361de7aa, type: 2}
+  localizacionFI: {fileID: 11400000, guid: 68fc791b5deaabe448a45666fab1f0a5, type: 2}
   localization: {fileID: 11400000, guid: ffbb884647f370c48a9765b0361de7aa, type: 2}
   blackOverlay: {fileID: 432990593}
 --- !u!4 &1576174627

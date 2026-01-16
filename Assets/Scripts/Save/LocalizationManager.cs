@@ -5,7 +5,7 @@ public class LocalizationManager : MonoBehaviour
 {
     public static LocalizationManager Instance { get; private set; }
 
-    public string CurrentLanguage { get; private set; } = "es";
+    public string CurrentLanguage { get; private set; } = "en";
 
     public event Action OnLanguageChanged;
 

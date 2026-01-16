@@ -25,6 +25,8 @@ public class GateOfEmotionsLocalization : ScriptableObject
 
     [Header("Parte 1 - Feedback")]
     public string feedbackIncorrect;
+    public string feedbackCorrecto01;
+    public string feedbackCorrecto02;
     public string feedbackAnger;
     public string feedbackFear;
     public string feedbackJoy;

@@ -223,7 +223,7 @@ public class CardMinigameManager : MonoBehaviour
     {
         if (panelRoot != null) panelRoot.SetActive(false);
         //TryBlockPlayer(false);
-        canvas.SetActive(true);
+        canvas.SetActive(false);
 
     }
 

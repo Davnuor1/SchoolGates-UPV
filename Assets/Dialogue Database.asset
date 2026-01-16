@@ -127,6 +127,10 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: NodeColor
+      value: '#373737ff'
+      type: 0
+      typeString: 
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -20725,8 +20729,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I don't think this is  fair, look at those people there, look at those
-          people there, they have the same rights as you and me
+        value: I don't think this is  fair, look at those people there,, they have
+          the same rights as you and me
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -27318,8 +27322,7 @@ MonoBehaviour:
         value: "Fantastico! La rabbia \xE8 utile per difendere una posizione. Usa
           quell'energia per proteggerti, non per combattere. Se \xE8 troppo intensa
           e ti lasci trasportare dalla rabbia, \xE8 pi\xF9 probabile che agirai senza
-          pensare e ferirai te stesso o gli altri... Ti sentirai pi\xF9 equilibrato
-          dopo\u2026 Continua cos\xEC!\r"
+          pensare e ferirai te stesso o gli altri... "
         type: 4
         typeString: CustomFieldType_Localization
       - title: fi
@@ -27877,8 +27880,7 @@ MonoBehaviour:
         value: "Fantastico! La paura \xE8 utile quando ci aiuta a proteggerci dal
           male, ma dobbiamo valutare se quel male \xE8 reale e probabile. Quando
           siamo presi dalla paura, possiamo diventare irrazionali e non essere in
-          grado di leggere correttamente la situazione... Ti sentirai pi\xF9 equilibrato
-          dopo\u2026 Continua cos\xEC!\r"
+          grado di leggere correttamente la situazione... "
         type: 4
         typeString: CustomFieldType_Localization
       - title: fi
@@ -28432,8 +28434,7 @@ MonoBehaviour:
       - title: it
         value: "Fantastico! La gioia chiede di essere condivisa per essere equilibrata.
           La vitalit\xE0 della gioia ti consente di fare tante cose e di farle con
-          cura, ottimismo e sicurezza. Ti sentirai pi\xF9 equilibrato dopo\u2026
-          Continua cos\xEC!\r"
+          cura, ottimismo e sicurezza. "
         type: 4
         typeString: CustomFieldType_Localization
       - title: fi
@@ -28990,8 +28991,7 @@ MonoBehaviour:
         value: "Fantastico! La tristezza aiuta a trovare un momento per stare con
           te. Quando si perde qualcosa di prezioso, \xE8 difficile accettarlo e pu\xF2
           volerci del tempo. La tristezza ci d\xE0 quel momento e pu\xF2 aiutarci
-          a concentrarci sugli aspetti pi\xF9 profondi e preziosi di una situazione.
-          Ti sentirai pi\xF9 equilibrato dopo\u2026 Continua cos\xEC!"
+          a concentrarci sugli aspetti pi\xF9 profondi e preziosi di una situazione. "
         type: 4
         typeString: CustomFieldType_Localization
       - title: fi

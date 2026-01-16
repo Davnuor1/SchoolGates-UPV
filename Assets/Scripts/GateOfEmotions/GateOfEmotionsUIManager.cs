@@ -273,8 +273,10 @@ public class GateOfEmotionsUIManager : MonoBehaviour
         {
             string localized = EmotionUtils.GetLocalizedName(localization, emotionId);
             string extra = GetFeedbackForEmotion(emotionId);
+            string correcto01 = localization.feedbackCorrecto01;
+            string correcto02 = localization.feedbackCorrecto02;
             textFeedback.text =
-                $"Esto parece acertado... Esta bien sentir {localized}. {extra} Ahora, vuelve a la ciudad y encuentra una manera de seguir tu camino por el laberinto...";
+                $"{correcto01} {localized}. {extra} {correcto02}.";
 
             if (neonManager != null)
                 neonManager.ChangeNeonsToEmotion(emotionId);
