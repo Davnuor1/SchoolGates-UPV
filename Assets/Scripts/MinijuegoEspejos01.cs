@@ -25,6 +25,7 @@ public class MinijuegoEspejos01 : MonoBehaviour
     [SerializeField] private MinijuegoEspejos01Localization localizacionDE;
     [SerializeField] private MinijuegoEspejos01Localization localizacionEN;
     [SerializeField] private MinijuegoEspejos01Localization localizacionFI;
+    [SerializeField] private MinijuegoEspejos01Localization localizacionFR;
     private MinijuegoEspejos01Localization localizacion;
     private string codeLanguage;
     private List<(string nombre, int id, int rating)> espejosLike = new List<(string nombre, int id, int rating)>();
@@ -46,6 +47,7 @@ public class MinijuegoEspejos01 : MonoBehaviour
         else if (codeLanguage == "de") { localizacion = localizacionDE; }
         else if (codeLanguage == "en") { localizacion = localizacionEN; }
         else if (codeLanguage == "fi") { localizacion = localizacionFI; }
+        else if (codeLanguage == "fr") { localizacion = localizacionFR; }
     }
     public void darBotonLike()
     {

@@ -11,4 +11,7 @@ public class BackendConfig : ScriptableObject
     [Header("Juego")]
     public string[] allowedGates;  // Lo usaremos en la tarea 16
     public bool debugLogging = false;
+
+    [Header("Build mode")]
+    public bool offlineBuild = false;
 }

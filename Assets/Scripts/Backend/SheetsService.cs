@@ -8,9 +8,14 @@ public class SheetsService : MonoBehaviour
 {
     public static SheetsService Instance { get; private set; }
 
-    private BackendConfig cfg;
-    private bool busySaving = false;
-    private const string PendingSaveJsonKey = "sog_pending_save_json";
+    BackendConfig cfg;
+    bool busySaving = false;
+    string pendingSaveJsonKey = "sog_pending_save_json";
+
+    private bool IsOfflineBuild
+    {
+        get { return cfg != null && cfg.offlineBuild; }
+    }
 
     private void Awake()
     {
@@ -22,50 +27,35 @@ public class SheetsService : MonoBehaviour
     private void Start()
     {
         cfg = BackendConfigProvider.Instance.Config;
+
+        if (IsOfflineBuild)
+        {
+            if (cfg != null && cfg.debugLogging) Debug.Log("SheetsService: Offline build activo. No se haran requests.");
+            return;
+        }
+
         TryFlushPending();
     }
 
-    // ----------------- LOGIN -----------------
-
     public IEnumerator LoginAsync(string tan, string password, Action<Result<LoginResponse>> cb)
     {
-        var url = cfg.apiUrl;
-
-#if UNITY_WEBGL && !UNITY_EDITOR
-        // WebGL: evitar preflight => usar form fields
-        WWWForm form = new WWWForm();
-        form.AddField("action", "login");
-        form.AddField("apiKey", cfg.apiKey);
-        form.AddField("tan", tan);
-        form.AddField("password", password);
-        form.AddField("versionId", cfg.versionId);
-
-        using (var req = UnityWebRequest.Post(url, form))
+        if (IsOfflineBuild)
         {
-            if (cfg.debugLogging) Debug.Log("[SheetsService] POST(form) login " + url);
-            yield return req.SendWebRequest();
+            if (cfg != null && cfg.debugLogging) Debug.Log("LoginAsync omitido (offline build).");
 
-#if UNITY_2021_3_OR_NEWER
-            bool hasErr = req.result != UnityWebRequest.Result.Success;
-#else
-            bool hasErr = req.isNetworkError || req.isHttpError;
-#endif
-            if (hasErr)
-            {
-                if (cfg.debugLogging) Debug.LogWarning("[SheetsService] Login error: " + req.error);
-                cb(Result<LoginResponse>.Fail(req.error));
-            }
-            else
-            {
-                var txt = req.downloadHandler.text;
-                if (cfg.debugLogging) Debug.Log("[SheetsService] Login response: " + txt);
-                var resp = JsonUtility.FromJson<LoginResponse>(txt);
-                if (resp == null) { cb(Result<LoginResponse>.Fail("PARSE_ERROR")); yield break; }
-                cb(resp.ok ? Result<LoginResponse>.Ok(resp) : Result<LoginResponse>.Fail(resp.error));
-            }
+            var resp = new LoginResponse();
+            resp.ok = true;
+
+            // Si tu LoginResponse tiene estos campos, los relleno.
+            // Si tu clase no los tiene, elimina estas 2 lineas:
+            resp.language = (LocalizationManager.Instance != null) ? LocalizationManager.Instance.CurrentLanguage : "es";
+            resp.snapshot = new SnapshotDto();
+
+            cb(Result<LoginResponse>.Ok(resp));
+            yield break;
         }
-#else
-        // Editor/PC: JSON normal
+
+        var url = cfg.apiUrl;
         var body = new LoginRequest
         {
             apiKey = cfg.apiKey,
@@ -73,231 +63,140 @@ public class SheetsService : MonoBehaviour
             password = password,
             versionId = cfg.versionId
         };
+
         yield return PostJson(url, JsonUtility.ToJson(body), (ok, txt, err) =>
         {
             if (!ok) { cb(Result<LoginResponse>.Fail(err)); return; }
-            if (cfg.debugLogging) Debug.Log("[SheetsService] Login response: " + txt);
             var resp = JsonUtility.FromJson<LoginResponse>(txt);
-            if (resp == null) { cb(Result<LoginResponse>.Fail("PARSE_ERROR")); return; }
-            cb(resp.ok ? Result<LoginResponse>.Ok(resp) : Result<LoginResponse>.Fail(resp.error));
+            if (cfg.debugLogging) Debug.Log("Login response: " + txt);
+            if (!resp.ok) { cb(Result<LoginResponse>.Fail(resp.error)); return; }
+            cb(Result<LoginResponse>.Ok(resp));
         });
-#endif
     }
-
-    // ----------------- SAVE -----------------
 
     public IEnumerator SaveAsync(string tan, SnapshotDto snapshot, Action<Result<bool>> cb)
     {
-        // Construimos un SaveRequest y su JSON (lo usaremos para cachear pendientes)
-        var reqObj = new SaveRequest
+        if (IsOfflineBuild)
+        {
+            if (cfg != null && cfg.debugLogging) Debug.Log("SaveAsync omitido (offline build). Guardado solo local.");
+            cb?.Invoke(Result<bool>.Ok(true));
+            yield break;
+        }
+
+        var req = new SaveRequest
         {
             apiKey = cfg.apiKey,
             tan = tan,
             versionId = cfg.versionId,
             snapshot = snapshot
         };
-        var json = JsonUtility.ToJson(reqObj);
+        var json = JsonUtility.ToJson(req);
 
-        // Cola simple: si ya hay un save en curso, cachea y listo
         if (busySaving)
         {
-            PlayerPrefs.SetString(PendingSaveJsonKey, json);
+            PlayerPrefs.SetString(pendingSaveJsonKey, json);
             PlayerPrefs.Save();
-            if (cfg.debugLogging) Debug.Log("[SheetsService] Save encolado (busy).");
+            if (cfg.debugLogging) Debug.Log("Save encolado (busy).");
             cb?.Invoke(Result<bool>.Ok(true));
             yield break;
         }
 
         busySaving = true;
+        bool finished = false;
 
-#if UNITY_WEBGL && !UNITY_EDITOR
-        // WebGL: enviar como form (evitar preflight). El snapshot va como string JSON en un campo.
-        WWWForm form = new WWWForm();
-        form.AddField("action", "save");
-        form.AddField("apiKey", cfg.apiKey);
-        form.AddField("tan", tan);
-        form.AddField("versionId", cfg.versionId);
-        form.AddField("snapshot", JsonUtility.ToJson(snapshot));
-
-        using (var req = UnityWebRequest.Post(cfg.apiUrl, form))
-        {
-            if (cfg.debugLogging) Debug.Log("[SheetsService] POST(form) save " + cfg.apiUrl);
-            yield return req.SendWebRequest();
-
-#if UNITY_2021_3_OR_NEWER
-            bool hasErr = req.result != UnityWebRequest.Result.Success;
-#else
-            bool hasErr = req.isNetworkError || req.isHttpError;
-#endif
-            if (hasErr)
-            {
-                // Cachea para reintentar luego
-                PlayerPrefs.SetString(PendingSaveJsonKey, json);
-                PlayerPrefs.Save();
-                if (cfg.debugLogging) Debug.LogWarning("[SheetsService] Save fallido. Cacheado. Err=" + req.error);
-                cb?.Invoke(Result<bool>.Fail(req.error));
-            }
-            else
-            {
-                var txt = req.downloadHandler.text;
-                if (cfg.debugLogging) Debug.Log("[SheetsService] Save response: " + txt);
-                var resp = JsonUtility.FromJson<SaveResponse>(txt);
-                if (resp != null && resp.ok)
-                {
-                    // Limpia pendiente si coincide
-                    if (PlayerPrefs.GetString(PendingSaveJsonKey, "") == json)
-                    {
-                        PlayerPrefs.DeleteKey(PendingSaveJsonKey);
-                        PlayerPrefs.Save();
-                    }
-                    cb?.Invoke(Result<bool>.Ok(true));
-                }
-                else
-                {
-                    PlayerPrefs.SetString(PendingSaveJsonKey, json);
-                    PlayerPrefs.Save();
-                    cb?.Invoke(Result<bool>.Fail(resp != null ? resp.error : "PARSE_ERROR"));
-                }
-            }
-        }
-#else
-        // Editor/PC: JSON normal
         yield return PostJson(cfg.apiUrl, json, (ok, txt, err) =>
         {
+            finished = true;
+
             if (!ok)
             {
-                PlayerPrefs.SetString(PendingSaveJsonKey, json);
+                PlayerPrefs.SetString(pendingSaveJsonKey, json);
                 PlayerPrefs.Save();
-                if (cfg.debugLogging) Debug.LogWarning("[SheetsService] Save fallido. Cacheado. Err=" + err);
+                if (cfg.debugLogging) Debug.LogWarning("Save fallido. Cacheado para reintentar. Err=" + err);
                 cb?.Invoke(Result<bool>.Fail(err));
             }
             else
             {
-                if (cfg.debugLogging) Debug.Log("[SheetsService] Save response: " + txt);
                 var resp = JsonUtility.FromJson<SaveResponse>(txt);
-                if (resp != null && resp.ok)
+                if (cfg.debugLogging) Debug.Log("Save response: " + txt);
+
+                if (resp.ok)
                 {
-                    if (PlayerPrefs.GetString(PendingSaveJsonKey, "") == json)
+                    if (PlayerPrefs.GetString(pendingSaveJsonKey, "") == json)
                     {
-                        PlayerPrefs.DeleteKey(PendingSaveJsonKey);
+                        PlayerPrefs.DeleteKey(pendingSaveJsonKey);
                         PlayerPrefs.Save();
                     }
                     cb?.Invoke(Result<bool>.Ok(true));
                 }
                 else
                 {
-                    PlayerPrefs.SetString(PendingSaveJsonKey, json);
+                    PlayerPrefs.SetString(pendingSaveJsonKey, json);
                     PlayerPrefs.Save();
-                    cb?.Invoke(Result<bool>.Fail(resp != null ? resp.error : "PARSE_ERROR"));
+                    cb?.Invoke(Result<bool>.Fail(resp.error));
                 }
             }
         });
-#endif
 
+        if (!finished && cfg.debugLogging) Debug.LogWarning("SaveAsync terminó sin callback.");
         busySaving = false;
+
         TryFlushPending();
     }
 
-    // ----------------- FLUSH PENDIENTE -----------------
-
     public void TryFlushPending()
     {
-        var pending = PlayerPrefs.GetString(PendingSaveJsonKey, "");
+        if (IsOfflineBuild) return;
+
+        var pending = PlayerPrefs.GetString(pendingSaveJsonKey, "");
         if (string.IsNullOrEmpty(pending)) return;
 
-#if UNITY_WEBGL && !UNITY_EDITOR
-        // En WebGL, reintenta el pendiente como form (no JSON)
-        SaveRequest reqObj = null;
-        try { reqObj = JsonUtility.FromJson<SaveRequest>(pending); } catch { reqObj = null; }
-        if (reqObj == null || reqObj.snapshot == null)
-        {
-            if (cfg.debugLogging) Debug.LogWarning("[SheetsService] TryFlushPending: JSON pendiente inválido.");
-            return;
-        }
-
-        WWWForm form = new WWWForm();
-        form.AddField("action", "save");
-        form.AddField("apiKey", reqObj.apiKey);
-        form.AddField("tan", reqObj.tan);
-        form.AddField("versionId", reqObj.versionId);
-        form.AddField("snapshot", JsonUtility.ToJson(reqObj.snapshot));
-
-        StartCoroutine(FlushForm(form));
-#else
-        // En Editor/PC, podemos enviar el JSON directamente
         StartCoroutine(PostJson(cfg.apiUrl, pending, (ok, txt, err) =>
         {
             if (!ok)
             {
-                if (cfg.debugLogging) Debug.LogWarning("[SheetsService] Flush pendiente fallido: " + err);
+                if (cfg.debugLogging) Debug.LogWarning("Flush pendiente fallido: " + err);
                 return;
             }
+
             var resp = JsonUtility.FromJson<SaveResponse>(txt);
-            if (resp != null && resp.ok)
+            if (resp.ok)
             {
-                if (cfg.debugLogging) Debug.Log("[SheetsService] Flush pendiente OK.");
-                PlayerPrefs.DeleteKey(PendingSaveJsonKey);
+                if (cfg.debugLogging) Debug.Log("Flush pendiente OK.");
+                PlayerPrefs.DeleteKey(pendingSaveJsonKey);
                 PlayerPrefs.Save();
             }
         }));
-#endif
     }
-
-#if UNITY_WEBGL && !UNITY_EDITOR
-    private IEnumerator FlushForm(WWWForm form)
-    {
-        using (var req = UnityWebRequest.Post(cfg.apiUrl, form))
-        {
-            if (cfg.debugLogging) Debug.Log("[SheetsService] POST(form) flush " + cfg.apiUrl);
-            yield return req.SendWebRequest();
-
-#if UNITY_2021_3_OR_NEWER
-            bool hasErr = req.result != UnityWebRequest.Result.Success;
-#else
-            bool hasErr = req.isNetworkError || req.isHttpError;
-#endif
-            if (hasErr)
-            {
-                if (cfg.debugLogging) Debug.LogWarning("[SheetsService] Flush pendiente fallido: " + req.error);
-            }
-            else
-            {
-                var txt = req.downloadHandler.text;
-                var resp = JsonUtility.FromJson<SaveResponse>(txt);
-                if (resp != null && resp.ok)
-                {
-                    if (cfg.debugLogging) Debug.Log("[SheetsService] Flush pendiente OK.");
-                    PlayerPrefs.DeleteKey(PendingSaveJsonKey);
-                    PlayerPrefs.Save();
-                }
-            }
-        }
-    }
-#endif
-
-    // ----------------- HTTP JSON (Editor/PC) -----------------
 
     private IEnumerator PostJson(string url, string json, Action<bool, string, string> cb, int timeoutSec = 15)
     {
-        byte[] raw = Encoding.UTF8.GetBytes(json);
-        using (var req = new UnityWebRequest(url, "POST"))
+        if (IsOfflineBuild)
         {
-            req.uploadHandler = new UploadHandlerRaw(raw);
-            req.downloadHandler = new DownloadHandlerBuffer();
-            req.SetRequestHeader("Content-Type", "application/json");
-            req.timeout = timeoutSec;
+            cb(false, null, "OFFLINE_BUILD");
+            yield break;
+        }
 
-            if (cfg.debugLogging) Debug.Log("[SheetsService] POST(json) " + url + " : " + json);
+        var raw = Encoding.UTF8.GetBytes(json);
+        var req = new UnityWebRequest(url, "POST");
+        req.uploadHandler = new UploadHandlerRaw(raw);
+        req.downloadHandler = new DownloadHandlerBuffer();
+        req.SetRequestHeader("Content-Type", "application/json");
+        req.timeout = timeoutSec;
 
-            yield return req.SendWebRequest();
+        if (cfg.debugLogging) Debug.Log("POST " + url + " : " + json);
+
+        yield return req.SendWebRequest();
 
 #if UNITY_2021_3_OR_NEWER
-            bool hasErr = req.result != UnityWebRequest.Result.Success;
+        bool hasErr = req.result != UnityWebRequest.Result.Success;
 #else
-            bool hasErr = req.isNetworkError || req.isHttpError;
+        bool hasErr = req.isNetworkError || req.isHttpError;
 #endif
-            if (hasErr) cb(false, null, req.error);
-            else cb(true, req.downloadHandler.text, null);
-        }
+
+        if (hasErr) cb(false, null, req.error);
+        else cb(true, req.downloadHandler.text, null);
+
+        req.Dispose();
     }
 }
