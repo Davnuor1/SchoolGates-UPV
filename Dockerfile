@@ -5,7 +5,7 @@ FROM node:14-slim
 WORKDIR /usr/src/app
 
 # Copy the current directory contents into the container at /usr/src/app
-COPY PortalsOfGrowth_G5_v10/ .
+COPY PortalsOfGrowth_G5_v11/ .
 
 # Install http-server in the container
 RUN npm install -g http-server

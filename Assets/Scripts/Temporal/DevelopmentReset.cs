@@ -10,6 +10,7 @@ public class DevelopmentReset : MonoBehaviour
         // Reseteos que ya tenías
         ActivableObject.ResetPortalStates();
         CinematicTriggerCollider.ResetTriggerByID("intro");
+        CinematicTriggerCollider.ResetTriggerByID("IntroJuego1");
         CinematicTriggerCollider.ResetTriggerByID("final");
 
         // Reset de las cinemáticas por ID (coincidir con 'cinematicId' en cada CinematicManager)
